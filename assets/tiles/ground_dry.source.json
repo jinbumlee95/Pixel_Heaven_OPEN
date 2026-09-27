@@ -1,0 +1,1270 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "cc2d42cc-db59-43ba-a082-21e63f2959f0",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        32
+      ],
+      "frame_count": 1,
+      "durations_ms": [
+        100
+      ],
+      "columns": 1,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      32,
+                      0
+                    ],
+                    [
+                      32,
+                      32
+                    ],
+                    [
+                      0,
+                      32
+                    ]
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      5
+                    ],
+                    [
+                      1,
+                      5
+                    ],
+                    [
+                      1,
+                      6
+                    ],
+                    [
+                      0,
+                      6
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      20,
+                      16
+                    ],
+                    [
+                      22,
+                      16
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      20,
+                      17
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      27
+                    ],
+                    [
+                      15,
+                      27
+                    ],
+                    [
+                      15,
+                      28
+                    ],
+                    [
+                      14,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      6
+                    ],
+                    [
+                      16,
+                      6
+                    ],
+                    [
+                      16,
+                      7
+                    ],
+                    [
+                      14,
+                      7
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      20,
+                      17
+                    ],
+                    [
+                      21,
+                      17
+                    ],
+                    [
+                      21,
+                      18
+                    ],
+                    [
+                      20,
+                      18
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      28
+                    ],
+                    [
+                      2,
+                      28
+                    ],
+                    [
+                      2,
+                      29
+                    ],
+                    [
+                      0,
+                      29
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      18,
+                      7
+                    ],
+                    [
+                      19,
+                      7
+                    ],
+                    [
+                      19,
+                      8
+                    ],
+                    [
+                      18,
+                      8
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      18
+                    ],
+                    [
+                      12,
+                      18
+                    ],
+                    [
+                      12,
+                      19
+                    ],
+                    [
+                      10,
+                      19
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      8,
+                      29
+                    ],
+                    [
+                      9,
+                      29
+                    ],
+                    [
+                      9,
+                      30
+                    ],
+                    [
+                      8,
+                      30
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      12,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ],
+                    [
+                      14,
+                      9
+                    ],
+                    [
+                      12,
+                      9
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      22,
+                      19
+                    ],
+                    [
+                      23,
+                      19
+                    ],
+                    [
+                      23,
+                      20
+                    ],
+                    [
+                      22,
+                      20
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      6,
+                      30
+                    ],
+                    [
+                      8,
+                      30
+                    ],
+                    [
+                      8,
+                      31
+                    ],
+                    [
+                      6,
+                      31
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      28,
+                      9
+                    ],
+                    [
+                      29,
+                      9
+                    ],
+                    [
+                      29,
+                      10
+                    ],
+                    [
+                      28,
+                      10
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      24,
+                      20
+                    ],
+                    [
+                      26,
+                      20
+                    ],
+                    [
+                      26,
+                      21
+                    ],
+                    [
+                      24,
+                      21
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      26,
+                      31
+                    ],
+                    [
+                      27,
+                      31
+                    ],
+                    [
+                      27,
+                      32
+                    ],
+                    [
+                      26,
+                      32
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      10
+                    ],
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      2,
+                      11
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      16,
+                      21
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      17,
+                      22
+                    ],
+                    [
+                      16,
+                      22
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      0
+                    ],
+                    [
+                      6,
+                      0
+                    ],
+                    [
+                      6,
+                      1
+                    ],
+                    [
+                      4,
+                      1
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      30,
+                      11
+                    ],
+                    [
+                      31,
+                      11
+                    ],
+                    [
+                      31,
+                      12
+                    ],
+                    [
+                      30,
+                      12
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      30,
+                      22
+                    ],
+                    [
+                      32,
+                      22
+                    ],
+                    [
+                      32,
+                      23
+                    ],
+                    [
+                      30,
+                      23
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      1
+                    ],
+                    [
+                      5,
+                      1
+                    ],
+                    [
+                      5,
+                      2
+                    ],
+                    [
+                      4,
+                      2
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      16,
+                      12
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      18,
+                      13
+                    ],
+                    [
+                      16,
+                      13
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      23
+                    ],
+                    [
+                      3,
+                      23
+                    ],
+                    [
+                      3,
+                      24
+                    ],
+                    [
+                      2,
+                      24
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      26,
+                      2
+                    ],
+                    [
+                      28,
+                      2
+                    ],
+                    [
+                      28,
+                      3
+                    ],
+                    [
+                      26,
+                      3
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      24,
+                      13
+                    ],
+                    [
+                      25,
+                      13
+                    ],
+                    [
+                      25,
+                      14
+                    ],
+                    [
+                      24,
+                      14
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      28,
+                      24
+                    ],
+                    [
+                      30,
+                      24
+                    ],
+                    [
+                      30,
+                      25
+                    ],
+                    [
+                      28,
+                      25
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      6,
+                      3
+                    ],
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      7,
+                      4
+                    ],
+                    [
+                      6,
+                      4
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      22,
+                      14
+                    ],
+                    [
+                      24,
+                      14
+                    ],
+                    [
+                      24,
+                      15
+                    ],
+                    [
+                      22,
+                      15
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      12,
+                      25
+                    ],
+                    [
+                      13,
+                      25
+                    ],
+                    [
+                      13,
+                      26
+                    ],
+                    [
+                      12,
+                      26
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      8,
+                      4
+                    ],
+                    [
+                      10,
+                      4
+                    ],
+                    [
+                      10,
+                      5
+                    ],
+                    [
+                      8,
+                      5
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      15
+                    ],
+                    [
+                      11,
+                      15
+                    ],
+                    [
+                      11,
+                      16
+                    ],
+                    [
+                      10,
+                      16
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      18,
+                      26
+                    ],
+                    [
+                      20,
+                      26
+                    ],
+                    [
+                      20,
+                      27
+                    ],
+                    [
+                      18,
+                      27
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      5
+                    ],
+                    [
+                      1,
+                      5
+                    ],
+                    [
+                      1,
+                      6
+                    ],
+                    [
+                      0,
+                      6
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      20,
+                      16
+                    ],
+                    [
+                      22,
+                      16
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      20,
+                      17
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      27
+                    ],
+                    [
+                      15,
+                      27
+                    ],
+                    [
+                      15,
+                      28
+                    ],
+                    [
+                      14,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      6
+                    ],
+                    [
+                      16,
+                      6
+                    ],
+                    [
+                      16,
+                      7
+                    ],
+                    [
+                      14,
+                      7
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      20,
+                      17
+                    ],
+                    [
+                      21,
+                      17
+                    ],
+                    [
+                      21,
+                      18
+                    ],
+                    [
+                      20,
+                      18
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      28
+                    ],
+                    [
+                      2,
+                      28
+                    ],
+                    [
+                      2,
+                      29
+                    ],
+                    [
+                      0,
+                      29
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      18,
+                      7
+                    ],
+                    [
+                      19,
+                      7
+                    ],
+                    [
+                      19,
+                      8
+                    ],
+                    [
+                      18,
+                      8
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      18
+                    ],
+                    [
+                      12,
+                      18
+                    ],
+                    [
+                      12,
+                      19
+                    ],
+                    [
+                      10,
+                      19
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      8,
+                      29
+                    ],
+                    [
+                      9,
+                      29
+                    ],
+                    [
+                      9,
+                      30
+                    ],
+                    [
+                      8,
+                      30
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      12,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ],
+                    [
+                      14,
+                      9
+                    ],
+                    [
+                      12,
+                      9
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      22,
+                      19
+                    ],
+                    [
+                      23,
+                      19
+                    ],
+                    [
+                      23,
+                      20
+                    ],
+                    [
+                      22,
+                      20
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      6,
+                      30
+                    ],
+                    [
+                      8,
+                      30
+                    ],
+                    [
+                      8,
+                      31
+                    ],
+                    [
+                      6,
+                      31
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      28,
+                      9
+                    ],
+                    [
+                      29,
+                      9
+                    ],
+                    [
+                      29,
+                      10
+                    ],
+                    [
+                      28,
+                      10
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      24,
+                      20
+                    ],
+                    [
+                      26,
+                      20
+                    ],
+                    [
+                      26,
+                      21
+                    ],
+                    [
+                      24,
+                      21
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      26,
+                      31
+                    ],
+                    [
+                      27,
+                      31
+                    ],
+                    [
+                      27,
+                      32
+                    ],
+                    [
+                      26,
+                      32
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      10
+                    ],
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      2,
+                      11
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      16,
+                      21
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      17,
+                      22
+                    ],
+                    [
+                      16,
+                      22
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      0
+                    ],
+                    [
+                      6,
+                      0
+                    ],
+                    [
+                      6,
+                      1
+                    ],
+                    [
+                      4,
+                      1
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      2,
+                      3
+                    ],
+                    [
+                      9,
+                      7
+                    ],
+                    [
+                      8,
+                      13
+                    ],
+                    [
+                      16,
+                      18
+                    ]
+                  ],
+                  "color": "red",
+                  "stroke_width": 1
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      8,
+                      13
+                    ],
+                    [
+                      3,
+                      19
+                    ],
+                    [
+                      4,
+                      25
+                    ]
+                  ],
+                  "color": "red",
+                  "stroke_width": 1
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      16,
+                      18
+                    ],
+                    [
+                      25,
+                      16
+                    ],
+                    [
+                      29,
+                      22
+                    ]
+                  ],
+                  "color": "red",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": true
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "frameCount": 1,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/cc2d42cc-db59-43ba-a082-21e63f2959f0/assets/south/full.png"
+}

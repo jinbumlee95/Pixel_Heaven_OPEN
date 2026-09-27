@@ -1,0 +1,77 @@
+{
+  "character": {
+    "id": "cc876aae-7f72-4d34-853f-2e4bd5951728",
+    "name": "Idle",
+    "prompt": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small warm brown deer with slender legs, light muzzle, small antlers, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human. ISOLATED FIGURE ONLY. No terrain tile, ground, platform, shadow, checker pattern or backdrop in ANY direction.",
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Clean_characters_deer-Idle.png",
+    "cell_size": {
+      "width": 48,
+      "height": 48
+    },
+    "sheet_size": {
+      "width": 384,
+      "height": 240
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "d04828f3-357b-4abf-b982-fcf06b35c222",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "d04828f3-357b-4abf-b982-fcf06b35c222",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "d04828f3-357b-4abf-b982-fcf06b35c222",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "d04828f3-357b-4abf-b982-fcf06b35c222",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-23T03:02:26.865458+00:00"
+}

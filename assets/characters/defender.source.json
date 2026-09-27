@@ -1,0 +1,6 @@
+{
+  "provider": "PixelLab",
+  "derivedFrom": "assets/characters/combat/swordsman/home/source.json",
+  "postProcessing": "Lossless copy of delivered swordsman rotation and idle/walk sheet. Shield-ready idle is the defense-ready visual.",
+  "integrationEnabled": false
+}

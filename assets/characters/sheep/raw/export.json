@@ -1,0 +1,77 @@
+{
+  "character": {
+    "id": "17bf3055-887a-4ba6-af83-35dec2847103",
+    "name": "Idle",
+    "prompt": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small cream wool sheep with dark muzzle and legs, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Pixel_Heaven_characters-Idle.png",
+    "cell_size": {
+      "width": 40,
+      "height": 40
+    },
+    "sheet_size": {
+      "width": 320,
+      "height": 200
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-23T02:32:19.176969+00:00"
+}

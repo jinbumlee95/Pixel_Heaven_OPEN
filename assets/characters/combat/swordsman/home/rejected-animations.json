@@ -1,0 +1,164 @@
+[
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "walk",
+    "direction": "south",
+    "frames": 6,
+    "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "fe2c2578-9229-4989-943a-9854f66efd3a",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "walk",
+    "direction": "east",
+    "frames": 6,
+    "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "fe2c2578-9229-4989-943a-9854f66efd3a",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "walk",
+    "direction": "north",
+    "frames": 6,
+    "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "fe2c2578-9229-4989-943a-9854f66efd3a",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "walk",
+    "direction": "west",
+    "frames": 6,
+    "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "fe2c2578-9229-4989-943a-9854f66efd3a",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "attack",
+    "direction": "south",
+    "frames": 8,
+    "prompt": "One sword attack: frames0-2 wind up, frame3 broad sword contact, frame4 follow-through, frames5-7 return to guard. Keep shield in same hand. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "bf976650-80d2-4a72-bb51-eb44096b9ab9",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "attack",
+    "direction": "east",
+    "frames": 8,
+    "prompt": "One sword attack: frames0-2 wind up, frame3 broad sword contact, frame4 follow-through, frames5-7 return to guard. Keep shield in same hand. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+    "group": "bf976650-80d2-4a72-bb51-eb44096b9ab9",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "attack",
+    "direction": "north",
+    "frames": 8,
+    "prompt": "One sword attack: frames0-2 wind up, frame3 broad sword contact, frame4 follow-through, frames5-7 return to guard. Keep shield in same hand. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "bf976650-80d2-4a72-bb51-eb44096b9ab9",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "attack",
+    "direction": "west",
+    "frames": 8,
+    "prompt": "One sword attack: frames0-2 wind up, frame3 broad sword contact, frame4 follow-through, frames5-7 return to guard. Keep shield in same hand. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "bf976650-80d2-4a72-bb51-eb44096b9ab9",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "hit",
+    "direction": "south",
+    "frames": 4,
+    "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "ef020c86-9c66-45f3-9826-a357e1f294c6",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "hit",
+    "direction": "east",
+    "frames": 4,
+    "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "ef020c86-9c66-45f3-9826-a357e1f294c6",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "hit",
+    "direction": "north",
+    "frames": 4,
+    "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "ef020c86-9c66-45f3-9826-a357e1f294c6",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "hit",
+    "direction": "west",
+    "frames": 4,
+    "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+    "group": "ef020c86-9c66-45f3-9826-a357e1f294c6",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "down",
+    "direction": "south",
+    "frames": 6,
+    "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "8614f7a2-f804-4b65-abda-4a8689ff9ad0",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "down",
+    "direction": "east",
+    "frames": 6,
+    "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "8614f7a2-f804-4b65-abda-4a8689ff9ad0",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "down",
+    "direction": "north",
+    "frames": 6,
+    "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "8614f7a2-f804-4b65-abda-4a8689ff9ad0",
+    "submitted": true
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+    "name": "down",
+    "direction": "west",
+    "frames": 6,
+    "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+    "group": "8614f7a2-f804-4b65-abda-4a8689ff9ad0",
+    "submitted": true
+  }
+]

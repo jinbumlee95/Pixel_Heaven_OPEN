@@ -1,0 +1,349 @@
+{
+  "date": "2026-09-23",
+  "provider": "PixelLab",
+  "initialBalance": 2000,
+  "status": "generated_pending_game_review",
+  "jobs": [
+    {
+      "key": "characters/villager_a",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Adult male villager, short brown hair, teal work tunic, brown trousers and boots, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1100
+      },
+      "job_id": "3263f84e-8026-492c-8821-2e8f4ec4c444",
+      "character_id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+      "rotationArgs": {
+        "mode": "v3",
+        "reference_image_url": "https://api.pixellab.ai/mcp/images/3263f84e-8026-492c-8821-2e8f4ec4c444/download",
+        "size": 48,
+        "n_directions": 8,
+        "name": "Pixel Heaven characters/villager_a",
+        "view": "low top-down",
+        "body_type": "humanoid"
+      },
+      "animations": {}
+    },
+    {
+      "key": "characters/villager_b",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 48,
+        "no_background": true
+      },
+      "job_id": "0c45663c-ee32-4522-b402-e8f0a7cc6f96",
+      "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+      "rotationArgs": {
+        "mode": "v3",
+        "reference_image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+        "size": 48,
+        "n_directions": 8,
+        "name": "Pixel Heaven characters/villager_b",
+        "view": "low top-down",
+        "body_type": "humanoid"
+      },
+      "animations": {},
+      "rejected_character_id": "31cfc388-2f91-4e99-86f0-590382970b24",
+      "original_job_id": "6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c",
+      "cleanup": {
+        "image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 48,
+        "no_background": true
+      },
+      "originalBaseArgs": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Adult female villager, tied dark hair, ochre work tunic, dark trousers and boots, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1101
+      },
+      "tool": "edit_image_pixen"
+    },
+    {
+      "key": "characters/combat/swordsman/home/base",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home swordsman: short steel sword in RIGHT hand and broad round shield in LEFT, sage green cloth, round shield emblem, silver helmet and light armor. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1102
+      },
+      "job_id": "dd4a6434-dbb4-4ca0-a9b9-722d6ff4f5d2",
+      "original_job_id": "38dc1793-4356-43ce-8860-1476a54263e6",
+      "character_id": "b3acea7c-64f0-42b0-837b-3cf177edd7e2",
+      "rotationArgs": {
+        "mode": "v3",
+        "reference_image_url": "https://api.pixellab.ai/mcp/images/d5fae413-3bbb-4604-a258-b644f8a2e92f/download",
+        "size": 48,
+        "n_directions": 8,
+        "name": "Pixel Heaven characters/combat/swordsman/home/base",
+        "view": "low top-down",
+        "body_type": "humanoid"
+      },
+      "animations": {},
+      "rejected_character_id": "0a8c72a3-4032-41f8-95b3-b35e45a17585",
+      "previous_job_id": "d5fae413-3bbb-4604-a258-b644f8a2e92f",
+      "revision": {
+        "image_url": "https://api.pixellab.ai/mcp/images/d5fae413-3bbb-4604-a258-b644f8a2e92f/download",
+        "description": "Redraw this same swordsman at native32x48 pixels with taller adult body filling40px HEIGHT, head at y8 and BOOT SOLES at y47. Keep sword RIGHT hand, shield LEFT hand, same armor and sage cloth. Remove excessive empty space BELOW boots. Draw extra native anatomical detail, do not upscale existing pixels. Transparent background, no ground.",
+        "width": 32,
+        "height": 48,
+        "no_background": true
+      },
+      "replacement_character_id": "b3acea7c-64f0-42b0-837b-3cf177edd7e2"
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home archer: long wooden bow in LEFT hand, RIGHT hand free to draw string, quiver on back, sage green tunic, blue grey cape, round shoulder emblem. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1103
+      },
+      "job_id": "0b9690d7-7e0f-4389-82ad-82d3a6296172",
+      "original_job_id": "7c17c622-da3c-40b9-a106-76de1c35aab2",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "rotationArgs": {
+        "mode": "v3",
+        "reference_image_url": "https://api.pixellab.ai/mcp/images/0b9690d7-7e0f-4389-82ad-82d3a6296172/download",
+        "size": 48,
+        "n_directions": 8,
+        "name": "Pixel Heaven characters/combat/archer/home/base",
+        "view": "low top-down",
+        "body_type": "humanoid"
+      },
+      "animations": {}
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home mage: long wooden staff with round muted violet orb held in RIGHT hand, sage green and blue grey long robe, round shoulder emblem, hood lowered. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1104
+      },
+      "job_id": "c7424bb3-817e-418b-8b7f-2133164bceef",
+      "original_job_id": "80e0eb47-3dd7-4e4e-8e66-e57e56df1ab5",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "animations": {}
+    },
+    {
+      "key": "characters/combat/rogue/home/base",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home rogue: low alert stance, TWO short daggers one in EACH hand, short hood and sage cloth, dark leather clothing, round belt emblem. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1105
+      },
+      "job_id": "31dfb03b-42c7-49f4-b8b4-1a8b39710d93",
+      "character_id": "1b0c8076-d9ef-4c98-8bdd-035c9c657687",
+      "animations": {}
+    },
+    {
+      "key": "characters/merchant",
+      "kind": "characterBase",
+      "animal": false,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Traveling merchant, warm ochre coat, blue scarf, small satchel, friendly bearded face, no cart, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+        "width": 32,
+        "height": 48,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1106
+      },
+      "job_id": "eec0dab1-eb49-4222-a97e-4dc3f8926967",
+      "character_id": "7143f4e5-7bba-40f0-bf2e-8750ae102ed1",
+      "animations": {}
+    },
+    {
+      "key": "characters/pack_donkey",
+      "kind": "characterBase",
+      "animal": true,
+      "args": {
+        "image_url": "https://api.pixellab.ai/mcp/images/f3e6331a-c8e5-4750-a980-1497613d275d/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 32,
+        "no_background": true
+      },
+      "job_id": "3a148d56-e391-46ab-a55a-6dbbd7d22b6e",
+      "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc",
+      "animations": {},
+      "rejected_character_id": "e702649f-f4e9-498e-810e-d13c35cf27bf",
+      "original_job_id": "f3e6331a-c8e5-4750-a980-1497613d275d",
+      "cleanup": {
+        "image_url": "https://api.pixellab.ai/mcp/images/f3e6331a-c8e5-4750-a980-1497613d275d/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 32,
+        "no_background": true
+      },
+      "originalBaseArgs": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey pack donkey with two brown side saddlebags, four legs and long ears clearly visible, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+        "width": 32,
+        "height": 32,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1107
+      },
+      "tool": "edit_image_pixen"
+    },
+    {
+      "key": "characters/deer",
+      "kind": "characterBase",
+      "animal": true,
+      "args": {
+        "image_url": "https://api.pixellab.ai/mcp/images/8e2a1c4e-871f-4808-9036-dad28def6069/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 32,
+        "no_background": true
+      },
+      "job_id": "eb248930-e7e0-43d3-8f84-fd82b1ba014e",
+      "character_id": "cc876aae-7f72-4d34-853f-2e4bd5951728",
+      "animations": {},
+      "rejected_character_id": "7a15ea99-bc71-4c52-8537-aa09f0b589a0",
+      "original_job_id": "8e2a1c4e-871f-4808-9036-dad28def6069",
+      "cleanup": {
+        "image_url": "https://api.pixellab.ai/mcp/images/8e2a1c4e-871f-4808-9036-dad28def6069/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 32,
+        "no_background": true
+      },
+      "originalBaseArgs": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small warm brown deer with slender legs, light muzzle, small antlers, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+        "width": 32,
+        "height": 32,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1108
+      },
+      "tool": "edit_image_pixen"
+    },
+    {
+      "key": "characters/wolf",
+      "kind": "characterBase",
+      "animal": true,
+      "args": {
+        "image_url": "https://api.pixellab.ai/mcp/images/23e13bd3-90b1-463c-b153-a50cc4bd2c4c/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 32,
+        "no_background": true
+      },
+      "job_id": "2dbfeb49-552d-435c-a4ec-1b8901044770",
+      "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+      "animations": {},
+      "rejected_character_id": "2b4ab08c-5fd8-4cff-9d2f-0f32401e879b",
+      "original_job_id": "23e13bd3-90b1-463c-b153-a50cc4bd2c4c",
+      "cleanup": {
+        "image_url": "https://api.pixellab.ai/mcp/images/23e13bd3-90b1-463c-b153-a50cc4bd2c4c/download",
+        "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+        "width": 32,
+        "height": 32,
+        "no_background": true
+      },
+      "originalBaseArgs": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey wolf, four legs, pointed ears and long tail, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+        "width": 32,
+        "height": 32,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1109
+      },
+      "tool": "edit_image_pixen"
+    },
+    {
+      "key": "characters/sheep",
+      "kind": "characterBase",
+      "animal": true,
+      "args": {
+        "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small cream wool sheep with dark muzzle and legs, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+        "width": 32,
+        "height": 32,
+        "direction": "south",
+        "view": "low top-down",
+        "no_background": true,
+        "detail": "medium detail",
+        "outline": "selective outline",
+        "seed": 1110
+      },
+      "job_id": "99ba1fcb-f832-478f-9d05-05e0fa81d275",
+      "character_id": "17bf3055-887a-4ba6-af83-35dec2847103",
+      "animations": {}
+    }
+  ],
+  "remainingBalance": 1720,
+  "usedGenerations": 280,
+  "extraCreditUSD": 0,
+  "activeJobsAtCompletion": 0,
+  "currentLedgers": {
+    "jobs": "assets/production-2026-09-23.jobs.json",
+    "static": "assets/production-2026-09-23.static.json",
+    "animations": "assets/production-2026-09-23.animations.json",
+    "drawings": "assets/production-2026-09-23.drawings.json",
+    "enemy": "assets/production-2026-09-23.enemy.json",
+    "building-depth": "assets/production-2026-09-23.building-depth.json",
+    "cleanup": "assets/production-2026-09-23.cleanup.json"
+  },
+  "report": "docs/ASSET_DELIVERY_2026-09-23.md",
+  "integrationEnabled": false
+}

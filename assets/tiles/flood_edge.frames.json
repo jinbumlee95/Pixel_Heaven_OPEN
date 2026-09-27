@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/flood_edge",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 8,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 256,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "470f1430-7e87-4ecb-8fdb-58d60f0d9697"
+}

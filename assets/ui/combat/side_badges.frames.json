@@ -1,0 +1,34 @@
+{
+  "id": "combat.side_badges",
+  "priority": "P1",
+  "status": "delivered_pending_visual_review",
+  "file": "assets/ui/combat/side_badges.png",
+  "frameWidth": 16,
+  "frameHeight": 16,
+  "sheetWidth": 48,
+  "sheetHeight": 16,
+  "columns": 3,
+  "rows": 1,
+  "frames": 3,
+  "pivot": {
+    "x": 8,
+    "y": 8
+  },
+  "stateColumns": {
+    "home": 0,
+    "enemy": 1,
+    "ally": 2
+  },
+  "symbols": {
+    "home": "circle",
+    "enemy": "split-chevron",
+    "ally": "diamond"
+  },
+  "renderLayer": "ui",
+  "loop": false,
+  "palette": "combat_v1",
+  "frameMetadata": "assets/ui/combat/side_badges.frames.json",
+  "provenance": "assets/ui/combat/side_badges.source.json",
+  "integrationEnabled": false,
+  "sourceDrawingId": "3d1e2c3e-7cbf-4089-8161-783e21fcb8a5"
+}

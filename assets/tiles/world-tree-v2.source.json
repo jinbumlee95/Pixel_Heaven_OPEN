@@ -1,0 +1,48 @@
+{
+  "key": "tiles/world-tree-v2",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. One monumental sacred Worldtree, gigantic broad moss green layered crown, thick ancient warm brown trunk, branching roots, small gold lights nestled in foliage. Native320x352, adult human40px tall for scale but no humans drawn, base6x4cells, anchor(160,352). Orthographic 3/4 slight overhead, entire crown contained, roots contact bottom center. No landscape, no sky, no pedestal.",
+    "width": 320,
+    "height": 352,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1204
+  },
+  "job_id": "cfc8869b-f535-429c-ab6e-1a1bc3b06025",
+  "original_job_id": "187b1e70-8f7b-4ae4-a7c9-4b90574d3676",
+  "tool": "create_image_pixen",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    320,
+    352
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/world-tree-v2.png"
+  ],
+  "alignment": {
+    "translation": [
+      8,
+      31
+    ],
+    "originalAlphaBounds": [
+      0,
+      0,
+      304,
+      321
+    ],
+    "pivot": {
+      "x": 160,
+      "y": 352
+    },
+    "originalPNG": "assets/tiles/world-tree-v2.generated.png"
+  }
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "key": "tiles/house_v2",
+    "job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c",
+    "tool": "create_image_pro_flash",
+    "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+    "args": {
+      "width": 96,
+      "height": 96,
+      "no_background": true,
+      "seed": 23996,
+      "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. A cozy medieval timber cottage, warm red clay tiled steep gabled roof, cream plaster infill and thick dark oak framing, visible warm front wall plus shadowed right side wall, one tall open front doorway and two small leaded windows. Small chimney. Doorway is tall enough for a 40px adult, about 40-44px high. A compact chunky cottage filling most of the 96px square. Roof thickness, projecting eaves, individual shingle rows and recessed opening give real depth. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+    }
+  },
+  {
+    "key": "tiles/town_hall",
+    "job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd",
+    "tool": "create_image_pro_flash",
+    "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+    "args": {
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "seed": 24093,
+      "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. A substantial fantasy civic town hall, broad TWO-STORY half-timbered structure with a stepped blue-slate roof, projecting central entrance bay and a square CLOCK TOWER. Distinct civic silhouette, asymmetrical roof volumes, prominent corner beams, stone foundation no higher than 4px, broad front facade and clearly visible right side receding in depth. Recessed adult scale south doorway about 44px high and 24px wide. Upper story windows, substantial projecting eaves. No church symbols. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+    }
+  },
+  {
+    "key": "tiles/temple_v2",
+    "job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d",
+    "tool": "create_image_pro_flash",
+    "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+    "args": {
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "seed": 24094,
+      "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. An elegant fantasy temple with IVORY STONE, tall central tapered bell/spire tower topped by a golden SUN disk, teal pitched roof, two lower side wings and projecting entrance portico with stone columns. Clearly three-dimensional architectural massing with front and right side planes, layered roofs, buttresses, deep recessed arched doorway about 44px high and 24px wide. Distinct sacred silhouette, not a house, not a rectangular flat facade. Two narrow stone entrance steps, no surrounding courtyard slab. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+    }
+  },
+  {
+    "key": "tiles/house_v2_damaged",
+    "job_id": "7082a360-0817-419c-92bd-4812e45d0313",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f645d88d-3852-4e37-a4bd-35e0f0efb69c/download",
+      "width": 96,
+      "height": 96,
+      "no_background": true,
+      "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c"
+  },
+  {
+    "key": "tiles/house_v2_ruins",
+    "job_id": "8d3a1c54-4b98-4185-a33f-0eab876421f6",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f645d88d-3852-4e37-a4bd-35e0f0efb69c/download",
+      "width": 96,
+      "height": 96,
+      "no_background": true,
+      "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c"
+  },
+  {
+    "key": "tiles/town_hall_damaged",
+    "job_id": "541bb75a-b505-43cd-a4d7-e0f94df3e406",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd"
+  },
+  {
+    "key": "tiles/town_hall_ruins",
+    "job_id": "df262df4-effe-4cf0-ba0f-bb9d6fdf2a83",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd"
+  },
+  {
+    "key": "tiles/temple_v2_damaged",
+    "job_id": "d89aa4f5-4220-4468-a8cb-8adfff0a0c6c",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/e2b6dc88-6e81-4995-bf76-e711b2ae129d/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d"
+  },
+  {
+    "key": "tiles/temple_v2_ruins",
+    "job_id": "03ed7ac6-7208-4109-8037-5ff3adbf1480",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/e2b6dc88-6e81-4995-bf76-e711b2ae129d/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d"
+  }
+]

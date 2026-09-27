@@ -1,0 +1,35 @@
+{
+  "key": "characters/sheep",
+  "kind": "characterBase",
+  "animal": true,
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small cream wool sheep with dark muzzle and legs, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+    "width": 32,
+    "height": 32,
+    "direction": "south",
+    "view": "low top-down",
+    "no_background": true,
+    "detail": "medium detail",
+    "outline": "selective outline",
+    "seed": 1110
+  },
+  "job_id": "99ba1fcb-f832-478f-9d05-05e0fa81d275",
+  "response": "id: 99ba1fcb-f832-478f-9d05-05e0fa81d275\njob_id: 99ba1fcb-f832-478f-9d05-05e0fa81d275\nmodel: pixen\ndescription: Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small cream wool sheep with dark muzzle and legs, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.\nsize: 32x32px\ntransparent: True\nasset_id: 096bddb7-1c38-5d42-b71a-fe44ae715dce\nasset_status: pending (saved when generation completes)\nseed: 1110\ncost: 1 generation\nstatus: processing (~10-40s)\n\nhint: get_image(job_id=\"99ba1fcb-f832-478f-9d05-05e0fa81d275\")",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "postProcessing": [
+    "Lossless south rotation extraction after fixed per-direction foot alignment. Generated base retained under production-originals."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/sheep.png"
+  ],
+  "selectedOutput": "rotations/south.png from the matching animated character export",
+  "animationProvenance": "assets/characters/sheep/source.json"
+}

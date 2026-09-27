@@ -1,0 +1,10 @@
+{
+  "checkedPNGFiles": 181,
+  "characterFrames": 1114,
+  "errors": [],
+  "warnings": [],
+  "passed": true,
+  "scope": "File presence, PNG decode, native canvas, explicit frame occupancy, palette, floor alpha. Animation semantics and desktop integration require visual review.",
+  "browserVerification": "Unavailable: browser automation returned no enabled browsers.",
+  "integrationEnabled": false
+}

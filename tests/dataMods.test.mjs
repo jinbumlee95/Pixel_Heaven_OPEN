@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createContentRegistry} from '../src/content/ContentRegistry.js';
+import {builtinPack} from '../src/content/builtin.js';
+import {Game} from '../src/game/Game.js';
+import {tick} from '../src/game/Simulation.js';
+import {decodeWorld} from '../src/state/Persistence.js';
+const pack=JSON.parse(await readFile(new URL('../examples/packs/harvest-relief.json',import.meta.url),'utf8'));
+const garden={schemaVersion:1,id:'second',modifiers:{woodProduction:1.1}};
+const content=createContentRegistry([builtinPack,pack,garden]);
+const modded=new Game(null,{content,packs:[pack,garden]}),base=new Game(null);
+tick(modded.world.state);tick(base.world.state);
+assert.ok(modded.world.getVillage('home').food>base.world.getVillage('home').food);
+assert.ok(modded.world.getVillage('home').wood>base.world.getVillage('home').wood);
+assert.deepEqual(decodeWorld(modded.snapshot()).world.content.rules,content.rules);
+for(const locale of ['ko','en','ja']){modded.i18n.setLocale(locale);assert.notEqual(modded.i18n.t('harvest-relief.field'),'harvest-relief.field');}
+modded.worldDecisions.record({action:'drought_resolved',time:1});assert.equal(modded.world.state.life.nextVisit,31);
+modded.worldDecisions.record({action:'life_caravan_arrived',time:151});assert.equal(modded.world.state.story.chains[0].stage,'trade_open');
+modded.worldDecisions.record({action:'life_caravan_left',time:271});assert.equal(modded.world.state.story.chains[0].stage,'complete');
+assert.throws(()=>createContentRegistry([builtinPack,pack,{...garden,modifiers:{foodProduction:1.2}}]));
+assert.throws(()=>createContentRegistry([builtinPack,{...pack,requires:[{id:'missing',version:'1.0.0'}]}]));
+assert.throws(()=>createContentRegistry([builtinPack,{...pack,modifiers:{foodProduction:100}}]));
+modded.stop();base.stop();console.log('dataMods: passed');

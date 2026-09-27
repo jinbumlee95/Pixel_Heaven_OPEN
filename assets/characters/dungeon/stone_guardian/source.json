@@ -1,0 +1,320 @@
+{
+  "provider": "PixelLab.ai",
+  "createdAt": "2026-09-23",
+  "base": {
+    "key": "characters/dungeon/stone_guardian/base",
+    "monster": "stone_guardian",
+    "body": [
+      44,
+      48
+    ],
+    "job_id": "0b6f3227-b473-485a-9ad3-61710c0ee845",
+    "args": {
+      "width": 44,
+      "height": 48,
+      "no_background": true,
+      "seed": 24602,
+      "description": "Native small fantasy RPG pixel-art enemy, matching32x48 chibi hero sprite pixel density. Slightly overhead THREE-QUARTER RPG view, facing LEFT, not straight side-view. One squat broad stone golem facing LEFT west. Massive boulder shoulders, articulated rocky forearms, short thick legs and low blocky head, tiny softly golden chest core. Volumetric grey stone facets, pale highlights upper-left, dark crevices and lower-right shadows. Empty hands. The entire figure including all limbs and wings must fit inside this 44x48 native canvas. Crisp1px clusters, selective dark contour, restrained warm muted palette. Not a large illustration reduced to pixels. True transparent background, no cast shadow, no floor or ground, no platform or base, no checkerboard, no scene, no text, no effects."
+    },
+    "tool": "create_image_pro_flash",
+    "rejectedOversizedJob": "2ddebfcf-8e7b-4f0d-b845-5289e9f79c99"
+  },
+  "preparation": {
+    "translation": [
+      13,
+      13
+    ],
+    "baseAlphaBounds": [
+      2,
+      6,
+      40,
+      45
+    ],
+    "idleAlphaBounds": [
+      15,
+      19,
+      53,
+      58
+    ],
+    "paletteHex": [
+      "#2E342F",
+      "#454C43",
+      "#E9DDC6",
+      "#CBBDA2",
+      "#BAC4C1",
+      "#7B9299",
+      "#4D626B",
+      "#9A9B88",
+      "#676F63",
+      "#DEC58B",
+      "#AF9254",
+      "#5D4D3B"
+    ],
+    "bodyDimensions": [
+      44,
+      48
+    ],
+    "idleSHA256": "3856602800fa9e51d7821177b67dbb41c02e31c84327c72252f70770e13ee101",
+    "postProcessing": "Native body preserved; no resizing. Constant integer padding/translation. Nearest role palette RGB mapping, binary alpha."
+  },
+  "animations": [
+    {
+      "monster": "stone_guardian",
+      "clip": "walk",
+      "frames": 6,
+      "args": {
+        "frame_count": 6,
+        "no_background": true,
+        "seed": 25001,
+        "action": "Seamless six-frame WALKING IN PLACE facing LEFT throughout. Heavy slow alternating stone legs, grounded foot contact, slight shoulder counter-rotation. Preserve EXACT guardian body size and chest core, same pixel density, same padded68x68 canvas, ground at y57 and fixed pivot34,58. No turning, no camera movement, no enlargement, no background or terrain. First and last frames form a smooth walk loop.",
+        "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+      },
+      "job_id": "fdc2ef95-fbb2-483e-92d2-f431a3b9f56c",
+      "returnedFrames": 7
+    },
+    {
+      "monster": "stone_guardian",
+      "clip": "attack",
+      "frames": 8,
+      "job_id": "8bf30c3b-4268-4913-bc06-cea243fa03e1",
+      "args": {
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 25011,
+        "action": "One HEAVY LEFTWARD stone arm slam. Frame0 ready,1 pull arm up and back,2 hold wind-up,3 swing broad forearm DOWN and LEFT to strongest contact,4 low follow-through,5 retract,6 straighten,7 return to ready. One attack only, no visual projectiles or opponent. Preserve exact same character, native pixel scale, LEFT-facing direction, fixed68x68 transparent canvas and virtual ground pivot(34,58). Ground level y57. Keep all body parts inside canvas. No camera motion, no turning, no scaling, no background, no platform, no text.",
+        "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+      },
+      "returnedFrames": 9
+    },
+    {
+      "monster": "stone_guardian",
+      "clip": "hit",
+      "frames": 4,
+      "job_id": "23b49adc-b3ec-4952-a01c-470b3c90dd2a",
+      "args": {
+        "frame_count": 4,
+        "no_background": true,
+        "seed": 25012,
+        "action": "One short recoil from an incoming hit from LEFT. Four frames:0 ready,1 flinch shoulders right,2 brace,3 recover ready. No damage debris or detached parts, no fall. Preserve exact same character, native pixel scale, LEFT-facing direction, fixed68x68 transparent canvas and virtual ground pivot(34,58). Ground level y57. Keep all body parts inside canvas. No camera motion, no turning, no scaling, no background, no platform, no text.",
+        "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+      },
+      "returnedFrames": 5
+    },
+    {
+      "monster": "stone_guardian",
+      "clip": "down",
+      "frames": 6,
+      "job_id": "3e29f28e-0219-482e-bc5f-67977e0acd12",
+      "args": {
+        "frame_count": 6,
+        "no_background": true,
+        "seed": 25013,
+        "action": "Lose balance and crumble in place:0 upright,1 knees buckle,2 torso tips downward,3 shoulders collapse,4 settle into low stone rubble,5 remain as a low recognizable pile of rocks with dim chest core. One death motion, NEVER stand back up. Non-bloody. End resting at ground y57. Preserve exact same character, native pixel scale, LEFT-facing direction, fixed68x68 transparent canvas and virtual ground pivot(34,58). Ground level y57. Keep all body parts inside canvas. No camera motion, no turning, no scaling, no background, no platform, no text.",
+        "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+      },
+      "returnedFrames": 7
+    }
+  ],
+  "selectedSourceIndices": {
+    "idle": [
+      0
+    ],
+    "walk": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "attack": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "hit": [
+      2,
+      3,
+      4
+    ],
+    "down": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "frameAlphaBounds": {
+    "idle": [
+      [
+        15,
+        19,
+        53,
+        58
+      ]
+    ],
+    "walk": [
+      [
+        16,
+        20,
+        52,
+        58
+      ],
+      [
+        17,
+        21,
+        50,
+        58
+      ],
+      [
+        17,
+        20,
+        49,
+        58
+      ],
+      [
+        17,
+        19,
+        48,
+        58
+      ],
+      [
+        16,
+        20,
+        49,
+        59
+      ],
+      [
+        16,
+        21,
+        51,
+        58
+      ]
+    ],
+    "attack": [
+      [
+        12,
+        20,
+        57,
+        58
+      ],
+      [
+        19,
+        16,
+        55,
+        58
+      ],
+      [
+        21,
+        10,
+        44,
+        58
+      ],
+      [
+        9,
+        17,
+        45,
+        58
+      ],
+      [
+        10,
+        17,
+        45,
+        58
+      ],
+      [
+        19,
+        17,
+        45,
+        58
+      ],
+      [
+        17,
+        18,
+        48,
+        58
+      ],
+      [
+        15,
+        19,
+        51,
+        58
+      ]
+    ],
+    "hit": [
+      [
+        13,
+        19,
+        51,
+        58
+      ],
+      [
+        14,
+        19,
+        51,
+        58
+      ],
+      [
+        15,
+        19,
+        51,
+        58
+      ]
+    ],
+    "down": [
+      [
+        16,
+        19,
+        51,
+        58
+      ],
+      [
+        17,
+        20,
+        52,
+        58
+      ],
+      [
+        13,
+        26,
+        56,
+        58
+      ],
+      [
+        12,
+        31,
+        57,
+        58
+      ],
+      [
+        11,
+        33,
+        57,
+        58
+      ],
+      [
+        10,
+        32,
+        57,
+        58
+      ]
+    ]
+  },
+  "referenceRightsBasis": "Original monsters authored for this project. The locally prepared idle PNG was uploaded as the animation reference. Hero art was used only for local scale comparison.",
+  "uploadedReferenceFile": "assets/characters/dungeon/stone_guardian/idle.png",
+  "uploadedReferenceSHA256": "3856602800fa9e51d7821177b67dbb41c02e31c84327c72252f70770e13ee101",
+  "postProcessing": [
+    "Native base canvas preserved; lossless padding and a single translation before animation.",
+    "PixelLab animate_image returns the input frame plus generated frames; index0 is usually omitted. Explicit segment selections may reuse the contact key pose and hold poses; see assemblyNote and selectedSourceIndices.",
+    "Hit uses selected three generated frames, excluding the initial impact burst where present. See selectedSourceIndices.",
+    "RGB mapped to a species-specific subset of combat_v1, nonzero alpha made opaque; no scale, mirroring, frame cropping or per-frame repositioning."
+  ],
+  "status": "generated; file checks and asset preview separate from gameplay integration"
+}

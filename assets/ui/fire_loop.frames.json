@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/fire_loop",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 6,
+  "frameDurationMs": 120,
+  "pivot": {
+    "x": 16,
+    "y": 16
+  },
+  "sheetWidth": 192,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "4ad2c263-bab7-4a1e-aa43-5e3752d9a9f9"
+}

@@ -1,0 +1,44 @@
+{
+  "key": "tiles/town_hall_ruins",
+  "job_id": "df262df4-effe-4cf0-ba0f-bb9d6fdf2a83",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd/download",
+    "width": 192,
+    "height": 192,
+    "no_background": true,
+    "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+  },
+  "tool": "edit_image_pixen",
+  "base_job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    192,
+    192
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/town_hall_ruins.png"
+  ],
+  "alignment": {
+    "translation": [
+      -1,
+      16
+    ],
+    "originalAlphaBounds": [
+      8,
+      5,
+      185,
+      176
+    ],
+    "pivot": {
+      "x": 96,
+      "y": 192
+    },
+    "originalPNG": "assets/tiles/town_hall_ruins.generated.png"
+  }
+}

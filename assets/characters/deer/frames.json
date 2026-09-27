@@ -1,0 +1,65 @@
+{
+  "assetId": "characters/deer",
+  "frameDimensions": {
+    "width": 48,
+    "height": 48
+  },
+  "bodyDimensions": [
+    32,
+    32
+  ],
+  "pivot": {
+    "x": 24,
+    "y": 40
+  },
+  "directionOrder": [
+    "south",
+    "east",
+    "north",
+    "west"
+  ],
+  "idleColumns": {
+    "south": 0,
+    "east": 2,
+    "north": 4,
+    "west": 6
+  },
+  "walkRows": {
+    "south": 1,
+    "east": 2,
+    "north": 3,
+    "west": 4
+  },
+  "actionRows": {
+    "south": 0,
+    "east": 1,
+    "north": 2,
+    "west": 3
+  },
+  "paths": {
+    "walk": "assets/characters/deer/walk.png"
+  },
+  "frameCounts": {
+    "walk": 6
+  },
+  "frameDurationsMs": {
+    "walk": 120,
+    "attack": 100,
+    "hit": 100,
+    "down": 140
+  },
+  "loopAndHoldPolicy": {
+    "walk": "loop",
+    "attack": "once",
+    "hit": "hold-last",
+    "down": "hold-last"
+  },
+  "integrationEnabled": false,
+  "qaIssues": [],
+  "sourceAlignmentOffsetsY": {
+    "south": 6,
+    "east": 4,
+    "north": 2,
+    "west": 5
+  }
+}

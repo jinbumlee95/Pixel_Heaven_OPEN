@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/town_hall_damaged",
+  "frameWidth": 192,
+  "frameHeight": 192,
+  "frames": 1,
+  "sheetWidth": 192,
+  "sheetHeight": 192,
+  "pivot": {
+    "x": 96,
+    "y": 192
+  },
+  "sourceJobId": "541bb75a-b505-43cd-a4d7-e0f94df3e406",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

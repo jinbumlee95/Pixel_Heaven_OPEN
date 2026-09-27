@@ -1,0 +1,32 @@
+{
+  "key": "characters/dungeon/cave_bat/base",
+  "monster": "cave_bat",
+  "body": [
+    48,
+    28
+  ],
+  "job_id": "3f460c54-83ad-4c07-866c-448ed1eec8d6",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/fb1846ae-32d8-4bdd-abd9-508143945ed3/download",
+    "description": "Redraw this SAME left-facing purple-winged bat to fit ENTIRELY in this48x28 canvas. Both wings spread mostly horizontally, tiny body14x16, full wingspan44-48px and total height24-28px. Preserve character and shaded wing membranes, upper-left light and crisp pixels. True transparent background, no scenery, no clipped wing tips.",
+    "width": 48,
+    "height": 28,
+    "no_background": true
+  },
+  "tool": "edit_image_pixen",
+  "rejectedOversizedJob": "23969405-10ae-49bb-a05a-611c6e52256e",
+  "rejectedSmallJob": "98bef50c-f633-4e0d-86ac-ba83bf9ffeaa",
+  "previousNativeJob": "fb1846ae-32d8-4bdd-abd9-508143945ed3",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    48,
+    28
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/cave_bat/base.png"
+  ]
+}

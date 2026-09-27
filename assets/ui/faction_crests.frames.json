@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/faction_crests",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 24,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 16
+  },
+  "sheetWidth": 768,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "7fed9cc4-5450-4567-af86-fb81d13632fc"
+}

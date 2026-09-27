@@ -1,0 +1,25 @@
+{
+  "key": "ui/icon_iron",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/41a8cf28-4e2d-4b62-b744-a7a7cc971b3b/download",
+    "description": "Replace the ore rock with ONE horizontal iron INGOT. A blue-grey trapezoidal rectangular metal bar, flat bright top plane and dark side faces. Clearly a refined bar, not a rock, with its whole silhouette inside16x16. Crisp pixel art, dark outline, truly TRANSPARENT background, no base, scene, numbers or letters.",
+    "width": 16,
+    "height": 16,
+    "no_background": true
+  },
+  "tool": "edit_image_pixen",
+  "job_id": "7fba3688-fde8-4826-9c11-dec2b465c3a9",
+  "previousJob": "41a8cf28-4e2d-4b62-b744-a7a7cc971b3b",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    16,
+    16
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/ui/icon_iron.png"
+  ]
+}

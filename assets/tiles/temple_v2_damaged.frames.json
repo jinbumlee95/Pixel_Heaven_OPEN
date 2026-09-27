@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/temple_v2_damaged",
+  "frameWidth": 192,
+  "frameHeight": 192,
+  "frames": 1,
+  "sheetWidth": 192,
+  "sheetHeight": 192,
+  "pivot": {
+    "x": 96,
+    "y": 192
+  },
+  "sourceJobId": "d89aa4f5-4220-4468-a8cb-8adfff0a0c6c",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

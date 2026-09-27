@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixel Heaven · 용사 모션</title>
+<style>body{background:#171d27;color:#e4e7ee;font:16px system-ui;max-width:1120px;margin:32px auto;padding:0 20px}h1{font-size:26px}p{color:#b8c3d5}button,select{font:inherit;padding:9px 14px;background:#27354a;color:inherit;border:1px solid #52627a;border-radius:7px;margin:4px}section{display:flex;flex-wrap:wrap;gap:14px}article{background:#222e3b;border:1px solid #3c4a59;border-radius:10px;padding:14px;text-align:center}canvas{image-rendering:pixelated}#scale{width:100%;height:270px;background:#304735;overflow:auto}#scale canvas{display:block}label{display:inline-block;padding:10px}a{color:#a8d2ff}</style>
+<h1>용사 · 이동과 전투</h1><p>야마다 안나 외형 참고 · 은색 경갑옷과 남색 의상 · 에셋 검수용, 게임 전투 기능과 별개</p>
+<div><button id="play">일시정지</button><button id="idle">정지 / 걷기</button><button id="replay">전투 다시 재생</button><label><input id="anchors" type="checkbox" checked> 발 기준점</label></div>
+<p id="status">이미지 읽는 중…</p><h2>4방향 이동</h2><section id="movement"></section>
+<h2>전투 · 정면 샘플</h2><label><input id="repeat" type="checkbox" checked> 미리보기에서 반복 재생</label><p>베기 · 찌르기 · 방어. 나머지 방향은 아직 제작하지 않았습니다.</p><section id="combat"></section>
+<h2>실제 크기 비교</h2><label>화면 배율 <select id="zoom"><option value="1">100%</option><option value="2">200% nearest</option></select></label><div id="scale"><canvas id="scene" width="820" height="240"></canvas></div>
+<p>집과 나무는 현재 게임처럼 기존 원본을 확대 표시합니다. 용사 픽셀은 확대 재제작하지 않았습니다.</p>
+<script type="module">
+try {
+const m=(await import('./hero.frames.js')).default;
+const load=async src=>{const im=new Image();im.src=src;await im.decode();return im};
+const [walk,battle,priest,house,temple,tree]=await Promise.all([load(m.walk.path),load(m.combat.path),load('priest.png'),load('../tiles/house.png'),load('../tiles/temple.png'),load('../tiles/forest.png')]);
+const names={south:'아래',east:'오른쪽',north:'위',west:'왼쪽',slash:'베기',thrust:'찌르기',guard:'방어'};
+const W=m.frameWidth,H=m.frameHeight, cards=[];let play=true,idle=false,t=0,battleT=0,last=performance.now();
+function card(section,key,sheet,row,count){const a=document.createElement('article'),c=document.createElement('canvas');c.width=W*3;c.height=H*3;c.setAttribute('aria-label',names[key]);a.append(c);const h=document.createElement('h3');h.textContent=names[key];a.append(h);document.querySelector(section).append(a);cards.push({c,key,sheet,row,count});}
+for(const d of m.directions)card('#movement',d,walk,m.walk.rows[d],6);
+for(const [a,v] of Object.entries(m.combat.actions))card('#combat',a,battle,v.row,v.frames);
+function draw(ctx,sheet,col,row,x,y,scale=1){ctx.imageSmoothingEnabled=false;ctx.drawImage(sheet,col*W,row*H,W,H,x,y,W*scale,H*scale);if(document.querySelector('#anchors').checked){ctx.strokeStyle='#74efed';ctx.lineWidth=1;const px=x+m.groundAnchor.x*scale,py=y+m.groundAnchor.y*scale;ctx.beginPath();ctx.moveTo(px-4,py);ctx.lineTo(px+4,py);ctx.moveTo(px,py-4);ctx.lineTo(px,py+4);ctx.stroke();}}
+function frame(now){const dt=Math.min(now-last,100);last=now;if(play){t+=dt;battleT+=dt;}for(const q of cards){const ctx=q.c.getContext('2d');ctx.clearRect(0,0,q.c.width,q.c.height);const moving=q.sheet===walk;let row=q.row,col=moving?Math.floor(t/120)%q.count:Math.min(q.count-1,Math.floor((document.querySelector("#repeat").checked?battleT%(q.count*m.combat.actions[q.key].durationMs+600):battleT)/m.combat.actions[q.key].durationMs));if(moving&&idle){row=0;col=m.walk.idleColumns[q.key];}draw(ctx,q.sheet,col,row,0,0,3);}const c=document.querySelector('#scene'),ctx=c.getContext('2d'),z=Number(document.querySelector('#zoom').value);c.width=820*z;c.height=240*z;ctx.scale(z,z);ctx.imageSmoothingEnabled=false;ctx.fillStyle='#304735';ctx.fillRect(0,0,820,240);ctx.strokeStyle='#ffffff18';for(let x=0;x<820;x+=32){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,240);ctx.stroke();}for(let y=0;y<240;y+=32){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(820,y);ctx.stroke();}ctx.drawImage(house,215,96,96,96);ctx.drawImage(temple,350,0,192,192);ctx.drawImage(tree,590,128,64,64);ctx.drawImage(priest,138,144,32,48);draw(ctx,walk,idle?0:Math.floor(t/120)%6,idle?0:1,72-m.groundAnchor.x,192-m.groundAnchor.y);ctx.fillStyle='#fff';ctx.font='12px system-ui';[['용사',58],['사제',138],['집 96×96',223],['공공 건물 192×192',368],['나무 64×64',585]].forEach(([s,x])=>ctx.fillText(s,x,217));requestAnimationFrame(frame);}
+document.querySelector('#play').onclick=e=>{play=!play;e.target.textContent=play?'일시정지':'재생';};document.querySelector('#idle').onclick=()=>{idle=!idle;};document.querySelector('#replay').onclick=()=>{battleT=0;play=true;document.querySelector('#play').textContent='일시정지';};document.querySelector('#status').textContent=`4방향 정지 + 걷기 24프레임 · 전투 3종 · 공통 캔버스 ${W}×${H} · 발 기준점 (${m.groundAnchor.x},${m.groundAnchor.y})`;requestAnimationFrame(frame);
+}catch(e){document.querySelector('#status').textContent='미리보기 오류: '+e.message;throw e;}
+</script></html>

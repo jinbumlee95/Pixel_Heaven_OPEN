@@ -1,0 +1,14 @@
+{
+  "provider": "PixelLab",
+  "character_id": "7820a529-9b84-49c0-a091-74945429e78f",
+  "reference_job_id": "79f16514-6727-4f3a-8332-8a811b8ad4dd",
+  "mode": "v3 reference",
+  "requested_directions": ["south", "west", "east", "north"],
+  "rotation_note": "Reference rotation generates eight directions; the four cardinal views are selected for the game.",
+  "animation_mode": "v3",
+  "animation_group_id": "79a51403-58c6-4ff2-a24e-9a5d72560bf3",
+  "rejected_template_group_id": "20379a3e-3966-4d6f-b0d8-97ae445d2d21",
+  "revision_reason": "Template walk dropped staff and changed north-facing character to a side view.",
+  "reference_size": [32, 48],
+  "character_canvas": [32, 48]
+}

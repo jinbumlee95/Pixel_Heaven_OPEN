@@ -1,0 +1,87 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/sheep",
+    "kind": "characterBase",
+    "animal": true,
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small cream wool sheep with dark muzzle and legs, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+      "width": 32,
+      "height": 32,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1110
+    },
+    "job_id": "99ba1fcb-f832-478f-9d05-05e0fa81d275",
+    "character_id": "17bf3055-887a-4ba6-af83-35dec2847103",
+    "animations": {}
+  },
+  "animations": [
+    {
+      "key": "characters/sheep",
+      "character_id": "17bf3055-887a-4ba6-af83-35dec2847103",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+      "submitted": true
+    },
+    {
+      "key": "characters/sheep",
+      "character_id": "17bf3055-887a-4ba6-af83-35dec2847103",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+      "submitted": true
+    },
+    {
+      "key": "characters/sheep",
+      "character_id": "17bf3055-887a-4ba6-af83-35dec2847103",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+      "submitted": true
+    },
+    {
+      "key": "characters/sheep",
+      "character_id": "17bf3055-887a-4ba6-af83-35dec2847103",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "3d7be0f9-c69f-4bb5-b565-6cc064f5af7c",
+      "submitted": true
+    }
+  ],
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "finalDimensions": [
+    40,
+    40
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/sheep/walk.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

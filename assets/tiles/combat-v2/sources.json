@@ -1,0 +1,24 @@
+{
+  "provider": "PixelLab",
+  "date": "2026-09-24",
+  "reviewPack": "d46b8617-f197-45ab-bac1-98ef67674a3e",
+  "objects": {
+    "cover": [
+      "67d243e1-4b4a-423a-9d30-48a06f0cfb89",
+      "bf497357-dfc5-453c-ab5c-47095bb23523",
+      "9f6d6d8f-82ae-44f6-b97b-0433c13df78f"
+    ],
+    "barricade": [
+      "5f7bb334-168f-4684-bee7-6f6cd4bda182",
+      "74c23e10-cbc4-4876-95f1-a09b58116dc8",
+      "1d6a5f6d-0b36-4ec5-921d-5820e02e69d5"
+    ],
+    "trap": [
+      "352adc23-96e3-4978-b8ed-6291b30d31cc",
+      "3c45a1b6-b7f6-48ab-8da8-dbcf7d9d13c6",
+      "95325d85-df15-42d5-8af7-58e59eb9d4ed"
+    ]
+  },
+  "processing": "lossless 48x48 uniform frame packing only; no rescale, no per-frame crop",
+  "palette": "warm ivory canvas, oak wood, desaturated blue-gray forged iron; transparent"
+}

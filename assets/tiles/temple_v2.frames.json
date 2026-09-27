@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/temple_v2",
+  "frameWidth": 192,
+  "frameHeight": 192,
+  "frames": 1,
+  "sheetWidth": 192,
+  "sheetHeight": 192,
+  "pivot": {
+    "x": 96,
+    "y": 192
+  },
+  "sourceJobId": "e2b6dc88-6e81-4995-bf76-e711b2ae129d",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

@@ -1,0 +1,366 @@
+{
+  "provider": "PixelLab.ai",
+  "createdAt": "2026-09-23",
+  "base": {
+    "key": "characters/dungeon/slime/base",
+    "monster": "slime",
+    "body": [
+      32,
+      24
+    ],
+    "job_id": "884a3c8e-1e0c-4e54-b202-1fcbca72bd4b",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/697bd8b3-5d29-497c-873d-c9f76b9e8058/download",
+      "description": "Redraw this SAME left-facing sage slime as a LOW WIDE JELLY MOUND, not a ball. Fill this32x24 canvas with a body about30px wide and22px high. Squash the shape by redrawing pixel anatomy, keep tiny eyes at left front, upper-left shine, blue-grey lower rim. Entire body within canvas, transparent around it. No platform, terrain, shadow, checkerboard or text.",
+      "width": 32,
+      "height": 24,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "rejectedOversizedJob": "c572b0a4-4d62-4b9a-a3fc-a229406dca9e",
+    "rejectedSmallJob": "e1ab9fe7-28df-4c13-9a15-bc0b9730160f",
+    "previousNativeJob": "697bd8b3-5d29-497c-873d-c9f76b9e8058"
+  },
+  "preparation": {
+    "translation": [
+      18,
+      34
+    ],
+    "baseAlphaBounds": [
+      0,
+      0,
+      32,
+      24
+    ],
+    "idleAlphaBounds": [
+      18,
+      34,
+      50,
+      58
+    ],
+    "paletteHex": [
+      "#2E342F",
+      "#454C43",
+      "#E9DDC6",
+      "#CBBDA2",
+      "#7F9B86",
+      "#526F61",
+      "#65899A",
+      "#BAC4C1",
+      "#7B9299",
+      "#4D626B"
+    ],
+    "bodyDimensions": [
+      32,
+      24
+    ],
+    "idleSHA256": "90302b05625833e738fc34bed8e313d7b29d0cff363eb15eea92c053165bc393",
+    "postProcessing": "Native body preserved; no resizing. Constant integer padding/translation. Nearest role palette RGB mapping, binary alpha."
+  },
+  "animations": [
+    {
+      "monster": "slime",
+      "clip": "walk",
+      "frames": 6,
+      "job_id": "b000ad66-cb08-4ffb-a0ac-6d00bd6a1e8b",
+      "args": {
+        "frame_count": 6,
+        "no_background": true,
+        "seed": 25104,
+        "action": "Seamless LOW HOP in place facing LEFT: squash downward, stretch a little and lift only4px, small airborne pause, descend, squash on landing, recover. Keep same jelly volume and low rounded shape, don't travel across canvas. No extra limbs. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). The jelly base rests at y57. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+        "firstFrameFile": "assets/characters/dungeon/slime/idle.png"
+      },
+      "returnedFrames": 7
+    },
+    {
+      "monster": "slime",
+      "clip": "attack",
+      "frames": 8,
+      "previousJobId": "234e08e7-1a9b-458a-893c-9295943f9295",
+      "segments": [
+        {
+          "monster": "slime",
+          "clip": "attack_back",
+          "frames": 4,
+          "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+          "args": {
+            "first_frame_url": "https://api.pixellab.ai/mcp/images/ef7f9202-92cf-4838-81b1-f5b54856f6d1/download",
+            "action": "Recover from the leftward ram, retract smoothly RIGHT into the supplied original idle pose. Stay on ground y57, no upward jump or extra features.",
+            "frame_count": 4,
+            "no_background": true,
+            "seed": 932313,
+            "lastFrameFile": "assets/characters/dungeon/slime/idle.png"
+          },
+          "returnedFrames": 5,
+          "selectedIndices": [
+            4,
+            4,
+            1,
+            0,
+            0,
+            1,
+            4,
+            4
+          ]
+        }
+      ],
+      "assemblyNote": "Eight timed frames assembled from three approved PixelLab poses. Idle hold (0-1), grounded extension (2), contact hold (3-4), recovery (5), idle (6-7). Rejected raised-tail poses at source2-3. No per-frame transform. Outward interpolation job8721be84 remained processing and was not selected."
+    },
+    {
+      "monster": "slime",
+      "clip": "hit",
+      "frames": 4,
+      "job_id": "cc1e69ed-1a06-418b-b6b0-d728f3c884d0",
+      "args": {
+        "frame_count": 4,
+        "no_background": true,
+        "seed": 25106,
+        "action": "A short jelly flinch from LEFT:0 ready,1 recoil and squash slightly to right,2 wobble,3 settle back to same idle shape. No death, splashes or detached pieces. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). The jelly base rests at y57. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+        "firstFrameFile": "assets/characters/dungeon/slime/idle.png"
+      },
+      "returnedFrames": 5
+    },
+    {
+      "monster": "slime",
+      "clip": "down",
+      "frames": 6,
+      "job_id": "315740b1-107c-47d8-b0f1-f0a01b2482bd",
+      "args": {
+        "firstFrameFile": "assets/characters/dungeon/slime/idle.png",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/8f1b951a-5653-4a69-8975-61d573054617/download",
+        "action": "Collapse slowly straight downward into the supplied flat puddle, remain grounded at y57 throughout. No bouncing, rising, new features or particles. Hold the flattened final pose.",
+        "frame_count": 6,
+        "no_background": true,
+        "seed": 932311
+      },
+      "returnedFrames": 7,
+      "previousJobId": "9490d5b4-d278-4ad7-8e3a-338f19a636fd"
+    }
+  ],
+  "selectedSourceIndices": {
+    "idle": [
+      0
+    ],
+    "walk": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "attack": [
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 4
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 4
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 1
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 0
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 0
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 1
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 4
+      },
+      {
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "index": 4
+      }
+    ],
+    "hit": [
+      2,
+      3,
+      4
+    ],
+    "down": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "frameAlphaBounds": {
+    "idle": [
+      [
+        18,
+        34,
+        50,
+        58
+      ]
+    ],
+    "walk": [
+      [
+        22,
+        22,
+        47,
+        50
+      ],
+      [
+        22,
+        9,
+        46,
+        36
+      ],
+      [
+        19,
+        9,
+        49,
+        34
+      ],
+      [
+        18,
+        16,
+        50,
+        41
+      ],
+      [
+        19,
+        32,
+        49,
+        55
+      ],
+      [
+        18,
+        36,
+        51,
+        57
+      ]
+    ],
+    "attack": [
+      [
+        18,
+        34,
+        50,
+        58
+      ],
+      [
+        18,
+        34,
+        50,
+        58
+      ],
+      [
+        7,
+        27,
+        59,
+        51
+      ],
+      [
+        8,
+        32,
+        61,
+        56
+      ],
+      [
+        8,
+        32,
+        61,
+        56
+      ],
+      [
+        7,
+        27,
+        59,
+        51
+      ],
+      [
+        18,
+        34,
+        50,
+        58
+      ],
+      [
+        18,
+        34,
+        50,
+        58
+      ]
+    ],
+    "hit": [
+      [
+        20,
+        28,
+        46,
+        54
+      ],
+      [
+        20,
+        32,
+        49,
+        56
+      ],
+      [
+        19,
+        33,
+        49,
+        58
+      ]
+    ],
+    "down": [
+      [
+        19,
+        33,
+        49,
+        57
+      ],
+      [
+        19,
+        30,
+        50,
+        55
+      ],
+      [
+        17,
+        29,
+        51,
+        54
+      ],
+      [
+        14,
+        28,
+        54,
+        55
+      ],
+      [
+        11,
+        30,
+        56,
+        56
+      ],
+      [
+        9,
+        31,
+        58,
+        57
+      ]
+    ]
+  },
+  "referenceRightsBasis": "Original monsters authored for this project. The locally prepared idle PNG was uploaded as the animation reference. Hero art was used only for local scale comparison.",
+  "uploadedReferenceFile": "assets/characters/dungeon/slime/idle.png",
+  "uploadedReferenceSHA256": "90302b05625833e738fc34bed8e313d7b29d0cff363eb15eea92c053165bc393",
+  "postProcessing": [
+    "Native base canvas preserved; lossless padding and a single translation before animation.",
+    "PixelLab animate_image returns the input frame plus generated frames; index0 is usually omitted. Explicit segment selections may reuse the contact key pose and hold poses; see assemblyNote and selectedSourceIndices.",
+    "Hit uses selected three generated frames, excluding the initial impact burst where present. See selectedSourceIndices.",
+    "RGB mapped to a species-specific subset of combat_v1, nonzero alpha made opaque; no scale, mirroring, frame cropping or per-frame repositioning."
+  ],
+  "status": "generated; file checks and asset preview separate from gameplay integration"
+}

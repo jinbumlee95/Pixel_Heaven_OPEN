@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-09-23",
+  "generationsTotal": 2000,
+  "generationsUsed": 280,
+  "generationsRemaining": 1720,
+  "creditsUSD": 0,
+  "resetsAt": "2026-10-23",
+  "raw": "credits: $0.00\ngenerations_remaining: 1720\ngenerations_used: 280\ngenerations_total: 2000\nsubscription: active (Tier 1: Pixel Apprentice)\ngenerations_reset: 2026-10-23\nnote: generations_total is this cycle's allowance (prorated on a mid-cycle upgrade); it refills on generations_reset"
+}

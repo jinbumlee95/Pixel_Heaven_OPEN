@@ -1,0 +1,109 @@
+{
+  "character": {
+    "id": "7820a529-9b84-49c0-a091-74945429e78f",
+    "name": "Idle",
+    "prompt": "One full-body female priestess sprite for a cozy medieval top-down pixel RPG, visual appearance inspired by Marin Kitagawa from My Dress-Up Darling: long straight golden blonde hair with clearly pink-dipped ends, side-swept bangs, bright pink eyes, cheerful friendly confident smile. Uncovered head, hair visible down both sides. Wearing a modest full-length ivory white priest robe with long sleeves, gold trim and a small coral ribbon, high neckline, closed clothing, small gold sun pendant. Holding a slender wooden staff with a small golden sun finial on her right side. Standing idle facing south toward viewer, slightly overhead RPG camera, chibi proportions and readable expressive face. Entire head, hair, staff and feet inside frame with transparent margin. Crisp native pixel art, warm limited palette, selective dark outlines, no text, no scenery, no base, no portrait crop, exactly one character and one view.",
+    "size": {
+      "width": 32,
+      "height": 48
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Marin-inspired_sun_pries-Idle.png",
+    "cell_size": {
+      "width": 68,
+      "height": 68
+    },
+    "sheet_size": {
+      "width": 544,
+      "height": 612
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "20379a3e-3966-4d6f-b0d8-97ae445d2d21",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "20379a3e-3966-4d6f-b0d8-97ae445d2d21",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "20379a3e-3966-4d6f-b0d8-97ae445d2d21",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "20379a3e-3966-4d6f-b0d8-97ae445d2d21",
+        "direction": "west"
+      },
+      {
+        "row": 5,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk-preserve-outfit",
+        "animation_group_id": "79a51403-58c6-4ff2-a24e-9a5d72560bf3",
+        "direction": "south"
+      },
+      {
+        "row": 6,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk-preserve-outfit",
+        "animation_group_id": "79a51403-58c6-4ff2-a24e-9a5d72560bf3",
+        "direction": "east"
+      },
+      {
+        "row": 7,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk-preserve-outfit",
+        "animation_group_id": "79a51403-58c6-4ff2-a24e-9a5d72560bf3",
+        "direction": "north"
+      },
+      {
+        "row": 8,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk-preserve-outfit",
+        "animation_group_id": "79a51403-58c6-4ff2-a24e-9a5d72560bf3",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-22T13:29:20.853492+00:00"
+}

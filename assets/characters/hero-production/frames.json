@@ -1,0 +1,48 @@
+{
+  "assetId": "hero additional motions",
+  "frameDimensions": {
+    "width": 68,
+    "height": 68
+  },
+  "bodyDimensions": [
+    32,
+    48
+  ],
+  "pivot": {
+    "x": 34,
+    "y": 58
+  },
+  "directionOrder": [
+    "south",
+    "east",
+    "north",
+    "west"
+  ],
+  "actionRows": {
+    "south": 0,
+    "east": 1,
+    "north": 2,
+    "west": 3
+  },
+  "paths": {
+    "guard": "assets/characters/hero-production/guard.png",
+    "slash": "assets/characters/hero-production/slash.png",
+    "thrust": "assets/characters/hero-production/thrust.png"
+  },
+  "frameCounts": {
+    "guard": 6,
+    "slash": 8,
+    "thrust": 8
+  },
+  "frameDurationsMs": {
+    "guard": 120,
+    "slash": 120,
+    "thrust": 120
+  },
+  "loopAndHoldPolicy": {
+    "guard": "once",
+    "slash": "once",
+    "thrust": "once"
+  },
+  "integrationEnabled": false
+}

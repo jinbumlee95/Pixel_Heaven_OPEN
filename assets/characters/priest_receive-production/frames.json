@@ -1,0 +1,34 @@
+{
+  "assetId": "priest_receive additional motions",
+  "frameDimensions": {
+    "width": 68,
+    "height": 68
+  },
+  "bodyDimensions": [
+    32,
+    48
+  ],
+  "pivot": {
+    "x": 34,
+    "y": 58
+  },
+  "directionOrder": [
+    "north"
+  ],
+  "actionRows": {
+    "north": 0
+  },
+  "paths": {
+    "receive": "assets/characters/priest_receive-production/receive.png"
+  },
+  "frameCounts": {
+    "receive": 6
+  },
+  "frameDurationsMs": {
+    "receive": 120
+  },
+  "loopAndHoldPolicy": {
+    "receive": "once"
+  },
+  "integrationEnabled": false
+}

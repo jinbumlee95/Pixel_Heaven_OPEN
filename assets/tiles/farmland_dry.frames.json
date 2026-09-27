@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/farmland_dry",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "7bc31a83-d397-4f11-8533-73500ab74461"
+}

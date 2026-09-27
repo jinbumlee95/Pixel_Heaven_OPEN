@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import { Game } from '../src/game/Game.js';
+import { heroTrainingPose, executeHeroOrder, HERO_TRAINING_MS } from '../src/game/Hero.js';
+import { encodeWorld, decodeWorld } from '../src/state/Persistence.js';
+const g=new Game(null,{ritual:false});const h=g.world.state.hero;
+const before={xp:h.xp,hp:h.hp,resources:structuredClone(g.world.state.resources)};
+const actions=new Set();for(let i=0;i<HERO_TRAINING_MS/100;i++){g.hero.update(100);actions.add(heroTrainingPose(h).action);}
+assert.deepEqual([...actions].sort(),['guard','idle','slash','thrust']);
+assert.equal(h.scene.elapsedMs,0);assert.equal(h.xp,before.xp);assert.equal(h.hp,before.hp);assert.deepEqual(g.world.state.resources,before.resources);
+g.hero.update(0);assert.equal(h.scene.elapsedMs,0,'Pause does not advance practice');
+for(let i=0;i<18;i++)g.hero.update(250);
+assert.equal(heroTrainingPose(h).action,'guard');
+const restored=decodeWorld(encodeWorld(g.world));const resumed=new Game(null,{restored,ritual:false});
+assert.deepEqual(heroTrainingPose(resumed.world.state.hero),heroTrainingPose(h));
+g.hero.update(100);resumed.hero.update(100);assert.deepEqual(resumed.world.state.hero.scene,h.scene);
+assert.equal(executeHeroOrder(g.world,{action:'hero_dispatch',target:'home',parameters:{}}).ok,true);
+assert.equal(heroTrainingPose(h).action,'idle');assert.equal(g.world.state.entities.get(h.entityId).hidden,true);
+for(const mode of ['recovering','defending','awaiting'])assert.equal(heroTrainingPose({...h,mode}).action,'idle');
+assert.equal(heroTrainingPose({...h,mode:'home',hp:1}).action,'idle');
+g.stop();resumed.stop();console.log('hero training: passed');

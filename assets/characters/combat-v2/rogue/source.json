@@ -1,0 +1,173 @@
+{
+  "character": {
+    "id": "3a0046eb-c1a7-434b-919e-a8d2f206dc24",
+    "name": "Idle",
+    "prompt": "Pixel Heaven ordinary FACELESS mob soldier. Match the style hero's cute compact body proportions and 1-pixel density; body approximately 40 px high. Face is a solid featureless dark shadow: NO eyes, nose, mouth, dots or highlights on the face. Simple large clusters, navy cloth, warm ivory accents, muted silver armor, dark outlines, brown boots. Whole body and weapon visible, feet on fixed baseline, transparent background, no scenery, text or floor. Deep navy hood and opaque dark face mask, short cloak and two small daggers.",
+    "size": {
+      "width": 48,
+      "height": 48
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Pixel_Heaven_faceless_ro-Idle.png",
+    "cell_size": {
+      "width": 68,
+      "height": 68
+    },
+    "sheet_size": {
+      "width": 544,
+      "height": 1156
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "attack",
+        "animation_group_id": "05b1e3b2-5e1c-426c-a19e-a2eb60baffe8",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "attack",
+        "animation_group_id": "05b1e3b2-5e1c-426c-a19e-a2eb60baffe8",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "attack",
+        "animation_group_id": "05b1e3b2-5e1c-426c-a19e-a2eb60baffe8",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "attack",
+        "animation_group_id": "05b1e3b2-5e1c-426c-a19e-a2eb60baffe8",
+        "direction": "west"
+      },
+      {
+        "row": 5,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "down",
+        "animation_group_id": "389e4c53-1655-4bf6-9102-2e14252b08e0",
+        "direction": "south"
+      },
+      {
+        "row": 6,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "down",
+        "animation_group_id": "389e4c53-1655-4bf6-9102-2e14252b08e0",
+        "direction": "east"
+      },
+      {
+        "row": 7,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "down",
+        "animation_group_id": "389e4c53-1655-4bf6-9102-2e14252b08e0",
+        "direction": "north"
+      },
+      {
+        "row": 8,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "down",
+        "animation_group_id": "389e4c53-1655-4bf6-9102-2e14252b08e0",
+        "direction": "west"
+      },
+      {
+        "row": 9,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "hit",
+        "animation_group_id": "477844e1-c184-48e4-a0ff-09efa9e806f1",
+        "direction": "south"
+      },
+      {
+        "row": 10,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "hit",
+        "animation_group_id": "477844e1-c184-48e4-a0ff-09efa9e806f1",
+        "direction": "east"
+      },
+      {
+        "row": 11,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "hit",
+        "animation_group_id": "477844e1-c184-48e4-a0ff-09efa9e806f1",
+        "direction": "north"
+      },
+      {
+        "row": 12,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "hit",
+        "animation_group_id": "477844e1-c184-48e4-a0ff-09efa9e806f1",
+        "direction": "west"
+      },
+      {
+        "row": 13,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "c480a096-279e-406e-b7a4-aae2e06b8e27",
+        "direction": "south"
+      },
+      {
+        "row": 14,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "c480a096-279e-406e-b7a4-aae2e06b8e27",
+        "direction": "east"
+      },
+      {
+        "row": 15,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "c480a096-279e-406e-b7a4-aae2e06b8e27",
+        "direction": "north"
+      },
+      {
+        "row": 16,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "c480a096-279e-406e-b7a4-aae2e06b8e27",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-24T03:20:24.394537+00:00"
+}

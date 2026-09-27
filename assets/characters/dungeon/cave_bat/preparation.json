@@ -1,0 +1,37 @@
+{
+  "translation": [
+    10,
+    14
+  ],
+  "baseAlphaBounds": [
+    0,
+    0,
+    48,
+    28
+  ],
+  "idleAlphaBounds": [
+    10,
+    14,
+    58,
+    42
+  ],
+  "paletteHex": [
+    "#2E342F",
+    "#454C43",
+    "#E9DDC6",
+    "#CBBDA2",
+    "#9285A7",
+    "#665D7A",
+    "#896849",
+    "#5D4D3B",
+    "#D1A382",
+    "#9A6E52",
+    "#4C433E"
+  ],
+  "bodyDimensions": [
+    48,
+    28
+  ],
+  "idleSHA256": "9670c5dda325d390a1466ace9745a3d0d0c552eed83240136f523362107d0dc5",
+  "postProcessing": "Native body preserved; no resizing. Constant integer padding/translation. Nearest role palette RGB mapping, binary alpha."
+}

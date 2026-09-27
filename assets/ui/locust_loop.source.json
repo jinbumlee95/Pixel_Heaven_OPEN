@@ -1,0 +1,429 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "eae7979f-48eb-47c4-8117-e5ff98425219",
+  "recipe": {
+    "job": {
+      "canvas": [
+        16,
+        16
+      ],
+      "frame_count": 4,
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "columns": 4,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ],
+                  "color": "ink",
+                  "size": 2
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      5,
+                      9
+                    ],
+                    [
+                      4,
+                      4
+                    ],
+                    [
+                      9,
+                      8
+                    ],
+                    [
+                      12,
+                      3
+                    ]
+                  ],
+                  "color": "wood",
+                  "stroke_width": 1
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      8,
+                      9
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      13,
+                      10
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ],
+                  "color": "ink",
+                  "size": 2
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      5,
+                      9
+                    ],
+                    [
+                      4,
+                      5
+                    ],
+                    [
+                      9,
+                      8
+                    ],
+                    [
+                      12,
+                      4
+                    ]
+                  ],
+                  "color": "wood",
+                  "stroke_width": 1
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      8,
+                      9
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      13,
+                      10
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ],
+                  "color": "ink",
+                  "size": 2
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      5,
+                      9
+                    ],
+                    [
+                      4,
+                      4
+                    ],
+                    [
+                      9,
+                      8
+                    ],
+                    [
+                      12,
+                      5
+                    ]
+                  ],
+                  "color": "wood",
+                  "stroke_width": 1
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      8,
+                      9
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      13,
+                      10
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ],
+                  "color": "ink",
+                  "size": 2
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      5,
+                      9
+                    ],
+                    [
+                      4,
+                      5
+                    ],
+                    [
+                      9,
+                      8
+                    ],
+                    [
+                      12,
+                      3
+                    ]
+                  ],
+                  "color": "wood",
+                  "stroke_width": 1
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      8,
+                      9
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      13,
+                      10
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    16,
+    16
+  ],
+  "frameCount": 4,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/eae7979f-48eb-47c4-8117-e5ff98425219/assets/south/full.png"
+}

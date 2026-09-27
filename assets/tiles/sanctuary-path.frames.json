@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/sanctuary-path",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "3732296d-246d-4efe-a011-43d25b84b2da"
+}

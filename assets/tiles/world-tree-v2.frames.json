@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/world-tree-v2",
+  "frameWidth": 320,
+  "frameHeight": 352,
+  "frames": 1,
+  "sheetWidth": 320,
+  "sheetHeight": 352,
+  "pivot": {
+    "x": 160,
+    "y": 352
+  },
+  "sourceJobId": "cfc8869b-f535-429c-ab6e-1a1bc3b06025",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

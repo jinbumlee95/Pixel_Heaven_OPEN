@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/house_v2",
+  "frameWidth": 96,
+  "frameHeight": 96,
+  "frames": 1,
+  "sheetWidth": 96,
+  "sheetHeight": 96,
+  "pivot": {
+    "x": 48,
+    "y": 96
+  },
+  "sourceJobId": "f645d88d-3852-4e37-a4bd-35e0f0efb69c",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

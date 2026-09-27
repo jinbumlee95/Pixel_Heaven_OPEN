@@ -1,0 +1,276 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "3d1e2c3e-7cbf-4089-8161-783e21fcb8a5",
+  "recipe": {
+    "job": {
+      "canvas": [
+        16,
+        16
+      ],
+      "frame_count": 3,
+      "durations_ms": [
+        100,
+        100,
+        100
+      ],
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "home": "#7F9B86",
+        "enemy": "#B46F55",
+        "ally": "#DEC58B",
+        "light": "#E9DDC6"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "n0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    8,
+                    8
+                  ],
+                  "radius": 6,
+                  "color": "ink"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    8,
+                    8
+                  ],
+                  "radius": 4,
+                  "color": "home"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    8,
+                    8
+                  ],
+                  "radius": 2,
+                  "color": "light"
+                }
+              ],
+              "visible": true
+            },
+            "n1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      8,
+                      9
+                    ],
+                    [
+                      14,
+                      3
+                    ],
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      8,
+                      14
+                    ],
+                    [
+                      3,
+                      9
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      3,
+                      5
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      12,
+                      5
+                    ]
+                  ],
+                  "color": "enemy",
+                  "stroke_width": 2
+                }
+              ],
+              "visible": false
+            },
+            "n2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      8,
+                      1
+                    ],
+                    [
+                      15,
+                      8
+                    ],
+                    [
+                      8,
+                      15
+                    ],
+                    [
+                      1,
+                      8
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      8,
+                      3
+                    ],
+                    [
+                      13,
+                      8
+                    ],
+                    [
+                      8,
+                      13
+                    ],
+                    [
+                      3,
+                      8
+                    ]
+                  ],
+                  "color": "ally"
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "n0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "n1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "n2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    16,
+    16
+  ],
+  "frameCount": 3,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [
+    "Lossless grid repacking; original retained as side_badges.raw.png"
+  ],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/3d1e2c3e-7cbf-4089-8161-783e21fcb8a5/assets/south/full.png",
+  "finalDimensions": [
+    48,
+    16
+  ]
+}

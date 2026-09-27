@@ -1,0 +1,28 @@
+{
+  "key": "ui/warning-drought",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Sun and cracked earth inside triangular warning outline; centered readable pixel UI icon, no lettering, no square frame.",
+    "width": 24,
+    "height": 24,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1233
+  },
+  "job_id": "87abdf65-d4ac-4087-84be-e3cf584af117",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    24,
+    24
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/ui/warning-drought.png"
+  ]
+}

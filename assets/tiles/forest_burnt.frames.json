@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/forest_burnt",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frames": 1,
+  "sheetWidth": 64,
+  "sheetHeight": 64,
+  "pivot": {
+    "x": 32,
+    "y": 64
+  },
+  "sourceJobId": "9b62782c-5a20-4d15-8bf8-5fc45db93e85",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

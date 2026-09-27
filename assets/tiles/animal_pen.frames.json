@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/animal_pen",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frames": 1,
+  "sheetWidth": 64,
+  "sheetHeight": 64,
+  "pivot": {
+    "x": 32,
+    "y": 64
+  },
+  "sourceJobId": "46d1f8b1-e8cf-4d56-86db-ee2250421252",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

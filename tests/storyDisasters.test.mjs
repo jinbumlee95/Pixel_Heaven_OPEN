@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { createInitialWorld } from '../src/game/World.js';
+import { initializeStory, setStoryProfile, nextStoryTime } from '../src/game/Story.js';
+import { hazardExposure, prepareDisaster, updateDisaster } from '../src/game/Disasters.js';
+const world=createInitialWorld();initializeStory(world);world.state.eventQueue=[];
+assert.equal(nextStoryTime(world.state,0,()=>0),1200);
+const plan={id:'fire-1',kind:'fire',stage:'forecast',startAt:360,severity:3,exposure:hazardExposure(world),mitigation:{}};
+world.state.eventQueue.push(plan);const snapshot=structuredClone(plan);setStoryProfile(world,'changing');assert.deepEqual(plan,snapshot);
+world.state.time=360;plan.stage='active';updateDisaster(world,plan);
+const house=[...world.state.buildings.values()].find(b=>b.type==='house');assert.equal(house.damage,6);
+updateDisaster(world,plan);assert.equal(house.damage,6,'damage cannot settle twice');
+world.getVillage('home').stone=100;world.getVillage('home').wood=100;
+assert.equal(prepareDisaster(world,'fire').ok,true);world.state.time=370;updateDisaster(world,plan);assert.equal(house.damage,6);
+assert.equal(prepareDisaster(world,'fire').ok,false);
+world.getVillage('home').weather='rain';world.state.time=380;updateDisaster(world,plan);assert.equal(plan.extinguished,true);
+console.log('storyDisasters: passed');

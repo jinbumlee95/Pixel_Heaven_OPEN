@@ -1,0 +1,29 @@
+{
+  "runtimeType": "breach",
+  "frameWidth": 48,
+  "frameHeight": 48,
+  "frames": 5,
+  "frameDurationMs": 90,
+  "pivot": {
+    "x": 24,
+    "y": 48
+  },
+  "renderLayer": "ground_effects",
+  "loop": false,
+  "directional": false,
+  "id": "combat.effect.breach",
+  "priority": "P0",
+  "status": "delivered_pending_visual_review",
+  "file": "assets/ui/combat/breach.png",
+  "sheetWidth": 240,
+  "sheetHeight": 48,
+  "columns": 5,
+  "rows": 1,
+  "directionOrder": [],
+  "endCondition": "clip-complete",
+  "palette": "combat_v1",
+  "frameMetadata": "assets/ui/combat/breach.frames.json",
+  "provenance": "assets/ui/combat/breach.source.json",
+  "integrationEnabled": false,
+  "sourceDrawingId": "14ebacfc-ffa6-4772-bf3f-840b14165d63"
+}

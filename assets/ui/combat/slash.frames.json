@@ -1,0 +1,29 @@
+{
+  "runtimeType": "slash",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 4,
+  "frameDurationMs": 70,
+  "pivot": {
+    "x": 16,
+    "y": 16
+  },
+  "renderLayer": "combat_effects",
+  "loop": false,
+  "directional": false,
+  "id": "combat.effect.slash",
+  "priority": "P0",
+  "status": "delivered_pending_visual_review",
+  "file": "assets/ui/combat/slash.png",
+  "sheetWidth": 128,
+  "sheetHeight": 32,
+  "columns": 4,
+  "rows": 1,
+  "directionOrder": [],
+  "endCondition": "clip-complete",
+  "palette": "combat_v1",
+  "frameMetadata": "assets/ui/combat/slash.frames.json",
+  "provenance": "assets/ui/combat/slash.source.json",
+  "integrationEnabled": false,
+  "sourceDrawingId": "075ad6a2-de79-4902-a056-52b53e3a7f3f"
+}

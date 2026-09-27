@@ -1,0 +1,28 @@
+{
+  "key": "ui/event_raid",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Two crossed swords above small warning notch; centered readable pixel UI icon, no lettering, no square frame.",
+    "width": 24,
+    "height": 24,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1218
+  },
+  "job_id": "1f464039-9767-47a7-bb23-b25db8fc77b1",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    24,
+    24
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/ui/event_raid.png"
+  ]
+}

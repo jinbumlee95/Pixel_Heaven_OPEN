@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/farmland_snow",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "758d2319-b14c-4e69-ab08-8d00b7d58c3c"
+}

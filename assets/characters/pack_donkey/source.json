@@ -1,0 +1,109 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + edit_image_pixen background cleanup + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/pack_donkey",
+    "kind": "characterBase",
+    "animal": true,
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f3e6331a-c8e5-4750-a980-1497613d275d/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "job_id": "3a148d56-e391-46ab-a55a-6dbbd7d22b6e",
+    "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc",
+    "animations": {},
+    "rejected_character_id": "e702649f-f4e9-498e-810e-d13c35cf27bf",
+    "original_job_id": "f3e6331a-c8e5-4750-a980-1497613d275d",
+    "cleanup": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f3e6331a-c8e5-4750-a980-1497613d275d/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "originalBaseArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey pack donkey with two brown side saddlebags, four legs and long ears clearly visible, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+      "width": 32,
+      "height": 32,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1107
+    },
+    "tool": "edit_image_pixen"
+  },
+  "animations": [
+    {
+      "key": "characters/pack_donkey",
+      "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "6cf7fef7-d50e-460c-8de8-372e4dd0dfe5",
+      "group": "e7a4d56a-8c86-4589-812a-b6de8dd9bec7"
+    },
+    {
+      "key": "characters/pack_donkey",
+      "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "6cf7fef7-d50e-460c-8de8-372e4dd0dfe5",
+      "group": "e7a4d56a-8c86-4589-812a-b6de8dd9bec7"
+    },
+    {
+      "key": "characters/pack_donkey",
+      "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "submitted": true,
+      "previousGroup": "6cf7fef7-d50e-460c-8de8-372e4dd0dfe5",
+      "group": "e7a4d56a-8c86-4589-812a-b6de8dd9bec7"
+    },
+    {
+      "key": "characters/pack_donkey",
+      "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "6cf7fef7-d50e-460c-8de8-372e4dd0dfe5",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "e7a4d56a-8c86-4589-812a-b6de8dd9bec7"
+    }
+  ],
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "finalDimensions": [
+    44,
+    44
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/pack_donkey/walk.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

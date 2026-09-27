@@ -1,0 +1,507 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "5c89f6a4-cc29-4c1d-9913-e2406979d2bc",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        32
+      ],
+      "frame_count": 4,
+      "durations_ms": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "columns": 4,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      20,
+                      16
+                    ],
+                    [
+                      21,
+                      14
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      17,
+                      20
+                    ],
+                    [
+                      18,
+                      18
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      13,
+                      18
+                    ],
+                    [
+                      14,
+                      16
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      13,
+                      14
+                    ],
+                    [
+                      14,
+                      12
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      17,
+                      12
+                    ],
+                    [
+                      18,
+                      10
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      22,
+                      16
+                    ],
+                    [
+                      23,
+                      14
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      18,
+                      22
+                    ],
+                    [
+                      19,
+                      20
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      11,
+                      20
+                    ],
+                    [
+                      12,
+                      18
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      12,
+                      11
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      18,
+                      10
+                    ],
+                    [
+                      19,
+                      8
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      24,
+                      16
+                    ],
+                    [
+                      25,
+                      14
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      19,
+                      24
+                    ],
+                    [
+                      20,
+                      22
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      10,
+                      21
+                    ],
+                    [
+                      11,
+                      19
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      10,
+                      9
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      18,
+                      8
+                    ],
+                    [
+                      19,
+                      6
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      26,
+                      16
+                    ],
+                    [
+                      27,
+                      14
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      19,
+                      25
+                    ],
+                    [
+                      20,
+                      23
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      8,
+                      22
+                    ],
+                    [
+                      9,
+                      20
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      8,
+                      10
+                    ],
+                    [
+                      9,
+                      8
+                    ]
+                  ],
+                  "color": "gold",
+                  "size": 1
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      19,
+                      6
+                    ],
+                    [
+                      20,
+                      4
+                    ]
+                  ],
+                  "color": "stone",
+                  "size": 1
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "frameCount": 4,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [
+    "Lossless grid repacking; original retained as trap.raw.png"
+  ],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/5c89f6a4-cc29-4c1d-9913-e2406979d2bc/assets/south/full.png",
+  "finalDimensions": [
+    128,
+    32
+  ]
+}

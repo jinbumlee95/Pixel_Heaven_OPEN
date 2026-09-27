@@ -1,0 +1,321 @@
+:root {
+  color-scheme: dark;
+  --page: #211e1a; --panel: #2b2721; --surface: #332e26; --input: #25221d;
+  --text: #f0e6d2; --heading: #f3d9a5; --muted: #c7b99f; --gold: #e2bb76;
+  --line: #78674e; --strong-line: #ac8b54; --button: #443a2b; --button-hover: #55452f;
+  --button-text: #f4dfb4; --button-line: #a88957; --disabled: #342e25; --disabled-text: #ae9f86;
+  --primary: #c79b55; --primary-hover: #dbaf67; --on-primary: #201a12;
+  --notice: #3a3227; --danger-surface: #392b23; --danger: #f2b79c; --danger-line: #b87952;
+  --success: #b8d39f;
+  font: 14px/1.55 system-ui, "Malgun Gothic", "Yu Gothic", sans-serif;
+  color: var(--text); background: var(--page);
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #d6cbb7; --panel: #e4d9c4; --surface: #d9ccb4; --input: #eee3ce;
+  --text: #30271d; --heading: #382815; --muted: #534535; --gold: #654516;
+  --line: #8f7958; --strong-line: #826b47; --button: #d2bf9b; --button-hover: #c4ac80;
+  --button-text: #382714; --button-line: #826b47; --disabled: #d9ccb6; --disabled-text: #64543f;
+  --primary: #6d491b; --primary-hover: #563813; --on-primary: #f7efdf;
+  --notice: #e0d0ac; --danger-surface: #e0c6b4; --danger: #663624; --danger-line: #a36243;
+  --success: #314723;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); }
+main { max-width: 1800px; margin: auto; padding: 24px; }
+h1, h2, p { margin: 0; overflow-wrap: anywhere; }
+h1 { font: 36px/1.2 Georgia, serif; letter-spacing: -.8px; color: var(--heading); }
+h2 { font: 20px/1.3 Georgia, serif; color: var(--heading); }
+.title-star { font-size: 24px; color: var(--gold); }
+.eyebrow { color: var(--muted); font-size: 10px; letter-spacing: 1.7px; text-transform: uppercase; }
+.muted { color: var(--muted); font-size: 12px; }
+.masthead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 0 0 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }
+.masthead > * { min-width: 0; max-width: 100%; }
+.masthead .eyebrow { margin-bottom: 6px; }
+.totals { text-align: center; font-variant-numeric: tabular-nums; }
+#summary { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; font-size: 16px; }
+#clock { font-size: 12px; color: var(--muted); margin-top: 6px; }
+#clock::after { content: attr(data-time-help); display: block; margin-top: 2px; font-size: 10px; line-height: 1.5; color: var(--muted); }
+.resource { display: inline-flex; align-items: center; gap: 7px; }
+img { image-rendering: pixelated; object-fit: contain; }
+.preferences { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.language-setting, .theme-setting { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.language-setting label, .theme-setting label { margin: 0; color: var(--text); }
+.language-setting select, .theme-setting select { width: auto; max-width: 100%; }
+button, select, textarea { font: inherit; }
+button { color: var(--button-text); background: var(--button); border: 1px solid var(--button-line); padding: 9px 12px; cursor: pointer; border-radius: 4px; font-weight: 600; min-height: 44px; min-width: 44px; max-width: 100%; overflow-wrap: anywhere; }
+button:hover:not(:disabled) { background: var(--button-hover); }
+button:disabled { opacity: 1; color: var(--disabled-text); background: var(--disabled); border-color: var(--line); cursor: default; }
+button[aria-pressed="true"] { color: var(--on-primary); border-color: var(--strong-line); background: var(--primary); }
+button[aria-pressed="true"]:hover:not(:disabled) { background: var(--primary-hover); }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.play-layout { display: grid; grid-template-columns: 244px minmax(340px, 1fr) 300px; align-items: start; gap: 18px; }
+.village-column, .world-column { display: grid; gap: 16px; min-width: 0; }
+.panel { background: var(--panel); border: 1px solid var(--line); padding: 18px; border-radius: 6px; min-width: 0; }
+.priest-panel { border-top: 2px solid var(--strong-line); background: var(--surface); }
+.priest-heading { display: flex; align-items: center; gap: 12px; margin: 18px 0; }
+.priest-heading img { width: 52px; height: 52px; flex-shrink: 0; }
+.priest-heading > div { min-width: 0; }
+.priest-panel [role="status"] { color: var(--text); font: italic 15px/1.6 Georgia, serif; border-left: 2px solid var(--strong-line); padding-left: 12px; }
+.priest-panel .oracle-process { margin-top: 12px; font: 12px/1.6 system-ui, sans-serif; color: var(--gold); }
+.oracle-process:empty { display: none; }
+.section-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.section-heading .eyebrow { font-size: 9px; letter-spacing: 1px; }
+#villages { display: grid; gap: 12px; }
+.village { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; }
+.village button { width: 100%; text-align: left; background: transparent; border: 0; padding: 0; color: var(--heading); font: 18px Georgia, serif; min-height: 44px; }
+.village p { margin-top: 10px; font-size: 12px; color: var(--muted); }
+.village .village-stats { font-size: 13px; color: var(--text); }
+.village meter { width: 100%; height: 8px; display: block; margin-top: 6px; accent-color: var(--gold); }
+.village .weather-label { display: flex; align-items: center; gap: 8px; color: var(--gold); }
+.oracle-settings { font-size: 12px; }
+.oracle-settings p, .oracle-settings button { margin-top: 12px; }
+.oracle-settings button { font-size: 11px; width: 100%; }
+summary { cursor: pointer; color: var(--heading); font-weight: 600; min-height: 44px; padding: 10px 0; overflow-wrap: anywhere; }
+.map-panel { border: 1px solid var(--strong-line); border-radius: 6px; overflow: hidden; background: var(--surface); }
+.map-heading { padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
+.map-heading h2 { font-size: 17px; }
+.map-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; max-width: 100%; }
+.map-controls button { font-size: 12px; }
+.live-label { color: var(--success); font-size: 11px; letter-spacing: 1px; white-space: nowrap; }
+#world { height: clamp(320px, 52vh, 680px); overflow: hidden; background: #304735; }
+canvas { display: block; touch-action: none; cursor: grab; image-rendering: pixelated; }
+canvas:active { cursor: grabbing; }
+canvas:focus-visible { outline-offset: -3px; }
+.map-caption { padding: 8px 12px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; font-size: 10px; color: var(--muted); }
+#divine-chat { border-color: var(--strong-line); }
+#divine-chat h2 { display: flex; align-items: center; gap: 8px; }
+label { display: block; color: var(--muted); font-size: 11px; margin: 12px 0 5px; }
+select, textarea { border: 1px solid var(--button-line); border-radius: 4px; background: var(--input); color: var(--text); padding: 9px 10px; width: 100%; min-width: 0; min-height: 44px; font-size: 16px; }
+textarea { resize: vertical; min-height: 76px; }
+textarea::placeholder { color: var(--muted); opacity: 1; }
+.send-row { display: flex; align-items: center; gap: 18px; margin-top: 10px; }
+.send-row p { flex: 1; color: var(--muted); font-size: 11px; }
+.send-row button { background: var(--primary); color: var(--on-primary); border-color: var(--strong-line); flex-shrink: 0; }
+.send-row button:hover:not(:disabled) { background: var(--primary-hover); }
+.send-row button:disabled { color: var(--disabled-text); background: var(--disabled); border-color: var(--line); }
+.reply-status { margin-top: 8px; color: var(--gold); font-size: 12px; min-height: 19px; }
+.message-help { margin-top: 10px; color: var(--muted); font-size: 11px; }
+.message-help p { margin-top: 6px; }
+#divine-chat[aria-busy="true"] .oracle-icon { animation: glow 1.5s ease-in-out infinite alternate; }
+@keyframes glow { to { opacity: .55; } }
+#status { color: var(--muted); font-size: 11px; }
+#world-panel { max-height: 1050px; overflow: auto; }
+#world-thinking { color: var(--gold); font-size: 12px; margin-top: 10px; }
+#world-thinking:empty { display: none; }
+#event-forecast { margin-top: 16px; }
+#event-forecast h3, .factions-panel h3 { margin: 0; font: 18px/1.35 Georgia, serif; color: var(--heading); overflow-wrap: anywhere; }
+.forecast-list { display: grid; gap: 10px; margin-top: 12px; }
+.forecast-card { padding: 12px; border: 1px solid var(--line); border-left: 3px solid var(--strong-line); border-radius: 4px; background: var(--notice); font-size: 12px; overflow-wrap: anywhere; }
+.forecast-card[data-kind="raid"] { border-left-color: var(--danger-line); background: var(--danger-surface); }
+.forecast-card[data-stage="active"] { border-color: var(--danger-line); }
+.forecast-card h4 { margin: 0; color: var(--heading); font-size: 14px; }
+.forecast-time { color: var(--danger); font-variant-numeric: tabular-nums; font-weight: 700; margin: 6px 0; }
+.forecast-advice { color: var(--muted); margin-top: 8px; }
+.forecast-respond { width: 100%; margin-top: 10px; }
+.battle-panel { border: 1px solid var(--line); border-top: 3px solid var(--strong-line); background: var(--surface); color: var(--text); border-radius: 6px; padding: 16px; min-width: 0; }
+.battle-panel h2, .battle-panel h3 { color: var(--heading); margin: 0 0 8px; font: 20px/1.35 Georgia, serif; }
+.battle-panel p + p { margin-top: 8px; }
+.battle-panel [role="status"] { color: var(--gold); margin-top: 10px; }
+.battle-status { color: var(--heading); font-weight: 700; }
+.battle-summary { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.battle-roster { padding: 10px; background: var(--notice); border: 1px solid var(--line); border-radius: 4px; font-size: 12px; font-variant-numeric: tabular-nums; line-height: 1.8; }
+.battle-roster:empty { display: none; }
+.battle-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.battle-actions button { flex: 1 1 120px; }
+.camera-notice { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; background: var(--notice); color: var(--text); font-size: 12px; border-top: 1px solid var(--line); }
+.camera-notice:empty, .camera-notice[hidden] { display: none; }
+.camera-notice button { flex-shrink: 0; font-size: 12px; }
+.factions-panel { font-size: 12px; }
+.factions-panel h4 { margin: 14px 0 6px; color: var(--heading); }
+.panel-note { color: var(--muted); margin-top: 8px; }
+.faction-counts, .faction-pressure { margin-top: 10px; color: var(--text); }
+.faction-roster { margin-top: 10px; }
+.faction-list { max-height: 260px; overflow: auto; padding: 0 8px 0 0; margin: 0; list-style: none; }
+.faction-list li { border-bottom: 1px solid var(--line); border-left: 2px solid var(--line); padding: 9px 0 9px 8px; overflow-wrap: anywhere; }
+.faction-list li[data-stance="hostile"] { border-left-color: var(--danger-line); }
+.faction-list li[data-stance="allied"] { border-left-color: var(--success); }
+.faction-list strong, .faction-list span { display: block; }
+.faction-list span { color: var(--muted); font-size: 11px; margin-top: 3px; }
+.faction-history { padding-left: 16px; margin-bottom: 0; color: var(--muted); }
+.faction-history li + li { margin-top: 8px; }
+#world-needs { margin: 16px 0; font-size: 12px; }
+.world-need { background: var(--notice); border: 1px solid var(--line); border-left: 3px solid var(--strong-line); padding: 12px; border-radius: 3px; margin-bottom: 10px; color: var(--text); }
+.world-need[data-type="raid"], .world-need[data-type="conflict"] { border-left-color: var(--danger-line); background: var(--danger-surface); }
+.world-need button { width: 100%; font-size: 11px; margin-top: 10px; background: transparent; }
+ol { padding: 0; list-style: none; margin-bottom: 0; }
+#world-events { max-height: 540px; overflow: auto; font-size: 12px; }
+#world-events li { padding: 12px 0 12px 12px; margin-left: 3px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--text); overflow-wrap: anywhere; }
+#world-events li[data-source="priest"] { color: var(--gold); border-left-color: var(--strong-line); }
+.chronicle { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 22px; align-items: start; }
+.chronicle h2, .chronicle summary { font: 19px Georgia, serif; margin-bottom: 8px; }
+#divine-events, #divine-history { max-height: 250px; overflow: auto; font-size: 12px; }
+#divine-events li, #divine-history li { border-bottom: 1px solid var(--line); padding: 12px 0; overflow-wrap: anywhere; }
+#divine-history li p + p { color: var(--gold); margin-top: 6px; }
+footer { text-align: center; font: italic 13px Georgia, serif; color: var(--muted); padding: 28px 0 4px; }
+#faith-counter { color: var(--gold); font-size: 13px; font-variant-numeric: tabular-nums; margin-top: 6px; }
+.resource-panel h3 { color: var(--heading); font: 18px Georgia, serif; margin: 0; }
+.resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 12px; margin: 12px 0; font-size: 12px; }
+.resource-grid > div { display: flex; gap: 5px; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 5px; }
+.resource-grid dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; }
+.resource-panel > p { font-size: 11px; }
+.hero-panel { padding: 12px 16px; }
+.hero-panel h2 { font: 18px Georgia, serif; }
+.hero-mode { font-size: 12px; color: var(--gold); }
+.hero-stats, .hero-room { font-size: 12px; margin: 6px 0; font-variant-numeric: tabular-nums; }
+.hero-panel .muted { font-size: 11px; margin-top: 5px; }
+.hero-scene { height: 112px; position: relative; overflow: hidden; margin-top: 10px; border: 1px solid var(--strong-line); border-radius: 3px; background: #343638; }
+.hero-scene::before, .hero-scene::after { content: ''; position: absolute; top: 12px; width: 38px; height: 55px; background: #45494a; border: 3px solid #292d2f; }
+.hero-scene::before { left: 12%; } .hero-scene::after { right: 18%; }
+.hero-ground { position: absolute; bottom: 0; width: 100%; height: 19px; background: #626059 url('../assets/tiles/sanctuary-path.png') repeat-x; border-top: 2px solid #99917c; }
+.hero-strip-pawn { position: absolute; width: 68px; height: 68px; bottom: 7px; image-rendering: pixelated; z-index: 2; }
+.dungeon-monster { position: absolute; bottom: 17px; width: 32px; height: 27px; background: #88aaa1; border: 3px solid #273734; border-radius: 14px 14px 3px 3px; z-index: 2; }
+.dungeon-monster::before { content: '··'; position: absolute; top: -8px; left: 6px; font: bold 23px monospace; color: #1b2524; }
+.dungeon-monster[data-kind="cave_bat"] { background: #b0a3c0; height: 25px; border-radius: 0; clip-path: polygon(0 0,35% 25%,50% 0,65% 25%,100% 0,80% 85%,50% 100%,20% 85%); bottom: 40px; }
+.dungeon-monster[data-kind="stone_guardian"] { background: #b6aea0; height: 44px; border-radius: 2px; }
+.dungeon-monster[data-down="true"] { opacity: .4; height: 10px; }
+.hero-panel progress { display: block; width: 100%; height: 5px; margin-top: 5px; accent-color: var(--gold); }
+.hero-panel [hidden] { display: none; }
+.hero-art-note { font-size: 10px; color: var(--muted); margin-top: 3px; }
+.hero-orders { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 9px; }
+.hero-orders button { flex: 1; font-size: 12px; }
+.faith-preview { color: var(--gold); font-size: 12px; margin-top: 8px; }
+.faith-preview[data-affordable="false"] { color: var(--danger); font-weight: 700; }
+.faction-crest { float: left; margin: 0 8px 4px 0; image-rendering: pixelated; }
+.forecast-icon { float: right; margin-left: 8px; image-rendering: pixelated; }
+.forecast-icon.fire-icon { object-fit:none; object-position:left center; }
+.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after { animation: none !important; scroll-behavior: auto !important; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; scroll-behavior: auto !important; } }
+@media (max-width: 1200px) { main { padding: 16px; } .play-layout { grid-template-columns: 210px minmax(320px, 1fr); } #world-panel { grid-column: 1 / -1; } #world-events { max-height: 280px; } #world-needs { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; } .preferences { width: 100%; } }
+@media (max-width: 700px) { .masthead { flex-wrap: wrap; gap: 16px; } h1 { font-size: 30px; } .totals { text-align: left; } #summary { font-size: 14px; } .preferences { flex-direction: row; width: 100%; } .play-layout { display: flex; flex-direction: column; } .world-column { order: 0; width: 100%; } .village-column { order: 2; width: 100%; } #world-panel { order: 1; width: 100%; } #world { height: 350px; } #villages { grid-template-columns: 1fr 1fr; } .chronicle { grid-template-columns: 1fr; } .send-row { align-items: stretch; flex-direction: column; gap: 10px; } .section-heading .eyebrow { display: none; } }
+@media (max-width: 420px) { main { padding: 10px; } #villages, #world-needs { grid-template-columns: 1fr; } .panel { padding: 14px; } }
+
+.dungeon-monster.has-sprite { width:68px; height:68px; bottom:7px; border:0; border-radius:0; clip-path:none; background-color:transparent; background-repeat:no-repeat; opacity:1; image-rendering:pixelated; }
+.dungeon-monster.has-sprite::before { content:none; }
+
+.labor-row { display:flex; align-items:center; gap:12px; margin:4px 0; }
+.labor-row span { min-width:130px; }
+.labor-row output { min-width:24px; }
+#chronicle-panel > button { margin:4px; }
+
+.creation-dialog { color:var(--text); background:var(--surface); border:1px solid var(--line); padding:32px; max-width:min(90vw,540px); }
+.creation-dialog::backdrop { background:#151711e8; }
+.creation-dialog input { display:block; width:100%; margin:16px 0; min-height:44px; }
+#chronicle-panel select { min-height:44px; margin:6px; max-width:100%; }
+.management-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; margin:20px 0; }
+.management-grid section { min-width:0; border-top:1px solid var(--line); padding-top:12px; }
+.management-grid button { margin:3px; }
+#chronicle-panel details { border-top:1px solid var(--line); padding:14px 0; }
+#chronicle-panel summary { min-height:44px; cursor:pointer; }
+#mod-source { display:block; width:100%; margin:8px 0; }
+@media(max-width:700px) { .management-grid { grid-template-columns:1fr; } .labor-row { gap:6px; } .labor-row span { min-width:100px; } }
+/* Phase 17: one conversational surface, read-only status and in-map queue. */
+body .play-layout { grid-template-columns: 220px minmax(0,1fr); }
+body main { max-width: 1600px; }
+body .masthead { padding-bottom:12px; margin-bottom:14px; }
+body .masthead h1 { font-size:28px; }
+body #summary { display:none; }
+body .village-column { gap:12px; }
+body .village-column .panel { padding:14px; }
+.map-stage { position:relative; }
+body #world { height:clamp(380px,52vh,620px); }
+body #event-forecast { position:absolute; top:12px; right:12px; width:230px; max-height:calc(100% - 24px); overflow-y:auto; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:12px; font-size:12px; }
+.decision-cards { display:grid; gap:8px; margin-top:10px; }
+.decision-card { padding:10px; border-left:3px solid var(--strong-line); background:var(--surface); }
+.decision-card[data-kind="raid"] { border-left-color:var(--danger-line); }
+.decision-card small,.queue-hint { color:var(--muted); }
+.decision-card p { margin-top:5px; }
+body #divine-chat { padding:14px; }
+body #divine-history { max-height:140px; overflow-y:auto; margin-top:8px; }
+body #divine-history li { margin:0 0 6px; padding:8px; }
+body .reply-status { white-space:pre-wrap; max-height:260px; overflow-y:auto; }
+body #divine-help { margin-top:6px; font-size:12px; color:var(--muted); }
+body #hero-panel .section-heading { display:block; }
+body #hero-panel .hero-stats { line-height:1.8; }
+body #world-events { font-size:13px; line-height:1.7; }
+body #hero-journey[hidden] { display:none; }
+@media(max-width:800px) {
+  body .play-layout { grid-template-columns:minmax(0,1fr); }
+  body .village-column { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  body .priest-heading { margin:8px 0; flex-wrap:wrap; gap:4px; }
+  body .village-column h2 { font-size:16px; }
+  body .priest-panel [role="status"] { font-size:12px; padding-left:6px; }
+  body #world { height:480px; }
+  body #event-forecast { width:180px; font-size:11px; max-height:220px; }
+}
+@media(max-width:480px) {
+  body .village-column { grid-template-columns:1fr 1fr; }
+  body #world-panel { grid-column:1 / -1; }
+  body #event-forecast { top:8px; right:8px; width:160px; max-height:190px; padding:8px; }
+  body .queue-hint { display:none; }
+}
+
+.journey-row { display:flex; gap:12px; align-items:stretch; min-width:0; }
+.journey-row > section { flex:1; min-width:0; }
+.journey-row > section[hidden] { display:none; }
+.merchant-scene { height:62px; border-bottom:2px solid var(--muted); display:flex; align-items:end; gap:20px; padding:0 20px; }
+.merchant-scene img { image-rendering:pixelated; object-fit:contain; }
+.merchant-pawn { width:32px; height:48px; }
+.merchant-donkey { width:32px; height:32px; }
+.merchant-details { white-space:pre-wrap; max-height:190px; overflow:auto; line-height:1.65; font-size:13px; }
+@media(max-width:800px){ .journey-row { flex-direction:column; } }
+
+.expedition-status { font-size:14px; line-height:1.7; font-variant-numeric:tabular-nums; margin:10px 0; }
+
+/* Production queries and visitors must not push the oracle off desktop. */
+@media(min-width:801px) and (min-height:650px) {
+  body .world-column { display:flex; flex-direction:column; gap:8px; height:calc(100dvh - 150px); min-height:720px; }
+  body .map-panel { display:flex; flex-direction:column; flex:1 1 auto; min-height:240px; }
+  body .map-stage { flex:1; min-height:0; }
+  body #world { height:100%; min-height:0; }
+  body .journey-row:has(> section:not([hidden])) { flex:0 0 168px; max-height:168px; }
+  body .journey-row > section { padding:8px 12px; overflow:auto; }
+  body .journey-row h2 { font-size:15px; margin:0 0 3px; }
+  body .merchant-scene { float:left; width:112px; height:55px; margin:0 10px 0 0; padding:0; }
+  body .journey-row .hero-scene { height:78px; margin-top:0; }
+  body .journey-row .expedition-status { font-size:12px; margin:2px 0; }
+  body #divine-chat { flex:0 0 auto; padding:8px 12px; }
+  body #divine-chat .section-heading { margin-bottom:4px; }
+  body #divine-chat h2 { font-size:16px; }
+  body #divine-chat textarea { min-height:44px; height:48px; resize:none; }
+  body #divine-history { max-height:44px; margin:4px 0 0; }
+  body .reply-status { max-height:72px; margin-top:4px; }
+  body #divine-help { margin-top:2px; }
+  body #status { margin:0; font-size:11px; }
+}
+.journey-row:not(:has(> section:not([hidden]))) { display:none; }
+
+#equipment-panel { position:absolute; inset:8px auto 8px 8px; width:min(440px,calc(100% - 16px)); z-index:8; overflow:auto; padding:12px; background:var(--panel); color:var(--text); }
+#equipment-panel[hidden] { display:none; }
+#equipment-panel h2 { margin:0; font-size:17px; }
+#equipment-panel p { font-size:12px; line-height:1.45; margin:6px 0; overflow-wrap:anywhere; }
+.equipment-grid { display:grid; grid-template-columns:repeat(var(--cols),1fr); grid-template-rows:repeat(var(--rows),36px); gap:2px; isolation:isolate; }
+.equipment-cell { border:1px solid var(--line); font-size:10px; padding:2px; opacity:.7; }
+.equipment-tile { z-index:1; padding:3px; white-space:pre-line; overflow:hidden; font-size:11px; line-height:1.25; background:#363936; color:#fff5dd; border:2px solid #b9b9ad; }
+.equipment-tile.grade-rare { border-color:#8ebaf3; border-style:dashed; }
+.equipment-tile.grade-unique { border-color:#dac0ff; border-style:double; border-width:3px; }
+.equipment-tile.grade-mythic { border-color:#f4c773; border-width:4px; }
+.equipment-tile.inactive { background:#4b4540; }
+[data-theme="light"] .equipment-tile { background:#eee4d0; color:#241e18; }
+[data-theme="light"] .equipment-tile.grade-rare { border-color:#315980; }
+[data-theme="light"] .equipment-tile.grade-unique { border-color:#703d83; }
+[data-theme="light"] .equipment-tile.grade-mythic { border-color:#76500d; }
+
+.equipment-tile { position:relative; }
+.equipment-icon { position:absolute; width:32px; max-height:64px; right:2px; bottom:2px; opacity:.85; z-index:-1; }
+
+.prayer-panel { margin-top:12px; padding-top:10px; border-top:1px solid var(--line); font-size:12px; line-height:1.6; white-space:pre-line; max-height:230px; overflow:auto; }
+#religion-details { position:absolute; inset:8px 8px 8px auto; width:min(570px,calc(100% - 16px)); z-index:10; overflow:auto; padding:16px; background:var(--panel); color:var(--text); }
+#religion-details[hidden] { display:none; }
+#religion-details section + section { border-top:1px solid var(--line); margin-top:12px; padding-top:8px; }
+#religion-details h3 { margin:4px 0 8px; font-size:16px; }
+#religion-details p { margin:6px 0; font-size:13px; line-height:1.6; overflow-wrap:anywhere; }
+.prayer-panel h4 { margin:8px 0 4px; font-size:13px; color:var(--text); }
+.prayer-panel h4:first-child { margin-top:0; }
+.prayer-panel p { margin:3px 0 6px; }
+
+/* Light affects the scene only; labels retain theme contrast. */
+.dungeon-shade { position:absolute; inset:0; z-index:3; background:#111827; opacity:var(--dungeon-darkness,0); pointer-events:none; }
+.dungeon-summary { font-size:12px; line-height:1.4; margin:0 0 4px; color:var(--text); }
+.hero-scene[data-room="elite"] { border: 2px solid #b97721; }
+.hero-scene[data-room="boss"] { border: 3px solid #ae4354; }

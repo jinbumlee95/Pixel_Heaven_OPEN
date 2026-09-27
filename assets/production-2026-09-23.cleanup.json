@@ -1,0 +1,98 @@
+[
+  {
+    "key": "characters/villager_b",
+    "job_id": "0c45663c-ee32-4522-b402-e8f0a7cc6f96",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 48,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "original_job_id": "6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c",
+    "old_character_id": "31cfc388-2f91-4e99-86f0-590382970b24",
+    "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+    "rotationArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Adult female villager, tied dark hair, ochre work tunic, dark trousers and boots, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. ISOLATED FIGURE ONLY. No terrain tile, ground, platform, shadow, checker pattern or backdrop in ANY direction.",
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/0c45663c-ee32-4522-b402-e8f0a7cc6f96/download",
+      "size": 48,
+      "n_directions": 8,
+      "name": "Clean characters/villager_b",
+      "view": "low top-down"
+    }
+  },
+  {
+    "key": "characters/pack_donkey",
+    "job_id": "3a148d56-e391-46ab-a55a-6dbbd7d22b6e",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f3e6331a-c8e5-4750-a980-1497613d275d/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "original_job_id": "f3e6331a-c8e5-4750-a980-1497613d275d",
+    "old_character_id": "e702649f-f4e9-498e-810e-d13c35cf27bf",
+    "rotationArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey pack donkey with two brown side saddlebags, four legs and long ears clearly visible, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human. ISOLATED FIGURE ONLY. No terrain tile, ground, platform, shadow, checker pattern or backdrop in ANY direction.",
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/3a148d56-e391-46ab-a55a-6dbbd7d22b6e/download",
+      "size": 32,
+      "n_directions": 8,
+      "name": "Clean characters/pack_donkey",
+      "view": "low top-down"
+    },
+    "character_id": "1c995a41-8fe8-4fda-a453-68dd65980ecc"
+  },
+  {
+    "key": "characters/deer",
+    "job_id": "eb248930-e7e0-43d3-8f84-fd82b1ba014e",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/8e2a1c4e-871f-4808-9036-dad28def6069/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "original_job_id": "8e2a1c4e-871f-4808-9036-dad28def6069",
+    "old_character_id": "7a15ea99-bc71-4c52-8537-aa09f0b589a0",
+    "character_id": "cc876aae-7f72-4d34-853f-2e4bd5951728",
+    "rotationArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small warm brown deer with slender legs, light muzzle, small antlers, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human. ISOLATED FIGURE ONLY. No terrain tile, ground, platform, shadow, checker pattern or backdrop in ANY direction.",
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/eb248930-e7e0-43d3-8f84-fd82b1ba014e/download",
+      "size": 32,
+      "n_directions": 8,
+      "name": "Clean characters/deer",
+      "view": "low top-down"
+    }
+  },
+  {
+    "key": "characters/wolf",
+    "job_id": "2dbfeb49-552d-435c-a4ec-1b8901044770",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/23e13bd3-90b1-463c-b153-a50cc4bd2c4c/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "original_job_id": "23e13bd3-90b1-463c-b153-a50cc4bd2c4c",
+    "old_character_id": "2b4ab08c-5fd8-4cff-9d2f-0f32401e879b",
+    "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+    "rotationArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey wolf, four legs, pointed ears and long tail, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human. ISOLATED FIGURE ONLY. No terrain tile, ground, platform, shadow, checker pattern or backdrop in ANY direction.",
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/2dbfeb49-552d-435c-a4ec-1b8901044770/download",
+      "size": 32,
+      "n_directions": 8,
+      "name": "Clean characters/wolf",
+      "view": "low top-down"
+    }
+  }
+]

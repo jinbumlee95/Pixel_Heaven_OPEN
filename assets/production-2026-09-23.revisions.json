@@ -1,0 +1,58 @@
+[
+  {
+    "key": "tiles/house_v2",
+    "description": "Redraw as a straight SOUTH-FACING front elevation with roof top visible from slightly above, not a diagonally rotated house. Keep96x96 canvas and original materials. Door opening must be44 pixels tall and24 pixels wide for a40px adult, not a tiny miniature door. Foundation contacts bottom center(48,96). Transparent outside, no ground base.",
+    "w": 96,
+    "h": 96,
+    "job_id": "d03737c5-3555-4238-9636-6d7cd0b51ece",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/7e4a7533-bd2a-4645-a389-bf5194d80bc7/download",
+      "description": "Redraw as a straight SOUTH-FACING front elevation with roof top visible from slightly above, not a diagonally rotated house. Keep96x96 canvas and original materials. Door opening must be44 pixels tall and24 pixels wide for a40px adult, not a tiny miniature door. Foundation contacts bottom center(48,96). Transparent outside, no ground base.",
+      "width": 96,
+      "height": 96,
+      "no_background": true
+    }
+  },
+  {
+    "key": "tiles/town_hall",
+    "description": "Remove all grass, earth island and pavement platform. Keep the town hall alone. Enlarge the south entrance OPENING to44 pixels tall and24 wide. Preserve192x192 native pixels, all roof and walls, bottom-center foundation at(96,192). True transparent outside.",
+    "w": 192,
+    "h": 192,
+    "job_id": "cc85f90f-31dd-46d0-a670-9516a2107bbb",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/6add4a4d-5eb3-47a8-8165-15ce97eb8e29/download",
+      "description": "Remove all grass, earth island and pavement platform. Keep the town hall alone. Enlarge the south entrance OPENING to44 pixels tall and24 wide. Preserve192x192 native pixels, all roof and walls, bottom-center foundation at(96,192). True transparent outside.",
+      "width": 192,
+      "height": 192,
+      "no_background": true
+    }
+  },
+  {
+    "key": "tiles/temple_v2",
+    "description": "Remove the grass and ground island, retain only temple and necessary stone doorstep. Entrance opening44px high24px wide. Preserve192x192 native canvas, temple size, sun spire and colors, foundation bottom center(96,192), true transparent background.",
+    "w": 192,
+    "h": 192,
+    "job_id": "7a608b57-d367-483f-95e2-a6cabdbbe40b",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/69fd9234-41d7-4586-af3a-64f9cc7ed23c/download",
+      "description": "Remove the grass and ground island, retain only temple and necessary stone doorstep. Entrance opening44px high24px wide. Preserve192x192 native canvas, temple size, sun spire and colors, foundation bottom center(96,192), true transparent background.",
+      "width": 192,
+      "height": 192,
+      "no_background": true
+    }
+  },
+  {
+    "key": "characters/combat/swordsman/home/base",
+    "description": "Redraw this same swordsman at native32x48 pixels with taller adult body filling40px HEIGHT, head at y8 and BOOT SOLES at y47. Keep sword RIGHT hand, shield LEFT hand, same armor and sage cloth. Remove excessive empty space BELOW boots. Draw extra native anatomical detail, do not upscale existing pixels. Transparent background, no ground.",
+    "w": 32,
+    "h": 48,
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/d5fae413-3bbb-4604-a258-b644f8a2e92f/download",
+      "description": "Redraw this same swordsman at native32x48 pixels with taller adult body filling40px HEIGHT, head at y8 and BOOT SOLES at y47. Keep sword RIGHT hand, shield LEFT hand, same armor and sage cloth. Remove excessive empty space BELOW boots. Draw extra native anatomical detail, do not upscale existing pixels. Transparent background, no ground.",
+      "width": 32,
+      "height": 48,
+      "no_background": true
+    },
+    "job_id": "dd4a6434-dbb4-4ca0-a9b9-722d6ff4f5d2"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "runtimeType": "trap",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 4,
+  "frameDurationMs": 80,
+  "pivot": {
+    "x": 16,
+    "y": 16
+  },
+  "renderLayer": "combat_effects",
+  "loop": false,
+  "directional": false,
+  "id": "combat.effect.trap",
+  "priority": "P0",
+  "status": "delivered_pending_visual_review",
+  "file": "assets/ui/combat/trap.png",
+  "sheetWidth": 128,
+  "sheetHeight": 32,
+  "columns": 4,
+  "rows": 1,
+  "directionOrder": [],
+  "endCondition": "clip-complete",
+  "palette": "combat_v1",
+  "frameMetadata": "assets/ui/combat/trap.frames.json",
+  "provenance": "assets/ui/combat/trap.source.json",
+  "integrationEnabled": false,
+  "sourceDrawingId": "5c89f6a4-cc29-4c1d-9913-e2406979d2bc"
+}

@@ -1,0 +1,372 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "d1a24cf5-8fb7-49ee-a689-ffa76f0f9857",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        48
+      ],
+      "frame_count": 3,
+      "durations_ms": [
+        100,
+        100,
+        100
+      ],
+      "columns": 3,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      46
+                    ],
+                    [
+                      2,
+                      30
+                    ],
+                    [
+                      8,
+                      26
+                    ],
+                    [
+                      27,
+                      29
+                    ],
+                    [
+                      29,
+                      46
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      44
+                    ],
+                    [
+                      4,
+                      31
+                    ],
+                    [
+                      9,
+                      28
+                    ],
+                    [
+                      25,
+                      31
+                    ],
+                    [
+                      27,
+                      44
+                    ]
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      5,
+                      37
+                    ],
+                    [
+                      25,
+                      37
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      46
+                    ],
+                    [
+                      2,
+                      35
+                    ],
+                    [
+                      8,
+                      32
+                    ],
+                    [
+                      27,
+                      34
+                    ],
+                    [
+                      29,
+                      46
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      44
+                    ],
+                    [
+                      4,
+                      36
+                    ],
+                    [
+                      9,
+                      34
+                    ],
+                    [
+                      25,
+                      36
+                    ],
+                    [
+                      27,
+                      44
+                    ]
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      15,
+                      34
+                    ],
+                    [
+                      13,
+                      36
+                    ],
+                    [
+                      18,
+                      39
+                    ],
+                    [
+                      16,
+                      45
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      46
+                    ],
+                    [
+                      2,
+                      40
+                    ],
+                    [
+                      8,
+                      38
+                    ],
+                    [
+                      27,
+                      39
+                    ],
+                    [
+                      29,
+                      46
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      44
+                    ],
+                    [
+                      4,
+                      41
+                    ],
+                    [
+                      9,
+                      40
+                    ],
+                    [
+                      25,
+                      41
+                    ],
+                    [
+                      27,
+                      44
+                    ]
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      15,
+                      38
+                    ],
+                    [
+                      13,
+                      36
+                    ],
+                    [
+                      18,
+                      39
+                    ],
+                    [
+                      16,
+                      45
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "frameCount": 3,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/d1a24cf5-8fb7-49ee-a689-ffa76f0f9857/assets/south/full.png"
+}

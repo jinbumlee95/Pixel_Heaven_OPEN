@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "harvest-relief",
+  "version": "1.0.0",
+  "requires": [{"id":"core","version":"1.0.0"}],
+  "modifiers": {"foodProduction":1.1},
+  "patches": [{"id":"farmland","labelKey":"harvest-relief.field","visual":{"tint":16773058}}],
+  "translations": {
+    "ko":{"harvest-relief.field":"구호의 밭"},
+    "en":{"harvest-relief.field":"Relief field"},
+    "ja":{"harvest-relief.field":"救援の畑"}
+  },
+  "storyChains": ["harvest_relief"]
+}

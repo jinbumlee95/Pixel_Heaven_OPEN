@@ -1,0 +1,16 @@
+# Local tools, credentials and generated files
+node_modules/
+.env
+.env.*
+**/.env
+**/.env.*
+*.log
+.DS_Store
+Thumbs.db
+.visual-review/
+.codex/
+.claude/
+.agents/
+# This public snapshot keeps only the project README as Markdown.
+**/*.md
+!/README.md

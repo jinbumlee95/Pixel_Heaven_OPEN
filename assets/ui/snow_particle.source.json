@@ -1,0 +1,115 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "872c8fae-025a-4d5b-bbd4-e6ea613c6a87",
+  "recipe": {
+    "job": {
+      "canvas": [
+        8,
+        8
+      ],
+      "frame_count": 1,
+      "durations_ms": [
+        100
+      ],
+      "columns": 1,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      5,
+                      3
+                    ]
+                  ],
+                  "color": "white"
+                },
+                {
+                  "op": "brush",
+                  "points": [
+                    [
+                      3,
+                      1
+                    ],
+                    [
+                      3,
+                      5
+                    ]
+                  ],
+                  "color": "white"
+                }
+              ],
+              "visible": true
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    8,
+    8
+  ],
+  "frameCount": 1,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/872c8fae-025a-4d5b-bbd4-e6ea613c6a87/assets/south/full.png"
+}

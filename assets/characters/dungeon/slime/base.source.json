@@ -1,0 +1,32 @@
+{
+  "key": "characters/dungeon/slime/base",
+  "monster": "slime",
+  "body": [
+    32,
+    24
+  ],
+  "job_id": "884a3c8e-1e0c-4e54-b202-1fcbca72bd4b",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/697bd8b3-5d29-497c-873d-c9f76b9e8058/download",
+    "description": "Redraw this SAME left-facing sage slime as a LOW WIDE JELLY MOUND, not a ball. Fill this32x24 canvas with a body about30px wide and22px high. Squash the shape by redrawing pixel anatomy, keep tiny eyes at left front, upper-left shine, blue-grey lower rim. Entire body within canvas, transparent around it. No platform, terrain, shadow, checkerboard or text.",
+    "width": 32,
+    "height": 24,
+    "no_background": true
+  },
+  "tool": "edit_image_pixen",
+  "rejectedOversizedJob": "c572b0a4-4d62-4b9a-a3fc-a229406dca9e",
+  "rejectedSmallJob": "e1ab9fe7-28df-4c13-9a15-bc0b9730160f",
+  "previousNativeJob": "697bd8b3-5d29-497c-873d-c9f76b9e8058",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    32,
+    24
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/slime/base.png"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "key": "characters/wolf",
+  "job_id": "2dbfeb49-552d-435c-a4ec-1b8901044770",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/23e13bd3-90b1-463c-b153-a50cc4bd2c4c/download",
+    "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+    "width": 32,
+    "height": 32,
+    "no_background": true
+  },
+  "tool": "edit_image_pixen",
+  "original_job_id": "23e13bd3-90b1-463c-b153-a50cc4bd2c4c",
+  "old_character_id": "2b4ab08c-5fd8-4cff-9d2f-0f32401e879b",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "postProcessing": [
+    "Lossless south rotation extraction after fixed per-direction foot alignment. Generated base retained under production-originals."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/wolf.png"
+  ],
+  "selectedOutput": "rotations/south.png from the matching animated character export",
+  "animationProvenance": "assets/characters/wolf/source.json"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "combat.cover",
+  "runtimeType": "cover",
+  "file": "assets/tiles/combat/cover_states.png",
+  "frameWidth": 32,
+  "frameHeight": 48,
+  "pivot": {
+    "x": 16,
+    "y": 48
+  },
+  "renderLayer": "terrain",
+  "states": [
+    "intact",
+    "damaged",
+    "broken"
+  ],
+  "priority": "P0",
+  "status": "delivered_pending_visual_review",
+  "sheetWidth": 96,
+  "sheetHeight": 48,
+  "columns": 3,
+  "rows": 1,
+  "frames": 3,
+  "loop": false,
+  "stateColumns": {
+    "intact": 0,
+    "damaged": 1,
+    "broken": 2
+  },
+  "footprint": {
+    "width": 1,
+    "height": 1,
+    "provisional": true
+  },
+  "palette": "combat_v1",
+  "frameMetadata": "assets/tiles/combat/cover.frames.json",
+  "provenance": "assets/tiles/combat/cover.source.json",
+  "integrationEnabled": false,
+  "sourceDrawingId": "d1a24cf5-8fb7-49ee-a689-ffa76f0f9857"
+}

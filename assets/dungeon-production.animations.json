@@ -1,0 +1,192 @@
+[
+  {
+    "monster": "stone_guardian",
+    "clip": "walk",
+    "frames": 6,
+    "args": {
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 25001,
+      "action": "Seamless six-frame WALKING IN PLACE facing LEFT throughout. Heavy slow alternating stone legs, grounded foot contact, slight shoulder counter-rotation. Preserve EXACT guardian body size and chest core, same pixel density, same padded68x68 canvas, ground at y57 and fixed pivot34,58. No turning, no camera movement, no enlargement, no background or terrain. First and last frames form a smooth walk loop.",
+      "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+    },
+    "job_id": "fdc2ef95-fbb2-483e-92d2-f431a3b9f56c",
+    "returnedFrames": 7
+  },
+  {
+    "monster": "stone_guardian",
+    "clip": "attack",
+    "frames": 8,
+    "job_id": "8bf30c3b-4268-4913-bc06-cea243fa03e1",
+    "args": {
+      "frame_count": 8,
+      "no_background": true,
+      "seed": 25011,
+      "action": "One HEAVY LEFTWARD stone arm slam. Frame0 ready,1 pull arm up and back,2 hold wind-up,3 swing broad forearm DOWN and LEFT to strongest contact,4 low follow-through,5 retract,6 straighten,7 return to ready. One attack only, no visual projectiles or opponent. Preserve exact same character, native pixel scale, LEFT-facing direction, fixed68x68 transparent canvas and virtual ground pivot(34,58). Ground level y57. Keep all body parts inside canvas. No camera motion, no turning, no scaling, no background, no platform, no text.",
+      "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+    },
+    "returnedFrames": 9
+  },
+  {
+    "monster": "stone_guardian",
+    "clip": "hit",
+    "frames": 4,
+    "job_id": "23b49adc-b3ec-4952-a01c-470b3c90dd2a",
+    "args": {
+      "frame_count": 4,
+      "no_background": true,
+      "seed": 25012,
+      "action": "One short recoil from an incoming hit from LEFT. Four frames:0 ready,1 flinch shoulders right,2 brace,3 recover ready. No damage debris or detached parts, no fall. Preserve exact same character, native pixel scale, LEFT-facing direction, fixed68x68 transparent canvas and virtual ground pivot(34,58). Ground level y57. Keep all body parts inside canvas. No camera motion, no turning, no scaling, no background, no platform, no text.",
+      "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+    },
+    "returnedFrames": 5
+  },
+  {
+    "monster": "stone_guardian",
+    "clip": "down",
+    "frames": 6,
+    "job_id": "3e29f28e-0219-482e-bc5f-67977e0acd12",
+    "args": {
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 25013,
+      "action": "Lose balance and crumble in place:0 upright,1 knees buckle,2 torso tips downward,3 shoulders collapse,4 settle into low stone rubble,5 remain as a low recognizable pile of rocks with dim chest core. One death motion, NEVER stand back up. Non-bloody. End resting at ground y57. Preserve exact same character, native pixel scale, LEFT-facing direction, fixed68x68 transparent canvas and virtual ground pivot(34,58). Ground level y57. Keep all body parts inside canvas. No camera motion, no turning, no scaling, no background, no platform, no text.",
+      "firstFrameFile": "assets/characters/dungeon/stone_guardian/idle.png"
+    },
+    "returnedFrames": 7
+  },
+  {
+    "monster": "slime",
+    "clip": "walk",
+    "frames": 6,
+    "job_id": "b000ad66-cb08-4ffb-a0ac-6d00bd6a1e8b",
+    "args": {
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 25104,
+      "action": "Seamless LOW HOP in place facing LEFT: squash downward, stretch a little and lift only4px, small airborne pause, descend, squash on landing, recover. Keep same jelly volume and low rounded shape, don't travel across canvas. No extra limbs. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). The jelly base rests at y57. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+      "firstFrameFile": "assets/characters/dungeon/slime/idle.png"
+    },
+    "returnedFrames": 7
+  },
+  {
+    "monster": "slime",
+    "clip": "attack",
+    "frames": 8,
+    "previousJobId": "234e08e7-1a9b-458a-893c-9295943f9295",
+    "segments": [
+      {
+        "monster": "slime",
+        "clip": "attack_back",
+        "frames": 4,
+        "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+        "args": {
+          "first_frame_url": "https://api.pixellab.ai/mcp/images/ef7f9202-92cf-4838-81b1-f5b54856f6d1/download",
+          "action": "Recover from the leftward ram, retract smoothly RIGHT into the supplied original idle pose. Stay on ground y57, no upward jump or extra features.",
+          "frame_count": 4,
+          "no_background": true,
+          "seed": 932313,
+          "lastFrameFile": "assets/characters/dungeon/slime/idle.png"
+        },
+        "returnedFrames": 5,
+        "selectedIndices": [
+          4,
+          4,
+          1,
+          0,
+          0,
+          1,
+          4,
+          4
+        ]
+      }
+    ],
+    "assemblyNote": "Eight timed frames assembled from three approved PixelLab poses. Idle hold (0-1), grounded extension (2), contact hold (3-4), recovery (5), idle (6-7). Rejected raised-tail poses at source2-3. No per-frame transform. Outward interpolation job8721be84 remained processing and was not selected."
+  },
+  {
+    "monster": "slime",
+    "clip": "hit",
+    "frames": 4,
+    "job_id": "cc1e69ed-1a06-418b-b6b0-d728f3c884d0",
+    "args": {
+      "frame_count": 4,
+      "no_background": true,
+      "seed": 25106,
+      "action": "A short jelly flinch from LEFT:0 ready,1 recoil and squash slightly to right,2 wobble,3 settle back to same idle shape. No death, splashes or detached pieces. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). The jelly base rests at y57. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+      "firstFrameFile": "assets/characters/dungeon/slime/idle.png"
+    },
+    "returnedFrames": 5
+  },
+  {
+    "monster": "slime",
+    "clip": "down",
+    "frames": 6,
+    "job_id": "315740b1-107c-47d8-b0f1-f0a01b2482bd",
+    "args": {
+      "firstFrameFile": "assets/characters/dungeon/slime/idle.png",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/8f1b951a-5653-4a69-8975-61d573054617/download",
+      "action": "Collapse slowly straight downward into the supplied flat puddle, remain grounded at y57 throughout. No bouncing, rising, new features or particles. Hold the flattened final pose.",
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 932311
+    },
+    "returnedFrames": 7,
+    "previousJobId": "9490d5b4-d278-4ad7-8e3a-338f19a636fd"
+  },
+  {
+    "monster": "cave_bat",
+    "clip": "walk",
+    "frames": 6,
+    "job_id": "560d98e2-77d9-4175-bee3-4b5aef5c746b",
+    "args": {
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 25108,
+      "action": "Seamless in-place FLAPPING WINGS, LEFT-facing bat. Two wings move up and down with folded membranes, tiny body bobs only2px around y28. Keep full flight silhouette within68px frame. Never walk on feet, never rotate, do not fly toward camera. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+      "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+    },
+    "returnedFrames": 7
+  },
+  {
+    "monster": "cave_bat",
+    "clip": "attack",
+    "frames": 8,
+    "job_id": "f7ac67d6-0d21-4f20-bd14-2bd7f8792a95",
+    "args": {
+      "frame_count": 8,
+      "no_background": true,
+      "seed": 25109,
+      "action": "ONE LEFTWARD flying lunge. Frame0 hover,1 pull wings high,2 windup,3 stretch small muzzle and body6px LEFT at maximum attack contact,4 follow-through,5 flap back,6 recover altitude,7 hover. Same small body, two wings, no projectile or opponent. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+      "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+    },
+    "returnedFrames": 9
+  },
+  {
+    "monster": "cave_bat",
+    "clip": "hit",
+    "frames": 4,
+    "job_id": "e85a3f58-f1db-44c7-87b0-1d5ab7700aaf",
+    "args": {
+      "frame_count": 4,
+      "no_background": true,
+      "seed": 25110,
+      "action": "One brief airborne flinch from LEFT:0 hover,1 recoil slightly right with wings tensed,2 regain balance,3 resume original hover. No fall or turning, keep same flight altitude. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+      "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+    },
+    "returnedFrames": 5
+  },
+  {
+    "monster": "cave_bat",
+    "clip": "down",
+    "frames": 6,
+    "job_id": "928b76ea-ef4a-455b-a3a6-c0c1395ea577",
+    "args": {
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 25111,
+      "action": "Bat loses flight and falls to ground:0 hover,1 wings falter,2 descend halfway with folded wings,3 land gently at ground y57,4 curl folded wings around body,5 remain a small grounded inert bat. No blood. Keep whole bat inside frame. Never rise again. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+      "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+    },
+    "returnedFrames": 7
+  }
+]

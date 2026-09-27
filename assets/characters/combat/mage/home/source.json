@@ -1,0 +1,217 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/combat/mage/home/base",
+    "kind": "characterBase",
+    "animal": false,
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home mage: long wooden staff with round muted violet orb held in RIGHT hand, sage green and blue grey long robe, round shoulder emblem, hood lowered. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+      "width": 32,
+      "height": 48,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1104
+    },
+    "job_id": "c7424bb3-817e-418b-8b7f-2133164bceef",
+    "original_job_id": "80e0eb47-3dd7-4e4e-8e66-e57e56df1ab5",
+    "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+    "animations": {}
+  },
+  "animations": [
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "f1481095-b268-47f2-b4f7-8041b7308fa1",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "f1481095-b268-47f2-b4f7-8041b7308fa1",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "f1481095-b268-47f2-b4f7-8041b7308fa1",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "f1481095-b268-47f2-b4f7-8041b7308fa1",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "attack",
+      "direction": "south",
+      "frames": 8,
+      "prompt": "One staff casting: frames0-3 gather energy, frame4 focus, frame5 release from staff orb, frames6-7 return. Keep orb in same place on staff. No large effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "00eab60d-84b6-456f-a858-cd676483ce08",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "attack",
+      "direction": "east",
+      "frames": 8,
+      "prompt": "One staff casting: frames0-3 gather energy, frame4 focus, frame5 release from staff orb, frames6-7 return. Keep orb in same place on staff. No large effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "00eab60d-84b6-456f-a858-cd676483ce08",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "attack",
+      "direction": "north",
+      "frames": 8,
+      "prompt": "One staff casting: frames0-3 gather energy, frame4 focus, frame5 release from staff orb, frames6-7 return. Keep orb in same place on staff. No large effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "00eab60d-84b6-456f-a858-cd676483ce08",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "attack",
+      "direction": "west",
+      "frames": 8,
+      "prompt": "One staff casting: frames0-3 gather energy, frame4 focus, frame5 release from staff orb, frames6-7 return. Keep orb in same place on staff. No large effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "00eab60d-84b6-456f-a858-cd676483ce08",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "hit",
+      "direction": "south",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "62e9c4e0-32f8-4ab4-a256-355f0de71f54",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "hit",
+      "direction": "east",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "62e9c4e0-32f8-4ab4-a256-355f0de71f54",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "hit",
+      "direction": "north",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "62e9c4e0-32f8-4ab4-a256-355f0de71f54",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "hit",
+      "direction": "west",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "62e9c4e0-32f8-4ab4-a256-355f0de71f54",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "down",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "0a9889d7-f960-41ae-8cb6-8917b2079cb6",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "down",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "0a9889d7-f960-41ae-8cb6-8917b2079cb6",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "down",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "0a9889d7-f960-41ae-8cb6-8917b2079cb6",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/mage/home/base",
+      "character_id": "e6b7be4c-1925-4102-b206-b7ef9e892d67",
+      "name": "down",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "0a9889d7-f960-41ae-8cb6-8917b2079cb6",
+      "submitted": true
+    }
+  ],
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "finalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Mapped RGB to combat_v1 nearest colors without dithering; alpha unchanged.",
+    "Hit generated as four frames (API minimum), selected 0,1,3 to deliver three.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/combat/mage/home/idle_walk.png",
+    "assets/characters/combat/mage/home/attack.png",
+    "assets/characters/combat/mage/home/hit.png",
+    "assets/characters/combat/mage/home/down.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

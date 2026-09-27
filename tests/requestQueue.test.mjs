@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import { RequestQueue } from '../src/llm/RequestQueue.js';
+
+const queue = new RequestQueue({ timeoutMs: 15, capacity: 2 });
+let finish;
+let signal;
+const first = queue.enqueue(s => { signal = s; return new Promise(r => { finish = r; }); });
+let secondStarted = false;
+const second = queue.enqueue(() => { secondStarted = true; return 'second'; });
+await assert.rejects(queue.enqueue(() => 'overflow'), /queue_full/);
+assert.equal(secondStarted, false);
+await assert.rejects(first, /request_timeout/);
+assert.equal(signal.aborted, true);
+assert.equal(await second, 'second');
+finish('late');
+assert.equal(await queue.enqueue(() => 'third'), 'third');
+await assert.rejects(queue.enqueue(() => { throw new Error('bad'); }), /bad/);
+assert.equal(await queue.enqueue(() => 'recovered'), 'recovered');
+const active = queue.enqueue(() => new Promise(() => {}));
+const waiting = queue.enqueue(() => assert.fail('stopped task must not start'));
+queue.stop();
+await assert.rejects(active, /queue_closed/);
+await assert.rejects(waiting, /queue_closed/);
+await assert.rejects(queue.enqueue(() => {}), /queue_closed/);
+console.log('requestQueue: passed');

@@ -1,0 +1,20 @@
+{
+  "file": "assets/tiles/combat-v2/cover_states.png",
+  "width": 48,
+  "height": 48,
+  "frames": 3,
+  "pivot": {
+    "x": 24,
+    "y": 42
+  },
+  "objects": [
+    "67d243e1-4b4a-423a-9d30-48a06f0cfb89",
+    "bf497357-dfc5-453c-ab5c-47095bb23523",
+    "9f6d6d8f-82ae-44f6-b97b-0433c13df78f"
+  ],
+  "states": [
+    "intact",
+    "damaged",
+    "broken"
+  ]
+}

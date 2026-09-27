@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/house_v2_ruins",
+  "frameWidth": 96,
+  "frameHeight": 96,
+  "frames": 1,
+  "sheetWidth": 96,
+  "sheetHeight": 96,
+  "pivot": {
+    "x": 48,
+    "y": 96
+  },
+  "sourceJobId": "8d3a1c54-4b98-4185-a33f-0eab876421f6",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

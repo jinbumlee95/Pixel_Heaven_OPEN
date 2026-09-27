@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixel Heaven · 던전 에셋</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eee5d2;color:#30382f;font:15px system-ui}header,main{padding:20px 24px}header{position:sticky;top:0;background:#eee5d2f2;z-index:2;border-bottom:1px solid #c6bea9}h1{margin:0 0 8px;font-size:24px}p{line-height:1.6;max-width:960px;margin:8px 0}button,select{font:inherit;padding:7px 10px;margin:4px 8px 4px 0;border:1px solid #a0a88d;border-radius:5px;background:#fff9}#cards{display:flex;flex-wrap:wrap;gap:16px}.card{border:1px solid #b6b9a2;background:#fff6;border-radius:8px;padding:12px;max-width:100%;overflow:auto}h2{font-size:18px;margin:0 0 6px}canvas,img{image-rendering:pixelated}.stage{display:block}small{display:block;margin:8px 0;color:#52634e}.icons{display:flex;flex-wrap:wrap;gap:20px;margin:18px 0}.icon{display:grid;justify-items:center;gap:7px}body.gray canvas,body.gray .icons img{filter:grayscale(1)}a{color:#276272}.error{color:#923924}
+</style>
+<header><h1>던전 몬스터 · PixelLab</h1><p>슬라임 · 동굴 박쥐 · 돌 수호자 — 왼쪽을 보는 1방향, 68×68 프레임, 기준점 (34,58). 비교용 용사는 오른쪽을 봅니다.</p>
+<label>동작 <select id="clip"><option value="idle">정지</option><option value="walk">이동</option><option value="attack" selected>공격</option><option value="hit">피격</option><option value="down">쓰러짐</option></select></label>
+<button id="play">일시정지</button><button id="restart">처음부터</button><button id="step">한 프레임</button>
+<label>배율 <select id="scale"><option value="1">100% · 원본</option><option value="2" selected>200% · nearest</option></select></label>
+<label>배경 <select id="bg"><option value="#293731">어두운 동굴</option><option value="#EEE5D2">베이지</option><option value="#7C8B5B">초록 지면</option></select></label>
+<label><input id="gray" type="checkbox">회색조</label></header>
+<main><div id="cards"></div><h2>추가 자원 아이콘</h2><div class="icons" id="icons"></div>
+<p>에셋 검수용 페이지입니다. 실제 던전 엔진을 실행하거나 보상을 지급하지 않습니다. 공격·피격은 마지막 자세에서 멈추며, 쓰러짐은 마지막 프레임을 유지합니다. 다른 동작을 고르거나 ‘처음부터’로 재생할 수 있습니다.</p>
+<a href="../docs/DUNGEON_ASSET_DELIVERY.md">출처와 검증 기록</a> · <a href="production-gallery.html">전체 에셋 미리보기</a></main>
+<script type="module">
+const counts={idle:1,walk:6,attack:8,hit:3,down:6},durations={idle:120,walk:120,attack:120,hit:100,down:140};
+const q=s=>document.querySelector(s);let running=true,elapsed=0,last=performance.now();const actors=[];
+async function load(src){const im=new Image();im.src=src;await im.decode();return im;}
+let hero;try{hero=await load('characters/hero/idle/east.png');}catch{}
+for(const [id,name,body] of [['slime','슬라임','32×24'],['cave_bat','동굴 박쥐','48×28 · 몸통 약 14×16'],['stone_guardian','돌 수호자','44×48']]){
+ const card=document.createElement('article');card.className='card';const title=document.createElement('h2');title.textContent=name;const info=document.createElement('small');info.textContent='기본 몸 범위 '+body;const c=document.createElement('canvas');c.className='stage';c.setAttribute('aria-label',name+' 동작 미리보기');const label=document.createElement('small');card.append(title,info,c,label);q('#cards').append(card);
+ try{const images={};await Promise.all(Object.keys(counts).map(async k=>{images[k]=await load('characters/dungeon/'+id+'/'+k+'.png');}));actors.push({id,c,label,images});}catch(error){label.className='error';label.textContent='이미지 로딩 실패: '+error.message;}
+}
+for(const [id,name] of [['faith','신앙'],['iron','철'],['copper','구리'],['coal','석탄'],['herbs','약초'],['cloth','천'],['silver','은'],['gold','금']]){const wrap=document.createElement('div');wrap.className='icon';const im=new Image();im.src='ui/icon_'+id+'.png';im.alt=name;im.width=48;im.height=48;const label=document.createElement('span');label.textContent=name;wrap.append(im,label);q('#icons').append(wrap);}
+function frame(now){if(running)elapsed+=Math.min(100,now-last);last=now;const clip=q('#clip').value,n=counts[clip],ms=durations[clip],scale=Number(q('#scale').value);const index=clip==='walk'?Math.floor(elapsed/ms)%n:Math.min(n-1,Math.floor(elapsed/ms));
+ for(const a of actors){a.c.width=340*scale;a.c.height=112*scale;const ctx=a.c.getContext('2d');ctx.scale(scale,scale);ctx.imageSmoothingEnabled=false;ctx.fillStyle=q('#bg').value;ctx.fillRect(0,0,340,112);ctx.strokeStyle='#829077';ctx.beginPath();ctx.moveTo(12,95.5);ctx.lineTo(328,95.5);ctx.stroke();if(hero)ctx.drawImage(hero,42,37);ctx.drawImage(a.images[clip],index*68,0,68,68,230,37,68,68);for(const x of [76,264]){ctx.fillStyle='#DEC58B';ctx.fillRect(x-3,95,7,1);ctx.fillRect(x,92,1,7);}a.label.textContent=clip+' · 프레임 '+index+' / '+(n-1)+(clip==='attack'&&index===3?' · 접촉 기준':'')+' · '+ms+'ms';}
+ requestAnimationFrame(frame);}
+requestAnimationFrame(frame);q('#clip').onchange=()=>{elapsed=0;};q('#play').onclick=()=>{running=!running;q('#play').textContent=running?'일시정지':'재생';};q('#restart').onclick=()=>{elapsed=0;running=true;q('#play').textContent='일시정지';};q('#step').onclick=()=>{running=false;q('#play').textContent='재생';const clip=q('#clip').value;elapsed=(Math.floor(elapsed/durations[clip])+1)%counts[clip]*durations[clip];};q('#gray').onchange=e=>document.body.classList.toggle('gray',e.target.checked);
+</script></html>

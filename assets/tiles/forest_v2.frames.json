@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/forest_v2",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frames": 1,
+  "sheetWidth": 64,
+  "sheetHeight": 64,
+  "pivot": {
+    "x": 32,
+    "y": 64
+  },
+  "sourceJobId": "b60bd3d1-0851-4525-b795-0599cdb385ec",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

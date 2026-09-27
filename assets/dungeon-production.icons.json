@@ -1,0 +1,118 @@
+[
+  {
+    "key": "ui/icon_faith",
+    "args": {
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "seed": 24300,
+      "description": "Single readable fantasy RPG resource inventory icon. A small golden radiant light cupping a sage-green worldtree leaf. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "tool": "create_image_pixen",
+    "job_id": "df93e8c0-abab-4c92-a6b7-02dee05a3030"
+  },
+  {
+    "key": "ui/icon_iron",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/41a8cf28-4e2d-4b62-b744-a7a7cc971b3b/download",
+      "description": "Replace the ore rock with ONE horizontal iron INGOT. A blue-grey trapezoidal rectangular metal bar, flat bright top plane and dark side faces. Clearly a refined bar, not a rock, with its whole silhouette inside16x16. Crisp pixel art, dark outline, truly TRANSPARENT background, no base, scene, numbers or letters.",
+      "width": 16,
+      "height": 16,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "job_id": "7fba3688-fde8-4826-9c11-dec2b465c3a9",
+    "previousJob": "41a8cf28-4e2d-4b62-b744-a7a7cc971b3b"
+  },
+  {
+    "key": "ui/icon_copper",
+    "args": {
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "seed": 24302,
+      "description": "Single readable fantasy RPG resource inventory icon. One rough reddish copper ore chunk with a small open curved ring of native copper, irregular silhouette unlike an ingot. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "tool": "create_image_pixen",
+    "job_id": "eacf2dda-373c-461c-a9b9-4b62c113a836"
+  },
+  {
+    "key": "ui/icon_coal",
+    "args": {
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "seed": 24303,
+      "description": "Single readable fantasy RPG resource inventory icon. One irregular jagged black charcoal lump with grey faceted highlights. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "tool": "create_image_pixen",
+    "job_id": "984f91b4-090a-446c-8174-41dbe599b486"
+  },
+  {
+    "key": "ui/icon_herbs",
+    "args": {
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "seed": 24304,
+      "description": "Single readable fantasy RPG resource inventory icon. Three sage-green medicinal leaves tied together by a small ochre cord. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "tool": "create_image_pixen",
+    "job_id": "6d86b692-b760-43f1-82ff-58c48120d3a8"
+  },
+  {
+    "key": "ui/icon_cloth",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/b4fecd02-9657-4bcf-8b62-43c2a3e6a1a1/download",
+      "description": "Remove the entire dark rectangular/checkered background. Keep ONLY one folded cream cloth roll with blue-grey folds and a curled end, softly dimensional pixel art. Entire cloth inside16x16, truly TRANSPARENT background, no frame or tile or text.",
+      "width": 16,
+      "height": 16,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "job_id": "e210306c-9205-41ef-9908-2b93d177df79",
+    "previousJob": "b4fecd02-9657-4bcf-8b62-43c2a3e6a1a1"
+  },
+  {
+    "key": "ui/icon_silver",
+    "args": {
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "seed": 24306,
+      "description": "Single readable fantasy RPG resource inventory icon. A short stack of three bright silver coins with round silhouettes. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "tool": "create_image_pixen",
+    "job_id": "4b3c7a5b-691e-4cc9-99dc-23aa04ef6727"
+  },
+  {
+    "key": "ui/icon_gold",
+    "args": {
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "seed": 24307,
+      "description": "Single readable fantasy RPG resource inventory icon. One golden bullion bar with a small round embossed seal on its upper face. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "tool": "create_image_pixen",
+    "job_id": "e7685356-1d21-4f5a-939d-136ebef5d051"
+  }
+]

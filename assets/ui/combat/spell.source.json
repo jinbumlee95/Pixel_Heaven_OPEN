@@ -1,0 +1,575 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "c2450f41-c25b-4895-bf19-d9092dd485bd",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        32
+      ],
+      "frame_count": 6,
+      "durations_ms": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "columns": 6,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 7,
+                  "color": "dark"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 5,
+                  "color": "violet"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    14,
+                    14
+                  ],
+                  "radius": 3,
+                  "color": "gold"
+                },
+                {
+                  "op": "pixels",
+                  "pixels": [
+                    [
+                      5,
+                      10,
+                      "gold"
+                    ],
+                    [
+                      23,
+                      20,
+                      "white"
+                    ]
+                  ]
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 8,
+                  "color": "dark"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 6,
+                  "color": "violet"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    14,
+                    14
+                  ],
+                  "radius": 3,
+                  "color": "gold"
+                },
+                {
+                  "op": "pixels",
+                  "pixels": [
+                    [
+                      6,
+                      10,
+                      "gold"
+                    ],
+                    [
+                      23,
+                      21,
+                      "white"
+                    ]
+                  ]
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 9,
+                  "color": "dark"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 7,
+                  "color": "violet"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    14,
+                    14
+                  ],
+                  "radius": 3,
+                  "color": "gold"
+                },
+                {
+                  "op": "pixels",
+                  "pixels": [
+                    [
+                      7,
+                      10,
+                      "gold"
+                    ],
+                    [
+                      23,
+                      22,
+                      "white"
+                    ]
+                  ]
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 7,
+                  "color": "dark"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 5,
+                  "color": "violet"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    14,
+                    14
+                  ],
+                  "radius": 3,
+                  "color": "gold"
+                },
+                {
+                  "op": "pixels",
+                  "pixels": [
+                    [
+                      8,
+                      10,
+                      "gold"
+                    ],
+                    [
+                      23,
+                      23,
+                      "white"
+                    ]
+                  ]
+                }
+              ],
+              "visible": false
+            },
+            "f4": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 8,
+                  "color": "dark"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 6,
+                  "color": "violet"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    14,
+                    14
+                  ],
+                  "radius": 3,
+                  "color": "gold"
+                },
+                {
+                  "op": "pixels",
+                  "pixels": [
+                    [
+                      9,
+                      10,
+                      "gold"
+                    ],
+                    [
+                      23,
+                      24,
+                      "white"
+                    ]
+                  ]
+                }
+              ],
+              "visible": false
+            },
+            "f5": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 9,
+                  "color": "dark"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    16,
+                    16
+                  ],
+                  "radius": 7,
+                  "color": "violet"
+                },
+                {
+                  "op": "circle",
+                  "center": [
+                    14,
+                    14
+                  ],
+                  "radius": 3,
+                  "color": "gold"
+                },
+                {
+                  "op": "pixels",
+                  "pixels": [
+                    [
+                      10,
+                      10,
+                      "gold"
+                    ],
+                    [
+                      23,
+                      25,
+                      "white"
+                    ]
+                  ]
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f4",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  true
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f5",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "frameCount": 6,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [
+    "Lossless grid repacking; original retained as spell.raw.png"
+  ],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/c2450f41-c25b-4895-bf19-d9092dd485bd/assets/south/full.png",
+  "finalDimensions": [
+    192,
+    32
+  ]
+}

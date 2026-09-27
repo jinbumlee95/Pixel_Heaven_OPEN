@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/smoke_particle",
+  "frameWidth": 16,
+  "frameHeight": 16,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 8,
+    "y": 8
+  },
+  "sheetWidth": 16,
+  "sheetHeight": 16,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "8c55f0b3-3f90-4f0e-88ff-dd2affa8fc1c"
+}

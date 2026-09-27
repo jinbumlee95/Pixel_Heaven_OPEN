@@ -1,0 +1,35 @@
+{
+  "key": "characters/merchant",
+  "kind": "characterBase",
+  "animal": false,
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Traveling merchant, warm ochre coat, blue scarf, small satchel, friendly bearded face, no cart, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+    "width": 32,
+    "height": 48,
+    "direction": "south",
+    "view": "low top-down",
+    "no_background": true,
+    "detail": "medium detail",
+    "outline": "selective outline",
+    "seed": 1106
+  },
+  "job_id": "eec0dab1-eb49-4222-a97e-4dc3f8926967",
+  "response": "id: eec0dab1-eb49-4222-a97e-4dc3f8926967\njob_id: eec0dab1-eb49-4222-a97e-4dc3f8926967\nmodel: pixen\ndescription: Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Traveling merchant, warm ochre coat, blue scarf, small satchel, friendly bearded face, no cart, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.\nsize: 32x48px\ntransparent: True\nasset_id: 355a5221-65c0-5905-b8ef-3a993cf3399d\nasset_status: pending (saved when generation completes)\nseed: 1106\ncost: 1 generation\nstatus: processing (~10-40s)\n\nhint: get_image(job_id=\"eec0dab1-eb49-4222-a97e-4dc3f8926967\")",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "postProcessing": [
+    "Lossless south rotation extraction after fixed per-direction foot alignment. Generated base retained under production-originals."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/merchant.png"
+  ],
+  "selectedOutput": "rotations/south.png from the matching animated character export",
+  "animationProvenance": "assets/characters/merchant/source.json"
+}

@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/ground_snow",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "073dad0b-3df0-42aa-9503-e6412042b83c"
+}

@@ -1,0 +1,40 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench exact edits",
+  "createdAt": "2026-09-23",
+  "derivedFrom": "assets/characters/combat/swordsman/home",
+  "palette": "combat_v1",
+  "referenceRightsBasis": "Project-owned generated home sheets; unchanged geometry.",
+  "postProcessing": [
+    "Exact sage/blue to terracotta/sand color mapping in PixelLab.",
+    "V emblems patched inside inspected cloth pixels when three-pixel coverage exists. Tiny or occluded poses use companion enemy side badge.",
+    "Lossless idle extraction."
+  ],
+  "jobs": [
+    {
+      "role": "swordsman",
+      "name": "idle_walk",
+      "id": "1f479025-5e78-435b-807d-29350353f36e",
+      "markedFrames": 7
+    },
+    {
+      "role": "swordsman",
+      "name": "attack",
+      "id": "9d622ad1-c857-4c3e-afc3-fa0cd38192da",
+      "markedFrames": 18
+    },
+    {
+      "role": "swordsman",
+      "name": "hit",
+      "id": "85f8bc4c-a6bf-4375-a6c4-5d620092d841",
+      "markedFrames": 3
+    },
+    {
+      "role": "swordsman",
+      "name": "down",
+      "id": "c272784e-5328-46a9-9e66-ba99907e6260",
+      "markedFrames": 12
+    }
+  ],
+  "integrationEnabled": false
+}

@@ -1,0 +1,173 @@
+{
+  "character": {
+    "id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+    "name": "Idle",
+    "prompt": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home archer: long wooden bow in LEFT hand, RIGHT hand free to draw string, quiver on back, sage green tunic, blue grey cape, round shoulder emblem. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+    "size": {
+      "width": 32,
+      "height": 48
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Pixel_Heaven_characters-Idle.png",
+    "cell_size": {
+      "width": 68,
+      "height": 68
+    },
+    "sheet_size": {
+      "width": 544,
+      "height": 1156
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_down",
+        "animation_group_id": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_down",
+        "animation_group_id": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_down",
+        "animation_group_id": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_down",
+        "animation_group_id": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+        "direction": "west"
+      },
+      {
+        "row": 5,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "production_hit",
+        "animation_group_id": "b6698199-298e-45fa-b639-5e3c231c466b",
+        "direction": "south"
+      },
+      {
+        "row": 6,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "production_hit",
+        "animation_group_id": "b6698199-298e-45fa-b639-5e3c231c466b",
+        "direction": "east"
+      },
+      {
+        "row": 7,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "production_hit",
+        "animation_group_id": "b6698199-298e-45fa-b639-5e3c231c466b",
+        "direction": "north"
+      },
+      {
+        "row": 8,
+        "type": "animation",
+        "frame_count": 4,
+        "animation": "production_hit",
+        "animation_group_id": "b6698199-298e-45fa-b639-5e3c231c466b",
+        "direction": "west"
+      },
+      {
+        "row": 9,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+        "direction": "south"
+      },
+      {
+        "row": 10,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+        "direction": "east"
+      },
+      {
+        "row": 11,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+        "direction": "north"
+      },
+      {
+        "row": 12,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+        "direction": "west"
+      },
+      {
+        "row": 13,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_attack",
+        "animation_group_id": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+        "direction": "south"
+      },
+      {
+        "row": 14,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_attack",
+        "animation_group_id": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+        "direction": "east"
+      },
+      {
+        "row": 15,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_attack",
+        "animation_group_id": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+        "direction": "north"
+      },
+      {
+        "row": 16,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_attack",
+        "animation_group_id": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-23T02:11:58.705685+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/ground_dry",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "cc2d42cc-db59-43ba-a082-21e63f2959f0"
+}

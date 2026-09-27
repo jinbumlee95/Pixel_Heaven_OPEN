@@ -1,0 +1,46 @@
+[
+  {
+    "monster": "slime",
+    "clip": "down",
+    "frames": 6,
+    "job_id": "315740b1-107c-47d8-b0f1-f0a01b2482bd",
+    "args": {
+      "firstFrameFile": "assets/characters/dungeon/slime/idle.png",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/8f1b951a-5653-4a69-8975-61d573054617/download",
+      "action": "Collapse slowly straight downward into the supplied flat puddle, remain grounded at y57 throughout. No bouncing, rising, new features or particles. Hold the flattened final pose.",
+      "frame_count": 6,
+      "no_background": true,
+      "seed": 932311
+    },
+    "returnedFrames": 7
+  },
+  {
+    "monster": "slime",
+    "clip": "attack_out",
+    "frames": 4,
+    "job_id": "8721be84-7b73-4420-958d-5cd8add0bcc0",
+    "args": {
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ef7f9202-92cf-4838-81b1-f5b54856f6d1/download",
+      "action": "Compress slightly then stretch horizontally LEFT into the provided grounded ram contact pose. Base stays on ground y57, never leap upwards. Finish at maximum leftward extension.",
+      "frame_count": 4,
+      "no_background": true,
+      "seed": 932312,
+      "firstFrameFile": "assets/characters/dungeon/slime/idle.png"
+    }
+  },
+  {
+    "monster": "slime",
+    "clip": "attack_back",
+    "frames": 4,
+    "job_id": "5567f52a-c9c2-4df6-b9f3-27593eddc02b",
+    "args": {
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ef7f9202-92cf-4838-81b1-f5b54856f6d1/download",
+      "action": "Recover from the leftward ram, retract smoothly RIGHT into the supplied original idle pose. Stay on ground y57, no upward jump or extra features.",
+      "frame_count": 4,
+      "no_background": true,
+      "seed": 932313,
+      "lastFrameFile": "assets/characters/dungeon/slime/idle.png"
+    },
+    "returnedFrames": 5
+  }
+]

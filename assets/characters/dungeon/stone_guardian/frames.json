@@ -1,0 +1,69 @@
+{
+  "assetId": "dungeon.stone_guardian",
+  "frameDimensions": {
+    "width": 68,
+    "height": 68
+  },
+  "bodyDimensions": [
+    44,
+    48
+  ],
+  "pivot": {
+    "x": 34,
+    "y": 58
+  },
+  "directionOrder": [
+    "west"
+  ],
+  "actionRows": {
+    "west": 0
+  },
+  "paths": {
+    "idle": "assets/characters/dungeon/stone_guardian/idle.png",
+    "walk": "assets/characters/dungeon/stone_guardian/walk.png",
+    "attack": "assets/characters/dungeon/stone_guardian/attack.png",
+    "hit": "assets/characters/dungeon/stone_guardian/hit.png",
+    "down": "assets/characters/dungeon/stone_guardian/down.png"
+  },
+  "frameCounts": {
+    "idle": 1,
+    "walk": 6,
+    "attack": 8,
+    "hit": 3,
+    "down": 6
+  },
+  "frameDurationsMs": {
+    "idle": 120,
+    "walk": 120,
+    "attack": 120,
+    "hit": 100,
+    "down": 140
+  },
+  "loopAndHoldPolicy": {
+    "idle": "hold",
+    "walk": "loop",
+    "attack": "once",
+    "hit": "once",
+    "down": "hold-last"
+  },
+  "visualMarker": {
+    "name": "contact",
+    "frame": 3
+  },
+  "palette": "combat_v1",
+  "paletteHex": [
+    "#2E342F",
+    "#454C43",
+    "#E9DDC6",
+    "#CBBDA2",
+    "#BAC4C1",
+    "#7B9299",
+    "#4D626B",
+    "#9A9B88",
+    "#676F63",
+    "#DEC58B",
+    "#AF9254",
+    "#5D4D3B"
+  ],
+  "integrationEnabled": false
+}

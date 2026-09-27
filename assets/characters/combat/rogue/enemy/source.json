@@ -1,0 +1,41 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench exact edits",
+  "createdAt": "2026-09-23",
+  "derivedFrom": "assets/characters/combat/rogue/home",
+  "palette": "combat_v1",
+  "referenceRightsBasis": "Project-owned generated home sheets; unchanged geometry.",
+  "postProcessing": [
+    "Exact sage/blue to terracotta/sand color mapping in PixelLab.",
+    "V emblems patched inside inspected cloth pixels when three-pixel coverage exists. Tiny or occluded poses use companion enemy side badge.",
+    "Lossless idle extraction.",
+    "Rogue violet hood colors also map to enemy terracotta to distinguish sides without changing skin or steel."
+  ],
+  "jobs": [
+    {
+      "role": "rogue",
+      "name": "idle_walk",
+      "id": "e3988e9b-d3cd-498b-8303-3a489bda3b99",
+      "markedFrames": 28
+    },
+    {
+      "role": "rogue",
+      "name": "attack",
+      "id": "2f7ceb6c-410c-4f28-95ad-316cb29626cd",
+      "markedFrames": 24
+    },
+    {
+      "role": "rogue",
+      "name": "hit",
+      "id": "adf993b3-d642-4133-a194-37248993551d",
+      "markedFrames": 12
+    },
+    {
+      "role": "rogue",
+      "name": "down",
+      "id": "81767576-0593-46a0-9ff2-e580379f0718",
+      "markedFrames": 24
+    }
+  ],
+  "integrationEnabled": false
+}

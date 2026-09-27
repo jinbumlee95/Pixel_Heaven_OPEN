@@ -1,0 +1,175 @@
+{
+  "provider": "PixelLab.ai",
+  "date": "2026-09-25",
+  "processing": "Original transparent PNGs. No pixel edits or resizing. UI renders at integer half/native scale; grid rectangles and grade borders are code.",
+  "objects": {
+    "shortblade": {
+      "id": "53f0501d-6d59-473a-8ad7-3e1a3084c732",
+      "nativeCanvas": [
+        32,
+        64
+      ],
+      "alphaBounds": [
+        8,
+        3,
+        24,
+        61
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "saber": {
+      "id": "7a198796-4ff2-4e6e-beda-09989eb039c3",
+      "nativeCanvas": [
+        32,
+        64
+      ],
+      "alphaBounds": [
+        11,
+        8,
+        21,
+        57
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "mace": {
+      "id": "ac00dc50-9d2d-434e-8100-4541413ad6f0",
+      "nativeCanvas": [
+        32,
+        64
+      ],
+      "alphaBounds": [
+        5,
+        5,
+        27,
+        58
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "greatsword": {
+      "id": "143b45ad-245f-446e-9639-8626b85c8f40",
+      "nativeCanvas": [
+        32,
+        64
+      ],
+      "alphaBounds": [
+        6,
+        4,
+        28,
+        60
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "runeblade": {
+      "id": "d5e8ebc1-cc83-4489-b16e-46b5f73a75ac",
+      "nativeCanvas": [
+        32,
+        64
+      ],
+      "alphaBounds": [
+        9,
+        4,
+        23,
+        60
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "lightarmor": {
+      "id": "008b15ca-0849-494c-8580-1aeb593b1c90",
+      "nativeCanvas": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        6,
+        6,
+        58,
+        58
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "plate": {
+      "id": "a95d2cb3-cfba-43b4-89e1-f69a9ac321e8",
+      "nativeCanvas": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        5,
+        7,
+        59,
+        59
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "ember": {
+      "id": "6910f447-e700-41b8-ac49-58f29de11384",
+      "nativeCanvas": [
+        32,
+        32
+      ],
+      "alphaBounds": [
+        8,
+        2,
+        24,
+        30
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "ward": {
+      "id": "af0b54a3-0ecc-438e-99db-932a25e853e8",
+      "nativeCanvas": [
+        32,
+        32
+      ],
+      "alphaBounds": [
+        6,
+        1,
+        26,
+        30
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "pathfinder": {
+      "id": "798db524-16f5-4ce4-bda4-d5d8ac66b15d",
+      "nativeCanvas": [
+        32,
+        32
+      ],
+      "alphaBounds": [
+        6,
+        3,
+        26,
+        28
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "dawnblade": {
+      "id": "4d733638-86ef-40a0-b7ae-58d6130c1b2e",
+      "nativeCanvas": [
+        32,
+        64
+      ],
+      "alphaBounds": [
+        7,
+        3,
+        25,
+        60
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    },
+    "worldheart": {
+      "id": "921b8a96-ad71-482d-9501-5f79bdf84e23",
+      "nativeCanvas": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        6,
+        3,
+        57,
+        61
+      ],
+      "pivot": "center (inventory icon, no map footprint)"
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/combat/archer/home/base",
+    "kind": "characterBase",
+    "animal": false,
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Home archer: long wooden bow in LEFT hand, RIGHT hand free to draw string, quiver on back, sage green tunic, blue grey cape, round shoulder emblem. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing. Use only combat_v1 colors: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E",
+      "width": 32,
+      "height": 48,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1103
+    },
+    "job_id": "0b9690d7-7e0f-4389-82ad-82d3a6296172",
+    "original_job_id": "7c17c622-da3c-40b9-a106-76de1c35aab2",
+    "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+    "rotationArgs": {
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/0b9690d7-7e0f-4389-82ad-82d3a6296172/download",
+      "size": 48,
+      "n_directions": 8,
+      "name": "Pixel Heaven characters/combat/archer/home/base",
+      "view": "low top-down",
+      "body_type": "humanoid"
+    },
+    "animations": {}
+  },
+  "animations": [
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "cd3eb690-a86b-4a39-b4b9-c59a49522c2e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "attack",
+      "direction": "south",
+      "frames": 8,
+      "prompt": "One bow shot: frames0-3 nock arrow and pull string to cheek, frame4 RELEASE string visibly, frames5-7 recover. Preserve bow curve and quiver. No flying projectile; separate effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "attack",
+      "direction": "east",
+      "frames": 8,
+      "prompt": "One bow shot: frames0-3 nock arrow and pull string to cheek, frame4 RELEASE string visibly, frames5-7 recover. Preserve bow curve and quiver. No flying projectile; separate effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "attack",
+      "direction": "north",
+      "frames": 8,
+      "prompt": "One bow shot: frames0-3 nock arrow and pull string to cheek, frame4 RELEASE string visibly, frames5-7 recover. Preserve bow curve and quiver. No flying projectile; separate effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "attack",
+      "direction": "west",
+      "frames": 8,
+      "prompt": "One bow shot: frames0-3 nock arrow and pull string to cheek, frame4 RELEASE string visibly, frames5-7 recover. Preserve bow curve and quiver. No flying projectile; separate effect. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "fcdc8e7d-5157-4134-b97a-7a06f04b749e",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "hit",
+      "direction": "south",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "b6698199-298e-45fa-b639-5e3c231c466b",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "hit",
+      "direction": "east",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "b6698199-298e-45fa-b639-5e3c231c466b",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "hit",
+      "direction": "north",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "b6698199-298e-45fa-b639-5e3c231c466b",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "hit",
+      "direction": "west",
+      "frames": 4,
+      "prompt": "One brief non-bloody hit reaction: initial recoil, flinch, settle into a hunched stunned pose and HOLD it at final frame. No knockback translation. Keep all equipment. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "b6698199-298e-45fa-b639-5e3c231c466b",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "down",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "down",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "down",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+      "submitted": true
+    },
+    {
+      "key": "characters/combat/archer/home/base",
+      "character_id": "1dd03090-eea1-43b5-b73a-28d2f4e282c3",
+      "name": "down",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Lose balance and fall onto the ground in place, frames0-4 collapse to knees and then lie on side, frame5 fully fallen motionless. Do NOT get up or loop to standing. Keep visible equipment, no gore, no blood. Ground anchor fixed. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "8f1fef0a-8104-47a7-91fb-b2d63041ff25",
+      "submitted": true
+    }
+  ],
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "finalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Mapped RGB to combat_v1 nearest colors without dithering; alpha unchanged.",
+    "Hit generated as four frames (API minimum), selected 0,1,3 to deliver three.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/combat/archer/home/idle_walk.png",
+    "assets/characters/combat/archer/home/attack.png",
+    "assets/characters/combat/archer/home/hit.png",
+    "assets/characters/combat/archer/home/down.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

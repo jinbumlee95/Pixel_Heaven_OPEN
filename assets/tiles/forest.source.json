@@ -1,0 +1,17 @@
+{
+  "provider": "PixelLab",
+  "tool": "create_image_pixflux",
+  "job_id": "fef1805b-ce2c-48ff-bc81-f3da6216ece0",
+  "created": "2026-09-22",
+  "file": "forest.png",
+  "width": 32,
+  "height": 32,
+  "transparent": true,
+  "seed": 922,
+  "generations": 1,
+  "prompt": "Single small oak tree game map prop, high top-down 3/4 view for a cozy medieval village simulation. Round clustered muted forest-green canopy, a short warm brown trunk visible at bottom, subtle upper-left light, crisp readable pixel clusters, restrained earthy palette, no grass tile, no ground plane, no text, no border. Entire tree centered with 2 pixel transparent margin. One tree only.",
+  "view": "high top-down",
+  "detail": "low detail",
+  "shading": "basic shading",
+  "outline": "selective outline"
+}

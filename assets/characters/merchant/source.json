@@ -1,0 +1,87 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/merchant",
+    "kind": "characterBase",
+    "animal": false,
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Traveling merchant, warm ochre coat, blue scarf, small satchel, friendly bearded face, no cart, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+      "width": 32,
+      "height": 48,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1106
+    },
+    "job_id": "eec0dab1-eb49-4222-a97e-4dc3f8926967",
+    "character_id": "7143f4e5-7bba-40f0-bf2e-8750ae102ed1",
+    "animations": {}
+  },
+  "animations": [
+    {
+      "key": "characters/merchant",
+      "character_id": "7143f4e5-7bba-40f0-bf2e-8750ae102ed1",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "16bc2879-7a65-41c9-97af-1547b648f818",
+      "submitted": true
+    },
+    {
+      "key": "characters/merchant",
+      "character_id": "7143f4e5-7bba-40f0-bf2e-8750ae102ed1",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "16bc2879-7a65-41c9-97af-1547b648f818",
+      "submitted": true
+    },
+    {
+      "key": "characters/merchant",
+      "character_id": "7143f4e5-7bba-40f0-bf2e-8750ae102ed1",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "16bc2879-7a65-41c9-97af-1547b648f818",
+      "submitted": true
+    },
+    {
+      "key": "characters/merchant",
+      "character_id": "7143f4e5-7bba-40f0-bf2e-8750ae102ed1",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "16bc2879-7a65-41c9-97af-1547b648f818",
+      "submitted": true
+    }
+  ],
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "finalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/merchant/walk.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

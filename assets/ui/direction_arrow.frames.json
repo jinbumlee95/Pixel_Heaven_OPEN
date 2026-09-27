@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/direction_arrow",
+  "frameWidth": 24,
+  "frameHeight": 24,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 12,
+    "y": 12
+  },
+  "sheetWidth": 24,
+  "sheetHeight": 24,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "9924c88b-b0fc-484a-b9a2-ca6740e223b8"
+}

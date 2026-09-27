@@ -1,0 +1,117 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + edit_image_pixen background cleanup + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/villager_b",
+    "kind": "characterBase",
+    "animal": false,
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 48,
+      "no_background": true
+    },
+    "job_id": "0c45663c-ee32-4522-b402-e8f0a7cc6f96",
+    "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+    "rotationArgs": {
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+      "size": 48,
+      "n_directions": 8,
+      "name": "Pixel Heaven characters/villager_b",
+      "view": "low top-down",
+      "body_type": "humanoid"
+    },
+    "animations": {},
+    "rejected_character_id": "31cfc388-2f91-4e99-86f0-590382970b24",
+    "original_job_id": "6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c",
+    "cleanup": {
+      "image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 48,
+      "no_background": true
+    },
+    "originalBaseArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Adult female villager, tied dark hair, ochre work tunic, dark trousers and boots, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+      "width": 32,
+      "height": 48,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1101
+    },
+    "tool": "edit_image_pixen"
+  },
+  "animations": [
+    {
+      "key": "characters/villager_b",
+      "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "b0cb583f-11a6-491b-bc2d-d9ac31cb3aa0",
+      "group": "725850f8-9592-4a2d-8d13-af38cc712048"
+    },
+    {
+      "key": "characters/villager_b",
+      "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "b0cb583f-11a6-491b-bc2d-d9ac31cb3aa0",
+      "group": "725850f8-9592-4a2d-8d13-af38cc712048"
+    },
+    {
+      "key": "characters/villager_b",
+      "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "submitted": true,
+      "previousGroup": "b0cb583f-11a6-491b-bc2d-d9ac31cb3aa0",
+      "group": "725850f8-9592-4a2d-8d13-af38cc712048"
+    },
+    {
+      "key": "characters/villager_b",
+      "character_id": "b8bc7d71-f034-4ee0-adb7-a060aa09bfe4",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "b0cb583f-11a6-491b-bc2d-d9ac31cb3aa0",
+      "group": "725850f8-9592-4a2d-8d13-af38cc712048"
+    }
+  ],
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "finalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/villager_b/walk.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

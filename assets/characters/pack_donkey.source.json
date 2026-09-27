@@ -1,0 +1,30 @@
+{
+  "key": "characters/pack_donkey",
+  "job_id": "3a148d56-e391-46ab-a55a-6dbbd7d22b6e",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/f3e6331a-c8e5-4750-a980-1497613d275d/download",
+    "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+    "width": 32,
+    "height": 32,
+    "no_background": true
+  },
+  "tool": "edit_image_pixen",
+  "original_job_id": "f3e6331a-c8e5-4750-a980-1497613d275d",
+  "old_character_id": "e702649f-f4e9-498e-810e-d13c35cf27bf",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "postProcessing": [
+    "Lossless south rotation extraction after fixed per-direction foot alignment. Generated base retained under production-originals."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/pack_donkey.png"
+  ],
+  "selectedOutput": "rotations/south.png from the matching animated character export",
+  "animationProvenance": "assets/characters/pack_donkey/source.json"
+}

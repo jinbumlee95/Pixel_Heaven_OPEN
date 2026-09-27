@@ -1,0 +1,661 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "14ebacfc-ffa6-4772-bf3f-840b14165d63",
+  "recipe": {
+    "job": {
+      "canvas": [
+        48,
+        48
+      ],
+      "frame_count": 5,
+      "durations_ms": [
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "columns": 5,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "rect",
+                  "box": [
+                    9,
+                    32,
+                    11,
+                    34
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    14,
+                    28,
+                    16,
+                    30
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    19,
+                    26,
+                    21,
+                    28
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    24,
+                    25,
+                    26,
+                    27
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    29,
+                    26,
+                    31,
+                    28
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    34,
+                    29,
+                    36,
+                    31
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    39,
+                    33,
+                    41,
+                    35
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "ellipse",
+                  "box": [
+                    12,
+                    40,
+                    36,
+                    44
+                  ],
+                  "color": "stone"
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "rect",
+                  "box": [
+                    8,
+                    33,
+                    10,
+                    35
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    15,
+                    29,
+                    17,
+                    31
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    18,
+                    27,
+                    20,
+                    29
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    28,
+                    27,
+                    30,
+                    29
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    35,
+                    30,
+                    37,
+                    32
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    38,
+                    33,
+                    40,
+                    35
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "ellipse",
+                  "box": [
+                    11,
+                    39,
+                    37,
+                    44
+                  ],
+                  "color": "stone"
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "rect",
+                  "box": [
+                    7,
+                    33,
+                    9,
+                    35
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    16,
+                    30,
+                    18,
+                    32
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    17,
+                    28,
+                    19,
+                    30
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    26,
+                    27,
+                    28,
+                    29
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    27,
+                    28,
+                    29,
+                    30
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    36,
+                    30,
+                    38,
+                    32
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    37,
+                    34,
+                    39,
+                    36
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "ellipse",
+                  "box": [
+                    10,
+                    38,
+                    38,
+                    44
+                  ],
+                  "color": "stone"
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "rect",
+                  "box": [
+                    6,
+                    33,
+                    8,
+                    35
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    17,
+                    31,
+                    19,
+                    33
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    16,
+                    29,
+                    18,
+                    31
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    27,
+                    28,
+                    29,
+                    30
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    26,
+                    29,
+                    28,
+                    31
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    37,
+                    31,
+                    39,
+                    33
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    36,
+                    34,
+                    38,
+                    36
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "ellipse",
+                  "box": [
+                    9,
+                    37,
+                    39,
+                    44
+                  ],
+                  "color": "stone"
+                }
+              ],
+              "visible": false
+            },
+            "f4": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "rect",
+                  "box": [
+                    5,
+                    34,
+                    7,
+                    36
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    18,
+                    31,
+                    20,
+                    33
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    15,
+                    30,
+                    17,
+                    32
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    25,
+                    30,
+                    27,
+                    32
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    38,
+                    32,
+                    40,
+                    34
+                  ],
+                  "color": "wood"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    35,
+                    34,
+                    37,
+                    36
+                  ],
+                  "color": "stone"
+                },
+                {
+                  "op": "ellipse",
+                  "box": [
+                    8,
+                    36,
+                    40,
+                    44
+                  ],
+                  "color": "stone"
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ],
+                [
+                  5,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f4",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    48,
+    48
+  ],
+  "frameCount": 5,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [
+    "Lossless grid repacking; original retained as breach.raw.png"
+  ],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/14ebacfc-ffa6-4772-bf3f-840b14165d63/assets/south/full.png",
+  "finalDimensions": [
+    240,
+    48
+  ]
+}

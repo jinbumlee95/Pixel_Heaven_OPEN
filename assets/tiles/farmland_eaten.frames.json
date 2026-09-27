@@ -1,0 +1,16 @@
+{
+  "assetId": "tiles/farmland_eaten",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "e1862bdb-be50-419d-aef0-7fb8e3d5b7a7"
+}

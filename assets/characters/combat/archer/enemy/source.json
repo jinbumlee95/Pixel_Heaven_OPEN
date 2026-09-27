@@ -1,0 +1,40 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench exact edits",
+  "createdAt": "2026-09-23",
+  "derivedFrom": "assets/characters/combat/archer/home",
+  "palette": "combat_v1",
+  "referenceRightsBasis": "Project-owned generated home sheets; unchanged geometry.",
+  "postProcessing": [
+    "Exact sage/blue to terracotta/sand color mapping in PixelLab.",
+    "V emblems patched inside inspected cloth pixels when three-pixel coverage exists. Tiny or occluded poses use companion enemy side badge.",
+    "Lossless idle extraction."
+  ],
+  "jobs": [
+    {
+      "role": "archer",
+      "name": "idle_walk",
+      "id": "e5c57a39-bf4d-4570-b555-71edfee663aa",
+      "markedFrames": 28
+    },
+    {
+      "role": "archer",
+      "name": "attack",
+      "id": "64dcdb10-e560-463f-a98f-18017bda62f9",
+      "markedFrames": 32
+    },
+    {
+      "role": "archer",
+      "name": "hit",
+      "id": "c7e5ecdf-b0ac-4e79-b251-b69228d651e1",
+      "markedFrames": 12
+    },
+    {
+      "role": "archer",
+      "name": "down",
+      "id": "2700e529-006e-4d9c-906a-bb3be5c4e7ec",
+      "markedFrames": 23
+    }
+  ],
+  "integrationEnabled": false
+}

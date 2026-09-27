@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사제 · 4방향 걷기</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#14221b;color:#f4edda;font:16px/1.6 system-ui,sans-serif}main{max-width:1040px;margin:auto;padding:40px 24px}h1{margin:0}p{color:#c4c7b7}section{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}article{background:#22362a;border:1px solid #486047;border-radius:12px;padding:18px;text-align:center}.stage{height:240px;display:grid;place-items:center;background:repeating-conic-gradient(#2b3d31 0% 25%,#354a3b 0% 50%) 0/16px 16px;border-radius:8px}img{image-rendering:pixelated;max-width:100%;object-fit:contain}button{font:inherit;background:#ecd7a3;color:#263022;border:0;border-radius:6px;padding:8px 18px;cursor:pointer;margin:0 12px 24px 0}h2{font-size:18px}a{color:#ecd7a3}#status{min-height:28px}
+</style>
+<main><h1>사제 · 4방향 걷기</h1><p>금발과 분홍빛 머리끝 · 흰색과 금색 사제복 · 태양 지팡이</p><button id="toggle">일시 정지</button><button id="mode">정지 자세 보기</button><p id="status" role="status">이미지 불러오는 중…</p><section id="directions"></section><p><a href="priest.png" download>최초 정면 시안 (32×48 PNG)</a></p></main>
+<script type="module">
+const labels={south:'아래 ↓',west:'왼쪽 ←',east:'오른쪽 →',north:'위 ↑'};
+let playing=true, walking=true, elapsed=0, previous=performance.now();
+const cards=[];
+document.querySelector('#toggle').onclick=event=>{playing=!playing;event.target.textContent=playing?'일시 정지':'재생';};
+document.querySelector('#mode').onclick=event=>{walking=!walking;event.target.textContent=walking?'정지 자세 보기':'걷기 보기';};
+try {
+  const data={"frameWidth":32,"frameHeight":48,"frameDurationMs":120,"directions":{"south":{"idle":"priest/rotations/south.png","walk":["priest/walk/south/0.png","priest/walk/south/1.png","priest/walk/south/2.png","priest/walk/south/3.png","priest/walk/south/4.png","priest/walk/south/5.png"]},"west":{"idle":"priest/rotations/west.png","walk":["priest/walk/west/0.png","priest/walk/west/1.png","priest/walk/west/2.png","priest/walk/west/3.png","priest/walk/west/4.png","priest/walk/west/5.png"]},"east":{"idle":"priest/rotations/east.png","walk":["priest/walk/east/0.png","priest/walk/east/1.png","priest/walk/east/2.png","priest/walk/east/3.png","priest/walk/east/4.png","priest/walk/east/5.png"]},"north":{"idle":"priest/rotations/north.png","walk":["priest/walk/north/0.png","priest/walk/north/1.png","priest/walk/north/2.png","priest/walk/north/3.png","priest/walk/north/4.png","priest/walk/north/5.png"]}}};
+  for(const direction of ['south','west','east','north']) {
+    const entry=data.directions[direction];
+    const article=document.createElement('article');
+    const stage=document.createElement('div');stage.className='stage';
+    const img=document.createElement('canvas');img.setAttribute('aria-label',`사제 ${labels[direction]}`);
+    img.width=204;img.height=204;
+    stage.append(img);const heading=document.createElement('h2');heading.textContent=labels[direction];
+    const caption=document.createElement('p');caption.textContent=`걷기 ${entry.walk.length}프레임`;
+    article.append(stage,heading,caption);document.querySelector('#directions').append(article);
+    cards.push({img,entry,direction});
+  }
+  const sheet=new Image();
+  sheet.src='priest/spritesheet/Marin-inspired_sun_pries-Idle.png';
+  await sheet.decode();
+  const idleColumns={south:0,east:2,north:4,west:6};
+  const walkRows={south:5,east:6,north:7,west:8};
+  document.querySelector('#status').textContent=`4방향 · 걷기 6프레임 · 120ms/프레임 · 원본 픽셀 3배 확대`;
+  function frame(now){if(playing)elapsed+=Math.min(now-previous,100);previous=now;for(const {img,entry,direction} of cards){const col=walking?Math.floor(elapsed/data.frameDurationMs)%entry.walk.length:idleColumns[direction];const row=walking?walkRows[direction]:0;const ctx=img.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,204,204);ctx.drawImage(sheet,col*68,row*68,68,68,0,0,204,204);}requestAnimationFrame(frame);}
+  requestAnimationFrame(frame);
+}catch(error){document.querySelector('#status').textContent=error.message;}
+</script>
+</html>

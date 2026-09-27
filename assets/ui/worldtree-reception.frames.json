@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/worldtree-reception",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frames": 6,
+  "frameDurationMs": 140,
+  "pivot": {
+    "x": 32,
+    "y": 32
+  },
+  "sheetWidth": 384,
+  "sheetHeight": 64,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "bcc3771a-1d2c-42b5-8dcb-96f36023885f"
+}

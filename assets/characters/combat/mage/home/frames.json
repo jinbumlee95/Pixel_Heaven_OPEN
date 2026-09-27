@@ -1,0 +1,75 @@
+{
+  "assetId": "combat.home.mage",
+  "frameDimensions": {
+    "width": 68,
+    "height": 68
+  },
+  "bodyDimensions": [
+    32,
+    48
+  ],
+  "pivot": {
+    "x": 34,
+    "y": 58
+  },
+  "directionOrder": [
+    "south",
+    "east",
+    "north",
+    "west"
+  ],
+  "idleColumns": {
+    "south": 0,
+    "east": 2,
+    "north": 4,
+    "west": 6
+  },
+  "walkRows": {
+    "south": 1,
+    "east": 2,
+    "north": 3,
+    "west": 4
+  },
+  "actionRows": {
+    "south": 0,
+    "east": 1,
+    "north": 2,
+    "west": 3
+  },
+  "paths": {
+    "walk": "assets/characters/combat/mage/home/idle_walk.png",
+    "attack": "assets/characters/combat/mage/home/attack.png",
+    "hit": "assets/characters/combat/mage/home/hit.png",
+    "down": "assets/characters/combat/mage/home/down.png"
+  },
+  "frameCounts": {
+    "walk": 6,
+    "attack": 8,
+    "hit": 3,
+    "down": 6
+  },
+  "frameDurationsMs": {
+    "walk": 120,
+    "attack": 120,
+    "hit": 100,
+    "down": 140
+  },
+  "loopAndHoldPolicy": {
+    "walk": "loop",
+    "attack": "once",
+    "hit": "hold-last",
+    "down": "hold-last"
+  },
+  "integrationEnabled": false,
+  "qaIssues": [],
+  "visualMarker": {
+    "name": "release",
+    "frame": 5
+  },
+  "sourceAlignmentOffsetsY": {
+    "south": 2,
+    "east": 1,
+    "north": 3,
+    "west": 2
+  }
+}

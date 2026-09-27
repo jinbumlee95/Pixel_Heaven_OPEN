@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/oracle-altar",
+  "frameWidth": 64,
+  "frameHeight": 48,
+  "frames": 1,
+  "sheetWidth": 64,
+  "sheetHeight": 48,
+  "pivot": {
+    "x": 32,
+    "y": 48
+  },
+  "sourceJobId": "5ee2f92c-64d4-4bb4-8f6b-d8b90fdbc002",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

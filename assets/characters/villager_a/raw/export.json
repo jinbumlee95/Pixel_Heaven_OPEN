@@ -1,0 +1,77 @@
+{
+  "character": {
+    "id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+    "name": "Idle",
+    "prompt": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Adult male villager, short brown hair, teal work tunic, brown trousers and boots, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+    "size": {
+      "width": 32,
+      "height": 48
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Pixel_Heaven_characters-Idle.png",
+    "cell_size": {
+      "width": 68,
+      "height": 68
+    },
+    "sheet_size": {
+      "width": 544,
+      "height": 340
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "aa75e36b-9efe-4044-b133-755343adbf32",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "aa75e36b-9efe-4044-b133-755343adbf32",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "aa75e36b-9efe-4044-b133-755343adbf32",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "aa75e36b-9efe-4044-b133-755343adbf32",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-23T02:03:58.251730+00:00"
+}

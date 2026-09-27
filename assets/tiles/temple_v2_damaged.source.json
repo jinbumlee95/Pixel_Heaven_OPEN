@@ -1,0 +1,44 @@
+{
+  "key": "tiles/temple_v2_damaged",
+  "job_id": "d89aa4f5-4220-4468-a8cb-8adfff0a0c6c",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/e2b6dc88-6e81-4995-bf76-e711b2ae129d/download",
+    "width": 192,
+    "height": 192,
+    "no_background": true,
+    "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+  },
+  "tool": "edit_image_pixen",
+  "base_job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    192,
+    192
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/temple_v2_damaged.png"
+  ],
+  "alignment": {
+    "translation": [
+      6,
+      11
+    ],
+    "originalAlphaBounds": [
+      25,
+      7,
+      155,
+      181
+    ],
+    "pivot": {
+      "x": 96,
+      "y": 192
+    },
+    "originalPNG": "assets/tiles/temple_v2_damaged.generated.png"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "provider": "PixelLab.ai",
+  "date": "2026-09-25",
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "footprint": [
+    3,
+    2
+  ],
+  "processing": "Original RGBA PNG, no resize or pixel edit; alpha padding measured and catalog pivot adjusted to actual contact edge.",
+  "objects": {
+    "smelter": {
+      "id": "24860f3b-e8dc-4066-bef1-ba18ab5119e4",
+      "pivot": [
+        64,
+        123
+      ],
+      "alphaBounds": [
+        7,
+        6,
+        121,
+        123
+      ]
+    },
+    "weaver": {
+      "id": "1d54bcd8-44ee-44fc-9202-d53639e7d660",
+      "pivot": [
+        64,
+        115
+      ],
+      "alphaBounds": [
+        9,
+        7,
+        119,
+        115
+      ]
+    },
+    "smith": {
+      "id": "fc57c9e6-f747-4d3d-84d3-6d875713fce8",
+      "pivot": [
+        64,
+        121
+      ],
+      "alphaBounds": [
+        4,
+        7,
+        124,
+        121
+      ]
+    },
+    "warehouse": {
+      "id": "62b94012-0e32-40ac-ac49-6d7a74ab0b7d",
+      "pivot": [
+        64,
+        114
+      ],
+      "alphaBounds": [
+        10,
+        15,
+        119,
+        114
+      ]
+    },
+    "sawmill": {
+      "id": "71e7d95c-30fe-4ca4-8156-d270845239f0",
+      "pivot": [
+        64,
+        119
+      ],
+      "alphaBounds": [
+        9,
+        14,
+        119,
+        119
+      ]
+    },
+    "apothecary": {
+      "id": "2780f843-a98a-4710-80b2-3d27037161b1",
+      "pivot": [
+        64,
+        120
+      ],
+      "alphaBounds": [
+        10,
+        8,
+        118,
+        120
+      ]
+    },
+    "kitchen": {
+      "id": "c20e4a93-393d-4622-a2ec-e854445d587e",
+      "pivot": [
+        64,
+        120
+      ],
+      "alphaBounds": [
+        9,
+        9,
+        120,
+        120
+      ]
+    }
+  }
+}

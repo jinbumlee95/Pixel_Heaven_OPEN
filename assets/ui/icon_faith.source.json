@@ -1,0 +1,27 @@
+{
+  "key": "ui/icon_faith",
+  "args": {
+    "width": 16,
+    "height": 16,
+    "no_background": true,
+    "seed": 24300,
+    "description": "Single readable fantasy RPG resource inventory icon. A small golden radiant light cupping a sage-green worldtree leaf. Native16x16 pixel art, fills about12x12px centred inside canvas. Dimensional three-quarter view, upper-left light, crisp1px clusters, selective dark #2E342F outline, warm restrained palette. Entire icon inside frame, true transparent background. NO tile, platform, terrain, scenery, letters, numbers, text or checkerboard.",
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail"
+  },
+  "tool": "create_image_pixen",
+  "job_id": "df93e8c0-abab-4c92-a6b7-02dee05a3030",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    16,
+    16
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/ui/icon_faith.png"
+  ]
+}

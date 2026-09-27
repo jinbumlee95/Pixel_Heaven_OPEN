@@ -1,0 +1,29 @@
+{
+  "key": "characters/dungeon/cave_bat/idle",
+  "monster": "cave_bat",
+  "job_id": "23969405-10ae-49bb-a05a-611c6e52256e",
+  "args": {
+    "width": 68,
+    "height": 68,
+    "no_background": true,
+    "seed": 24101,
+    "description": "Pixel Heaven RPG MONSTER SPRITE, native crisp 1px pixel art on a TRANSPARENT 68x68 canvas. Match small existing 32x48 RPG hero sprites. Slightly overhead three-quarter RPG camera, NOT flat side-view cartoon. Upper-left light, rich but restrained volumetric shading and selective dark outline. One flying cave bat facing LEFT west, tiny furry dark-brown body about 14x16 pixels, small ears and muzzle at its LEFT-facing front, wide leathery muted-purple wings. Full wing span at rest is 48 pixels and full silhouette height28, contained x10..57 y14..41, body airborne well above the bottom. Dimensional folded wing membrane, highlight edges, darker undersides. Two wings, small feet, no huge humanoid torso. IMPORTANT transparent margins are intentional: do NOT expand the body to fill the canvas. Fixed virtual ground pivot(34,58). Only one monster. No scene, ground/platform, floor, shadow blob, checkerboard, UI, text or effects. Limited 8-16 colors drawn from: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E."
+  },
+  "tool": "create_image_pro_flash",
+  "body": [
+    48,
+    28
+  ],
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/cave_bat/idle.png"
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "4ad2c263-bab7-4a1e-aa43-5e3752d9a9f9",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        32
+      ],
+      "frame_count": 6,
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "columns": 6,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      7,
+                      29
+                    ],
+                    [
+                      5,
+                      20
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      12,
+                      4
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      24,
+                      7
+                    ],
+                    [
+                      26,
+                      23
+                    ],
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      28
+                    ],
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      16,
+                      10
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      21,
+                      28
+                    ]
+                  ],
+                  "color": "fire"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      28
+                    ],
+                    [
+                      14,
+                      23
+                    ],
+                    [
+                      18,
+                      18
+                    ],
+                    [
+                      19,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      7,
+                      29
+                    ],
+                    [
+                      5,
+                      20
+                    ],
+                    [
+                      11,
+                      14
+                    ],
+                    [
+                      12,
+                      5
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      24,
+                      8
+                    ],
+                    [
+                      26,
+                      23
+                    ],
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      28
+                    ],
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      16,
+                      11
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      21,
+                      28
+                    ]
+                  ],
+                  "color": "fire"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      28
+                    ],
+                    [
+                      14,
+                      23
+                    ],
+                    [
+                      18,
+                      19
+                    ],
+                    [
+                      19,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      7,
+                      29
+                    ],
+                    [
+                      5,
+                      20
+                    ],
+                    [
+                      11,
+                      15
+                    ],
+                    [
+                      12,
+                      4
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      24,
+                      9
+                    ],
+                    [
+                      26,
+                      23
+                    ],
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      28
+                    ],
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      16,
+                      12
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      21,
+                      28
+                    ]
+                  ],
+                  "color": "fire"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      28
+                    ],
+                    [
+                      14,
+                      23
+                    ],
+                    [
+                      18,
+                      18
+                    ],
+                    [
+                      19,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      7,
+                      29
+                    ],
+                    [
+                      5,
+                      20
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      12,
+                      5
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      24,
+                      7
+                    ],
+                    [
+                      26,
+                      23
+                    ],
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      28
+                    ],
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      16,
+                      10
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      21,
+                      28
+                    ]
+                  ],
+                  "color": "fire"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      28
+                    ],
+                    [
+                      14,
+                      23
+                    ],
+                    [
+                      18,
+                      19
+                    ],
+                    [
+                      19,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": false
+            },
+            "f4": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      7,
+                      29
+                    ],
+                    [
+                      5,
+                      20
+                    ],
+                    [
+                      11,
+                      14
+                    ],
+                    [
+                      12,
+                      4
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      24,
+                      8
+                    ],
+                    [
+                      26,
+                      23
+                    ],
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      28
+                    ],
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      16,
+                      11
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      21,
+                      28
+                    ]
+                  ],
+                  "color": "fire"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      28
+                    ],
+                    [
+                      14,
+                      23
+                    ],
+                    [
+                      18,
+                      18
+                    ],
+                    [
+                      19,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": false
+            },
+            "f5": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      7,
+                      29
+                    ],
+                    [
+                      5,
+                      20
+                    ],
+                    [
+                      11,
+                      15
+                    ],
+                    [
+                      12,
+                      5
+                    ],
+                    [
+                      18,
+                      12
+                    ],
+                    [
+                      24,
+                      9
+                    ],
+                    [
+                      26,
+                      23
+                    ],
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "color": "red"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      10,
+                      28
+                    ],
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      16,
+                      12
+                    ],
+                    [
+                      17,
+                      21
+                    ],
+                    [
+                      22,
+                      17
+                    ],
+                    [
+                      21,
+                      28
+                    ]
+                  ],
+                  "color": "fire"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      14,
+                      28
+                    ],
+                    [
+                      14,
+                      23
+                    ],
+                    [
+                      18,
+                      19
+                    ],
+                    [
+                      19,
+                      28
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f4",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  true
+                ],
+                [
+                  6,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f5",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "frameCount": 6,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/4ad2c263-bab7-4a1e-aa43-5e3752d9a9f9/assets/south/full.png"
+}

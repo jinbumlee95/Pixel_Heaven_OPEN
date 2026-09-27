@@ -1,0 +1,112 @@
+{
+  "provider": "PixelLab",
+  "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+  "createdAt": "2026-09-23",
+  "tasks": [
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "slash",
+      "direction": "east",
+      "frames": 8,
+      "group": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+      "prompt": "EXAGGERATED SINGLE OVERHEAD SWORD CHOP, facing the input facing direction. 8 distinct keyframes: idle; lift sword hand HIGH ABOVE HEAD with blade vertical; hold overhead windup; sweep the entire sword DOWN in a LARGE arc; blade finishes low across the opposite side of the body; low follow-through; lift sword back; return to idle. Clear large sword motion, NOT a little wrist waggle or a horizontal guard. Only one chop. Legs bend in place, no jump, no turn. Keep sword in the SAME hand as source. Same long dark hair, silver armor, dark navy tunic, teal cape, brown boots, unchanged body size and pixel density. Whole sword remains inside padded frame, no glow, no text, no opponent.",
+      "existingGroup": true,
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "slash",
+      "direction": "north",
+      "frames": 8,
+      "group": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+      "prompt": "EXAGGERATED SINGLE OVERHEAD SWORD CHOP, facing the input facing direction. 8 distinct keyframes: idle; lift sword hand HIGH ABOVE HEAD with blade vertical; hold overhead windup; sweep the entire sword DOWN in a LARGE arc; blade finishes low across the opposite side of the body; low follow-through; lift sword back; return to idle. Clear large sword motion, NOT a little wrist waggle or a horizontal guard. Only one chop. Legs bend in place, no jump, no turn. Keep sword in the SAME hand as source. Same long dark hair, silver armor, dark navy tunic, teal cape, brown boots, unchanged body size and pixel density. Whole sword remains inside padded frame, no glow, no text, no opponent.",
+      "existingGroup": true,
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "slash",
+      "direction": "west",
+      "frames": 8,
+      "group": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+      "prompt": "EXAGGERATED SINGLE OVERHEAD SWORD CHOP, facing the input facing direction. 8 distinct keyframes: idle; lift sword hand HIGH ABOVE HEAD with blade vertical; hold overhead windup; sweep the entire sword DOWN in a LARGE arc; blade finishes low across the opposite side of the body; low follow-through; lift sword back; return to idle. Clear large sword motion, NOT a little wrist waggle or a horizontal guard. Only one chop. Legs bend in place, no jump, no turn. Keep sword in the SAME hand as source. Same long dark hair, silver armor, dark navy tunic, teal cape, brown boots, unchanged body size and pixel density. Whole sword remains inside padded frame, no glow, no text, no opponent.",
+      "existingGroup": true,
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "thrust",
+      "direction": "east",
+      "frames": 8,
+      "group": "053b0c82-f938-485e-a1d0-c50182ebc003",
+      "prompt": "ONE DEEP FORWARD SWORD STAB the input facing direction, 8 distinct frames: idle; pull sword HAND back to hip; bend rear knee and prepare; extend sword arm STRAIGHT the input facing direction; hold maximum extension and front knee lunge; retract sword; straighten legs; recover idle. The sword points the input facing direction and is foreshortened at full extension, NOT a sideways swing, NOT raising blade toward upper corner, NOT a guard. Clear arm extension and retraction. Keep sword in SAME hand as source. Same long dark hair, silver armor, navy tunic, teal cape, brown boots, unchanged pixel scale. Fixed camera and body anchor, modest forward lunge within frame, no jump, no turning, no effects, no text.",
+      "existingGroup": true,
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "thrust",
+      "direction": "north",
+      "frames": 8,
+      "group": "053b0c82-f938-485e-a1d0-c50182ebc003",
+      "prompt": "ONE DEEP FORWARD SWORD STAB the input facing direction, 8 distinct frames: idle; pull sword HAND back to hip; bend rear knee and prepare; extend sword arm STRAIGHT the input facing direction; hold maximum extension and front knee lunge; retract sword; straighten legs; recover idle. The sword points the input facing direction and is foreshortened at full extension, NOT a sideways swing, NOT raising blade toward upper corner, NOT a guard. Clear arm extension and retraction. Keep sword in SAME hand as source. Same long dark hair, silver armor, navy tunic, teal cape, brown boots, unchanged pixel scale. Fixed camera and body anchor, modest forward lunge within frame, no jump, no turning, no effects, no text.",
+      "existingGroup": true,
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "thrust",
+      "direction": "west",
+      "frames": 8,
+      "group": "053b0c82-f938-485e-a1d0-c50182ebc003",
+      "prompt": "ONE DEEP FORWARD SWORD STAB the input facing direction, 8 distinct frames: idle; pull sword HAND back to hip; bend rear knee and prepare; extend sword arm STRAIGHT the input facing direction; hold maximum extension and front knee lunge; retract sword; straighten legs; recover idle. The sword points the input facing direction and is foreshortened at full extension, NOT a sideways swing, NOT raising blade toward upper corner, NOT a guard. Clear arm extension and retraction. Keep sword in SAME hand as source. Same long dark hair, silver armor, navy tunic, teal cape, brown boots, unchanged pixel scale. Fixed camera and body anchor, modest forward lunge within frame, no jump, no turning, no effects, no text.",
+      "existingGroup": true,
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "guard",
+      "direction": "east",
+      "frames": 6,
+      "group": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+      "prompt": "A single sword parry and guard facing the input facing direction the input facing direction: raise the SAME sword diagonally across torso, brace with bent knees, small defensive recoil, lower sword and return to initial ready stance. No shield appears, left hand stays free. Preserve exact female character appearance: long dark hair, silver armor, navy tunic, teal cape, brown boots, steel sword held in RIGHT hand. Same pixel density and body height. Keep entire sword and hair visible within padded canvas, fixed camera, no translation of the whole sprite, no magical effects, no enemies, no text.",
+      "existingGroup": true,
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "guard",
+      "direction": "north",
+      "frames": 6,
+      "group": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+      "prompt": "A single sword parry and guard facing the input facing direction the input facing direction: raise the SAME sword diagonally across torso, brace with bent knees, small defensive recoil, lower sword and return to initial ready stance. No shield appears, left hand stays free. Preserve exact female character appearance: long dark hair, silver armor, navy tunic, teal cape, brown boots, steel sword held in RIGHT hand. Same pixel density and body height. Keep entire sword and hair visible within padded canvas, fixed camera, no translation of the whole sprite, no magical effects, no enemies, no text.",
+      "existingGroup": true,
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "submitted": true
+    },
+    {
+      "key": "characters/hero",
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "name": "guard",
+      "direction": "west",
+      "frames": 6,
+      "group": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+      "prompt": "A single sword parry and guard facing the input facing direction the input facing direction: raise the SAME sword diagonally across torso, brace with bent knees, small defensive recoil, lower sword and return to initial ready stance. No shield appears, left hand stays free. Preserve exact female character appearance: long dark hair, silver armor, navy tunic, teal cape, brown boots, steel sword held in RIGHT hand. Same pixel density and body height. Keep entire sword and hair visible within padded canvas, fixed camera, no translation of the whole sprite, no magical effects, no enemies, no text.",
+      "existingGroup": true,
+      "submitted": true
+    }
+  ],
+  "postProcessing": "Lossless centred packing only; existing actor source and gameplay files preserved.",
+  "previousSource": "assets/characters/hero.source.json",
+  "status": "generated; browser motion and game integration not verified"
+}

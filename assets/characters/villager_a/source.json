@@ -1,0 +1,96 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/villager_a",
+    "kind": "characterBase",
+    "animal": false,
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Adult male villager, short brown hair, teal work tunic, brown trousers and boots, empty hands. Full body facing south. Native 32x48, visible adult height 40 pixels, top 8 pixels empty, feet at bottom ground anchor (16,48), no enlarged chibi head. Modest practical clothing.",
+      "width": 32,
+      "height": 48,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1100
+    },
+    "job_id": "3263f84e-8026-492c-8821-2e8f4ec4c444",
+    "character_id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+    "rotationArgs": {
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/3263f84e-8026-492c-8821-2e8f4ec4c444/download",
+      "size": 48,
+      "n_directions": 8,
+      "name": "Pixel Heaven characters/villager_a",
+      "view": "low top-down",
+      "body_type": "humanoid"
+    },
+    "animations": {}
+  },
+  "animations": [
+    {
+      "key": "characters/villager_a",
+      "character_id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "aa75e36b-9efe-4044-b133-755343adbf32",
+      "submitted": true
+    },
+    {
+      "key": "characters/villager_a",
+      "character_id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "aa75e36b-9efe-4044-b133-755343adbf32",
+      "submitted": true
+    },
+    {
+      "key": "characters/villager_a",
+      "character_id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "group": "aa75e36b-9efe-4044-b133-755343adbf32",
+      "submitted": true
+    },
+    {
+      "key": "characters/villager_a",
+      "character_id": "991561d1-ab9f-45d2-9773-b90353cd0b1d",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Gentle bipedal alternating-foot walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "aa75e36b-9efe-4044-b133-755343adbf32",
+      "submitted": true
+    }
+  ],
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "finalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/villager_a/walk.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

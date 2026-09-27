@@ -1,0 +1,149 @@
+{
+  "provider": "PixelLab",
+  "created": "2026-09-22",
+  "reference": {
+    "name": "Anna Yamada — The Dangers in My Heart",
+    "official_url": "https://bokuyaba-anime.com/character/detail/?chara=02",
+    "style_local": "priest.png"
+  },
+  "base_job_id": "01de4d5b-1fa3-4b01-8292-95d01938934b",
+  "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+  "base_model": "pixen",
+  "rotation_model": "v3",
+  "animation_model": "v3",
+  "source_resolution": [
+    32,
+    48
+  ],
+  "prompts": {
+    "base": {
+      "description": "One full-body female sword hero for Pixel Heaven. Appearance inspired by Anna Yamada from The Dangers in My Heart: long straight dark navy-black hair, parted bangs framing face, warm brown eyes, friendly confident expression. Fantasy adventurer outfit: practical silver breastplate over navy blue long-sleeved tunic, brown belt, covered dark trousers and brown boots, small teal shoulder cape. No helmet. Hold a short straight steel sword in her right hand low alongside leg; left hand free. Modest fully covered clothing. South-facing idle, slightly overhead 3/4 RPG view, orthographic ground, no isometric diamond. Native 32x48 pixel canvas, visible body approximately 40 pixels high, boots on bottom edge at ground anchor (16,48), head around y8; all hair and sword fit canvas. Same chibi body proportions as existing priest. Crisp 1px clusters, selective dark outline, warm limited palette, upper-left light, transparent background, one character, no scenery, no platform, no text.",
+      "width": 32,
+      "height": 48,
+      "direction": "south",
+      "view": "low top-down",
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "no_background": true,
+      "seed": 975
+    },
+    "rotation": {
+      "description": "One full-body female sword hero for Pixel Heaven. Appearance inspired by Anna Yamada from The Dangers in My Heart: long straight dark navy-black hair, parted bangs framing face, warm brown eyes, friendly confident expression. Fantasy adventurer outfit: practical silver breastplate over navy blue long-sleeved tunic, brown belt, covered dark trousers and brown boots, small teal shoulder cape. No helmet. Hold a short straight steel sword in her right hand low alongside leg; left hand free. Modest fully covered clothing. South-facing idle, slightly overhead 3/4 RPG view, orthographic ground, no isometric diamond. Native 32x48 pixel canvas, visible body approximately 40 pixels high, boots on bottom edge at ground anchor (16,48), head around y8; all hair and sword fit canvas. Same chibi body proportions as existing priest. Crisp 1px clusters, selective dark outline, warm limited palette, upper-left light, transparent background, one character, no scenery, no platform, no text.",
+      "mode": "v3",
+      "reference_image_url": "https://api.pixellab.ai/mcp/images/01de4d5b-1fa3-4b01-8292-95d01938934b/download",
+      "size": 48,
+      "n_directions": 8,
+      "name": "Anna-inspired sword hero",
+      "view": "low top-down",
+      "body_type": "humanoid",
+      "outline": "selective outline",
+      "detail": "medium detail"
+    },
+    "walk": {
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "mode": "v3",
+      "animation_name": "walk",
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ],
+      "frame_count": 6,
+      "keep_first_frame": false,
+      "action_description": "Seamless six-frame gentle walking IN PLACE facing the input direction throughout. Alternating feet, planted contact, no turning or camera motion. Preserve EXACT same woman, long dark hair, silver armor, navy tunic, teal cape, brown boots. KEEP the same steel sword in the same RIGHT hand low beside the body, naturally occluded when behind body, never vanish or change hands. Keep native pixel scale and body height, same ground anchor, no translation, no effects."
+    },
+    "combat": {
+      "slash": {
+        "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+        "mode": "v3",
+        "animation_name": "slash",
+        "directions": [
+          "south"
+        ],
+        "frame_count": 6,
+        "keep_first_frame": false,
+        "action_description": "A single controlled sword slash facing SOUTH toward camera: ready stance, short windup, decisive diagonal cut, follow-through, recover to the initial ready stance. Feet stay near the same ground anchor, no spin or jump. Preserve exact female character appearance: long dark hair, silver armor, navy tunic, teal cape, brown boots, steel sword held in RIGHT hand. Same pixel density and body height. Keep entire sword and hair visible within padded canvas, fixed camera, no translation of the whole sprite, no magical effects, no enemies, no text."
+      },
+      "thrust": {
+        "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+        "mode": "v3",
+        "animation_name": "thrust",
+        "directions": [
+          "south"
+        ],
+        "frame_count": 6,
+        "keep_first_frame": false,
+        "action_description": "A single straight sword thrust facing SOUTH toward camera: ready stance, pull sword back slightly, extend the RIGHT sword arm forward with a tiny lunge, retract, return to initial ready stance. Feet stay near same ground anchor, no turning. Preserve exact female character appearance: long dark hair, silver armor, navy tunic, teal cape, brown boots, steel sword held in RIGHT hand. Same pixel density and body height. Keep entire sword and hair visible within padded canvas, fixed camera, no translation of the whole sprite, no magical effects, no enemies, no text."
+      },
+      "guard": {
+        "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+        "mode": "v3",
+        "animation_name": "guard",
+        "directions": [
+          "south"
+        ],
+        "frame_count": 6,
+        "keep_first_frame": false,
+        "action_description": "A single sword parry and guard facing SOUTH toward camera: raise the SAME sword diagonally across torso, brace with bent knees, small defensive recoil, lower sword and return to initial ready stance. No shield appears, left hand stays free. Preserve exact female character appearance: long dark hair, silver armor, navy tunic, teal cape, brown boots, steel sword held in RIGHT hand. Same pixel density and body height. Keep entire sword and hair visible within padded canvas, fixed camera, no translation of the whole sprite, no magical effects, no enemies, no text."
+      }
+    },
+    "revisions": {
+      "slash": {
+        "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+        "mode": "v3",
+        "animation_name": "slash-revised",
+        "directions": [
+          "south"
+        ],
+        "frame_count": 8,
+        "keep_first_frame": false,
+        "action_description": "EXAGGERATED SINGLE OVERHEAD SWORD CHOP, facing south. 8 distinct keyframes: idle; lift sword hand HIGH ABOVE HEAD with blade vertical; hold overhead windup; sweep the entire sword DOWN in a LARGE arc; blade finishes low across the opposite side of the body; low follow-through; lift sword back; return to idle. Clear large sword motion, NOT a little wrist waggle or a horizontal guard. Only one chop. Legs bend in place, no jump, no turn. Keep sword in the SAME hand as source. Same long dark hair, silver armor, dark navy tunic, teal cape, brown boots, unchanged body size and pixel density. Whole sword remains inside padded frame, no glow, no text, no opponent."
+      },
+      "thrust": {
+        "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+        "mode": "v3",
+        "animation_name": "thrust-revised",
+        "directions": [
+          "south"
+        ],
+        "frame_count": 8,
+        "keep_first_frame": false,
+        "action_description": "ONE DEEP FORWARD SWORD STAB toward SOUTH, 8 distinct frames: idle; pull sword HAND back to hip; bend rear knee and prepare; extend sword arm STRAIGHT toward viewer; hold maximum extension and front knee lunge; retract sword; straighten legs; recover idle. The sword points toward camera and is foreshortened at full extension, NOT a sideways swing, NOT raising blade toward upper corner, NOT a guard. Clear arm extension and retraction. Keep sword in SAME hand as source. Same long dark hair, silver armor, navy tunic, teal cape, brown boots, unchanged pixel scale. Fixed camera and body anchor, modest forward lunge within frame, no jump, no turning, no effects, no text."
+      }
+    }
+  },
+  "animation_groups": {
+    "walk": "98d60294-6340-457c-812b-cb17751a02c9",
+    "slash": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+    "thrust": "053b0c82-f938-485e-a1d0-c50182ebc003",
+    "guard": "599b623c-485d-4ee5-85a2-c5d3f18e0000"
+  },
+  "generation_cost": 11,
+  "status": "Generated and locally inspected in hero-preview.html; awaiting Director/integration review.",
+  "final_canvas": [
+    68,
+    68
+  ],
+  "ground_anchor": {
+    "x": 34,
+    "y": 58
+  },
+  "postprocess": "Lossless frame extraction and repacking from PixelLab uniform pivot-centred export; no resizing, mirroring, recoloring or per-frame alpha cropping.",
+  "initial_animation_groups": {
+    "walk": "98d60294-6340-457c-812b-cb17751a02c9",
+    "slash": "2452a735-ca54-45e0-bbca-1eeb97555b81",
+    "thrust": "b7ef79f2-3df0-4890-b461-abde4c3311cf",
+    "guard": "599b623c-485d-4ee5-85a2-c5d3f18e0000"
+  },
+  "validation": {
+    "frame_count": 50,
+    "transparent_reserved_cells": "verified",
+    "preview": "4 directions, 3 combat samples and 100% scale comparison visually inspected",
+    "limitations": [
+      "Combat is south-only; no hero gameplay integration.",
+      "Source silhouette is 46px versus approximate 40px guide target; retained at native resolution.",
+      "Thrust remains a stylized diagonal forward stab rather than strict south foreshortening."
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "asset": "assets/tiles/world-tree-v1.png",
+  "created": "2026-09-23",
+  "tool": "built-in imagegen",
+  "sourceSize": [1196, 1315],
+  "displaySize": [320, 352],
+  "footprint": [6, 4],
+  "displayPivot": [160, 352],
+  "alpha": true,
+  "status": "temporary generated source; native PixelLab replacement listed in ASSET_LIST.md",
+  "prompt": "Create ONE game sprite asset: an ancient gigantic sacred WORLD TREE for a top-down 3/4-view pixel-art colony simulation called Pixel Heaven. It will tower over a 40-pixel-tall human, with a wide gnarled trunk and enormous layered emerald foliage, tiny warm gold sacred motes nestled within leaves. Handcrafted 16-bit pixel art, disciplined visible square pixel clusters, restrained moss/emerald/olive green and warm bark palette, upper-left illumination, crisp hard pixel edges. Target working canvas proportion 320 wide by 352 high; image should be the tree alone, completely visible from top of crown to grounded roots, crown centered, trunk root base at bottom center, small transparent margin. TRUE transparent alpha background, NO floor tile, NO landscape, NO scenery, NO characters, NO altar, NO buildings, NO labels, NO shadows extending beyond roots. This is a sprite for a game, NOT a mockup or illustration with a background. Canopy occupies upper 65%, thick branching trunk below, grounded exposed roots spreading at bottom. Tree should look monumental and protective, not a Christmas tree. Preserve clean silhouette and avoid painterly gradients or antialias blur. Generate at the target 320x352 pixel canvas if supported; otherwise preserve proportions and transparency."
+}

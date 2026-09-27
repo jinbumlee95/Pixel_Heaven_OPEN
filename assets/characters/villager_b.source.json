@@ -1,0 +1,30 @@
+{
+  "key": "characters/villager_b",
+  "job_id": "0c45663c-ee32-4522-b402-e8f0a7cc6f96",
+  "args": {
+    "image_url": "https://api.pixellab.ai/mcp/images/6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c/download",
+    "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+    "width": 32,
+    "height": 48,
+    "no_background": true
+  },
+  "tool": "edit_image_pixen",
+  "original_job_id": "6c335ae8-b9fb-4ac7-b3fd-a5c7b312dd8c",
+  "old_character_id": "31cfc388-2f91-4e99-86f0-590382970b24",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    32,
+    48
+  ],
+  "postProcessing": [
+    "Lossless south rotation extraction after fixed per-direction foot alignment. Generated base retained under production-originals."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/villager_b.png"
+  ],
+  "selectedOutput": "rotations/south.png from the matching animated character export",
+  "animationProvenance": "assets/characters/villager_b/source.json"
+}

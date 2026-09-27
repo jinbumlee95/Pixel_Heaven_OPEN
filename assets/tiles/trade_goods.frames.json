@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/trade_goods",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sourceJobId": "64071bca-dba6-4d57-8366-ab224b03b1e7",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

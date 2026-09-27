@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/house_v2_damaged",
+  "frameWidth": 96,
+  "frameHeight": 96,
+  "frames": 1,
+  "sheetWidth": 96,
+  "sheetHeight": 96,
+  "pivot": {
+    "x": 48,
+    "y": 96
+  },
+  "sourceJobId": "7082a360-0817-419c-92bd-4812e45d0313",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checkedPNGFiles": 23,
+  "monsterFrames": 72,
+  "errors": [],
+  "warnings": [],
+  "scope": "File sizes, nonempty and distinct frames, west-only single-row layout, pivot, idle body bounds, palette, transparency. Does not certify runtime integration or exact attack timing.",
+  "integrationEnabled": false,
+  "browserCheck": "No connected browsers returned by cua.getState; contact sheets inspected instead."
+}

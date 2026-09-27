@@ -1,0 +1,391 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "075ad6a2-de79-4902-a056-52b53e3a7f3f",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        32
+      ],
+      "frame_count": 4,
+      "durations_ms": [
+        70,
+        70,
+        70,
+        70
+      ],
+      "columns": 4,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      5,
+                      6
+                    ],
+                    [
+                      19,
+                      9
+                    ],
+                    [
+                      25,
+                      23
+                    ],
+                    [
+                      14,
+                      26
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 3
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      6,
+                      7
+                    ],
+                    [
+                      19,
+                      10
+                    ],
+                    [
+                      24,
+                      22
+                    ],
+                    [
+                      14,
+                      25
+                    ]
+                  ],
+                  "color": "white",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      8,
+                      6
+                    ],
+                    [
+                      20,
+                      12
+                    ],
+                    [
+                      24,
+                      23
+                    ],
+                    [
+                      14,
+                      24
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 3
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      9,
+                      7
+                    ],
+                    [
+                      20,
+                      13
+                    ],
+                    [
+                      23,
+                      22
+                    ],
+                    [
+                      14,
+                      23
+                    ]
+                  ],
+                  "color": "white",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      21,
+                      15
+                    ],
+                    [
+                      23,
+                      23
+                    ],
+                    [
+                      14,
+                      22
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 3
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      12,
+                      7
+                    ],
+                    [
+                      21,
+                      16
+                    ],
+                    [
+                      22,
+                      22
+                    ],
+                    [
+                      14,
+                      21
+                    ]
+                  ],
+                  "color": "gold",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      14,
+                      6
+                    ],
+                    [
+                      22,
+                      18
+                    ],
+                    [
+                      22,
+                      23
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "color": "ink",
+                  "stroke_width": 3
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      15,
+                      7
+                    ],
+                    [
+                      22,
+                      19
+                    ],
+                    [
+                      21,
+                      22
+                    ],
+                    [
+                      14,
+                      19
+                    ]
+                  ],
+                  "color": "gold",
+                  "stroke_width": 1
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "frameCount": 4,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [
+    "Lossless grid repacking; original retained as slash.raw.png"
+  ],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/075ad6a2-de79-4902-a056-52b53e3a7f3f/assets/south/full.png",
+  "finalDimensions": [
+    128,
+    32
+  ]
+}

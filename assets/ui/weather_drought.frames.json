@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/weather_drought",
+  "frameWidth": 24,
+  "frameHeight": 24,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 12,
+    "y": 12
+  },
+  "sheetWidth": 24,
+  "sheetHeight": 24,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "809c1dc3-9d86-492e-8751-2899ad1535d4"
+}

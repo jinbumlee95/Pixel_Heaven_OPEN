@@ -1,0 +1,29 @@
+{
+  "key": "characters/dungeon/stone_guardian/idle",
+  "monster": "stone_guardian",
+  "job_id": "2ddebfcf-8e7b-4f0d-b845-5289e9f79c99",
+  "args": {
+    "width": 68,
+    "height": 68,
+    "no_background": true,
+    "seed": 24102,
+    "description": "Pixel Heaven RPG MONSTER SPRITE, native crisp 1px pixel art on a TRANSPARENT 68x68 canvas. Match small existing 32x48 RPG hero sprites. Slightly overhead three-quarter RPG camera, NOT flat side-view cartoon. Upper-left light, rich but restrained volumetric shading and selective dark outline. One broad heavy ancient stone guardian facing LEFT west, squat low head, large articulated shoulder boulders and heavy forearms, short thick legs, small softly golden glowing chest core. Visible body only44px wide and48px high, contained x12..55 y10..57. Feet stand on y57. Similar height to a 40-46px hero but broader shoulders. Dimensional grey stone planes with upper-left light and dark crevices, gold core small, no weapon. IMPORTANT transparent margins are intentional: do NOT expand the body to fill the canvas. Fixed virtual ground pivot(34,58). Only one monster. No scene, ground/platform, floor, shadow blob, checkerboard, UI, text or effects. Limited 8-16 colors drawn from: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E."
+  },
+  "tool": "create_image_pro_flash",
+  "body": [
+    44,
+    48
+  ],
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/stone_guardian/idle.png"
+  ]
+}

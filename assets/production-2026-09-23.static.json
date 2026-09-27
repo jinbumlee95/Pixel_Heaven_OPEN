@@ -1,0 +1,596 @@
+[
+  {
+    "key": "tiles/house_v2",
+    "job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c",
+    "tool": "create_image_pro_flash",
+    "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+    "args": {
+      "width": 96,
+      "height": 96,
+      "no_background": true,
+      "seed": 23996,
+      "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. A cozy medieval timber cottage, warm red clay tiled steep gabled roof, cream plaster infill and thick dark oak framing, visible warm front wall plus shadowed right side wall, one tall open front doorway and two small leaded windows. Small chimney. Doorway is tall enough for a 40px adult, about 40-44px high. A compact chunky cottage filling most of the 96px square. Roof thickness, projecting eaves, individual shingle rows and recessed opening give real depth. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+    }
+  },
+  {
+    "key": "tiles/town_hall",
+    "job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd",
+    "tool": "create_image_pro_flash",
+    "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+    "args": {
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "seed": 24093,
+      "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. A substantial fantasy civic town hall, broad TWO-STORY half-timbered structure with a stepped blue-slate roof, projecting central entrance bay and a square CLOCK TOWER. Distinct civic silhouette, asymmetrical roof volumes, prominent corner beams, stone foundation no higher than 4px, broad front facade and clearly visible right side receding in depth. Recessed adult scale south doorway about 44px high and 24px wide. Upper story windows, substantial projecting eaves. No church symbols. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+    }
+  },
+  {
+    "key": "tiles/temple_v2",
+    "job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d",
+    "tool": "create_image_pro_flash",
+    "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+    "args": {
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "seed": 24094,
+      "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. An elegant fantasy temple with IVORY STONE, tall central tapered bell/spire tower topped by a golden SUN disk, teal pitched roof, two lower side wings and projecting entrance portico with stone columns. Clearly three-dimensional architectural massing with front and right side planes, layered roofs, buttresses, deep recessed arched doorway about 44px high and 24px wide. Distinct sacred silhouette, not a house, not a rectangular flat facade. Two narrow stone entrance steps, no surrounding courtyard slab. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+    }
+  },
+  {
+    "key": "tiles/forest_v2",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. One leafy oak tree with muted green dense crown, visible warm brown trunk, modest roots, bottom center ground anchor(32,64), 1x1 cell footprint, canopy extends above and sides. No dirt platform.",
+      "width": 64,
+      "height": 64,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1203
+    },
+    "job_id": "b60bd3d1-0851-4525-b795-0599cdb385ec"
+  },
+  {
+    "key": "tiles/world-tree-v2",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. One monumental sacred Worldtree, gigantic broad moss green layered crown, thick ancient warm brown trunk, branching roots, small gold lights nestled in foliage. Native320x352, adult human40px tall for scale but no humans drawn, base6x4cells, anchor(160,352). Orthographic 3/4 slight overhead, entire crown contained, roots contact bottom center. No landscape, no sky, no pedestal.",
+      "width": 320,
+      "height": 352,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1204
+    },
+    "job_id": "cfc8869b-f535-429c-ab6e-1a1bc3b06025",
+    "original_job_id": "187b1e70-8f7b-4ae4-a7c9-4b90574d3676",
+    "tool": "edit_image"
+  },
+  {
+    "key": "tiles/oracle-altar",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small ancient pale stone oracle altar facing south, three shallow steps, flat offering slab, engraved small gold sun at top center, slight violet reception point. 2x1cell footprint, bottom center anchor(32,48). Worshipper stands to south facing north. No humans.",
+      "width": 64,
+      "height": 48,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1205
+    },
+    "job_id": "5ee2f92c-64d4-4bb4-8f6b-d8b90fdbc002"
+  },
+  {
+    "key": "tiles/sanctuary-path",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Seamless repeating square sanctuary stone floor, muted warm grey beige slabs, subtle cracks, low contrast, fills whole tile edge to edge. Straight overhead.",
+      "width": 32,
+      "height": 32,
+      "no_background": false,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1206
+    },
+    "job_id": "81ad4f49-878a-4013-a0a0-90e88e1ad1bf",
+    "replacedByDrawing": "3732296d-246d-4efe-a011-43d25b84b2da"
+  },
+  {
+    "key": "tiles/ground_dry",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Seamless parched ochre brown earth texture, subtle cracks, overhead, no plants, low contrast edge to edge.",
+      "width": 32,
+      "height": 32,
+      "no_background": false,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1207
+    },
+    "job_id": "c683244e-6404-49ba-a0e1-e294a4b5a30e",
+    "replacedByDrawing": "cc2d42cc-db59-43ba-a082-21e63f2959f0"
+  },
+  {
+    "key": "tiles/farmland_dry",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Dry cultivated farmland patch, four parallel withered seedling rows, ochre cracked soil, square overhead, one pixel transparent margin.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1208
+    },
+    "job_id": "c9b157ee-65f1-4e72-a6c7-d17003cfde92",
+    "replacedByDrawing": "7bc31a83-d397-4f11-8533-73500ab74461"
+  },
+  {
+    "key": "tiles/trade_goods",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. One compact group of tied sacks and two small crates, wheat and wooden logs, medieval merchant cargo, no people.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1209
+    },
+    "job_id": "64071bca-dba6-4d57-8366-ab224b03b1e7"
+  },
+  {
+    "key": "tiles/animal_pen",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small low wooden square sheep pen with gate facing south, empty interior, 2x2grid footprint provisional, no animals, transparent interior no grass platform.",
+      "width": 64,
+      "height": 64,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1210
+    },
+    "job_id": "46d1f8b1-e8cf-4d56-86db-ee2250421252"
+  },
+  {
+    "key": "tiles/forest_burnt",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. One burnt oak tree, charred bare branches and trunk, small remaining dark crown silhouette, no flames, ground anchor(32,64), no ground patch.",
+      "width": 64,
+      "height": 64,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1211
+    },
+    "job_id": "9b62782c-5a20-4d15-8bf8-5fc45db93e85"
+  },
+  {
+    "key": "tiles/farmland_burnt",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Square burnt farmland patch, four parallel rows of blackened seedlings on charcoal brown soil, overhead one pixel transparent margin.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1212
+    },
+    "job_id": "dbcd9d56-43f0-4eab-891f-0d9c8530c720",
+    "replacedByDrawing": "12b6a433-1ce2-40aa-a219-bb82f46e7ce2"
+  },
+  {
+    "key": "tiles/debris",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small scattered flood debris pile of broken timber twigs and grey stones, no water background, slight topdown.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1213
+    },
+    "job_id": "ced60e73-ada7-4842-ab94-6f10035a7052"
+  },
+  {
+    "key": "tiles/ground_crack",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. A jagged thin earthquake fissure decal with dark center and dusty stone edges, transparent surrounding, overhead.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1214
+    },
+    "job_id": "09da77b4-2756-4e06-bc70-f9a847ef64a7",
+    "replacedByDrawing": "6a325d65-14c1-4482-a19a-ee2b917fd6a8"
+  },
+  {
+    "key": "tiles/farmland_eaten",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Square farmland four parallel rows with bare bitten plant stalks, dark brown soil, overhead, one pixel transparent margin.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1215
+    },
+    "job_id": "aca4f354-4820-41fc-bd7e-947d44c5d3a1",
+    "replacedByDrawing": "e1862bdb-be50-419d-aef0-7fb8e3d5b7a7"
+  },
+  {
+    "key": "tiles/ground_snow",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Seamless snow-covered ground tile pale desaturated blue white, subtle snowy speckles, edge to edge overhead, low contrast.",
+      "width": 32,
+      "height": 32,
+      "no_background": false,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1216
+    },
+    "job_id": "4a16a73c-74f4-44ad-a616-b190933e86f8",
+    "replacedByDrawing": "073dad0b-3df0-42aa-9503-e6412042b83c"
+  },
+  {
+    "key": "tiles/farmland_snow",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Square farmland four straight rows, partial snow across soil and seedlings, muted cool palette, overhead margin1px.",
+      "width": 32,
+      "height": 32,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1217
+    },
+    "job_id": "42e393ae-ae37-4437-8b41-b2876f55c727",
+    "replacedByDrawing": "758d2319-b14c-4e69-ab08-8d00b7d58c3c"
+  },
+  {
+    "key": "ui/event_raid",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Two crossed swords above small warning notch; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1218
+    },
+    "job_id": "1f464039-9767-47a7-bb23-b25db8fc77b1"
+  },
+  {
+    "key": "ui/status_defense",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. A broad round shield with central boss; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1219
+    },
+    "job_id": "c5c327c8-09bf-4131-bc04-5b021309725d"
+  },
+  {
+    "key": "ui/direction_arrow",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. A clear thick arrow pointing north; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1220
+    },
+    "job_id": "27ae1c5b-78a5-41f9-9cc3-a159a24f2ef2",
+    "replacedByDrawing": "9924c88b-b0fc-484a-b9a2-ca6740e223b8"
+  },
+  {
+    "key": "ui/weather_drought",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Dry sun over cracked earth; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1221
+    },
+    "job_id": "71799ac5-b310-439e-99d3-ab6cc88c2724",
+    "replacedByDrawing": "809c1dc3-9d86-492e-8751-2899ad1535d4"
+  },
+  {
+    "key": "ui/event_caravan",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Covered merchant wagon silhouette with visible wheels; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1222
+    },
+    "job_id": "14aba405-7799-46ea-bd46-0fca72abb0c5"
+  },
+  {
+    "key": "ui/action_hunt",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. A simple wooden bow and one arrow; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1223
+    },
+    "job_id": "860bb8f9-06f1-41ac-b1e0-242ca2956260"
+  },
+  {
+    "key": "ui/event_predator",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Wolf head warning emblem; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1224
+    },
+    "job_id": "ad562ba3-682c-404c-9c69-b9ff63d9377b"
+  },
+  {
+    "key": "ui/icon_livestock",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Cream sheep face with dark muzzle; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 16,
+      "height": 16,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1225
+    },
+    "job_id": "5e2ed126-e379-4ef2-8bca-19d322cf182d"
+  },
+  {
+    "key": "ui/event_flood",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Three rising blue water waves around small roof; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1226
+    },
+    "job_id": "a3eac8b4-e990-4e76-b15e-b3f7aa6a4e82"
+  },
+  {
+    "key": "ui/action_repair",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small crossed hammer and wooden plank; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1227
+    },
+    "job_id": "6d8a6d56-4b1e-4aad-9b34-4a9f966cf5df"
+  },
+  {
+    "key": "ui/action_evacuate",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Person walking toward right arrow; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1228
+    },
+    "job_id": "327e2d26-79c0-4d5c-b76e-d159883982c8"
+  },
+  {
+    "key": "ui/weather_storm",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Dark grey cloud with small gold lightning; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1229
+    },
+    "job_id": "b686a95b-434c-4a2b-9b75-bf4f852e3d93"
+  },
+  {
+    "key": "ui/weather_snow",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Cloud with three clear snowflakes; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1230
+    },
+    "job_id": "f181ac4e-ac72-441d-9be5-84495d6544bf"
+  },
+  {
+    "key": "ui/event_earthquake",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Cracked ground and shaking stone; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1231
+    },
+    "job_id": "c6dbc064-8412-4552-90b4-09d92a32938d"
+  },
+  {
+    "key": "ui/warning-raid",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Crossed swords inside triangular warning outline; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1232
+    },
+    "job_id": "44bfdba1-676c-4e64-858e-579cc73f25c0"
+  },
+  {
+    "key": "ui/warning-drought",
+    "kind": "static",
+    "args": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Sun and cracked earth inside triangular warning outline; centered readable pixel UI icon, no lettering, no square frame.",
+      "width": 24,
+      "height": 24,
+      "no_background": true,
+      "view": "low top-down",
+      "outline": "selective outline",
+      "detail": "medium detail",
+      "seed": 1233
+    },
+    "job_id": "87abdf65-d4ac-4087-84be-e3cf584af117"
+  },
+  {
+    "key": "tiles/house_v2_damaged",
+    "job_id": "7082a360-0817-419c-92bd-4812e45d0313",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f645d88d-3852-4e37-a4bd-35e0f0efb69c/download",
+      "width": 96,
+      "height": 96,
+      "no_background": true,
+      "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c"
+  },
+  {
+    "key": "tiles/house_v2_ruins",
+    "job_id": "8d3a1c54-4b98-4185-a33f-0eab876421f6",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/f645d88d-3852-4e37-a4bd-35e0f0efb69c/download",
+      "width": 96,
+      "height": 96,
+      "no_background": true,
+      "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c"
+  },
+  {
+    "key": "tiles/town_hall_damaged",
+    "job_id": "541bb75a-b505-43cd-a4d7-e0f94df3e406",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd"
+  },
+  {
+    "key": "tiles/town_hall_ruins",
+    "job_id": "df262df4-effe-4cf0-ba0f-bb9d6fdf2a83",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "ce1e8cb9-2e75-4167-a73e-2f6df95b9fdd"
+  },
+  {
+    "key": "tiles/temple_v2_damaged",
+    "job_id": "d89aa4f5-4220-4468-a8cb-8adfff0a0c6c",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/e2b6dc88-6e81-4995-bf76-e711b2ae129d/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Damage this SAME 3D-volume building: broken roof tiles, a few cracked walls and windows, 25 percent damage but still standing. Preserve EXACT 3/4 camera, projecting roof planes, wall depth, light direction, architectural style, scale, footprint and foundation position. Retain tall doorway and tower. Detailed crisp pixel art, transparent background. No new ground or scene. No flattened facade."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d"
+  },
+  {
+    "key": "tiles/temple_v2_ruins",
+    "job_id": "03ed7ac6-7208-4109-8037-5ff3adbf1480",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/e2b6dc88-6e81-4995-bf76-e711b2ae129d/download",
+      "width": 192,
+      "height": 192,
+      "no_background": true,
+      "description": "Ruined state of this SAME dimensional building. Collapse much of roof and upper walls, leave jagged low wall remnants, broken rafters and rubble within its original foundation. Preserve EXACT 3/4 camera, native pixel density, footprint and foundation placement, material colors, directional lighting and convincing volume. No fire, no smoke, no added ground or background. Transparent. Do not flatten into a front elevation."
+    },
+    "tool": "edit_image_pixen",
+    "base_job_id": "e2b6dc88-6e81-4995-bf76-e711b2ae129d"
+  }
+]

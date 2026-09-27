@@ -1,0 +1,23 @@
+{
+  "provider": "PixelLab",
+  "tool": "create_image_pro_flash",
+  "job_id": "698be7a9-9f30-480b-9bc4-5efeca500469",
+  "file": "priest_portrait_marin.png",
+  "created": "2026-09-22",
+  "reference_local": "../characters/priest/rotations/south.png",
+  "description": "One close-up head-and-shoulders pixel art dialogue portrait of the EXACT female sun priestess shown in the reference sprite. Preserve her identity: long golden blonde hair with pink-dipped ends, side-swept bangs, bright pink eyes, youthful cheerful friendly smile, ivory white high-neck priest robe with gold edging and small coral ribbon and sun pendant. Marin Kitagawa-inspired appearance adapted to a modest fantasy priestess. Front facing at eye level, face large and readable, head fully inside canvas, hair framing cheeks, shoulders cropped at lower edge. Match the reference warm palette, crisp pixel clusters and selective dark outlines. Transparent background, no frame, no text, no staff, no hands, no full body, exactly one portrait.",
+  "width": 48,
+  "height": 48,
+  "no_background": true,
+  "seed": 963,
+  "style_image": {
+    "url": "https://backblaze.pixellab.ai/file/pixellab-characters/f3d02597-c0d8-4299-b3f5-7f7383170861/7820a529-9b84-49c0-a091-74945429e78f/rotations/south.png?t=1790083308",
+    "usage_description": "Character identity and outfit reference. Draw a close-up face portrait of this same priestess; keep blonde/pink hair, pink eyes, white/gold robe, coral ribbon. Change composition from full body to head and shoulders."
+  },
+  "style_options": {
+    "color_palette": true,
+    "outline": true,
+    "detail": true,
+    "shading": true
+  }
+}

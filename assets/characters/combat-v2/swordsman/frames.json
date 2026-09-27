@@ -1,0 +1,1100 @@
+{
+  "provider": "PixelLab",
+  "characterId": "a4220699-a13b-424f-bf6c-6de9381f466b",
+  "frameWidth": 68,
+  "frameHeight": 68,
+  "pivot": {
+    "x": 34,
+    "y": 58
+  },
+  "frameCounts": {
+    "walk": 6,
+    "attack": 8,
+    "hit": 4,
+    "down": 6
+  },
+  "frameDurationsMs": {
+    "walk": 120,
+    "attack": 100,
+    "hit": 100,
+    "down": 140
+  },
+  "idleColumns": {
+    "south": 0,
+    "east": 2,
+    "north": 4,
+    "west": 6
+  },
+  "walkRows": {
+    "south": 1,
+    "east": 2,
+    "north": 3,
+    "west": 4
+  },
+  "paths": {
+    "walk": "assets/characters/combat-v2/swordsman/idle_walk.png",
+    "attack": "assets/characters/combat-v2/swordsman/attack.png",
+    "hit": "assets/characters/combat-v2/swordsman/hit.png",
+    "down": "assets/characters/combat-v2/swordsman/down.png"
+  },
+  "teamStyle": "Shared faceless mob design; independent existing home/enemy/ally shape badges and HP colors.",
+  "packing": "Fixed cell centre, native pixels, no resize, no mirroring, no alpha crop. Sword attack reference frame omitted.",
+  "frames": [
+    {
+      "action": "walk",
+      "direction": "south",
+      "frame": 0,
+      "visibleBounds": [
+        23,
+        11,
+        44,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "south",
+      "frame": 1,
+      "visibleBounds": [
+        23,
+        11,
+        44,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "south",
+      "frame": 2,
+      "visibleBounds": [
+        23,
+        11,
+        44,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "south",
+      "frame": 3,
+      "visibleBounds": [
+        23,
+        11,
+        45,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "south",
+      "frame": 4,
+      "visibleBounds": [
+        23,
+        11,
+        47,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "south",
+      "frame": 5,
+      "visibleBounds": [
+        24,
+        11,
+        47,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 0,
+      "visibleBounds": [
+        18,
+        11,
+        51,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 1,
+      "visibleBounds": [
+        20,
+        11,
+        51,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 2,
+      "visibleBounds": [
+        20,
+        12,
+        50,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 3,
+      "visibleBounds": [
+        23,
+        13,
+        48,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 4,
+      "visibleBounds": [
+        25,
+        14,
+        46,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 5,
+      "visibleBounds": [
+        25,
+        14,
+        45,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 6,
+      "visibleBounds": [
+        25,
+        13,
+        46,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 7,
+      "visibleBounds": [
+        23,
+        12,
+        48,
+        55
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "south",
+      "frame": 0,
+      "visibleBounds": [
+        19,
+        12,
+        51,
+        55
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "south",
+      "frame": 1,
+      "visibleBounds": [
+        17,
+        12,
+        51,
+        55
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "south",
+      "frame": 2,
+      "visibleBounds": [
+        17,
+        11,
+        50,
+        55
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "south",
+      "frame": 3,
+      "visibleBounds": [
+        19,
+        10,
+        50,
+        55
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "south",
+      "frame": 0,
+      "visibleBounds": [
+        20,
+        12,
+        51,
+        55
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "south",
+      "frame": 1,
+      "visibleBounds": [
+        18,
+        13,
+        52,
+        55
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "south",
+      "frame": 2,
+      "visibleBounds": [
+        13,
+        21,
+        54,
+        55
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "south",
+      "frame": 3,
+      "visibleBounds": [
+        14,
+        27,
+        57,
+        56
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "south",
+      "frame": 4,
+      "visibleBounds": [
+        11,
+        34,
+        58,
+        55
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "south",
+      "frame": 5,
+      "visibleBounds": [
+        10,
+        36,
+        59,
+        56
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "east",
+      "frame": 0,
+      "visibleBounds": [
+        25,
+        12,
+        49,
+        57
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "east",
+      "frame": 1,
+      "visibleBounds": [
+        25,
+        12,
+        48,
+        57
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "east",
+      "frame": 2,
+      "visibleBounds": [
+        25,
+        12,
+        50,
+        56
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "east",
+      "frame": 3,
+      "visibleBounds": [
+        25,
+        12,
+        48,
+        56
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "east",
+      "frame": 4,
+      "visibleBounds": [
+        24,
+        13,
+        46,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "east",
+      "frame": 5,
+      "visibleBounds": [
+        24,
+        13,
+        47,
+        56
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 0,
+      "visibleBounds": [
+        24,
+        11,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 1,
+      "visibleBounds": [
+        22,
+        11,
+        47,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 2,
+      "visibleBounds": [
+        20,
+        12,
+        49,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 3,
+      "visibleBounds": [
+        18,
+        12,
+        50,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 4,
+      "visibleBounds": [
+        18,
+        12,
+        50,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 5,
+      "visibleBounds": [
+        18,
+        12,
+        50,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 6,
+      "visibleBounds": [
+        19,
+        11,
+        50,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 7,
+      "visibleBounds": [
+        21,
+        11,
+        48,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "east",
+      "frame": 0,
+      "visibleBounds": [
+        24,
+        12,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "east",
+      "frame": 1,
+      "visibleBounds": [
+        23,
+        12,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "east",
+      "frame": 2,
+      "visibleBounds": [
+        23,
+        11,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "east",
+      "frame": 3,
+      "visibleBounds": [
+        23,
+        11,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "east",
+      "frame": 0,
+      "visibleBounds": [
+        25,
+        12,
+        48,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "east",
+      "frame": 1,
+      "visibleBounds": [
+        24,
+        14,
+        48,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "east",
+      "frame": 2,
+      "visibleBounds": [
+        20,
+        19,
+        53,
+        56
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "east",
+      "frame": 3,
+      "visibleBounds": [
+        16,
+        23,
+        54,
+        56
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "east",
+      "frame": 4,
+      "visibleBounds": [
+        11,
+        34,
+        56,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "east",
+      "frame": 5,
+      "visibleBounds": [
+        9,
+        38,
+        59,
+        57
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "north",
+      "frame": 0,
+      "visibleBounds": [
+        23,
+        12,
+        45,
+        56
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "north",
+      "frame": 1,
+      "visibleBounds": [
+        24,
+        12,
+        44,
+        56
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "north",
+      "frame": 2,
+      "visibleBounds": [
+        24,
+        12,
+        45,
+        56
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "north",
+      "frame": 3,
+      "visibleBounds": [
+        23,
+        12,
+        45,
+        54
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "north",
+      "frame": 4,
+      "visibleBounds": [
+        23,
+        12,
+        45,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "north",
+      "frame": 5,
+      "visibleBounds": [
+        23,
+        12,
+        45,
+        55
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 0,
+      "visibleBounds": [
+        19,
+        11,
+        47,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 1,
+      "visibleBounds": [
+        18,
+        10,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 2,
+      "visibleBounds": [
+        18,
+        11,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 3,
+      "visibleBounds": [
+        18,
+        11,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 4,
+      "visibleBounds": [
+        17,
+        10,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 5,
+      "visibleBounds": [
+        16,
+        11,
+        46,
+        56
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 6,
+      "visibleBounds": [
+        15,
+        12,
+        58,
+        56
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 7,
+      "visibleBounds": [
+        15,
+        11,
+        56,
+        56
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "north",
+      "frame": 0,
+      "visibleBounds": [
+        19,
+        10,
+        46,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "north",
+      "frame": 1,
+      "visibleBounds": [
+        18,
+        11,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "north",
+      "frame": 2,
+      "visibleBounds": [
+        19,
+        0,
+        68,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "north",
+      "frame": 3,
+      "visibleBounds": [
+        20,
+        12,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "north",
+      "frame": 0,
+      "visibleBounds": [
+        22,
+        12,
+        46,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "north",
+      "frame": 1,
+      "visibleBounds": [
+        23,
+        13,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "north",
+      "frame": 2,
+      "visibleBounds": [
+        20,
+        18,
+        48,
+        56
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "north",
+      "frame": 3,
+      "visibleBounds": [
+        17,
+        24,
+        53,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "north",
+      "frame": 4,
+      "visibleBounds": [
+        12,
+        35,
+        54,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "north",
+      "frame": 5,
+      "visibleBounds": [
+        8,
+        38,
+        54,
+        58
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "west",
+      "frame": 0,
+      "visibleBounds": [
+        18,
+        13,
+        42,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "west",
+      "frame": 1,
+      "visibleBounds": [
+        18,
+        13,
+        45,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "west",
+      "frame": 2,
+      "visibleBounds": [
+        18,
+        13,
+        45,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "west",
+      "frame": 3,
+      "visibleBounds": [
+        19,
+        12,
+        42,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "west",
+      "frame": 4,
+      "visibleBounds": [
+        19,
+        13,
+        43,
+        55
+      ]
+    },
+    {
+      "action": "walk",
+      "direction": "west",
+      "frame": 5,
+      "visibleBounds": [
+        19,
+        13,
+        42,
+        56
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 0,
+      "visibleBounds": [
+        18,
+        11,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 1,
+      "visibleBounds": [
+        18,
+        11,
+        43,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 2,
+      "visibleBounds": [
+        16,
+        11,
+        43,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 3,
+      "visibleBounds": [
+        18,
+        11,
+        42,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 4,
+      "visibleBounds": [
+        20,
+        11,
+        42,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 5,
+      "visibleBounds": [
+        19,
+        11,
+        42,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 6,
+      "visibleBounds": [
+        20,
+        11,
+        42,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 7,
+      "visibleBounds": [
+        18,
+        11,
+        43,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "west",
+      "frame": 0,
+      "visibleBounds": [
+        18,
+        12,
+        42,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "west",
+      "frame": 1,
+      "visibleBounds": [
+        18,
+        11,
+        42,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "west",
+      "frame": 2,
+      "visibleBounds": [
+        17,
+        11,
+        44,
+        57
+      ]
+    },
+    {
+      "action": "hit",
+      "direction": "west",
+      "frame": 3,
+      "visibleBounds": [
+        16,
+        11,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "west",
+      "frame": 0,
+      "visibleBounds": [
+        17,
+        13,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "west",
+      "frame": 1,
+      "visibleBounds": [
+        16,
+        15,
+        46,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "west",
+      "frame": 2,
+      "visibleBounds": [
+        16,
+        22,
+        50,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "west",
+      "frame": 3,
+      "visibleBounds": [
+        15,
+        30,
+        53,
+        58
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "west",
+      "frame": 4,
+      "visibleBounds": [
+        14,
+        37,
+        56,
+        57
+      ]
+    },
+    {
+      "action": "down",
+      "direction": "west",
+      "frame": 5,
+      "visibleBounds": [
+        12,
+        37,
+        56,
+        57
+      ]
+    }
+  ]
+}

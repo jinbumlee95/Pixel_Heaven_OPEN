@@ -1,0 +1,29 @@
+{
+  "key": "characters/dungeon/slime/idle",
+  "monster": "slime",
+  "job_id": "c572b0a4-4d62-4b9a-a3fc-a229406dca9e",
+  "args": {
+    "width": 68,
+    "height": 68,
+    "no_background": true,
+    "seed": 24100,
+    "description": "Pixel Heaven RPG MONSTER SPRITE, native crisp 1px pixel art on a TRANSPARENT 68x68 canvas. Match small existing 32x48 RPG hero sprites. Slightly overhead three-quarter RPG camera, NOT flat side-view cartoon. Upper-left light, rich but restrained volumetric shading and selective dark outline. One low rounded sage-green gelatinous slime with two tiny dark eyes at its LEFT-facing front, a blue-grey lower shaded rim and warm pale upper-left highlight. A plump asymmetric jelly mound with dimensional translucency, no arms or legs. The VISIBLE slime is only 32 pixels wide by 24 pixels tall: entirely x18..49 y34..57. It rests on y57, left-facing west. IMPORTANT transparent margins are intentional: do NOT expand the body to fill the canvas. Fixed virtual ground pivot(34,58). Only one monster. No scene, ground/platform, floor, shadow blob, checkerboard, UI, text or effects. Limited 8-16 colors drawn from: #2E342F #454C43 #E9DDC6 #CBBDA2 #BAC4C1 #7B9299 #4D626B #7F9B86 #526F61 #65899A #B46F55 #784C40 #D6A078 #9285A7 #665D7A #DEC58B #AF9254 #896849 #5D4D3B #9A9B88 #676F63 #D1A382 #9A6E52 #4C433E."
+  },
+  "tool": "create_image_pro_flash",
+  "body": [
+    32,
+    24
+  ],
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/slime/idle.png"
+  ]
+}

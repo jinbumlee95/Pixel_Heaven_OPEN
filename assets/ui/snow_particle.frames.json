@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/snow_particle",
+  "frameWidth": 8,
+  "frameHeight": 8,
+  "frames": 1,
+  "frameDurationMs": 100,
+  "pivot": {
+    "x": 4,
+    "y": 4
+  },
+  "sheetWidth": 8,
+  "sheetHeight": 8,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "872c8fae-025a-4d5b-bbd4-e6ea613c6a87"
+}

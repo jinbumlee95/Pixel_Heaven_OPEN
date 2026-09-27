@@ -1,0 +1,56 @@
+{
+  "frameWidth": 68,
+  "frameHeight": 68,
+  "idleWidth": 32,
+  "idleHeight": 48,
+  "sheet": "priest/spritesheet/Marin-inspired_sun_pries-Idle.png",
+  "sheetLayout": "priest/spritesheet/Marin-inspired_sun_pries-Idle.json",
+  "selectedAnimationGroup": "79a51403-58c6-4ff2-a24e-9a5d72560bf3",
+  "frameDurationMs": 120,
+  "directions": {
+    "south": {
+      "idle": "priest/rotations/south.png",
+      "walk": [
+        "priest/walk/south/0.png",
+        "priest/walk/south/1.png",
+        "priest/walk/south/2.png",
+        "priest/walk/south/3.png",
+        "priest/walk/south/4.png",
+        "priest/walk/south/5.png"
+      ]
+    },
+    "west": {
+      "idle": "priest/rotations/west.png",
+      "walk": [
+        "priest/walk/west/0.png",
+        "priest/walk/west/1.png",
+        "priest/walk/west/2.png",
+        "priest/walk/west/3.png",
+        "priest/walk/west/4.png",
+        "priest/walk/west/5.png"
+      ]
+    },
+    "east": {
+      "idle": "priest/rotations/east.png",
+      "walk": [
+        "priest/walk/east/0.png",
+        "priest/walk/east/1.png",
+        "priest/walk/east/2.png",
+        "priest/walk/east/3.png",
+        "priest/walk/east/4.png",
+        "priest/walk/east/5.png"
+      ]
+    },
+    "north": {
+      "idle": "priest/rotations/north.png",
+      "walk": [
+        "priest/walk/north/0.png",
+        "priest/walk/north/1.png",
+        "priest/walk/north/2.png",
+        "priest/walk/north/3.png",
+        "priest/walk/north/4.png",
+        "priest/walk/north/5.png"
+      ]
+    }
+  }
+}

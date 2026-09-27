@@ -1,0 +1,25 @@
+{
+  "key": "characters/dungeon/slime/key_down",
+  "clip": "down",
+  "job_id": "8f1b951a-5653-4a69-8975-61d573054617",
+  "args": {
+    "width": 68,
+    "height": 68,
+    "no_background": true,
+    "description": "Keep the exact68x68 transparent canvas. Draw the SAME sage jelly monster after defeat, now a VERY LOW FLAT PUDDLE. Shape32px wide and only6-8px tall, at x18..49 y50..57. Preserve sage and blue-grey material, tiny closed dark eye slits. Absolutely no rounded upright ball or tall body. It lies motionless at ground y57. No particles, platform, background, shadow, checkerboard or text.",
+    "inputReference": "assets/characters/dungeon/slime/idle.png"
+  },
+  "tool": "edit_image_pixen",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    68,
+    68
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/slime/key_down.png"
+  ]
+}

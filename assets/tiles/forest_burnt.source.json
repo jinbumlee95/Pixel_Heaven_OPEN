@@ -1,0 +1,47 @@
+{
+  "key": "tiles/forest_burnt",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. One burnt oak tree, charred bare branches and trunk, small remaining dark crown silhouette, no flames, ground anchor(32,64), no ground patch.",
+    "width": 64,
+    "height": 64,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1211
+  },
+  "job_id": "9b62782c-5a20-4d15-8bf8-5fc45db93e85",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    64,
+    64
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/forest_burnt.png"
+  ],
+  "alignment": {
+    "translation": [
+      0,
+      10
+    ],
+    "originalAlphaBounds": [
+      12,
+      9,
+      51,
+      54
+    ],
+    "pivot": {
+      "x": 32,
+      "y": 64
+    },
+    "originalPNG": "assets/tiles/forest_burnt.generated.png"
+  }
+}

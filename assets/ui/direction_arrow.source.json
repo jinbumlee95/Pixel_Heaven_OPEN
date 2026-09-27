@@ -1,0 +1,161 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "9924c88b-b0fc-484a-b9a2-ca6740e223b8",
+  "recipe": {
+    "job": {
+      "canvas": [
+        24,
+        24
+      ],
+      "frame_count": 1,
+      "durations_ms": [
+        100
+      ],
+      "columns": 1,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55",
+        "wooddark": "#5D4D3B",
+        "steel": "#7B9299",
+        "steeldark": "#4D626B",
+        "sage": "#7F9B86",
+        "sagedark": "#526F61",
+        "linen": "#CBBDA2"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      2,
+                      9
+                    ],
+                    [
+                      14,
+                      9
+                    ],
+                    [
+                      14,
+                      3
+                    ],
+                    [
+                      23,
+                      12
+                    ],
+                    [
+                      14,
+                      21
+                    ],
+                    [
+                      14,
+                      15
+                    ],
+                    [
+                      2,
+                      15
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      16,
+                      11
+                    ],
+                    [
+                      16,
+                      8
+                    ],
+                    [
+                      20,
+                      12
+                    ],
+                    [
+                      16,
+                      16
+                    ],
+                    [
+                      16,
+                      13
+                    ],
+                    [
+                      4,
+                      13
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": true
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    24,
+    24
+  ],
+  "frameCount": 1,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/9924c88b-b0fc-484a-b9a2-ca6740e223b8/assets/south/full.png"
+}

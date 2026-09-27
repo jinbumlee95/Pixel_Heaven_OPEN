@@ -1,0 +1,15 @@
+{
+  "assetId": "tiles/debris",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "frames": 1,
+  "sheetWidth": 32,
+  "sheetHeight": 32,
+  "pivot": {
+    "x": 16,
+    "y": 32
+  },
+  "sourceJobId": "ced60e73-ada7-4842-ab94-6f10035a7052",
+  "integrationEnabled": false,
+  "status": "generated_pending_game_review"
+}

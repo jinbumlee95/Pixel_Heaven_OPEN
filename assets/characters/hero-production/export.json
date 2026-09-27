@@ -1,0 +1,189 @@
+{
+  "character": {
+    "id": "d1528b31-d86b-4486-943f-add8f6add4af",
+    "name": "Idle",
+    "prompt": "One full-body female sword hero for Pixel Heaven. Appearance inspired by Anna Yamada from The Dangers in My Heart: long straight dark navy-black hair, parted bangs framing face, warm brown eyes, friendly confident expression. Fantasy adventurer outfit: practical silver breastplate over navy blue long-sleeved tunic, brown belt, covered dark trousers and brown boots, small teal shoulder cape. No helmet. Hold a short straight steel sword in her right hand low alongside leg; left hand free. Modest fully covered clothing. South-facing idle, slightly overhead 3/4 RPG view, orthographic ground, no isometric diamond. Native 32x48 pixel canvas, visible body approximately 40 pixels high, boots on bottom edge at ground anchor (16,48), head around y8; all hair and sword fit canvas. Same chibi body proportions as existing priest. Crisp 1px clusters, selective dark outline, warm limited palette, upper-left light, transparent background, one character, no scenery, no platform, no text.",
+    "size": {
+      "width": 32,
+      "height": 48
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Anna-inspired_sword_hero-Idle.png",
+    "cell_size": {
+      "width": 68,
+      "height": 68
+    },
+    "sheet_size": {
+      "width": 544,
+      "height": 1292
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_thrust",
+        "animation_group_id": "053b0c82-f938-485e-a1d0-c50182ebc003",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_thrust",
+        "animation_group_id": "053b0c82-f938-485e-a1d0-c50182ebc003",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_thrust",
+        "animation_group_id": "053b0c82-f938-485e-a1d0-c50182ebc003",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_thrust",
+        "animation_group_id": "053b0c82-f938-485e-a1d0-c50182ebc003",
+        "direction": "west"
+      },
+      {
+        "row": 5,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "slash",
+        "animation_group_id": "2452a735-ca54-45e0-bbca-1eeb97555b81",
+        "direction": "south"
+      },
+      {
+        "row": 6,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_guard",
+        "animation_group_id": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+        "direction": "south"
+      },
+      {
+        "row": 7,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_guard",
+        "animation_group_id": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+        "direction": "east"
+      },
+      {
+        "row": 8,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_guard",
+        "animation_group_id": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+        "direction": "north"
+      },
+      {
+        "row": 9,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_guard",
+        "animation_group_id": "599b623c-485d-4ee5-85a2-c5d3f18e0000",
+        "direction": "west"
+      },
+      {
+        "row": 10,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "98d60294-6340-457c-812b-cb17751a02c9",
+        "direction": "south"
+      },
+      {
+        "row": 11,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "98d60294-6340-457c-812b-cb17751a02c9",
+        "direction": "east"
+      },
+      {
+        "row": 12,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "98d60294-6340-457c-812b-cb17751a02c9",
+        "direction": "north"
+      },
+      {
+        "row": 13,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "walk",
+        "animation_group_id": "98d60294-6340-457c-812b-cb17751a02c9",
+        "direction": "west"
+      },
+      {
+        "row": 14,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_slash",
+        "animation_group_id": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+        "direction": "south"
+      },
+      {
+        "row": 15,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_slash",
+        "animation_group_id": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+        "direction": "east"
+      },
+      {
+        "row": 16,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_slash",
+        "animation_group_id": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+        "direction": "north"
+      },
+      {
+        "row": 17,
+        "type": "animation",
+        "frame_count": 8,
+        "animation": "production_slash",
+        "animation_group_id": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+        "direction": "west"
+      },
+      {
+        "row": 18,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "thrust",
+        "animation_group_id": "b7ef79f2-3df0-4890-b461-abde4c3311cf",
+        "direction": "south"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-23T02:36:12.228597+00:00"
+}

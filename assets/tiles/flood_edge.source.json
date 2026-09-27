@@ -1,0 +1,777 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "470f1430-7e87-4ecb-8fdb-58d60f0d9697",
+  "recipe": {
+    "job": {
+      "canvas": [
+        32,
+        32
+      ],
+      "frame_count": 8,
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "columns": 8,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      31,
+                      0
+                    ],
+                    [
+                      31,
+                      9
+                    ],
+                    [
+                      24,
+                      7
+                    ],
+                    [
+                      17,
+                      10
+                    ],
+                    [
+                      8,
+                      7
+                    ],
+                    [
+                      0,
+                      9
+                    ]
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": true
+            },
+            "f1": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      23,
+                      0
+                    ],
+                    [
+                      31,
+                      0
+                    ],
+                    [
+                      31,
+                      31
+                    ],
+                    [
+                      23,
+                      31
+                    ],
+                    [
+                      25,
+                      22
+                    ],
+                    [
+                      22,
+                      16
+                    ],
+                    [
+                      25,
+                      8
+                    ]
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            },
+            "f2": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      23
+                    ],
+                    [
+                      8,
+                      25
+                    ],
+                    [
+                      17,
+                      22
+                    ],
+                    [
+                      24,
+                      25
+                    ],
+                    [
+                      31,
+                      23
+                    ],
+                    [
+                      31,
+                      31
+                    ],
+                    [
+                      0,
+                      31
+                    ]
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            },
+            "f3": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      9,
+                      0
+                    ],
+                    [
+                      7,
+                      8
+                    ],
+                    [
+                      10,
+                      17
+                    ],
+                    [
+                      7,
+                      24
+                    ],
+                    [
+                      9,
+                      31
+                    ],
+                    [
+                      0,
+                      31
+                    ]
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            },
+            "f4": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      31,
+                      0
+                    ],
+                    [
+                      31,
+                      9
+                    ],
+                    [
+                      24,
+                      7
+                    ],
+                    [
+                      17,
+                      10
+                    ],
+                    [
+                      8,
+                      7
+                    ],
+                    [
+                      0,
+                      9
+                    ]
+                  ],
+                  "color": "#65899A"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    0,
+                    0,
+                    8,
+                    24
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            },
+            "f5": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      23,
+                      0
+                    ],
+                    [
+                      31,
+                      0
+                    ],
+                    [
+                      31,
+                      31
+                    ],
+                    [
+                      23,
+                      31
+                    ],
+                    [
+                      25,
+                      22
+                    ],
+                    [
+                      22,
+                      16
+                    ],
+                    [
+                      25,
+                      8
+                    ]
+                  ],
+                  "color": "#65899A"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    8,
+                    0,
+                    31,
+                    8
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            },
+            "f6": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      23
+                    ],
+                    [
+                      8,
+                      25
+                    ],
+                    [
+                      17,
+                      22
+                    ],
+                    [
+                      24,
+                      25
+                    ],
+                    [
+                      31,
+                      23
+                    ],
+                    [
+                      31,
+                      31
+                    ],
+                    [
+                      0,
+                      31
+                    ]
+                  ],
+                  "color": "#65899A"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    23,
+                    8,
+                    31,
+                    31
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            },
+            "f7": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "polygon",
+                  "points": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      9,
+                      0
+                    ],
+                    [
+                      7,
+                      8
+                    ],
+                    [
+                      10,
+                      17
+                    ],
+                    [
+                      7,
+                      24
+                    ],
+                    [
+                      9,
+                      31
+                    ],
+                    [
+                      0,
+                      31
+                    ]
+                  ],
+                  "color": "#65899A"
+                },
+                {
+                  "op": "rect",
+                  "box": [
+                    0,
+                    23,
+                    24,
+                    31
+                  ],
+                  "color": "#65899A"
+                }
+              ],
+              "visible": false
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f1",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  true
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f2",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  true
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f3",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  true
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f4",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  true
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f5",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  true
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f6",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  true
+                ],
+                [
+                  8,
+                  false
+                ]
+              ]
+            },
+            {
+              "node": "f7",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  false
+                ],
+                [
+                  2,
+                  false
+                ],
+                [
+                  3,
+                  false
+                ],
+                [
+                  4,
+                  false
+                ],
+                [
+                  5,
+                  false
+                ],
+                [
+                  6,
+                  false
+                ],
+                [
+                  7,
+                  false
+                ],
+                [
+                  8,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "frameCount": 8,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/470f1430-7e87-4ecb-8fdb-58d60f0d9697/assets/south/full.png"
+}

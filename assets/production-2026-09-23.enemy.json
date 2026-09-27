@@ -1,0 +1,98 @@
+[
+  {
+    "role": "archer",
+    "name": "idle_walk",
+    "id": "e5c57a39-bf4d-4570-b555-71edfee663aa",
+    "markedFrames": 28
+  },
+  {
+    "role": "archer",
+    "name": "attack",
+    "id": "64dcdb10-e560-463f-a98f-18017bda62f9",
+    "markedFrames": 32
+  },
+  {
+    "role": "archer",
+    "name": "hit",
+    "id": "c7e5ecdf-b0ac-4e79-b251-b69228d651e1",
+    "markedFrames": 12
+  },
+  {
+    "role": "archer",
+    "name": "down",
+    "id": "2700e529-006e-4d9c-906a-bb3be5c4e7ec",
+    "markedFrames": 23
+  },
+  {
+    "role": "mage",
+    "name": "idle_walk",
+    "id": "46f71a96-acc0-406e-9416-a2e5e0bdae17",
+    "markedFrames": 28
+  },
+  {
+    "role": "mage",
+    "name": "attack",
+    "id": "0cde9670-3816-43f1-b2d8-23aeccc52498",
+    "markedFrames": 32
+  },
+  {
+    "role": "mage",
+    "name": "hit",
+    "id": "8b99f025-7bf2-4e10-aebd-54b37b4271e9",
+    "markedFrames": 12
+  },
+  {
+    "role": "mage",
+    "name": "down",
+    "id": "f6a48fd8-b47f-42b8-91a7-15ecd77c0318",
+    "markedFrames": 24
+  },
+  {
+    "role": "swordsman",
+    "name": "idle_walk",
+    "id": "1f479025-5e78-435b-807d-29350353f36e",
+    "markedFrames": 7
+  },
+  {
+    "role": "swordsman",
+    "name": "attack",
+    "id": "9d622ad1-c857-4c3e-afc3-fa0cd38192da",
+    "markedFrames": 18
+  },
+  {
+    "role": "swordsman",
+    "name": "hit",
+    "id": "85f8bc4c-a6bf-4375-a6c4-5d620092d841",
+    "markedFrames": 3
+  },
+  {
+    "role": "swordsman",
+    "name": "down",
+    "id": "c272784e-5328-46a9-9e66-ba99907e6260",
+    "markedFrames": 12
+  },
+  {
+    "role": "rogue",
+    "name": "idle_walk",
+    "id": "e3988e9b-d3cd-498b-8303-3a489bda3b99",
+    "markedFrames": 28
+  },
+  {
+    "role": "rogue",
+    "name": "attack",
+    "id": "2f7ceb6c-410c-4f28-95ad-316cb29626cd",
+    "markedFrames": 24
+  },
+  {
+    "role": "rogue",
+    "name": "hit",
+    "id": "adf993b3-d642-4133-a194-37248993551d",
+    "markedFrames": 12
+  },
+  {
+    "role": "rogue",
+    "name": "down",
+    "id": "81767576-0593-46a0-9ff2-e580379f0718",
+    "markedFrames": 24
+  }
+]

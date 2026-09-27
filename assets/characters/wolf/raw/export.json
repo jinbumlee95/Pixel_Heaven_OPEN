@@ -1,0 +1,77 @@
+{
+  "character": {
+    "id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+    "name": "Idle",
+    "prompt": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey wolf, four legs, pointed ears and long tail, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human. ISOLATED FIGURE ONLY. No terrain tile, ground, platform, shadow, checker pattern or backdrop in ANY direction.",
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "directions": 8,
+    "view": "low top-down"
+  },
+  "spritesheet": {
+    "path": "Clean_characters_wolf-Idle.png",
+    "cell_size": {
+      "width": 40,
+      "height": 40
+    },
+    "sheet_size": {
+      "width": 320,
+      "height": 200
+    },
+    "columns": 8,
+    "pivot": "cell-center",
+    "rows": [
+      {
+        "row": 0,
+        "type": "rotations",
+        "frame_count": 8,
+        "directions": [
+          "south",
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ]
+      },
+      {
+        "row": 1,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2",
+        "direction": "south"
+      },
+      {
+        "row": 2,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2",
+        "direction": "east"
+      },
+      {
+        "row": 3,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2",
+        "direction": "north"
+      },
+      {
+        "row": 4,
+        "type": "animation",
+        "frame_count": 6,
+        "animation": "production_walk",
+        "animation_group_id": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2",
+        "direction": "west"
+      }
+    ]
+  },
+  "export_version": "1.0",
+  "export_date": "2026-09-23T03:02:25.856362+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench exact edits",
+  "createdAt": "2026-09-23",
+  "derivedFrom": "assets/characters/combat/mage/home",
+  "palette": "combat_v1",
+  "referenceRightsBasis": "Project-owned generated home sheets; unchanged geometry.",
+  "postProcessing": [
+    "Exact sage/blue to terracotta/sand color mapping in PixelLab.",
+    "V emblems patched inside inspected cloth pixels when three-pixel coverage exists. Tiny or occluded poses use companion enemy side badge.",
+    "Lossless idle extraction."
+  ],
+  "jobs": [
+    {
+      "role": "mage",
+      "name": "idle_walk",
+      "id": "46f71a96-acc0-406e-9416-a2e5e0bdae17",
+      "markedFrames": 28
+    },
+    {
+      "role": "mage",
+      "name": "attack",
+      "id": "0cde9670-3816-43f1-b2d8-23aeccc52498",
+      "markedFrames": 32
+    },
+    {
+      "role": "mage",
+      "name": "hit",
+      "id": "8b99f025-7bf2-4e10-aebd-54b37b4271e9",
+      "markedFrames": 12
+    },
+    {
+      "role": "mage",
+      "name": "down",
+      "id": "f6a48fd8-b47f-42b8-91a7-15ecd77c0318",
+      "markedFrames": 24
+    }
+  ],
+  "integrationEnabled": false
+}

@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import { createInitialWorld } from '../src/game/World.js';
+import { EventForecast, getForecasts, FORECAST_RULES } from '../src/game/EventForecast.js';
+import { Factions } from '../src/game/Factions.js';
+import { encodeWorld, decodeWorld } from '../src/state/Persistence.js';
+const w=createInitialWorld();new Factions(w);const f=new EventForecast(w,{random:()=>0});
+const raids=()=>getForecasts(w.state).filter(p=>p.kind==='raid');
+assert.equal(raids().length,1);
+const initial=raids()[0];
+for(let time=1;time<initial.endAt;time++){w.state.time=time;f.update();assert.equal(raids().length,1);assert.equal(raids()[0].id,initial.id);}
+w.state.time=initial.endAt;f.update();
+assert.equal(w.state.eventQueue.find(p=>p.id===initial.id).stage,'resolved');
+assert.equal(raids().length,1);assert.notEqual(raids()[0].id,initial.id);
+assert.ok(raids()[0].startAt>=w.state.time+FORECAST_RULES.leadTicks);
+const old=createInitialWorld();new Factions(old);new EventForecast(old,{random:()=>0});
+const duplicate={...structuredClone(old.state.eventQueue[0]),id:'forecast-9',startAt:1000,endAt:1045};
+duplicate.battlePreparation={kinds:['cover'],woodSpent:3,resourcesSpent:{wood:3,stone:4},works:[]};
+old.state.eventQueue[1]=duplicate;old.state.faith.points=20;old.state.faith.spent=6;
+const loaded=decodeWorld(encodeWorld(old)).world,wood=loaded.getVillage('home').wood,events=[];
+new EventForecast(loaded,{random:()=>0,onEvent:e=>events.push(e)});
+assert.equal(getForecasts(loaded.state).filter(p=>p.kind==='raid').length,1);
+assert.equal(loaded.getVillage('home').wood,wood+3);assert.equal(loaded.state.faith.points,26);
+assert.equal(events.filter(e=>e.action==='raid_migrated').length,1);
+new EventForecast(loaded,{random:()=>0,onEvent:e=>events.push(e)});
+assert.equal(loaded.getVillage('home').wood,wood+3,'Refund once only');
+assert.equal(events.filter(e=>e.action==='raid_migrated').length,1);
+console.log('single battle queue: passed');

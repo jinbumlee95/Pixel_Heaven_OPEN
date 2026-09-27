@@ -1,0 +1,164 @@
+{
+  "role": "swordsman",
+  "name": "idle_walk",
+  "changes": [
+    {
+      "operation": "map_colors",
+      "layer": "image",
+      "frames": [
+        1
+      ],
+      "region": [
+        0,
+        0,
+        543,
+        339
+      ],
+      "colors": {
+        "#7F9B86": "#B46F55",
+        "#526F61": "#784C40",
+        "#65899A": "#D6A078"
+      },
+      "reason": "Enemy terracotta cloth; preserve skin, steel and weapon hands."
+    },
+    {
+      "operation": "patch_pixels",
+      "layer": "image",
+      "frames": [
+        1
+      ],
+      "pixels": [
+        [
+          305,
+          27,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          306,
+          28,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          307,
+          27,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          33,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          34,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          35,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          101,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          102,
+          233,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          103,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          169,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          170,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          171,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          237,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          238,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          239,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          305,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          306,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          307,
+          231,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          373,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          374,
+          233,
+          "#D6A078",
+          "#E9DDC6"
+        ],
+        [
+          375,
+          232,
+          "#D6A078",
+          "#E9DDC6"
+        ]
+      ],
+      "reason": "Three-pixel V emblem entirely inside observed cloth clusters."
+    }
+  ],
+  "markedFrames": 7,
+  "output": "assets/characters/combat/swordsman/enemy/idle_walk.png",
+  "referenceFile": "assets/characters/combat/swordsman/home/idle_walk.png"
+}

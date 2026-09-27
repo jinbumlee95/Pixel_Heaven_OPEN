@@ -1,0 +1,185 @@
+{
+  "provider": "PixelLab",
+  "tool": "pixelart_workbench",
+  "createdAt": "2026-09-23",
+  "drawingId": "809c1dc3-9d86-492e-8751-2899ad1535d4",
+  "recipe": {
+    "job": {
+      "canvas": [
+        24,
+        24
+      ],
+      "frame_count": 1,
+      "durations_ms": [
+        100
+      ],
+      "columns": 1,
+      "views": [
+        {
+          "id": "south",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "source_bookends_exact": false,
+      "body_palette_exact": false
+    },
+    "scene": {
+      "palette": {
+        "ink": "#2E342F",
+        "gold": "#DEC58B",
+        "violet": "#9285A7",
+        "dark": "#665D7A",
+        "white": "#E9DDC6",
+        "wood": "#896849",
+        "stone": "#9A9B88",
+        "fire": "#D6A078",
+        "red": "#B46F55",
+        "wooddark": "#5D4D3B",
+        "steel": "#7B9299",
+        "steeldark": "#4D626B",
+        "sage": "#7F9B86",
+        "sagedark": "#526F61",
+        "linen": "#CBBDA2"
+      },
+      "layers": [
+        {
+          "id": "art",
+          "name": "Art"
+        }
+      ],
+      "views": {
+        "south": {
+          "selections": {},
+          "nodes": {
+            "f0": {
+              "layer": "art",
+              "at": [
+                0,
+                0
+              ],
+              "draw": [
+                {
+                  "op": "circle",
+                  "center": [
+                    8,
+                    7
+                  ],
+                  "radius": 5,
+                  "color": "gold"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      1,
+                      18
+                    ],
+                    [
+                      6,
+                      16
+                    ],
+                    [
+                      11,
+                      20
+                    ],
+                    [
+                      16,
+                      16
+                    ],
+                    [
+                      23,
+                      18
+                    ]
+                  ],
+                  "color": "red",
+                  "stroke_width": 2
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      10,
+                      17
+                    ],
+                    [
+                      8,
+                      23
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      17,
+                      17
+                    ],
+                    [
+                      19,
+                      23
+                    ]
+                  ],
+                  "color": "ink"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      16,
+                      3
+                    ],
+                    [
+                      19,
+                      1
+                    ]
+                  ],
+                  "color": "gold"
+                },
+                {
+                  "op": "path",
+                  "points": [
+                    [
+                      16,
+                      8
+                    ],
+                    [
+                      21,
+                      8
+                    ]
+                  ],
+                  "color": "gold"
+                }
+              ],
+              "visible": true
+            }
+          },
+          "tracks": [
+            {
+              "node": "f0",
+              "property": "visible",
+              "interpolation": "step",
+              "keys": [
+                [
+                  1,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "originalDimensions": [
+    24,
+    24
+  ],
+  "frameCount": 1,
+  "referenceRightsBasis": "Original shapes authored for this project; no external image reference.",
+  "postProcessing": [],
+  "downloadUrl": "https://api.pixellab.ai/mcp/pixel-tools/809c1dc3-9d86-492e-8751-2899ad1535d4/assets/south/full.png"
+}

@@ -1,0 +1,41 @@
+import assert from 'node:assert/strict';
+import { Game } from '../src/game/Game.js';
+import { createPriestResponse, PRIEST_MESSAGES } from '../src/ui/Priest.js';
+import { updateWander, WANDER_RULES } from '../src/game/Wander.js';
+import { executeDivineAction } from '../src/actions/divineActions.js';
+
+const game = new Game(null);
+const priest = game.priestEntity;
+const original = structuredClone(game.world.state);
+const result = await game.sendDivineMessage('make the moon jealous of the sun', 'home');
+assert.equal(result.code, 'unclear');
+assert.equal(result.ok, false);
+assert.equal(result.priestResponse.entityId, priest.id);
+assert.equal(result.priestResponse.villageId, 'home');
+assert.equal(game.world.state.entities.get(priest.id), priest);
+assert.equal(game.world.state.entities.size, 5, 'One named hero joins the Priest and three decorative villagers');
+assert.equal(priest.lastInterpretation.confidence, 0.2);
+assert.equal(priest.lastInterpretation.messageId, 1);
+assert.ok(PRIEST_MESSAGES.en.includes(result.message));
+original.entities.get(priest.id).lastInterpretation = structuredClone(priest.lastInterpretation);
+assert.deepEqual(game.world.state, original); // Only this Priest's response metadata changed.
+assert.deepEqual(game.world.state.recent_events, original.recent_events); // Not a divine effect; initial forecasts remain.
+const korean = await game.sendDivineMessage('달이 태양을 질투하게 해라');
+assert.ok(PRIEST_MESSAGES.ko.includes(korean.message));
+assert.notEqual(createPriestResponse(priest, 'moon', 0).message, createPriestResponse(priest, 'moon', 1).message);
+assert.equal(createPriestResponse(priest, 'moon', 3).message, createPriestResponse(priest, 'moon', 0).message);
+assert.throws(() => createPriestResponse({ type: 'villager' }, 'moon'), TypeError);
+const start = { ...priest.position };
+for (let elapsed = 0; elapsed < WANDER_RULES.restMinMs; elapsed += 50) updateWander(game.world, 50, () => 0);
+assert.notDeepEqual(priest.position, start);
+assert.equal(priest.lastInterpretation.messageId, 2);
+assert.ok((await game.sendDivineMessage('make it rain in our village')).ok);
+assert.equal(game.world.getVillage('home').weather, 'rain');
+const beforeInvalid = structuredClone(game.world.state);
+assert.equal(executeDivineAction(game.world, { status: 'unclear', confidence: 0.2 }).ok, false);
+assert.deepEqual(game.world.state, beforeInvalid);
+const malformed = new Game(null, { interpret: async () => ({ status: 'unclear', confidence: 0.2, action: 'create_rain' }) });
+const untouched = structuredClone(malformed.world.state);
+assert.equal((await malformed.sendDivineMessage('moon')).code, 'invalid_action');
+assert.deepEqual(malformed.world.state, untouched);
+console.log('priest: passed');

@@ -1,0 +1,16 @@
+{
+  "provider": "PixelLab",
+  "created": "2026-09-24",
+  "styleReference": "d1528b31-d86b-4486-943f-add8f6add4af",
+  "characters": {
+    "swordsman": "a4220699-a13b-424f-bf6c-6de9381f466b",
+    "archer": "c73f102a-f64b-4d8c-bd40-53977a93391a",
+    "mage": "418ee380-8afb-48c7-a5e2-eb61183ef9e5",
+    "rogue": "3a0046eb-c1a7-434b-919e-a8d2f206dc24"
+  },
+  "mountain": "6741ed53-e186-4952-98d9-809eacbc1be2",
+  "pine": "918e5a57-6f19-4a9b-98f9-5ba71aa8d4b6",
+  "ford": "9d40b601-7a8f-4866-8748-aac2b2dc6909",
+  "riverPaletteEdit": "43cd08c5-8fe0-434a-a370-e4814b74eb7b",
+  "river": "ba90ff42-6cd2-4878-98a4-b04679bff673"
+}

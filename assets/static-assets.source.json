@@ -1,0 +1,322 @@
+{
+  "provider": "PixelLab",
+  "created": "2026-09-22",
+  "scope": "Single-view static assets. Directional character sprites excluded; existing forest retained.",
+  "assets": [
+    {
+      "name": "tiles/grass",
+      "size": 32,
+      "description": "Seamless repeating grass ground texture viewed directly overhead. Muted dark moss and olive greens matching a cozy medieval forest village. Very subtle tiny grass clusters and low contrast. Fill the square entirely edge to edge with grass, no border, no horizon, no objects, no isolated island. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": false,
+      "seed": 930,
+      "job_id": "0e8f95d2-9b9c-4907-9c7f-e8371cc2ae72",
+      "file": "tiles/grass.png",
+      "url": "https://api.pixellab.ai/mcp/pixel-tools/893266fb-ea6d-4c0d-886c-85e1fad2a82d/assets/south/full.png",
+      "postprocess": "Replaced busy generated texture with a low-contrast exact PixelLab drawing; see grass.recipe.json",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "tiles/water",
+      "size": 32,
+      "description": "Seamless repeating river water texture viewed directly overhead. Muted deep teal and blue, a few subtle short pale horizontal ripple clusters. Flat square texture filled edge to edge, no shore, no border, no objects. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": false,
+      "seed": 931,
+      "job_id": "d4597b8f-7e26-4dea-b717-b825127809db",
+      "file": "tiles/water.png",
+      "url": "https://api.pixellab.ai/mcp/images/d4597b8f-7e26-4dea-b717-b825127809db/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "tiles/farmland",
+      "size": 32,
+      "description": "Single square patch of cultivated farmland, overhead view. Four tidy parallel rows of tiny green seedlings in dark warm brown tilled earth. Flat square aligned with screen axes, not diamond, nearly fills tile with one pixel transparent margin. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 932,
+      "job_id": "d04f3507-1b38-4f01-a385-7328493f283b",
+      "file": "tiles/farmland.png",
+      "url": "https://api.pixellab.ai/mcp/pixel-tools/52862f5f-8c8d-4602-93a6-49080b367a35/assets/south/full.png",
+      "tool": "create_image_pixen",
+      "generations": 1,
+      "postprocess": {
+        "tool": "pixelart_workbench",
+        "drawing_id": "52862f5f-8c8d-4602-93a6-49080b367a35",
+        "reason": "Preserve one-pixel transparent margin.",
+        "recipe": {
+          "job": {
+            "canvas": [
+              32,
+              32
+            ],
+            "frame_count": 1,
+            "views": [
+              {
+                "id": "south",
+                "offset": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "source_bookends_exact": false
+          },
+          "scene": {
+            "layers": [
+              {
+                "id": "field",
+                "name": "Field"
+              }
+            ],
+            "views": {
+              "south": {
+                "selections": {
+                  "field": {
+                    "regions": [
+                      [
+                        1,
+                        1,
+                        30,
+                        30
+                      ]
+                    ]
+                  },
+                  "border": {}
+                },
+                "nodes": {
+                  "field": {
+                    "layer": "field",
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "draw": [
+                      {
+                        "op": "copy",
+                        "part": "field"
+                      }
+                    ]
+                  }
+                },
+                "tracks": []
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "tiles/stone",
+      "size": 32,
+      "description": "Single small cluster of three rounded gray stone resource rocks, muted slate gray with warm highlights and moss at base, high top-down 3/4 view, entire object centered, two pixel transparent margin, no ground tile. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 933,
+      "job_id": "40c6c6f9-f897-49dc-be65-eab5d5bdce86",
+      "file": "tiles/stone.png",
+      "url": "https://api.pixellab.ai/mcp/images/40c6c6f9-f897-49dc-be65-eab5d5bdce86/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "tiles/house",
+      "size": 32,
+      "description": "One tiny cozy medieval timber cottage, warm ochre plaster walls, reddish brown pitched roof, one dark wooden front door and small window. High top-down 3/4 view with front facing south, clear compact silhouette, centered with two pixel transparent margin, no ground tile. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 934,
+      "job_id": "dbfc1e7b-fd2c-49f0-a20c-73a73df1756c",
+      "file": "tiles/house.png",
+      "url": "https://api.pixellab.ai/mcp/images/dbfc1e7b-fd2c-49f0-a20c-73a73df1756c/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "tiles/temple",
+      "size": 96,
+      "description": "Single cozy medieval village temple doubling as a town hall, warm gray stone walls, muted blue slate pitched roofs, modest central bell tower, broad wooden entrance facing south, two symmetric side wings, subtle gold sun emblem. High top-down 3/4 game view, earthy colors, simple readable pixel clusters, entire building centered with six pixel transparent margin, no terrain or surrounding objects. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 935,
+      "job_id": "6a400a4d-b78a-4946-a34f-ff47ad5a7656",
+      "file": "tiles/temple.png",
+      "url": "https://api.pixellab.ai/mcp/images/6a400a4d-b78a-4946-a34f-ff47ad5a7656/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/weather_clear",
+      "size": 24,
+      "description": "Single clear-weather HUD icon: warm golden sun with eight short chunky rays, simple readable silhouette, centered, two pixel transparent margin. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 936,
+      "job_id": "54574ae3-1382-444d-a5fe-cf270179ac91",
+      "file": "ui/weather_clear.png",
+      "url": "https://api.pixellab.ai/mcp/images/54574ae3-1382-444d-a5fe-cf270179ac91/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/weather_rain",
+      "size": 24,
+      "description": "Single rainy-weather HUD icon: small muted blue gray cloud above three bright blue falling raindrops, simple chunky readable silhouette, centered, two pixel transparent margin. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 937,
+      "job_id": "56c17ed9-2a19-4dde-a28f-a587a51507f5",
+      "file": "ui/weather_rain.png",
+      "url": "https://api.pixellab.ai/mcp/images/56c17ed9-2a19-4dde-a28f-a587a51507f5/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/icon_food",
+      "size": 16,
+      "description": "Single tiny food resource HUD icon: golden loaf of bread with two darker scoring marks, chunky simple silhouette readable at sixteen pixels, centered with one pixel transparent margin. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 938,
+      "job_id": "f0124fc8-dd89-4e72-80ca-f171fca90666",
+      "file": "ui/icon_food.png",
+      "url": "https://api.pixellab.ai/mcp/images/f0124fc8-dd89-4e72-80ca-f171fca90666/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/icon_wood",
+      "size": 16,
+      "description": "Single tiny wood resource HUD icon: two short stacked brown timber logs, light tan circular cut ends, chunky simple silhouette readable at sixteen pixels, centered with one pixel transparent margin. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 939,
+      "job_id": "c45de4a9-a5e5-4a2e-bc0e-6834b50db750",
+      "file": "ui/icon_wood.png",
+      "url": "https://api.pixellab.ai/mcp/images/c45de4a9-a5e5-4a2e-bc0e-6834b50db750/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/icon_stone",
+      "size": 16,
+      "description": "Single tiny stone resource HUD icon: two slate gray rocks with a light upper-left facet, chunky simple silhouette readable at sixteen pixels, centered with one pixel transparent margin. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 940,
+      "job_id": "d32d79f4-d6d1-412b-8212-6ba70a6cc1ea",
+      "file": "ui/icon_stone.png",
+      "url": "https://api.pixellab.ai/mcp/images/d32d79f4-d6d1-412b-8212-6ba70a6cc1ea/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/priest_portrait",
+      "size": 48,
+      "description": "Single bust portrait of a kindly elderly high priest for a cozy medieval village game. Cream and muted gold hooded robe, short white beard, calm face, tiny gold sun clasp. Front-facing head and shoulders only, centered, restrained warm earthy palette, no frame, transparent surrounding background. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 941,
+      "job_id": "ec69cf8c-16b7-4864-94fa-bc7208fa1609",
+      "file": "ui/priest_portrait.png",
+      "url": "https://api.pixellab.ai/mcp/images/ec69cf8c-16b7-4864-94fa-bc7208fa1609/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/oracle_glow",
+      "size": 32,
+      "description": "Single divine oracle waiting indicator: small four-point warm golden star with two smaller sparkles around it and a restrained stepped pixel halo. Crisp pixel clusters, cream and amber colors, centered with generous transparent margin, no text. Cohesive crisp retro pixel art, limited earthy palette, upper-left lighting, no text, no UI frame, no antialiasing.",
+      "transparent": true,
+      "seed": 942,
+      "job_id": "f0d4059a-15ae-4cb1-841d-933b7f00574c",
+      "file": "ui/oracle_glow.png",
+      "url": "https://api.pixellab.ai/mcp/images/f0d4059a-15ae-4cb1-841d-933b7f00574c/download",
+      "tool": "create_image_pixen",
+      "generations": 1
+    },
+    {
+      "name": "ui/rain_particle",
+      "file": "ui/rain_particle.png",
+      "size": 8,
+      "transparent": true,
+      "tool": "pixelart_workbench",
+      "drawing_id": "750dbeb9-da67-48bc-b007-9ca4676ceb9a",
+      "url": "https://api.pixellab.ai/mcp/pixel-tools/750dbeb9-da67-48bc-b007-9ca4676ceb9a/assets/south/full.png",
+      "recipe": {
+        "job": {
+          "canvas": [
+            8,
+            8
+          ],
+          "frame_count": 1,
+          "views": [
+            {
+              "id": "south",
+              "offset": [
+                0,
+                0
+              ]
+            }
+          ],
+          "source_bookends_exact": false
+        },
+        "scene": {
+          "palette": {
+            "dark": "#5591b5",
+            "light": "#a3d9eb"
+          },
+          "layers": [
+            {
+              "id": "rain",
+              "name": "Rain"
+            }
+          ],
+          "views": {
+            "south": {
+              "selections": {},
+              "nodes": {
+                "drop": {
+                  "layer": "rain",
+                  "at": [
+                    0,
+                    0
+                  ],
+                  "draw": [
+                    {
+                      "op": "pixels",
+                      "pixels": [
+                        [
+                          5,
+                          1,
+                          "dark"
+                        ],
+                        [
+                          4,
+                          2,
+                          "dark"
+                        ],
+                        [
+                          4,
+                          3,
+                          "light"
+                        ],
+                        [
+                          3,
+                          4,
+                          "light"
+                        ],
+                        [
+                          3,
+                          5,
+                          "light"
+                        ],
+                        [
+                          2,
+                          6,
+                          "dark"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              },
+              "tracks": []
+            }
+          }
+        }
+      },
+      "generations": 0
+    }
+  ]
+}

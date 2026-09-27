@@ -1,0 +1,68 @@
+{
+  "assetId": "dungeon.cave_bat",
+  "frameDimensions": {
+    "width": 68,
+    "height": 68
+  },
+  "bodyDimensions": [
+    48,
+    28
+  ],
+  "pivot": {
+    "x": 34,
+    "y": 58
+  },
+  "directionOrder": [
+    "west"
+  ],
+  "actionRows": {
+    "west": 0
+  },
+  "paths": {
+    "idle": "assets/characters/dungeon/cave_bat/idle.png",
+    "walk": "assets/characters/dungeon/cave_bat/walk.png",
+    "attack": "assets/characters/dungeon/cave_bat/attack.png",
+    "hit": "assets/characters/dungeon/cave_bat/hit.png",
+    "down": "assets/characters/dungeon/cave_bat/down.png"
+  },
+  "frameCounts": {
+    "idle": 1,
+    "walk": 6,
+    "attack": 8,
+    "hit": 3,
+    "down": 6
+  },
+  "frameDurationsMs": {
+    "idle": 120,
+    "walk": 120,
+    "attack": 120,
+    "hit": 100,
+    "down": 140
+  },
+  "loopAndHoldPolicy": {
+    "idle": "hold",
+    "walk": "loop",
+    "attack": "once",
+    "hit": "once",
+    "down": "hold-last"
+  },
+  "visualMarker": {
+    "name": "contact",
+    "frame": 3
+  },
+  "palette": "combat_v1",
+  "paletteHex": [
+    "#2E342F",
+    "#454C43",
+    "#E9DDC6",
+    "#CBBDA2",
+    "#9285A7",
+    "#665D7A",
+    "#896849",
+    "#5D4D3B",
+    "#D1A382",
+    "#9A6E52",
+    "#4C433E"
+  ],
+  "integrationEnabled": false
+}

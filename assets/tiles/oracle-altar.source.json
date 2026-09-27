@@ -1,0 +1,47 @@
+{
+  "key": "tiles/oracle-altar",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small ancient pale stone oracle altar facing south, three shallow steps, flat offering slab, engraved small gold sun at top center, slight violet reception point. 2x1cell footprint, bottom center anchor(32,48). Worshipper stands to south facing north. No humans.",
+    "width": 64,
+    "height": 48,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1205
+  },
+  "job_id": "5ee2f92c-64d4-4bb4-8f6b-d8b90fdbc002",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    64,
+    48
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/oracle-altar.png"
+  ],
+  "alignment": {
+    "translation": [
+      1,
+      2
+    ],
+    "originalAlphaBounds": [
+      5,
+      5,
+      57,
+      46
+    ],
+    "pivot": {
+      "x": 32,
+      "y": 48
+    },
+    "originalPNG": "assets/tiles/oracle-altar.generated.png"
+  }
+}

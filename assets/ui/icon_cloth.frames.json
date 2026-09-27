@@ -1,0 +1,14 @@
+{
+  "assetId": "resource.cloth",
+  "frameDimensions": {
+    "width": 16,
+    "height": 16
+  },
+  "pivot": {
+    "x": 8,
+    "y": 8
+  },
+  "frameCount": 1,
+  "path": "assets/ui/icon_cloth.png",
+  "source": "assets/ui/icon_cloth.source.json"
+}

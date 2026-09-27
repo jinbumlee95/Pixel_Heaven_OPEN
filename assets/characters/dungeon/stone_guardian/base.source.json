@@ -1,0 +1,30 @@
+{
+  "key": "characters/dungeon/stone_guardian/base",
+  "monster": "stone_guardian",
+  "body": [
+    44,
+    48
+  ],
+  "job_id": "0b6f3227-b473-485a-9ad3-61710c0ee845",
+  "args": {
+    "width": 44,
+    "height": 48,
+    "no_background": true,
+    "seed": 24602,
+    "description": "Native small fantasy RPG pixel-art enemy, matching32x48 chibi hero sprite pixel density. Slightly overhead THREE-QUARTER RPG view, facing LEFT, not straight side-view. One squat broad stone golem facing LEFT west. Massive boulder shoulders, articulated rocky forearms, short thick legs and low blocky head, tiny softly golden chest core. Volumetric grey stone facets, pale highlights upper-left, dark crevices and lower-right shadows. Empty hands. The entire figure including all limbs and wings must fit inside this 44x48 native canvas. Crisp1px clusters, selective dark contour, restrained warm muted palette. Not a large illustration reduced to pixels. True transparent background, no cast shadow, no floor or ground, no platform or base, no checkerboard, no scene, no text, no effects."
+  },
+  "tool": "create_image_pro_flash",
+  "rejectedOversizedJob": "2ddebfcf-8e7b-4f0d-b845-5289e9f79c99",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    44,
+    48
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/characters/dungeon/stone_guardian/base.png"
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "key": "characters/dungeon/slime/key_down",
+    "clip": "down",
+    "job_id": "8f1b951a-5653-4a69-8975-61d573054617",
+    "args": {
+      "width": 68,
+      "height": 68,
+      "no_background": true,
+      "description": "Keep the exact68x68 transparent canvas. Draw the SAME sage jelly monster after defeat, now a VERY LOW FLAT PUDDLE. Shape32px wide and only6-8px tall, at x18..49 y50..57. Preserve sage and blue-grey material, tiny closed dark eye slits. Absolutely no rounded upright ball or tall body. It lies motionless at ground y57. No particles, platform, background, shadow, checkerboard or text.",
+      "inputReference": "assets/characters/dungeon/slime/idle.png"
+    },
+    "tool": "edit_image_pixen"
+  },
+  {
+    "key": "characters/dungeon/slime/key_attack",
+    "clip": "attack",
+    "job_id": "ef7f9202-92cf-4838-81b1-f5b54856f6d1",
+    "args": {
+      "width": 68,
+      "height": 68,
+      "no_background": true,
+      "description": "Keep exact68x68 canvas. Draw SAME left-facing sage slime at maximum LEFTWARD ram contact. A low stretched horizontal jelly shape roughly42px wide,18px high, extending from x8 to49, y40 to57. Left-facing eyes near leading LEFT tip, rear still at right. Base on ground y57, NO airborne jump, NO legs/arms/tongue, no new features. Same color/material and upper-left shine. True transparency, no effects or background.",
+      "inputReference": "assets/characters/dungeon/slime/idle.png"
+    },
+    "tool": "edit_image_pixen"
+  }
+]

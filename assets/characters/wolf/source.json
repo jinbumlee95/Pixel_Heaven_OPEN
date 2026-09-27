@@ -1,0 +1,109 @@
+{
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen + edit_image_pixen background cleanup + create_character v3 + animate_character v3",
+  "base": {
+    "key": "characters/wolf",
+    "kind": "characterBase",
+    "animal": true,
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/23e13bd3-90b1-463c-b153-a50cc4bd2c4c/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "job_id": "2dbfeb49-552d-435c-a4ec-1b8901044770",
+    "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+    "animations": {},
+    "rejected_character_id": "2b4ab08c-5fd8-4cff-9d2f-0f32401e879b",
+    "original_job_id": "23e13bd3-90b1-463c-b153-a50cc4bd2c4c",
+    "cleanup": {
+      "image_url": "https://api.pixellab.ai/mcp/images/23e13bd3-90b1-463c-b153-a50cc4bd2c4c/download",
+      "description": "Remove ALL scenery, ground tile, diamond terrain platform, grass, soil, cast shadow, checkerboard and background fragments from this image. Keep ONLY the exact same isolated character/animal and carried equipment, preserving every anatomical part, feet/hooves, tail, colors, face, outfit, native body size, pose and position. The space around and between legs must be true transparent alpha. Do not add any scenery or change the character.",
+      "width": 32,
+      "height": 32,
+      "no_background": true
+    },
+    "originalBaseArgs": {
+      "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small grey wolf, four legs, pointed ears and long tail, south-facing. Native 32x32 body, centered, feet near bottom, same density as 40px human.",
+      "width": 32,
+      "height": 32,
+      "direction": "south",
+      "view": "low top-down",
+      "no_background": true,
+      "detail": "medium detail",
+      "outline": "selective outline",
+      "seed": 1109
+    },
+    "tool": "edit_image_pixen"
+  },
+  "animations": [
+    {
+      "key": "characters/wolf",
+      "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+      "name": "walk",
+      "direction": "south",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "submitted": true,
+      "previousGroup": "e46b394b-161b-4ecb-96fe-0f1f4a1bd9d7",
+      "group": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2"
+    },
+    {
+      "key": "characters/wolf",
+      "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+      "name": "walk",
+      "direction": "east",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "e46b394b-161b-4ecb-96fe-0f1f4a1bd9d7",
+      "lastError": "error: need 1 job slots but only 0 available (8/8 used)\n\nhint: wait for jobs to finish (~30-60s each), then retry",
+      "group": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2"
+    },
+    {
+      "key": "characters/wolf",
+      "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+      "name": "walk",
+      "direction": "north",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "e46b394b-161b-4ecb-96fe-0f1f4a1bd9d7",
+      "group": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2"
+    },
+    {
+      "key": "characters/wolf",
+      "character_id": "d7614ad2-260f-4cbc-bd61-d3c3aab8a2f0",
+      "name": "walk",
+      "direction": "west",
+      "frames": 6,
+      "prompt": "Natural quadruped four-legged walking IN PLACE seamless loop, input direction unchanged. Same exact character and equipment; do not change hands, clothing or scale. No floor, no camera movement. Maintain fixed ground anchor. Fixed slight overhead camera, native pixel density, no resizing, all body and weapon visible inside padded68x68 frame. Preserve exact face, outfit and palette.",
+      "submitted": true,
+      "previousGroup": "e46b394b-161b-4ecb-96fe-0f1f4a1bd9d7",
+      "group": "e6e6d86f-1f19-4cec-9d47-c5e6cafecdf2"
+    }
+  ],
+  "originalDimensions": [
+    32,
+    32
+  ],
+  "finalDimensions": [
+    40,
+    40
+  ],
+  "postProcessing": [
+    "Uniform pivot-centred lossless packing; no body scaling.",
+    "Constant direction-specific vertical translation from idle foot to declared pivot, applied unchanged to every frame; offsets in frames.json. No per-frame crop or scale."
+  ],
+  "referenceAuthor": "Project-generated original characters",
+  "referenceRightsBasis": "Original textual descriptions, no third-party reference image uploaded.",
+  "requiredAttribution": null,
+  "selectedOutputPaths": [
+    "assets/characters/wolf/walk.png"
+  ],
+  "status": "delivered_pending_visual_review",
+  "qaIssues": []
+}

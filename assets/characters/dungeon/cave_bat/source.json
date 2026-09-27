@@ -1,0 +1,321 @@
+{
+  "provider": "PixelLab.ai",
+  "createdAt": "2026-09-23",
+  "base": {
+    "key": "characters/dungeon/cave_bat/base",
+    "monster": "cave_bat",
+    "body": [
+      48,
+      28
+    ],
+    "job_id": "3f460c54-83ad-4c07-866c-448ed1eec8d6",
+    "args": {
+      "image_url": "https://api.pixellab.ai/mcp/images/fb1846ae-32d8-4bdd-abd9-508143945ed3/download",
+      "description": "Redraw this SAME left-facing purple-winged bat to fit ENTIRELY in this48x28 canvas. Both wings spread mostly horizontally, tiny body14x16, full wingspan44-48px and total height24-28px. Preserve character and shaded wing membranes, upper-left light and crisp pixels. True transparent background, no scenery, no clipped wing tips.",
+      "width": 48,
+      "height": 28,
+      "no_background": true
+    },
+    "tool": "edit_image_pixen",
+    "rejectedOversizedJob": "23969405-10ae-49bb-a05a-611c6e52256e",
+    "rejectedSmallJob": "98bef50c-f633-4e0d-86ac-ba83bf9ffeaa",
+    "previousNativeJob": "fb1846ae-32d8-4bdd-abd9-508143945ed3"
+  },
+  "preparation": {
+    "translation": [
+      10,
+      14
+    ],
+    "baseAlphaBounds": [
+      0,
+      0,
+      48,
+      28
+    ],
+    "idleAlphaBounds": [
+      10,
+      14,
+      58,
+      42
+    ],
+    "paletteHex": [
+      "#2E342F",
+      "#454C43",
+      "#E9DDC6",
+      "#CBBDA2",
+      "#9285A7",
+      "#665D7A",
+      "#896849",
+      "#5D4D3B",
+      "#D1A382",
+      "#9A6E52",
+      "#4C433E"
+    ],
+    "bodyDimensions": [
+      48,
+      28
+    ],
+    "idleSHA256": "9670c5dda325d390a1466ace9745a3d0d0c552eed83240136f523362107d0dc5",
+    "postProcessing": "Native body preserved; no resizing. Constant integer padding/translation. Nearest role palette RGB mapping, binary alpha."
+  },
+  "animations": [
+    {
+      "monster": "cave_bat",
+      "clip": "walk",
+      "frames": 6,
+      "job_id": "560d98e2-77d9-4175-bee3-4b5aef5c746b",
+      "args": {
+        "frame_count": 6,
+        "no_background": true,
+        "seed": 25108,
+        "action": "Seamless in-place FLAPPING WINGS, LEFT-facing bat. Two wings move up and down with folded membranes, tiny body bobs only2px around y28. Keep full flight silhouette within68px frame. Never walk on feet, never rotate, do not fly toward camera. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+        "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+      },
+      "returnedFrames": 7
+    },
+    {
+      "monster": "cave_bat",
+      "clip": "attack",
+      "frames": 8,
+      "job_id": "f7ac67d6-0d21-4f20-bd14-2bd7f8792a95",
+      "args": {
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 25109,
+        "action": "ONE LEFTWARD flying lunge. Frame0 hover,1 pull wings high,2 windup,3 stretch small muzzle and body6px LEFT at maximum attack contact,4 follow-through,5 flap back,6 recover altitude,7 hover. Same small body, two wings, no projectile or opponent. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+        "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+      },
+      "returnedFrames": 9
+    },
+    {
+      "monster": "cave_bat",
+      "clip": "hit",
+      "frames": 4,
+      "job_id": "e85a3f58-f1db-44c7-87b0-1d5ab7700aaf",
+      "args": {
+        "frame_count": 4,
+        "no_background": true,
+        "seed": 25110,
+        "action": "One brief airborne flinch from LEFT:0 hover,1 recoil slightly right with wings tensed,2 regain balance,3 resume original hover. No fall or turning, keep same flight altitude. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+        "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+      },
+      "returnedFrames": 5
+    },
+    {
+      "monster": "cave_bat",
+      "clip": "down",
+      "frames": 6,
+      "job_id": "928b76ea-ef4a-455b-a3a6-c0c1395ea577",
+      "args": {
+        "frame_count": 6,
+        "no_background": true,
+        "seed": 25111,
+        "action": "Bat loses flight and falls to ground:0 hover,1 wings falter,2 descend halfway with folded wings,3 land gently at ground y57,4 curl folded wings around body,5 remain a small grounded inert bat. No blood. Keep whole bat inside frame. Never rise again. Preserve exact appearance, original pixel scale, LEFT-facing direction and padded68x68 transparent canvas. Ground pivot stays(34,58). For flight the body stays near its source altitude; y57 is virtual ground. All silhouette and motion stay inside canvas. No camera movement, scaling, background, platform, text, added particles or ground shadow.",
+        "firstFrameFile": "assets/characters/dungeon/cave_bat/idle.png"
+      },
+      "returnedFrames": 7
+    }
+  ],
+  "selectedSourceIndices": {
+    "idle": [
+      0
+    ],
+    "walk": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "attack": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "hit": [
+      2,
+      3,
+      4
+    ],
+    "down": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "frameAlphaBounds": {
+    "idle": [
+      [
+        10,
+        14,
+        58,
+        42
+      ]
+    ],
+    "walk": [
+      [
+        11,
+        13,
+        55,
+        43
+      ],
+      [
+        12,
+        12,
+        49,
+        45
+      ],
+      [
+        12,
+        16,
+        49,
+        45
+      ],
+      [
+        12,
+        20,
+        51,
+        43
+      ],
+      [
+        12,
+        20,
+        56,
+        42
+      ],
+      [
+        11,
+        18,
+        59,
+        42
+      ]
+    ],
+    "attack": [
+      [
+        11,
+        12,
+        58,
+        43
+      ],
+      [
+        12,
+        11,
+        56,
+        45
+      ],
+      [
+        12,
+        12,
+        56,
+        46
+      ],
+      [
+        11,
+        12,
+        57,
+        44
+      ],
+      [
+        10,
+        15,
+        58,
+        42
+      ],
+      [
+        9,
+        17,
+        59,
+        40
+      ],
+      [
+        9,
+        16,
+        58,
+        40
+      ],
+      [
+        9,
+        14,
+        58,
+        39
+      ]
+    ],
+    "hit": [
+      [
+        10,
+        17,
+        58,
+        44
+      ],
+      [
+        10,
+        18,
+        59,
+        46
+      ],
+      [
+        10,
+        18,
+        59,
+        44
+      ]
+    ],
+    "down": [
+      [
+        12,
+        14,
+        55,
+        45
+      ],
+      [
+        14,
+        15,
+        50,
+        46
+      ],
+      [
+        17,
+        18,
+        41,
+        48
+      ],
+      [
+        19,
+        26,
+        41,
+        51
+      ],
+      [
+        19,
+        28,
+        41,
+        51
+      ],
+      [
+        19,
+        30,
+        41,
+        51
+      ]
+    ]
+  },
+  "referenceRightsBasis": "Original monsters authored for this project. The locally prepared idle PNG was uploaded as the animation reference. Hero art was used only for local scale comparison.",
+  "uploadedReferenceFile": "assets/characters/dungeon/cave_bat/idle.png",
+  "uploadedReferenceSHA256": "9670c5dda325d390a1466ace9745a3d0d0c552eed83240136f523362107d0dc5",
+  "postProcessing": [
+    "Native base canvas preserved; lossless padding and a single translation before animation.",
+    "PixelLab animate_image returns the input frame plus generated frames; index0 is usually omitted. Explicit segment selections may reuse the contact key pose and hold poses; see assemblyNote and selectedSourceIndices.",
+    "Hit uses selected three generated frames, excluding the initial impact burst where present. See selectedSourceIndices.",
+    "RGB mapped to a species-specific subset of combat_v1, nonzero alpha made opaque; no scale, mirroring, frame cropping or per-frame repositioning."
+  ],
+  "status": "generated; file checks and asset preview separate from gameplay integration"
+}

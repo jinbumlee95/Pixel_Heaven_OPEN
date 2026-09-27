@@ -1,0 +1,31 @@
+{
+  "reason": "Initial slash and thrust motion too similar to guard; clearer distinct keyframes requested.",
+  "prompts": {
+    "slash": {
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "mode": "v3",
+      "animation_name": "slash-revised",
+      "directions": [
+        "south"
+      ],
+      "frame_count": 8,
+      "keep_first_frame": false,
+      "action_description": "EXAGGERATED SINGLE OVERHEAD SWORD CHOP, facing south. 8 distinct keyframes: idle; lift sword hand HIGH ABOVE HEAD with blade vertical; hold overhead windup; sweep the entire sword DOWN in a LARGE arc; blade finishes low across the opposite side of the body; low follow-through; lift sword back; return to idle. Clear large sword motion, NOT a little wrist waggle or a horizontal guard. Only one chop. Legs bend in place, no jump, no turn. Keep sword in the SAME hand as source. Same long dark hair, silver armor, dark navy tunic, teal cape, brown boots, unchanged body size and pixel density. Whole sword remains inside padded frame, no glow, no text, no opponent."
+    },
+    "thrust": {
+      "character_id": "d1528b31-d86b-4486-943f-add8f6add4af",
+      "mode": "v3",
+      "animation_name": "thrust-revised",
+      "directions": [
+        "south"
+      ],
+      "frame_count": 8,
+      "keep_first_frame": false,
+      "action_description": "ONE DEEP FORWARD SWORD STAB toward SOUTH, 8 distinct frames: idle; pull sword HAND back to hip; bend rear knee and prepare; extend sword arm STRAIGHT toward viewer; hold maximum extension and front knee lunge; retract sword; straighten legs; recover idle. The sword points toward camera and is foreshortened at full extension, NOT a sideways swing, NOT raising blade toward upper corner, NOT a guard. Clear arm extension and retraction. Keep sword in SAME hand as source. Same long dark hair, silver armor, navy tunic, teal cape, brown boots, unchanged pixel scale. Fixed camera and body anchor, modest forward lunge within frame, no jump, no turning, no effects, no text."
+    }
+  },
+  "groups": {
+    "slash": "b7c5e9c2-d158-417f-ab23-c6197c381a98",
+    "thrust": "053b0c82-f938-485e-a1d0-c50182ebc003"
+  }
+}

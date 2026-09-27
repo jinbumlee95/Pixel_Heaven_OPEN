@@ -1,0 +1,47 @@
+{
+  "key": "tiles/animal_pen",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Small low wooden square sheep pen with gate facing south, empty interior, 2x2grid footprint provisional, no animals, transparent interior no grass platform.",
+    "width": 64,
+    "height": 64,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1210
+  },
+  "job_id": "46d1f8b1-e8cf-4d56-86db-ee2250421252",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    64,
+    64
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/animal_pen.png"
+  ],
+  "alignment": {
+    "translation": [
+      1,
+      12
+    ],
+    "originalAlphaBounds": [
+      4,
+      14,
+      58,
+      52
+    ],
+    "pivot": {
+      "x": 32,
+      "y": 64
+    },
+    "originalPNG": "assets/tiles/animal_pen.generated.png"
+  }
+}

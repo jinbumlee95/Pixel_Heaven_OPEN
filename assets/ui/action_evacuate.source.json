@@ -1,0 +1,28 @@
+{
+  "key": "ui/action_evacuate",
+  "kind": "static",
+  "args": {
+    "description": "Pixel Heaven native pixel art. Slightly overhead 3/4 RPG view, orthogonal ground (not isometric diamond), upper-left light, crisp 1px clusters, selective dark outlines, warm muted limited palette. Transparent background, no text, no watermark, no scene or ground platform, entire silhouette inside canvas. Person walking toward right arrow; centered readable pixel UI icon, no lettering, no square frame.",
+    "width": 24,
+    "height": 24,
+    "no_background": true,
+    "view": "low top-down",
+    "outline": "selective outline",
+    "detail": "medium detail",
+    "seed": 1228
+  },
+  "job_id": "327e2d26-79c0-4d5c-b76e-d159883982c8",
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "tool": "create_image_pixen",
+  "originalDimensions": [
+    24,
+    24
+  ],
+  "postProcessing": [],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/ui/action_evacuate.png"
+  ]
+}

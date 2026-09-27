@@ -1,0 +1,16 @@
+{
+  "assetId": "ui/locust_loop",
+  "frameWidth": 16,
+  "frameHeight": 16,
+  "frames": 4,
+  "frameDurationMs": 120,
+  "pivot": {
+    "x": 8,
+    "y": 8
+  },
+  "sheetWidth": 64,
+  "sheetHeight": 16,
+  "status": "delivered_pending_visual_review",
+  "integrationEnabled": false,
+  "sourceDrawingId": "eae7979f-48eb-47c4-8117-e5ff98425219"
+}

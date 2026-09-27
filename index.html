@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211e1a">
+  <title>픽셀 헤븐 — Phase 21</title>
+  <script>
+    // Apply the stored/system choice before CSS paints the page.
+    (() => {
+      let saved, system;
+      try { saved = localStorage.getItem('pixelHeaven.theme'); } catch {}
+      try {
+        if (matchMedia('(prefers-color-scheme: dark)').matches) system = 'dark';
+        else if (matchMedia('(prefers-color-scheme: light)').matches) system = 'light';
+      } catch {}
+      const theme = saved === 'light' || saved === 'dark' ? saved : system || 'dark';
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#d6cbb7' : '#211e1a';
+    })();
+  </script>
+  <link rel="stylesheet" href="src/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/pixi.js@7.4.3/dist/pixi.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@pixi/tilemap@4.1.0/dist/pixi-tilemap.umd.js"></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div><p class="eyebrow" data-i18n="app.tagline">저마다의 뜻을 품은 작은 세계</p><h1>Pixel Heaven<span class="title-star" aria-hidden="true"> ✦</span></h1></div>
+      <div class="totals"><strong id="summary" data-i18n="app.loading">세계를 불러오는 중…</strong><p id="faith-counter"></p><p id="clock"></p></div>
+    </header>
+    <div class="play-layout">
+      <aside class="village-column" aria-label="당신의 정착지와 사제" data-i18n-aria-label="villages.aria">
+        <section id="priest" class="priest-panel panel" aria-label="사제의 마지막 응답" data-i18n-aria-label="priest.aria">
+          <p class="eyebrow" data-i18n="priest.eyebrow">당신의 말씀을 간직하는 이</p>
+          <div class="priest-heading"><img src="assets/ui/priest_portrait_marin.png" width="48" height="48" alt=""><div><h2>대사제</h2><p id="priest-location" class="muted">세계수 정착지 · 신탁의 전령</p></div></div>
+          <p role="status" aria-live="polite">당신의 말씀을 기다립니다.</p>
+          <p id="oracle-process" class="oracle-process" role="status" aria-live="polite"></p>
+        </section>
+        <section id="hero-panel" class="panel hero-panel" data-i18n-aria-label="hero.title"></section>
+        <section id="world-panel" class="panel"><h2 data-i18n="cw.latest"></h2><p id="world-events" aria-live="polite"></p></section>
+      </aside>
+      <div class="world-column">
+        <section class="map-panel" aria-label="세계수 아래에서" data-i18n-aria-label="map.title">
+          <div class="map-heading"><h2 data-i18n="map.title">세계수 아래에서</h2><span class="live-label" data-i18n="map.live">● 실시간</span></div>
+          <p id="camera-notice" class="camera-notice" role="status" aria-live="polite" hidden></p>
+          <div class="map-stage"><div id="world"></div><section id="equipment-panel" class="panel" hidden></section><section id="event-forecast" aria-label="Pending events" data-i18n-aria-label="cw.title"></section></div>
+          <div class="map-caption"><span id="coordinates"></span><span data-i18n="map.legend">신관 · 주민 · 영웅</span></div>
+        </section>
+        <div class="journey-row"><section id="hero-journey" class="panel" hidden></section><section id="merchant-visit" class="panel" hidden></section></div>
+        <section id="divine-chat" class="panel" aria-busy="false">
+          <div class="section-heading"><h2><img class="oracle-icon" src="assets/ui/oracle_glow.png" width="24" height="24" alt=""><span data-i18n="chat.title">세계에 말씀을 전하세요</span></h2><span class="eyebrow" data-i18n="chat.eyebrow">신의 말씀</span></div>
+          <form>
+            <label for="divine-message" data-i18n="chat.command">당신의 말씀</label>
+            <textarea id="divine-message" name="message" rows="2" maxlength="500" required disabled placeholder="세계수 아래 사람들에게 말씀을 전하세요…" data-i18n-placeholder="chat.placeholder" aria-describedby="divine-help" enterkeyhint="send"></textarea>
+            <p id="faith-preview" class="faith-preview" role="status"></p>
+            <p id="divine-help" data-i18n="cw.hint"></p>
+          </form>
+          <ol id="divine-history"></ol>
+          <p class="reply-status" role="status" aria-live="polite"></p>
+
+        </section>
+        <p id="status" role="status">세계를 불러오는 중…</p>
+      </div>
+    </div>
+<footer data-i18n="app.footer">한 신과 하나의 정착지. 작은 시작에서 세계가 열립니다.</footer>
+  </main>
+  <script type="module">
+    // Wait for the ordered CDN scripts before evaluating our native modules.
+    window.addEventListener('DOMContentLoaded', () => {
+      // This fallback also works when ES module loading itself is unavailable.
+      let locale;
+      try { locale = localStorage.getItem('pixelHeaven.locale'); } catch {}
+      locale = (locale || navigator.language || 'en').toLowerCase().split(/[-_]/)[0];
+      const fallback = {
+        ko: { file: '로컬 HTTP 서버로 여세요. node tools/serve.mjs를 실행한 뒤 http://localhost:8080에 접속하세요.', failed: '게임을 불러오지 못했습니다: ' },
+        en: { file: 'Open through a local HTTP server: run node tools/serve.mjs, then visit http://localhost:8080.', failed: 'Could not load the game: ' },
+        ja: { file: 'ローカルHTTPサーバーで開いてください。node tools/serve.mjsを実行し、http://localhost:8080にアクセスします。', failed: 'ゲームを読み込めませんでした：' },
+      };
+      const copy = fallback[locale] || fallback.en;
+      if (location.protocol === 'file:') {
+        document.querySelector('#status').textContent = copy.file;
+        return;
+      }
+      import('./src/main.js').catch(error => {
+        document.querySelector('#status').textContent = copy.failed + error.message;
+        document.querySelector('#status').setAttribute('role', 'alert');
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+{
+  "frameWidth": 68,
+  "frameHeight": 68,
+  "bodyCanvas": [
+    32,
+    48
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "groundAnchor": {
+    "x": 34,
+    "y": 58
+  },
+  "padding": {
+    "left": 18,
+    "top": 10
+  },
+  "directions": [
+    "south",
+    "east",
+    "north",
+    "west"
+  ],
+  "walk": {
+    "path": "hero_walk.png",
+    "size": [
+      544,
+      340
+    ],
+    "frames": 6,
+    "durationMs": 120,
+    "idleColumns": {
+      "south": 0,
+      "east": 2,
+      "north": 4,
+      "west": 6
+    },
+    "rows": {
+      "south": 1,
+      "east": 2,
+      "north": 3,
+      "west": 4
+    },
+    "loop": true
+  },
+  "combat": {
+    "path": "hero_combat.png",
+    "size": [
+      544,
+      204
+    ],
+    "actions": {
+      "slash": {
+        "row": 0,
+        "frames": 8,
+        "durationMs": 100,
+        "loop": false,
+        "direction": "south"
+      },
+      "thrust": {
+        "row": 1,
+        "frames": 8,
+        "durationMs": 100,
+        "loop": false,
+        "direction": "south"
+      },
+      "guard": {
+        "row": 2,
+        "frames": 6,
+        "durationMs": 140,
+        "loop": false,
+        "direction": "south"
+      }
+    }
+  },
+  "integration": "Asset preparation only; combat states require engine support. Other combat directions not generated.",
+  "frameInspection": [
+    {
+      "path": "hero/idle/south.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        23,
+        11,
+        47,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/south/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        21,
+        11,
+        48,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/south/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        12,
+        48,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/south/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        12,
+        48,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/south/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        11,
+        47,
+        55
+      ]
+    },
+    {
+      "path": "hero/walk/south/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        11,
+        47,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/south/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        12,
+        47,
+        58
+      ]
+    },
+    {
+      "path": "hero/idle/east.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        20,
+        11,
+        48,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/east/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        11,
+        46,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/east/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        12,
+        46,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/east/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        12,
+        46,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/east/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        11,
+        48,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/east/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        11,
+        51,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/east/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        20,
+        12,
+        53,
+        58
+      ]
+    },
+    {
+      "path": "hero/idle/north.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        21,
+        11,
+        46,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/north/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        10,
+        48,
+        58
+      ]
+    },
+    {
+      "path": "hero/walk/north/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        10,
+        49,
+        58
+      ]
+    },
+    {
+      "path": "hero/walk/north/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        12,
+        48,
+        58
+      ]
+    },
+    {
+      "path": "hero/walk/north/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        11,
+        46,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/north/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        17,
+        10,
+        43,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/north/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        11,
+        47,
+        56
+      ]
+    },
+    {
+      "path": "hero/idle/west.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        11,
+        47,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/west/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        11,
+        47,
+        57
+      ]
+    },
+    {
+      "path": "hero/walk/west/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        12,
+        46,
+        58
+      ]
+    },
+    {
+      "path": "hero/walk/west/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        20,
+        12,
+        46,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/west/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        20,
+        11,
+        47,
+        56
+      ]
+    },
+    {
+      "path": "hero/walk/west/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        11,
+        47,
+        55
+      ]
+    },
+    {
+      "path": "hero/walk/west/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        17,
+        12,
+        48,
+        56
+      ]
+    },
+    {
+      "path": "hero/slash/south/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        11,
+        12,
+        49,
+        57
+      ]
+    },
+    {
+      "path": "hero/slash/south/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        8,
+        49,
+        57
+      ]
+    },
+    {
+      "path": "hero/slash/south/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        23,
+        11,
+        52,
+        57
+      ]
+    },
+    {
+      "path": "hero/slash/south/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        21,
+        13,
+        56,
+        57
+      ]
+    },
+    {
+      "path": "hero/slash/south/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        14,
+        48,
+        57
+      ]
+    },
+    {
+      "path": "hero/slash/south/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        11,
+        13,
+        49,
+        57
+      ]
+    },
+    {
+      "path": "hero/slash/south/6.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        21,
+        11,
+        47,
+        58
+      ]
+    },
+    {
+      "path": "hero/slash/south/7.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        22,
+        11,
+        52,
+        58
+      ]
+    },
+    {
+      "path": "hero/thrust/south/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        11,
+        48,
+        56
+      ]
+    },
+    {
+      "path": "hero/thrust/south/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        11,
+        49,
+        57
+      ]
+    },
+    {
+      "path": "hero/thrust/south/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        9,
+        13,
+        50,
+        57
+      ]
+    },
+    {
+      "path": "hero/thrust/south/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        10,
+        14,
+        50,
+        57
+      ]
+    },
+    {
+      "path": "hero/thrust/south/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        10,
+        14,
+        50,
+        57
+      ]
+    },
+    {
+      "path": "hero/thrust/south/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        10,
+        14,
+        49,
+        57
+      ]
+    },
+    {
+      "path": "hero/thrust/south/6.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        13,
+        13,
+        47,
+        57
+      ]
+    },
+    {
+      "path": "hero/thrust/south/7.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        18,
+        12,
+        48,
+        57
+      ]
+    },
+    {
+      "path": "hero/guard/south/0.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        19,
+        12,
+        48,
+        57
+      ]
+    },
+    {
+      "path": "hero/guard/south/1.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        15,
+        12,
+        49,
+        57
+      ]
+    },
+    {
+      "path": "hero/guard/south/2.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        17,
+        13,
+        52,
+        57
+      ]
+    },
+    {
+      "path": "hero/guard/south/3.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        16,
+        14,
+        51,
+        57
+      ]
+    },
+    {
+      "path": "hero/guard/south/4.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        15,
+        13,
+        50,
+        57
+      ]
+    },
+    {
+      "path": "hero/guard/south/5.png",
+      "size": [
+        68,
+        68
+      ],
+      "visibleBounds": [
+        17,
+        11,
+        49,
+        57
+      ]
+    }
+  ]
+}

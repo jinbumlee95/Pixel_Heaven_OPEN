@@ -1,0 +1,44 @@
+{
+  "key": "tiles/house_v2",
+  "job_id": "f645d88d-3852-4e37-a4bd-35e0f0efb69c",
+  "tool": "create_image_pro_flash",
+  "revisionReason": "User rejected flat facades; replace with volumetric 3/4 buildings.",
+  "args": {
+    "width": 96,
+    "height": 96,
+    "no_background": true,
+    "seed": 23996,
+    "description": "Pixel Heaven fantasy RPG building sprite. NATIVE crisp 1px PIXEL ART, NOT a flat front elevation. Camera slightly above at THREE-QUARTER angle: visible front wall AND right side wall AND top roof planes, convincing volumetric depth. Upper-left sunlight, brighter front plane, darker right wall, strong deep shadows under eaves, layered material shading, warm restrained palette. Orthographic camera with no lens distortion. A cozy medieval timber cottage, warm red clay tiled steep gabled roof, cream plaster infill and thick dark oak framing, visible warm front wall plus shadowed right side wall, one tall open front doorway and two small leaded windows. Small chimney. Doorway is tall enough for a 40px adult, about 40-44px high. A compact chunky cottage filling most of the 96px square. Roof thickness, projecting eaves, individual shingle rows and recessed opening give real depth. Single entire building isolated on true transparent background. Bottom-centred foundation/ground anchor, leave only 1px clearance at bottom. No separate isometric diamond of terrain, no lawn, no scenery, no text, no UI, no grid, no checkerboard. Keep whole silhouette inside native canvas. High quality richly detailed game sprite, clear architectural shape, no smooth rendering, no enlarged pixels."
+  },
+  "provider": "PixelLab",
+  "createdAt": "2026-09-23",
+  "originalDimensions": [
+    96,
+    96
+  ],
+  "postProcessing": [
+    "Uniform integer translation of the complete static object to bottom-centred pivot. No scaling, redraw, per-pixel change or alpha loss."
+  ],
+  "references": [],
+  "referenceRightsBasis": "Original text description for user project; no third-party image uploaded.",
+  "selectedOutputPaths": [
+    "assets/tiles/house_v2.png"
+  ],
+  "alignment": {
+    "translation": [
+      2,
+      3
+    ],
+    "originalAlphaBounds": [
+      4,
+      3,
+      87,
+      93
+    ],
+    "pivot": {
+      "x": 48,
+      "y": 96
+    },
+    "originalPNG": "assets/tiles/house_v2.generated.png"
+  }
+}

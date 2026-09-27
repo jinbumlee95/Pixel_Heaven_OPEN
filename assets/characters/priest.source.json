@@ -1,0 +1,18 @@
+{
+  "provider": "PixelLab",
+  "tool": "create_image_pixen",
+  "created": "2026-09-22",
+  "job_id": "79f16514-6727-4f3a-8332-8a811b8ad4dd",
+  "file": "priest.png",
+  "generations": 1,
+  "reference": "Marin Kitagawa (My Dress-Up Darling), appearance adapted to priest robes.",
+  "description": "One full-body female priestess sprite for a cozy medieval top-down pixel RPG, visual appearance inspired by Marin Kitagawa from My Dress-Up Darling: long straight golden blonde hair with clearly pink-dipped ends, side-swept bangs, bright pink eyes, cheerful friendly confident smile. Uncovered head, hair visible down both sides. Wearing a modest full-length ivory white priest robe with long sleeves, gold trim and a small coral ribbon, high neckline, closed clothing, small gold sun pendant. Holding a slender wooden staff with a small golden sun finial on her right side. Standing idle facing south toward viewer, slightly overhead RPG camera, chibi proportions and readable expressive face. Entire head, hair, staff and feet inside frame with transparent margin. Crisp native pixel art, warm limited palette, selective dark outlines, no text, no scenery, no base, no portrait crop, exactly one character and one view.",
+  "width": 32,
+  "height": 48,
+  "no_background": true,
+  "direction": "south",
+  "view": "low top-down",
+  "detail": "medium detail",
+  "outline": "selective outline",
+  "seed": 952
+}
