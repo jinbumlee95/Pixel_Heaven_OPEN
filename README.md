@@ -1,50 +1,58 @@
 # Pixel Heaven — English Edition
 
-A pixel settlement simulation built around a Worldtree. Send an oracle through chat; the Priest receives it at the altar before the engine validates and executes the action.
+A pixel settlement simulation centered on a Worldtree. Speak through chat; the Priest walks to the altar and receives the oracle before the game validates costs and applies an action.
 
-This public edition uses English for its interface. Light and dark themes are available in the header. Send a message with the button or **Enter**; use **Shift+Enter** for a new line.
-
-## Run locally
-
-Install Node.js, then run:
+## Run
 
 ```sh
 node tools/serve.mjs
 ```
 
-Open http://localhost:8080 and type **Let there be light**. An internet connection is needed to load PixiJS and the tilemap library from their CDN. Game code uses native JavaScript modules without a build step.
+Open http://localhost:8080 and type **Let there be light**. Node.js is required for the local server. PixiJS and its tilemap library load from a CDN, so the initial page needs internet access. Game code uses native JavaScript modules without a build step.
 
-## Playing
+The public interface is English. Theme and language settings sit in the header. **Enter** or the send button submits a message; **Shift+Enter** adds a line.
 
-Manage one settlement surrounded by 24 autonomous factions. Forecasts announce threats before impact. Faith limits divine intervention; resources, labor and facilities determine what the settlement can build and produce.
+## First steps
 
-- Ask `help`, `show resources`, `status`, `save` or `load`.
-- Send `make it rain`, `prepare for battle` or `send the hero to the dungeon`.
-- Heroes repeat expeditions until recalled. Equipment grids, dungeon routes, light, elites and bosses affect their progress.
-- Caravans support instructed and autonomous trading. Workshops process materials and craft goods.
-- Prayers, commandments and rituals connect faith with settlement life.
+Your settlement begins with eight people, one house and one field. Its resources and faith grow through the simulation; divine interventions spend faith. Outside it, 24 factions act autonomously. Forecasts give time to respond before threats arrive.
 
-![Header settings and chat submission](docs/screenshots/header-dark.jpg)
+| Goal | Chat command |
+| --- | --- |
+| Inspect the settlement | `status`, `show resources`, `labor status`, `costs` |
+| Start Chrome local AI | `enable ai` |
+| Speed up / pause | `speed 4`, `speed 12`, `pause`, `resume` |
+| Explore after the hero arrives | `Send the hero to the dungeon.` |
+| Bring the hero back | `Recall the hero.` |
+| Begin production after gathering materials | `build sawmill`, then `produce planks 3` |
+| Inspect production / equipment | `production status`, `recipes`, `equipment` |
+| Prepare for a forecast | `respond forecast-1` (use the visible event ID) |
+| Let the settlement handle an event | `ignore forecast-1` |
+| Trade during a visit | `buy cloth 2`, `sell wood 5` |
+| Adjust expedition policy | `dungeon safe`, `dungeon hunt`, `dungeon treasure` |
+| Save / restore | `save`, `load` |
+| More commands | `help` |
 
-The screenshot includes a failed real-model oracle from verification. The failure is shown as a failure; it is not a successful rain command.
+Heroes repeat dungeon runs until recalled, recovering and resupplying when possible. Supplies or cargo capacity can make them wait. Production facilities, a grid equipment inventory, four equipment grades, prayers, commandments and rituals support longer progression. Battle preparations interact with combat terrain and can be cleared afterward.
 
-## AI status
+![English desktop gameplay](docs/screenshots/playable-dark.jpg)
 
-**Demo interpretation is the default.** It recognizes a bounded set of supported expressions. `enable ai` attempts Chrome's on-device Prompt API; it may require a model download. No API key or paid model service is included.
+## On-device AI
 
-The on-device interpreter is experimental and is **not ready to be relied on for general instructions**. A real Chrome run on 2026-09-27 tested 59 fixed cases: 20 matched expectations, 3 questions were blocked before model invocation, 34 returned a different interpretation, and 2 failed response validation. There were 56 actual model calls. English cases also failed; changing the interface language does not fix the interpretation problem. This is a diagnostic sample, not a benchmark of overall model capability.
+Demo commands work by default. `enable ai` uses Chrome's built-in Prompt API when available; Chrome may download the model. No API key or paid model service is included. Availability depends on the browser, operating system and hardware; see [Google's Prompt API documentation](https://developer.chrome.com/docs/ai/prompt-api).
 
-A separate experiment using a simpler JSON constraint improved the sample but still had incorrect actions and invalid output. That experimental change has not been applied to the game. Invalid output is rejected by the engine, but a structurally valid, incorrectly interpreted action can still pass validation.
+The local model chooses a compact intent. A separate fresh model conversation checks whether the proposed action matches the entire request. At most one repair is attempted, within the request deadline. The engine still validates the target, parameters, inventory, faith and current world state. Failed model requests do not silently switch to demo interpretation.
 
-## Verification and structure
+In the final 2026-09-27 Chrome test, 63 fixed English cases produced **56 expected model results**, **3 pre-model gates** (questions or no world trigger), **2 valid requests declined**, and **2 invalid-output rejections**, across 131 actual model calls. No different executable action was returned in that sample. This is a development sample, not a guarantee for arbitrary language. Valid wording can still be rejected: use the precise commands above or the examples in `help` when needed. `demo mode` explicitly switches back to the bounded command interpreter.
 
-The current public snapshot passes 78 Node test scripts and content validation:
+## Verification
 
 ```sh
 node tools/check.mjs
 node tools/validate-content.mjs
 ```
 
-`src/game` owns simulation; `src/actions` validates effects; `src/llm` interprets requests; `src/ui` renders interface panels; `src/state` owns persistent state. PixiJS rendering is isolated in `src/game/Renderer.js`. Sparse world storage and content registries support extension without a bundler.
+80 Node test scripts cover simulation, validated actions, persistence, input and regression cases. Three normal-start 30-minute simulations verify workshop construction, production, hero growth, recall and save restoration without injecting resources or faith. Real Chrome desktop checks cover the actual Priest and chat path.
 
-This is a work in progress. Balance, browser-model reliability and dedicated elite/boss art need further work.
+`src/game` owns simulation, `src/actions` validates effects, `src/llm` interprets requests, `src/ui` provides panels and `src/state` owns persistence. PixiJS is isolated in `src/game/Renderer.js`. Sparse world storage and declarative content registries support extension.
+
+This remains a playable prototype. Broader language reliability, long-term balance and dedicated elite/boss art need further work.

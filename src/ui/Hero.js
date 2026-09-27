@@ -42,7 +42,8 @@ export class HeroPanel {
     this.title.textContent = t('hero.title'); this.mode.textContent = t(mode === 'home' ? `cw.training.${heroTrainingPose(hero).action}` : `hero.mode.${mode}`);
     this.stats.textContent = hero ? t('hero.stats', { level: hero.level, xp: hero.xp, hp: Math.ceil(hero.hp), maxHp: hero.maxHp }) : '';
     const away = AWAY_MODES.includes(mode);
-    this.scene.hidden = !away; this.progress.hidden = !away; this.placeholder.hidden = !away;
+    this.scene.hidden = !away; this.progress.hidden = !away;
+    if (!away) this.placeholder.hidden = true;
     this.scene.setAttribute('aria-label', this.mode.textContent);
     this.progress.setAttribute('aria-label', this.mode.textContent);
     const scene = hero?.scene;
@@ -87,7 +88,7 @@ export class HeroPanel {
     const key = `${this.monster.dataset.kind}/${clip}`;
     const loaded = this.monsterAssets.get(key) === true;
     this.monster.classList.toggle('has-sprite', loaded);
-    this.placeholder.hidden = loaded || this.scene.hidden || !scene.monsterId;
+    this.placeholder.hidden = loaded || this.scene.hidden || this.monster.hidden;
     const counts = { idle: 1, walk: 6, attack: 8, hit: 3, down: 6 };
     const columnMonster = clip === 'down' ? Math.min(5, Math.floor(elapsed / 140))
       : Math.floor(elapsed / (clip === 'hit' ? 100 : 120)) % counts[clip];

@@ -324,3 +324,5 @@ body #hero-journey[hidden] { display:none; }
 .dungeon-summary { font-size:12px; line-height:1.4; margin:0 0 4px; color:var(--text); }
 .hero-scene[data-room="elite"] { border: 2px solid #b97721; }
 .hero-scene[data-room="boss"] { border: 3px solid #ae4354; }
+
+.ai-status { margin-top:6px; color:var(--muted); font-size:12px; line-height:1.4; }

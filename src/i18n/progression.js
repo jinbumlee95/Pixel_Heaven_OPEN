@@ -16,6 +16,7 @@ const entries = {
   'combat.role.hero': ['영웅', 'Hero', '勇者'],
   'hero.failure.invalid_order': ['이 영웅 지시는 지원하지 않습니다.', 'This hero order is not supported.', 'この勇者への指示には対応していません。'],
   'hero.failure.unavailable': ['파견할 영웅이 없습니다.', 'No hero is available.', '派遣できる勇者がいません。'],
+  'hero.failure.arriving': ['영웅이 아직 마을로 오는 중입니다. 도착한 뒤 파견해 주세요.', 'The hero is still approaching the settlement. Dispatch after arrival.', '勇者はまだ集落へ向かっています。到着してから派遣してください。'],
   'hero.failure.busy': ['영웅이 돌아와 회복할 때까지 기다려 주세요.', 'Wait until the hero returns and recovers.', '勇者が帰還し回復するまでお待ちください。'],
   'hero.failure.defending': ['영웅은 현재 마을 방어를 떠날 수 없습니다.', 'The hero cannot leave an active defense.', '勇者は現在の防衛戦を離れられません。'],
   'hero.failure.supplies': ['원정 물자가 부족합니다. 식량 6 · 약초 1 · 석탄 1이 필요합니다.', 'Missing expedition supplies: 6 food, 1 herb and 1 coal are required.', '遠征物資が不足しています。食料6・薬草1・石炭1が必要です。'],

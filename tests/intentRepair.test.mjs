@@ -24,12 +24,12 @@ for (const [message, action] of [['Build a house', 'build_house'], ['밭을 만�
 }
 let calls = 0;
 const ai = new LocalAI({ api: { availability: async () => 'available', create: async () => ({ destroy() {},
-  clone: async () => ({ destroy() {}, prompt: async () => { calls++; return JSON.stringify({ status: 'understood', action: 'prepare_defense', target: 'home', parameters: {} }); } }) }) } });
+  clone: async () => ({ destroy() {}, prompt: async p => { calls++; return p.startsWith('Verify')?'{"matches":true}':JSON.stringify({intent:'prepare_defense',value:'balanced',amount:0,direction:'',target:'home'}); } }) }) } });
 await ai.detect(); await ai.enable();
 assert.equal((await ai.interpret('Protect our people…', { defaultTarget: 'home' })).action, 'prepare_defense');
-assert.equal(calls, 1);
+assert.equal(calls, 2);
 ai.stop();
-const wrongAmount=new LocalAI({api:{availability:async()=> 'available',create:async()=>({destroy(){},clone:async()=>({destroy(){},prompt:async()=>JSON.stringify({status:'understood',action:'increase_food',target:'home',parameters:{amount:50}})})})}});
+const wrongAmount=new LocalAI({api:{availability:async()=> 'available',create:async()=>({destroy(){},clone:async()=>({destroy(){},prompt:async(p)=>p.startsWith('Verify')?'{"matches":true}':JSON.stringify({intent:'increase_food',value:'',amount:50,direction:'',target:'home'})})})}});
 await wrongAmount.detect();await wrongAmount.enable();
 assert.equal((await wrongAmount.interpret('식량 10을 주어라',{defaultTarget:'home'})).status,'unclear');
 assert.equal(wrongAmount.traces.divine.reason,'invalid_output');wrongAmount.stop();

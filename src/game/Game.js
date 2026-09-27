@@ -128,9 +128,15 @@ export class Game {
     this.localeSelect?.addEventListener('change', this.onLocaleSelect);
     this.renderer.reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     document.body.classList.toggle('reduce-motion',this.renderer.reducedMotion);
-    this.localAI.onStatus = () => {};
+    const updateAIStatus=()=>{
+      const label=document.querySelector('#ai-status');
+      const status=this.localAI.session?{messageKey:'ai.readyLanguages',messageParams:{languages:this.localAI.options.expectedInputs[0].languages.join(', ')}}:this.localAI.statusMessage;
+      if(label)label.textContent=this.i18n.formatMessage(status);
+    };
+    this.localAI.onStatus = updateAIStatus;
+    updateAIStatus();
     void this.localAI.detect();
-    this.unsubscribeLocale=this.i18n.subscribe(()=>{this.i18n.applyDOM(document);this.renderer.setMapLabel(this.i18n.t('map.aria'));document.querySelector('#status').textContent=this.i18n.t('app.navigationHint');});
+    this.unsubscribeLocale=this.i18n.subscribe(()=>{updateAIStatus();this.i18n.applyDOM(document);this.renderer.setMapLabel(this.i18n.t('map.aria'));document.querySelector('#status').textContent=this.i18n.t('app.navigationHint');});
     this.i18n.applyDOM(document);
     this.renderer.setMapLabel(this.i18n.t('map.aria'));
     this.worldDecisions.update();

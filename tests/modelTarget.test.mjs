@@ -1,13 +1,13 @@
 import assert from 'node:assert/strict';
 import { Game } from '../src/game/Game.js';
 const game=new Game(null,{ritual:false});
-let target='Worldtree Settlement';
-game.localAI.api={availability:async()=> 'available',create:async()=>({destroy(){},clone:async()=>({destroy(){},prompt:async()=>JSON.stringify({status:'understood',action:'increase_food',target,parameters:{amount:10}})})})};
+let target='home';
+game.localAI.api={availability:async()=> 'available',create:async()=>({destroy(){},clone:async()=>({destroy(){},prompt:async(p)=>p.startsWith('Verify')?'{"matches":true}':JSON.stringify({intent:'increase_food',value:'',amount:10,direction:'',target})})})};
 await game.localAI.detect();await game.localAI.enable();
-assert.equal((await game.sendDivineMessage('식량 10을 주어라')).ok,true,'Recorded 4o-mini display-name output resolves to the known settlement ID');
+assert.equal((await game.sendDivineMessage('식량 10을 주어라')).ok,true,'The provider home target resolves to the selected settlement ID');
 assert.equal(game.world.getVillage('home').food,40);
 assert.equal(game.localAI.traces.divine.provider,'local','A correctly interpreted action does not require a keyword fallback');
-target='faction-01';
+target='external';
 assert.equal((await game.sendDivineMessage('식량 10을 주어라')).ok,false,'Never rebind an external target to home');
 assert.equal(game.world.getVillage('home').food,40);
 game.stop();console.log('model target: passed');

@@ -13,7 +13,7 @@ assert.equal(await broken.detect(), 'unavailable');
 const stuck = new LocalAI({ api: { availability: () => new Promise(() => {}) }, timeoutMs: 5 });
 assert.equal(await stuck.detect(), 'unavailable');
 
-let output = JSON.stringify({ status: 'understood', action: 'increase_food', target: 'south', parameters: { amount: 77 } });
+let output = JSON.stringify({intent:'increase_food',value:'',amount:77,direction:'',target:'home'});
 let prompts = 0;
 let destroyed = 0;
 let created = 0;
@@ -31,9 +31,9 @@ const ai = new LocalAI({ timeoutMs: 15, api: {
       prompt: async (_prompt, o) => {
         prompts++;
         assert.equal(o.responseConstraint.type, 'object');
-        if (_prompt.startsWith('Interpret')) assert.ok(o.responseConstraint.oneOf);
+        if (_prompt.startsWith('Classify')) assert.equal(o.omitResponseConstraintInput,true);
         if (output === 'hang') return new Promise(resolve => { pending = resolve; });
-        return output;
+        return _prompt.startsWith('Verify') && output.startsWith('{') && !output.includes('erase_map') ? '{"matches":true}' : output;
       },
     }; } };
   },
@@ -42,7 +42,7 @@ await ai.detect();
 assert.equal(created, 0, 'detection must not download');
 await ai.enable();
 assert.equal((await ai.interpret('food', context)).parameters.amount, 77);
-assert.equal(destroyed, 1);
+assert.equal(destroyed, 2);
 const beforeKorean = prompts;
 assert.equal((await ai.interpret('비를 내려라', context)).status, 'unclear');
 assert.equal(prompts, beforeKorean, 'unsupported language applies no action');

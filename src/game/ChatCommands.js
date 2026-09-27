@@ -232,7 +232,7 @@ export class ChatCommands {
         const card=chosen.card;
         if(command.name==='ignore'){setDecision(s,card.id,'autonomous');return {ok:true,message:t('cw.autonomous')};}
         if(card.kind==='caravan'||card.kind==='proposal')return {ok:true,message:t(card.kind==='caravan'?'cw.tradeHint':'cw.offerHint',{id:card.id})};
-        const words={raid:'prepare defense',drought:'rain',fire:'firebreak',flood:'drainage',cold:'winter shelter',wolves:'protect herd'};
+        const words={raid:'prepare defense',drought:'make it rain',fire:'prepare firebreaks',flood:'prepare for a flood',cold:'prepare for winter',wolves:'protect herd'};
         return this.deliver(message,{planId:card.kind==='wolves'?undefined:card.id,decisionId:card.id,
           ...(card.kind==='wolves'?{order:{type:'order',name:'herd',original:message}}:{interpretMessage:words[card.kind]})});
       }

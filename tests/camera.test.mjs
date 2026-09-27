@@ -16,4 +16,8 @@ camera.resize(1440, 800);
 assert.equal(camera.bounds.right, 2000);
 assert.equal(camera.bounds.bottom, 2000);
 assert.ok((camera.bounds.right - camera.bounds.left) * (camera.bounds.bottom - camera.bounds.top) < 2000);
+camera.center({x:1000,y:1000});
+camera.resize(1120,360);
+assert.equal(camera.x+camera.width/2,1000,'responsive layout retains horizontal focus');
+assert.equal(camera.y+camera.height/2,1000,'opening chat/expedition panels must not move the Worldtree offscreen');
 console.log('camera: passed');

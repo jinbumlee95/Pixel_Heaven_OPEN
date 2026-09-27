@@ -77,6 +77,7 @@ export function validateHeroOrder(world, action) {
   const home = homeOf(world);
   if (!hero || !entityOf(world) || !home || home.population <= 0) return failed('unavailable');
   if (action.action === 'hero_dispatch') {
+    if (hero.mode === 'awaiting') return failed('arriving');
     if (hero.mode !== 'home' || hero.hp < hero.maxHp || bagSize(hero) || hero.equipment?.items.some(i=>i.location==='loot')) return failed('busy');
     if (activeBattle(world)) return failed('defending');
     const supplies = home.economyVersion === 2 ? HERO_RULES.supplies : { food: HERO_RULES.supplies.food };
