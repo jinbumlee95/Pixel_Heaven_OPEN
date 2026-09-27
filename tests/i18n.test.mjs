@@ -56,6 +56,10 @@ assert.equal(i18n.formatMessage({ messageKey: 'world.event', messageParams: { ti
   '経過 20:00 · <img onerror=alert(1)>', 'formatting returns plain text, without evaluating player input');
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const englishEdition = new I18n({ locale: 'ko', allowedLocales: ['en'], storage: null });
+assert.equal(englishEdition.locale,'en','the public edition cannot start in a saved or requested unsupported locale');
+assert.equal(englishEdition.setLocale('ja'),false);
+assert.equal(englishEdition.locale,'en','chat cannot switch an English edition into a hidden language');
 for (const [, key] of html.matchAll(/data-i18n(?:-aria-label|-placeholder|-title)?="([^"]+)"/g)) {
   assert.ok(Object.hasOwn(catalogues.en, key), `HTML key exists: ${key}`);
 }

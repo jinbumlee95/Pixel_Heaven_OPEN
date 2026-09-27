@@ -51,10 +51,19 @@ try {
   chat.form.requestSubmit=()=>{chat.submitted=chat.form.emit('submit');};
   await chat.input.emit('keydown',{key:'Enter',shiftKey:true});
   assert.equal(calls,0,'Shift+Enter keeps a multiline draft');
-  await chat.input.emit('keydown',{key:'Enter'});
+  // Some IMEs report composition keystrokes as Process/229, then release
+  // Process without keyCode 229. A later real Enter must still send.
+  await chat.input.emit('compositionstart');
+  await chat.input.emit('keydown',{key:'Process',keyCode:229,isComposing:true});
+  await chat.input.emit('compositionend');
+  await chat.input.emit('keyup',{key:'Process'});
+  let prevented=false;
+  await chat.input.emit('keydown',{key:'Enter',preventDefault(){prevented=true;}});
+  assert.equal(prevented,true,'Enter after IME Process release must send instead of inserting a newline');
   const pending=chat.submitted;
   assert.equal(calls, 1);
   assert.equal(chat.busy, true);
+  assert.equal(chat.sendButton.disabled,true,'the send button cannot duplicate a pending request');
   assert.equal(host.attributes['aria-busy'], 'true');
   i18n.setLocale('ja');
   assert.equal(chat.input.value, '私たちの集落に雨を');
@@ -70,6 +79,7 @@ try {
   await pending;
   assert.equal(chat.input.value, '');
   assert.equal(chat.busy, false);
+  assert.equal(chat.sendButton.disabled,false,'the send button becomes available after reception');
   assert.match(text(globals['#divine-events']), /世界樹の集落に雨/);
   chat.renderHistory([{ id: 1, time: 7, message: '<b>my original words</b>', outcome: 'applied', replyMessage: event }]);
   i18n.setLocale('en');

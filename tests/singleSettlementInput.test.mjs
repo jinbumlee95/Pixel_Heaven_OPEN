@@ -88,6 +88,9 @@ assert.deepEqual(world.state, before, 'even a legacy village object is not playe
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 assert.doesNotMatch(html, /id="divine-target"/);
 assert.match(html, /id="oracle-process"/);
-assert.doesNotMatch(html, /<button|<select/);
+assert.deepEqual([...html.matchAll(/<select id="([^"]+)"/g)].map(match=>match[1]).sort(),['locale-select','theme-select'],
+  'only presentation preferences use selectors; no settlement selector');
+assert.equal((html.match(/<button\b/g)??[]).length,1,'the chat submit control is the only gameplay button');
+assert.match(html, /<button type="submit"[^>]*data-i18n="chat.send"/);
 assert.match(html, /id="event-forecast"/);
 console.log('single settlement input: passed');

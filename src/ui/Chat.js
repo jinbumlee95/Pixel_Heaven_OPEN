@@ -13,6 +13,8 @@ export class Chat {
     this.form = host.querySelector('form');
     this.input = host.querySelector('textarea');
     this.input.disabled = false;
+    this.sendButton = host.querySelector('button[type="submit"]');
+    if (this.sendButton) this.sendButton.disabled = false;
     this.target = host.querySelector('select');
     this.busy = false;
     this.status = host.querySelector('.reply-status') ?? host.querySelector('[role="status"]');
@@ -34,9 +36,9 @@ export class Chat {
         this.compositionEnter = true;
       }
     });
-    this.input.addEventListener('keyup', event => {
-      if (event.key === 'Enter' || event.keyCode === 229) this.compositionEnter = false;
-    });
+    // IMEs may release Process (without keyCode 229), not Enter. Once that
+    // keystroke is released, a later Enter is a new explicit send gesture.
+    this.input.addEventListener('keyup', () => { this.compositionEnter = false; });
     this.input.addEventListener('blur', () => { this.compositionEnter = false; this.composing = false; });
     this.input.addEventListener('input', () => { this.responsePlanId = undefined; });
     this.unsubscribe = this.i18n.subscribe(() => this.refreshLocale());
@@ -45,6 +47,7 @@ export class Chat {
       if (this.composing || this.compositionEnter || event.isComposing || this.busy || !this.input.value.trim()) return;
       this.busy = true;
       this.input.disabled = true;
+      if (this.sendButton) this.sendButton.disabled = true;
       host.setAttribute('aria-busy', 'true');
       this.setStatus({ messageKey: 'chat.pending' });
       try {
@@ -62,6 +65,7 @@ export class Chat {
       } finally {
         this.busy = false;
         this.input.disabled = false;
+        if (this.sendButton) this.sendButton.disabled = false;
         host.setAttribute('aria-busy', 'false');
         this.input.focus();
       }

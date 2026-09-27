@@ -41,6 +41,7 @@ const messages={
   ambiguous:['대상을 하나 지정해 주세요: {choices}','Choose one target: {choices}','対象を一つ指定してください：{choices}'],
   expired:['해당 사건이나 대상이 없거나 이미 종료됐습니다.','That event or target is absent or has ended.','その事件・対象は存在しないか終了しました。'],
   invalid:['명령을 한 가지씩 구체적으로 말씀해 주세요. “도움말”에서 예시를 볼 수 있습니다.','Please give one specific command. Type “help” for examples.','命令は一つずつ具体的に伝えてください。「ヘルプ」で例を確認できます。'],
+  availableLanguages:['이 배포판의 화면 언어: {languages}','Interface languages in this edition: {languages}','この配布版の表示言語: {languages}'],
   paused:['일시정지 중입니다. 신탁을 받으려면 “계속”이라고 말씀해 주세요.','Paused. Say “resume” before sending an oracle.','一時停止中です。「再開」と伝えてから神託を送ってください。'],
   autonomous:['마을에 맡김 · 기한에 자율 진행','Left to the settlement · proceeds at its deadline','集落に任せる · 期限に自動進行'],
   receiving:['사제에게 전달 중','Priest receiving','司祭へ伝達中'],

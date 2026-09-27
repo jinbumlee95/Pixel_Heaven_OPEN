@@ -123,6 +123,9 @@ export class Game {
     this.heroPanel = new HeroPanel(document.querySelector('#hero-panel'), this.world.state, this.i18n);
     this.merchantPanel = new MerchantPanel(document.querySelector('#merchant-visit'), this.world, this.i18n);
     this.theme = new Theme();
+    this.localeSelect = document.querySelector('#locale-select');
+    this.onLocaleSelect = () => this.i18n.setLocale(this.localeSelect.value);
+    this.localeSelect?.addEventListener('change', this.onLocaleSelect);
     this.renderer.reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     document.body.classList.toggle('reduce-motion',this.renderer.reducedMotion);
     this.localAI.onStatus = () => {};
@@ -304,6 +307,7 @@ export class Game {
     this.religionPanel?.dispose?.();
     this.merchantPanel?.dispose?.();
     this.theme?.dispose();
+    this.localeSelect?.removeEventListener('change', this.onLocaleSelect);
     globalThis.cancelAnimationFrame?.(this.frameId);
     this.renderer.destroy();
   }

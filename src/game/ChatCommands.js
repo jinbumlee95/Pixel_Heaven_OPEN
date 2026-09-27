@@ -213,7 +213,7 @@ export class ChatCommands {
         }
         else if(c.name==='speed')g.speed=c.value;
         else if(c.name==='theme')g.theme?.setTheme(c.value);
-        else if(c.name==='locale'){g.i18n.setLocale(c.value);reply=t('cw.done');}
+        else if(c.name==='locale'){reply=g.i18n.setLocale(c.value)===false?t('cw.availableLanguages',{languages:g.i18n.allowedLocales.join(', ')}):t('cw.done');}
         else if(c.name==='motion'){g.renderer.reducedMotion=c.value;globalThis.document?.body.classList.toggle('reduce-motion',c.value);}
         else if(c.name==='sound'){if(c.value){if(!await g.sound.enable())return failure('error',{error:'audio_unavailable'});}else g.sound.mute();}
         else if(c.name==='difficulty')setStoryProfile(g.world,c.value);

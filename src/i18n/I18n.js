@@ -35,18 +35,22 @@ function browserStorage() {
 }
 
 export class I18n {
-  constructor({ locale, storage = browserStorage(), catalogs = catalogues } = {}) {
+  constructor({ locale, storage = browserStorage(), catalogs = catalogues, allowedLocales = SUPPORTED_LOCALES } = {}) {
     this.storage = storage;
     this.catalogs = catalogs;
     this.listeners = new Set();
+    this.allowedLocales = SUPPORTED_LOCALES.filter(value => allowedLocales.includes(value));
+    if (!this.allowedLocales.length) this.allowedLocales = ['en'];
     let stored;
     try { stored = storage?.getItem(LOCALE_STORAGE_KEY); } catch { /* Preferences may be blocked. */ }
     this.locale = normalizeLocale(locale ?? stored ?? globalThis.navigator?.language ?? 'en');
+    if (!this.allowedLocales.includes(this.locale)) this.locale = this.allowedLocales[0];
     this.numbers = new Intl.NumberFormat(intlLocales[this.locale]);
   }
 
   setLocale(locale) {
     const next = normalizeLocale(locale);
+    if (!this.allowedLocales.includes(next)) return false;
     try { this.storage?.setItem(LOCALE_STORAGE_KEY, next); } catch { /* Keep the current session usable. */ }
     if (next === this.locale) return;
     this.locale = next;

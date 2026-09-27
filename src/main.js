@@ -6,7 +6,8 @@ import { Game } from './game/Game.js';
 import { I18n } from './i18n/I18n.js';
 
 const status = document.querySelector('#status');
-const i18n = new I18n();
+const allowedLocales = document.documentElement.dataset.locales?.split(',');
+const i18n = new I18n({ ...(allowedLocales ? { allowedLocales } : {}) });
 i18n.applyDOM(document);
 status.textContent = i18n.t('app.loading');
 let restored; let packs = [];let content;
