@@ -46,7 +46,11 @@ Heroes repeat dungeon runs until recalled, recovering and resupplying when possi
 
 ## On-device AI
 
-Demo commands work by default. `enable ai` uses Chrome's built-in Prompt API when available; Chrome may download the model. No API key or paid model service is included. Availability depends on the browser, operating system and hardware; see [Google's Prompt API documentation](https://developer.chrome.com/docs/ai/prompt-api).
+Demo commands work by default. `enable ai` uses Chrome's built-in Prompt API when available.
+
+> **Heads-up:** the first `enable ai` may make Chrome download its on-device model, which is several gigabytes. The download starts only when you type `enable ai`, never on page load, and Chrome keeps the model for later visits. Devices without enough free storage cannot install it; the game then keeps running with demo commands.
+
+No API key or paid model service is included. Availability depends on the browser, operating system and hardware; see [Google's Prompt API documentation](https://developer.chrome.com/docs/ai/prompt-api).
 
 The local model chooses a compact intent. A separate fresh model conversation checks whether the proposed action matches the entire request. At most one repair is attempted, within the request deadline. The engine still validates the target, parameters, inventory, faith and current world state. Failed model requests do not silently switch to demo interpretation.
 
