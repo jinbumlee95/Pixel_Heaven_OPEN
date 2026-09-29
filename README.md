@@ -25,6 +25,8 @@ Your settlement begins with eight people, one house and one field. Its resources
 | Bring the hero back | `Recall the hero.` |
 | Begin production after gathering materials | `build sawmill`, then `produce planks 3` |
 | Inspect production / equipment | `production status`, `recipes`, `equipment` |
+| Arrange equipment | In the `equipment` panel, drag an item picture onto a cell (or back to storage), or click it for its stats and command buttons |
+| Zoom the map | Mouse wheel, `+` / `-`, or `zoom in` / `zoom out` |
 | Prepare for a forecast | `respond forecast-1` (use the visible event ID) |
 | Strike raiders during a battle | `smite the raiders` (12 faith, every 8 seconds) |
 | See goals and their faith rewards | `legends` |
@@ -55,7 +57,7 @@ node tools/check.mjs
 node tools/validate-content.mjs
 ```
 
-82 Node test scripts cover simulation, validated actions, persistence, input and regression cases. Three normal-start 30-minute simulations verify workshop construction, production, hero growth, recall and save restoration without injecting resources or faith. Real Chrome desktop checks cover the actual Priest and chat path.
+83 Node test scripts cover simulation, validated actions, persistence, input and regression cases. Three normal-start 30-minute simulations verify workshop construction, production, hero growth, recall and save restoration without injecting resources or faith. Real Chrome desktop checks cover the actual Priest and chat path.
 
 `src/game` owns simulation, `src/actions` validates effects, `src/llm` interprets requests, `src/ui` provides panels and `src/state` owns persistence. PixiJS is isolated in `src/game/Renderer.js`. Sparse world storage and declarative content registries support extension.
 

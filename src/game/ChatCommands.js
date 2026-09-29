@@ -64,6 +64,7 @@ export function parseChatCommand(message) {
     ['new',/^(?:new world|새 세계|新世界)$/u],
     ['ai',/^(?:enable ai|ai 활성화|ai有効化)$/u],['demo',/^(?:demo mode|데모 모드|デモモード)$/u],
     ['legends',/^(?:legends|achievements|milestones|전설|업적|伝説|実績)$/u],
+    ['zoomIn',/^(?:zoom in|확대|拡大)$/u],['zoomOut',/^(?:zoom out|축소|縮小)$/u],
     ['home',/^(?:focus home|세계수로|세계수로 돌아가기|世界樹へ)$/u],['battle',/^(?:show battle|전장 보여줘|戦場を見せて)$/u]
   ];
   for(const [name,pattern]of meta)if(exact(s,pattern))return {type:'meta',name};
@@ -229,6 +230,7 @@ export class ChatCommands {
         else if(c.name==='sound'){if(c.value){if(!await g.sound.enable())return failure('error',{error:'audio_unavailable'});}else g.sound.mute();}
         else if(c.name==='difficulty')setStoryProfile(g.world,c.value);
         else if(c.name==='personality')s.story.personality=c.value;
+        else if(c.name==='zoomIn'||c.name==='zoomOut')g.renderer.zoomBy?.(c.name==='zoomIn'?1:-1);
         else if(c.name==='home')g.renderer.focusVillage('home');
         else if(c.name==='battle'){if(!s.combat?.entry)return failure('expired');g.renderer.focusBattle();}
         else if(c.name==='ai'){await g.localAI.enable();reply=g.i18n.formatMessage(g.localAI.statusMessage);}

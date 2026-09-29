@@ -126,7 +126,7 @@ export class Game {
     this.eventsView = new Events(document.querySelector('#world-panel'), null, this.i18n);
     for (const event of this.worldDecisions.events) this.eventsView.add(event);
     this.forecastPanel = new DecisionQueuePanel(document.querySelector('#event-forecast'), this);
-    this.equipmentPanel=new EquipmentPanel(document.querySelector('#equipment-panel'),this.i18n);
+    this.equipmentPanel=new EquipmentPanel(document.querySelector('#equipment-panel'),this.i18n,{onCommand:command=>this.chat?.suggest(command),onSend:command=>this.chat?.send(command)});
     this.heroPanel = new HeroPanel(document.querySelector('#hero-panel'), this.world.state, this.i18n);
     this.merchantPanel = new MerchantPanel(document.querySelector('#merchant-visit'), this.world, this.i18n);
     this.banner = new Banner(document.querySelector('.map-stage'), this.i18n, { reducedMotion: () => this.renderer.reducedMotion });

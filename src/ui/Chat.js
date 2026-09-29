@@ -108,6 +108,22 @@ export class Chat {
     this.input.scrollIntoView({ block: 'center', behavior: reduced ? 'auto' : 'smooth' });
   }
 
+  // Fill the message box with a ready command (e.g. from the equipment panel).
+  suggest(command) {
+    if (this.busy || typeof command !== 'string') return;
+    this.input.value = command;
+    this.responsePlanId = undefined;
+    this.input.focus();
+  }
+
+  // Send a ready command immediately, through the same form as typed text.
+  send(command) {
+    if (this.busy || typeof command !== 'string') return;
+    this.input.value = command;
+    this.responsePlanId = undefined;
+    this.form.requestSubmit();
+  }
+
   addEvent(event) {
     if (!event) return;
     this.eventRecords.unshift(event);
