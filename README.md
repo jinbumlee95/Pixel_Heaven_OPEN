@@ -1,5 +1,7 @@
 # Pixel Heaven — English Edition
 
+> **Why this exists:** Chrome went ahead and shipped a local LLM (Gemini Nano) into everyone's browser for its own convenience. Leaving it there for Google alone to use felt irritating, so this game was built to put it to work as hard as possible.
+
 A pixel settlement simulation centered on a Worldtree. Speak through chat; the Priest walks to the altar and receives the oracle before the game validates costs and applies an action.
 
 ## Run
