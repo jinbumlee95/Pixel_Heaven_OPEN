@@ -4,6 +4,9 @@ import { isQuestion } from './DialogueAct.js';
 const HOME_ENGLISH = new Set(['our', 'my', 'this', 'the', 'home', 'current', 'worldtree']);
 const HOME_KOREAN = new Set(['우리', '내', '나의', '이', '현재', '세계수']);
 const HOME_JAPANESE = new Set(['私たちの', '私達の', '私の', 'この', '我々の', '世界樹の', '世界樹']);
+// Common dungeon typos/romanizations: deongun, dungun, dungeoun, deonjeon.
+const DUNGEON_TYPOS = /\bd(?:u|eo|o)n[gj](?:eo|e|u|o)u?n\b/giu;
+export const normalizeDungeonTypos = text => typeof text === 'string' ? text.replace(DUNGEON_TYPOS, 'dungeon') : text;
 const ACTION_PATTERNS = [
   ['prepare_fire', /\bfirebreaks?\b|방화선|防火帯/u],
   ['prepare_flood', /\b(?:drainage|prepare for (?:a )?flood)\b|배수로|排水路/u],
@@ -107,7 +110,7 @@ export async function interpretDivineMessage(message, context = {}) {
   if (typeof message !== 'string' || !message.trim() || message.length > 500) return null;
   const destination = inspectDivineDestination(message, context);
   if (destination.unsupported) return null;
-  let text = destination.text;
+  let text = normalizeDungeonTypos(destination.text);
   // Negation, conditions and alternatives cannot become an immediate command.
   if (hasUnsupportedCommandWording(text)) return unclear();
   let actions = ACTION_PATTERNS.filter(([, pattern]) => pattern.test(text));

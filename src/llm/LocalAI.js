@@ -3,12 +3,18 @@ import { oracleIntentPrompt, ORACLE_INTENT_SCHEMA, decodeOracleIntent, intentMat
 import { oracleSubject } from './OracleFailure.js';
 import { isQuestion } from './DialogueAct.js';
 import { parseTradeCommand, validTradeIntent } from '../game/TradeCommands.js';
-import { interpretDivineMessage } from './divineLLM.js';
+import { interpretDivineMessage, normalizeDungeonTypos } from './divineLLM.js';
 import { decideWorldAction } from './worldLLM.js';
 import { validateDivineInterpretation } from './schemas.js';
 import { validateWorldSchema } from '../actions/worldActions.js';
 import { RequestQueue } from './RequestQueue.js';
 
+// Chrome Prompt API only accepts these codes; any other code aborts create().
+export const PROMPT_API_LANGUAGES = ['en', 'es', 'ja', 'de', 'fr'];
+const supportedOptions = options => ({ ...options,
+  expectedInputs: options.expectedInputs.map(input => ({ ...input, languages: input.languages.filter(l => PROMPT_API_LANGUAGES.includes(l)) })),
+  expectedOutputs: options.expectedOutputs.map(output => ({ ...output, languages: output.languages.filter(l => PROMPT_API_LANGUAGES.includes(l)) })),
+});
 const OPTIONS = {
   expectedInputs: [{ type: 'text', languages: ['en'] }],
   expectedOutputs: [{ type: 'text', languages: ['en'] }],
@@ -95,7 +101,8 @@ export class LocalAI {
     try {
       // Called directly from the click handler, preserving user activation.
       const session = await Promise.race([
-        this.api.create({ ...this.options, signal: controller.signal,
+        // 'ko' may pass availability() but aborts create(); Korean text is still accepted as input.
+        this.api.create({ ...supportedOptions(this.options), signal: controller.signal,
           monitor: monitor => monitor.addEventListener('downloadprogress', event => {
             if (generation === this.generation) this.report(`Downloading on-device AI · ${Math.round(event.loaded * 100)}%`,
               'ai.downloading', { percent: Math.round(event.loaded * 100) });
@@ -183,8 +190,18 @@ export class LocalAI {
     }
   }
 
-  interpret = (message, context) => isQuestion(message) ? Promise.resolve({status:'unclear',confidence:0}) : this.request('divine', { message, ...context },
-    () => interpretDivineMessage(message, context), value=>validateDivineInterpretation(value)||validOracleOrder(value));
+  interpret = async (message, context) => {
+    if (isQuestion(message)) return {status:'unclear',confidence:0};
+    // Nano often misreads short hero commands (e.g. as expedition_supply).
+    // The strict rule parser rejects negation/conditions, so its hero match is safe to use directly.
+    if (this.session) {
+      const rule = await interpretDivineMessage(message, context);
+      if (['hero_dispatch','hero_recall'].includes(rule?.action)) { this.traces.divine = { provider: 'demo', reason: 'rule_match' }; return rule; }
+    }
+    // Nano rejects unknown words like 'deongun'; normalize known typos before classify/verify.
+    return this.request('divine', { ...context, message: normalizeDungeonTypos(message) },
+      () => interpretDivineMessage(message, context), value=>validateDivineInterpretation(value)||validOracleOrder(value));
+  };
 
   interpretTrade = message => this.request('trade',{message},()=>parseTradeCommand(message)??{type:'invalid'},value=>value?.type==='invalid'||validTradeIntent(value));
 
