@@ -14,7 +14,8 @@ const ACTION_PATTERNS = [
   ['build_house', /\b(?:build|construct)\b.*\b(?:house|home|housing)\b|집.*(?:지어|짓|건설)|주택|家.*(?:建て|建設)/u],
   ['farm', /\b(?:plant|build|cultivate|create)\b.*\b(?:field|farm)\b|밭.*(?:만들|가꾸|일구|지어)|농지|畑.*(?:作|耕)|農地/u],
   ['build_temple', /\b(?:build|construct)\b.*\b(?:temple|shrine)\b|(?:사원|성전).*?(?:지어|짓|건설)|神殿.*(?:建て|建設)/u],
-  ['hero_dispatch', /\b(?:dungeon|expedition|explore|dispatch)\b|던전|탐험|원정|파견|ダンジョン|探索|遠征|派遣/u],
+  // Also common dungeon typos/romanizations: deongun, dungun, dungeoun, deonjeon.
+  ['hero_dispatch', /\b(?:d(?:u|eo|o)n[gj](?:eo|e|u|o)u?n|expedition|explore|dispatch)\b|던전|탐험|원정|파견|ダンジョン|探索|遠征|派遣/u],
   ['hero_recall', /\b(?:recall|return|come back|bring (?:our |the )?hero home|call (?:our |the )?hero back)\b|복귀|귀환|돌아오|돌아와|帰還|呼び戻|戻って/u],
   ['prepare_defense', /\b(?:defen[ds]\w*|protect|guard|prepare for battle|rally|muster|cover|barricades?|obstacles?|traps?)\b|지켜|지키|방어|수비|전투\s*준비|소집|엄폐|장애물|바리케이드|덫|덪|함정|守って|守れ|防衛|防御|戦闘\s*準備|戦いに備え|召集|遮蔽物|遮蔽|バリケード|障害物|罠/u],
   ['create_rain', /\brain\b|(?<![가-힣])비(?:를|가|좀|\s|$)|비내|비오|雨/u],

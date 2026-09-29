@@ -59,4 +59,9 @@ for (const message of ['moon', 'make the moon jealous of the sun', '달이 태�
 for (const message of ['', 'x'.repeat(501), null]) {
   assert.equal(await interpret(message), null, String(message));
 }
+// Common dungeon misspellings still dispatch; unrelated words stay unclear.
+for (const message of ['send hero deongun', 'send hero dungun', 'send hero deonjeon']) {
+  assert.equal((await interpret(message))?.action, 'hero_dispatch', message);
+}
+assert.equal((await interpret('send hero to the dragon')).status, 'unclear');
 console.log('divineLLM: passed');
