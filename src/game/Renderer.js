@@ -13,6 +13,7 @@ import { defaultContent } from '../content/builtin.js';
 
 // Compatibility exports for asset inspection. Runtime rendering uses the
 // world's validated content catalog, including definitions added by a pack.
+export const ZOOM_LEVELS = Object.freeze([0.5, 0.75, 1, 1.5, 2]);
 export const APPEARANCE = Object.freeze(Object.fromEntries(defaultContent.list().map(definition => [definition.id, definition.visual])));
 export const CHARACTER_ANIMATIONS = Object.freeze(Object.fromEntries(defaultContent.list().filter(definition => definition.animation)
   .map(definition => [definition.id, definition.animation])));
@@ -171,8 +172,34 @@ export class Renderer {
   resize() {
     const width = Math.max(1, this.host.clientWidth);
     const height = Math.max(1, this.host.clientHeight);
+    this.zoom ??= 1;
     this.app.renderer.resize(width, height);
-    this.camera.resize(width, height);
+    // Everything is drawn in logical pixels (screen ÷ zoom); the stage scale does the zoom.
+    this.logicalWidth = width / this.zoom; this.logicalHeight = height / this.zoom;
+    this.app.stage.scale.set(this.zoom);
+    this.camera.resize(this.logicalWidth, this.logicalHeight);
+  }
+
+  get viewWidth() { return this.logicalWidth ?? this.app.screen.width; }
+  get viewHeight() { return this.logicalHeight ?? this.app.screen.height; }
+
+  // Zoom keeps the map point under the cursor (or the view center) in place.
+  setZoom(zoom, clientPoint) {
+    const next = ZOOM_LEVELS.includes(zoom) ? zoom : 1;
+    if (next === (this.zoom ?? 1) || !this.app) return false;
+    const rect = this.app.view.getBoundingClientRect();
+    const mx = clientPoint ? clientPoint.x - rect.left : rect.width / 2;
+    const my = clientPoint ? clientPoint.y - rect.top : rect.height / 2;
+    const gx = this.camera.x + mx / (TILE_SIZE * this.zoom), gy = this.camera.y + my / (TILE_SIZE * this.zoom);
+    this.zoom = next; this.resize();
+    this.camera.x = gx - mx / (TILE_SIZE * next); this.camera.y = gy - my / (TILE_SIZE * next); this.camera.pan(0, 0);
+    this.groundBounds = null;
+    return true;
+  }
+
+  zoomBy(step, clientPoint) {
+    const index = ZOOM_LEVELS.indexOf(this.zoom ?? 1);
+    return this.setZoom(ZOOM_LEVELS[Math.max(0, Math.min(ZOOM_LEVELS.length - 1, (index < 0 ? 2 : index) + step))], clientPoint);
   }
 
   focusVillage(id) {
@@ -205,11 +232,12 @@ export class Renderer {
     const signal = (this.inputAbort = new AbortController()).signal;
     const view = this.app.view;
     view.tabIndex = 0;
-    view.setAttribute('aria-label', 'Village map. Drag to pan, or use arrow keys and WASD.');
+    view.setAttribute('aria-label', 'Village map. Drag to pan, use arrow keys and WASD, and the mouse wheel or +/- to zoom.');
     const handled = ['arrowup', 'arrowdown', 'arrowleft', 'arrowright', 'w', 'a', 's', 'd'];
     view.addEventListener('keydown', event => {
       const key = event.key.toLowerCase();
       if (handled.includes(key)) { event.preventDefault(); this.cameraTour.cancel(); this.keys.add(key); }
+      else if (['+', '=', '-', '_'].includes(key)) { event.preventDefault(); this.zoomBy(['+', '='].includes(key) ? 1 : -1); }
     }, { signal });
     view.addEventListener('keyup', event => this.keys.delete(event.key.toLowerCase()), { signal });
     view.addEventListener('blur', () => this.keys.clear(), { signal });
@@ -223,9 +251,17 @@ export class Renderer {
     }, { signal });
     view.addEventListener('pointermove', event => {
       if (!this.drag || this.drag.id !== event.pointerId) return;
-      this.camera.pan((this.drag.x - event.clientX) / TILE_SIZE, (this.drag.y - event.clientY) / TILE_SIZE);
+      this.camera.pan((this.drag.x - event.clientX) / (TILE_SIZE * this.zoom), (this.drag.y - event.clientY) / (TILE_SIZE * this.zoom));
       this.drag = { id: event.pointerId, x: event.clientX, y: event.clientY };
     }, { signal });
+    // Wheel zoom; trackpads fire bursts, so one step per 120 ms.
+    view.addEventListener('wheel', event => {
+      event.preventDefault();
+      if (!event.deltaY || performance.now() - (this.lastWheel ?? 0) < 120) return;
+      this.lastWheel = performance.now();
+      this.cameraTour.cancel();
+      this.zoomBy(event.deltaY < 0 ? 1 : -1, { x: event.clientX, y: event.clientY });
+    }, { signal, passive: false });
     for (const event of ['pointerup', 'pointercancel', 'lostpointercapture']) {
       view.addEventListener(event, () => { this.drag = null; }, { signal });
     }
@@ -406,8 +442,8 @@ export class Renderer {
       const y = (event.from.y - this.camera.y) * TILE_SIZE + 6;
       const tx = (event.to.x - this.camera.x) * TILE_SIZE + 16;
       const ty = (event.to.y - this.camera.y) * TILE_SIZE + 6;
-      if (Math.max(x, tx) < -64 || Math.min(x, tx) > this.app.screen.width + 64
-        || Math.max(y, ty) < -64 || Math.min(y, ty) > this.app.screen.height + 64) continue;
+      if (Math.max(x, tx) < -64 || Math.min(x, tx) > this.viewWidth + 64
+        || Math.max(y, ty) < -64 || Math.min(y, ty) > this.viewHeight + 64) continue;
       effectIds.add(event.id);
       if (this.drawEffectArt(event, { x, y, tx, ty }, elapsedMs)) continue;
       const progress = this.reducedMotion ? 1 : Math.min(1, Math.max(0,
@@ -428,7 +464,7 @@ export class Renderer {
         const fade = this.reducedMotion ? 0.85 : 1 - progress * 0.75;
         const radius = (event.radius ?? 2) * TILE_SIZE;
         if (!this.reducedMotion && progress < 0.25) effect.beginFill(0xfff6d8, 0.28 * (1 - progress * 4))
-          .drawRect(0, 0, this.app.screen.width, this.app.screen.height).endFill();
+          .drawRect(0, 0, this.viewWidth, this.viewHeight).endFill();
         effect.beginFill(BATTLE.gold, 0.16 * fade).drawCircle(tx, ty + 10, radius).endFill();
         effect.lineStyle(2, BATTLE.gold, 0.8 * fade).drawCircle(tx, ty + 10, radius * (this.reducedMotion ? 1 : 0.55 + progress * 0.45));
         // The bolt starts above the viewport; a dark outline keeps it readable on grass and snow.
@@ -617,7 +653,7 @@ export class Renderer {
   }
 
   renderAtmosphere() {
-    const width = this.app.screen.width; const height = this.app.screen.height;
+    const width = this.viewWidth; const height = this.viewHeight;
     this.atmosphere.clear().beginFill(0x11172e, daylight(this.visualTime).darkness).drawRect(0, 0, width, height).endFill();
     const villages = this.world.state.villages;
     const snow= villages.some(v=>v.weather==='cold');
