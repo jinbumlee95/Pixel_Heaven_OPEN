@@ -4,6 +4,9 @@ import { isQuestion } from './DialogueAct.js';
 const HOME_ENGLISH = new Set(['our', 'my', 'this', 'the', 'home', 'current', 'worldtree']);
 const HOME_KOREAN = new Set(['우리', '내', '나의', '이', '현재', '세계수']);
 const HOME_JAPANESE = new Set(['私たちの', '私達の', '私の', 'この', '我々の', '世界樹の', '世界樹']);
+// Common dungeon typos/romanizations: deongun, dungun, dungeoun, deonjeon.
+const DUNGEON_TYPOS = /\bd(?:u|eo|o)n[gj](?:eo|e|u|o)u?n\b/giu;
+export const normalizeDungeonTypos = text => typeof text === 'string' ? text.replace(DUNGEON_TYPOS, 'dungeon') : text;
 const ACTION_PATTERNS = [
   ['prepare_fire', /\bfirebreaks?\b|방화선|防火帯/u],
   ['prepare_flood', /\b(?:drainage|prepare for (?:a )?flood)\b|배수로|排水路/u],
@@ -14,8 +17,7 @@ const ACTION_PATTERNS = [
   ['build_house', /\b(?:build|construct)\b.*\b(?:house|home|housing)\b|집.*(?:지어|짓|건설)|주택|家.*(?:建て|建設)/u],
   ['farm', /\b(?:plant|build|cultivate|create)\b.*\b(?:field|farm)\b|밭.*(?:만들|가꾸|일구|지어)|농지|畑.*(?:作|耕)|農地/u],
   ['build_temple', /\b(?:build|construct)\b.*\b(?:temple|shrine)\b|(?:사원|성전).*?(?:지어|짓|건설)|神殿.*(?:建て|建設)/u],
-  // Also common dungeon typos/romanizations: deongun, dungun, dungeoun, deonjeon.
-  ['hero_dispatch', /\b(?:d(?:u|eo|o)n[gj](?:eo|e|u|o)u?n|expedition|explore|dispatch)\b|던전|탐험|원정|파견|ダンジョン|探索|遠征|派遣/u],
+  ['hero_dispatch', /\b(?:dungeon|expedition|explore|dispatch)\b|던전|탐험|원정|파견|ダンジョン|探索|遠征|派遣/u],
   ['hero_recall', /\b(?:recall|return|come back|bring (?:our |the )?hero home|call (?:our |the )?hero back)\b|복귀|귀환|돌아오|돌아와|帰還|呼び戻|戻って/u],
   ['prepare_defense', /\b(?:defen[ds]\w*|protect|guard|prepare for battle|rally|muster|cover|barricades?|obstacles?|traps?)\b|지켜|지키|방어|수비|전투\s*준비|소집|엄폐|장애물|바리케이드|덫|덪|함정|守って|守れ|防衛|防御|戦闘\s*準備|戦いに備え|召集|遮蔽物|遮蔽|バリケード|障害物|罠/u],
   ['create_rain', /\brain\b|(?<![가-힣])비(?:를|가|좀|\s|$)|비내|비오|雨/u],
@@ -108,7 +110,7 @@ export async function interpretDivineMessage(message, context = {}) {
   if (typeof message !== 'string' || !message.trim() || message.length > 500) return null;
   const destination = inspectDivineDestination(message, context);
   if (destination.unsupported) return null;
-  let text = destination.text;
+  let text = normalizeDungeonTypos(destination.text);
   // Negation, conditions and alternatives cannot become an immediate command.
   if (hasUnsupportedCommandWording(text)) return unclear();
   let actions = ACTION_PATTERNS.filter(([, pattern]) => pattern.test(text));

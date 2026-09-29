@@ -102,3 +102,20 @@ await permissive.detect();
 assert.equal(await permissive.enable(), true);
 assert.deepEqual(permissive.options.expectedInputs[0].languages, ['en', 'ko', 'ja'], 'Korean input stays accepted');
 permissive.stop();
+
+// AI mode: dungeon typos reach the model (classify and verify) as 'dungeon'.
+const seen = [];
+const typoAI = new LocalAI({ api: {
+  availability: async () => 'available',
+  create: async () => ({ destroy() {}, clone: async () => ({ destroy() {}, prompt: async p => {
+    const message = p.match(/Message: (".*")/)[1];
+    seen.push(message);
+    const knows = message.includes('dungeon');
+    if (p.startsWith('Verify')) return JSON.stringify({ matches: knows });
+    return JSON.stringify({ intent: knows ? 'hero_dispatch' : 'none', value: '', amount: 0, direction: '', target: 'home' });
+  } }) }),
+} });
+await typoAI.detect(); await typoAI.enable();
+assert.equal((await typoAI.interpret('send hero deongun', context)).action, 'hero_dispatch');
+assert.ok(seen.length === 2 && seen.every(m => m === '"send hero dungeon"'), JSON.stringify(seen));
+typoAI.stop();

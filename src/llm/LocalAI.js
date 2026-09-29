@@ -3,7 +3,7 @@ import { oracleIntentPrompt, ORACLE_INTENT_SCHEMA, decodeOracleIntent, intentMat
 import { oracleSubject } from './OracleFailure.js';
 import { isQuestion } from './DialogueAct.js';
 import { parseTradeCommand, validTradeIntent } from '../game/TradeCommands.js';
-import { interpretDivineMessage } from './divineLLM.js';
+import { interpretDivineMessage, normalizeDungeonTypos } from './divineLLM.js';
 import { decideWorldAction } from './worldLLM.js';
 import { validateDivineInterpretation } from './schemas.js';
 import { validateWorldSchema } from '../actions/worldActions.js';
@@ -190,7 +190,8 @@ export class LocalAI {
     }
   }
 
-  interpret = (message, context) => isQuestion(message) ? Promise.resolve({status:'unclear',confidence:0}) : this.request('divine', { message, ...context },
+  // Nano rejects unknown words like 'deongun'; normalize known typos before classify/verify.
+  interpret = (message, context) => isQuestion(message) ? Promise.resolve({status:'unclear',confidence:0}) : this.request('divine', { ...context, message: normalizeDungeonTypos(message) },
     () => interpretDivineMessage(message, context), value=>validateDivineInterpretation(value)||validOracleOrder(value));
 
   interpretTrade = message => this.request('trade',{message},()=>parseTradeCommand(message)??{type:'invalid'},value=>value?.type==='invalid'||validTradeIntent(value));
