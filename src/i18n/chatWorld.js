@@ -39,6 +39,7 @@ const messages={
   hint:['Enter로 전하기 · Shift+Enter 줄바꿈 · “도움말”, “자원 보여줘”, “저장해”','Enter to send · Shift+Enter for a new line · “help”, “show resources”, “save”','Enterで送信 · Shift+Enterで改行 ·「ヘルプ」「資源を見せて」「保存」'],
   done:['처리했습니다.','Done.','完了しました。'],
   ambiguous:['대상을 하나 지정해 주세요: {choices}','Choose one target: {choices}','対象を一つ指定してください：{choices}'],
+  noForecast:['아직 대비할 사건이 없습니다: 예고된 “{kind}”이(가) 없습니다. “사건 목록”으로 다가오는 사건을 확인하세요.','Nothing to prepare for yet: no “{kind}” is forecast. Say “events” to see what is coming.','まだ備える事件がありません：「{kind}」は予告されていません。「事件一覧」で今後の事件を確認してください。'],
   expired:['해당 사건이나 대상이 없거나 이미 종료됐습니다.','That event or target is absent or has ended.','その事件・対象は存在しないか終了しました。'],
   invalid:['명령을 한 가지씩 구체적으로 말씀해 주세요. “도움말”에서 예시를 볼 수 있습니다.','Please give one specific command. Type “help” for examples.','命令は一つずつ具体的に伝えてください。「ヘルプ」で例を確認できます。'],
   availableLanguages:['이 배포판의 화면 언어: {languages}','Interface languages in this edition: {languages}','この配布版の表示言語: {languages}'],
