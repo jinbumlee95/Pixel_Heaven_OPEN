@@ -6,11 +6,11 @@ A pixel settlement simulation centered on a Worldtree. Speak through chat; the P
 
 ## Run
 
-```sh
-node tools/serve.mjs
-```
+**Play in your browser: https://jinbumlee95.github.io/Pixel_Heaven_OPEN/**
 
-Open http://localhost:8080 and type **Let there be light**. Node.js is required for the local server. PixiJS and its tilemap library load from a CDN, so the initial page needs internet access. Game code uses native JavaScript modules without a build step.
+Open the page and type **Let there be light**. No install is needed. Use desktop Chrome to try the on-device AI (`enable ai`); other browsers play with the built-in demo commands.
+
+To run it locally instead, start `node tools/serve.mjs` and open http://localhost:8080. PixiJS and its tilemap library load from a CDN, so the first load needs internet access. Game code uses native JavaScript modules without a build step.
 
 The public interface is English. Theme and language settings sit in the header. **Enter** or the send button submits a message; **Shift+Enter** adds a line.
 
