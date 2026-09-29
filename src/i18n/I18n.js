@@ -14,13 +14,14 @@ import { forecastCatalogs } from './forecast.js';
 import { settlementCatalogs } from './settlement.js';
 import { combatCatalogs } from './combat.js';
 import { progressionCatalogs } from './progression.js';
+import { legendCatalogs } from './legends.js';
 import { durationParts, elapsedClock } from '../game/GameTime.js';
 
 export const SUPPORTED_LOCALES = Object.freeze(['ko', 'en', 'ja']);
 export const LOCALE_STORAGE_KEY = 'pixelHeaven.locale';
 export const catalogues = Object.freeze(Object.fromEntries(SUPPORTED_LOCALES.map(locale =>
   [locale, Object.freeze({ ...uiCatalogs[locale], ...eventCatalogs[locale], ...runtimeCatalogs[locale],
-    ...factionCatalogs[locale], ...forecastCatalogs[locale], ...settlementCatalogs[locale], ...combatCatalogs[locale], ...progressionCatalogs[locale], ...expansionCatalogs[locale], ...chatWorldCatalogs[locale], ...tradeCatalogs[locale], ...productionCatalogs[locale], ...equipmentCatalogs[locale], ...religionCatalogs[locale], ...failureCatalogs[locale], ...dungeonCatalogs[locale] })])));
+    ...factionCatalogs[locale], ...forecastCatalogs[locale], ...settlementCatalogs[locale], ...combatCatalogs[locale], ...progressionCatalogs[locale], ...expansionCatalogs[locale], ...chatWorldCatalogs[locale], ...tradeCatalogs[locale], ...productionCatalogs[locale], ...equipmentCatalogs[locale], ...religionCatalogs[locale], ...failureCatalogs[locale], ...dungeonCatalogs[locale], ...legendCatalogs[locale] })])));
 const intlLocales = { ko: 'ko-KR', en: 'en-US', ja: 'ja-JP' };
 const defaultVillageNames = { home: 'Worldtree Settlement', north: 'North village', south: 'South village' };
 

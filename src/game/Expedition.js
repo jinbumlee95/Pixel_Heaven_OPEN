@@ -34,8 +34,10 @@ export function depositBag(world) {
 }
 export function orderExpedition(world, order) {
   const hero = world.state.hero;
-  if (!hero || (order.missionId!==undefined&&order.missionId!==hero.missionId) || !AWAY_MODES.includes(hero.mode) || hero.recallRequested || hero.mode==='returning')
-    return {ok:false,messageKey:'hero.failure.not_away',messageParams:{}};
+  // Depth/supply orders need their own wording; the recall message confused players.
+  if (!hero || (order.missionId!==undefined&&order.missionId!==hero.missionId) || !AWAY_MODES.includes(hero.mode))
+    return {ok:false,messageKey:'exp.notAway',messageParams:{}};
+  if (hero.recallRequested || hero.mode==='returning') return {ok:false,messageKey:'exp.returning',messageParams:{}};
   migrateExpedition(hero);
   if (order.operation === 'deeper') {
     if (hero.nextDepth >= EXPEDITION.maxDepth) return {ok:false,messageKey:'exp.depthLimit',messageParams:{}};

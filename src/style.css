@@ -326,3 +326,11 @@ body #hero-journey[hidden] { display:none; }
 .hero-scene[data-room="boss"] { border: 3px solid #ae4354; }
 
 .ai-status { margin-top:6px; color:var(--muted); font-size:12px; line-height:1.4; }
+
+/* Legends and wonders: one centered banner over the map. */
+.divine-banner { position:absolute; top:14px; left:50%; transform:translateX(-50%); z-index:12; max-width:min(520px,calc(100% - 32px)); margin:0; padding:10px 18px; border:2px solid var(--gold); border-radius:6px; background:var(--panel); color:var(--text); font:600 15px/1.4 Georgia, serif; text-align:center; pointer-events:none; }
+.divine-banner[hidden] { display:none; }
+.divine-banner[data-kind="wonder"] { border-color:var(--strong-line); }
+.divine-banner.animated { animation:banner-rise 3.6s ease-out both; }
+@keyframes banner-rise { 0% { opacity:0; transform:translate(-50%,-10px); } 10%,85% { opacity:1; transform:translate(-50%,0); } 100% { opacity:0; transform:translate(-50%,-6px); } }
+@media(max-width:480px) { .divine-banner { top:8px; font-size:13px; padding:8px 12px; } }

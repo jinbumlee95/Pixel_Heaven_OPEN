@@ -32,6 +32,7 @@ const catalog = {
  workshop: 'Build a production workshop. value: '+Object.keys(WORKSHOPS).join(', '),
  produce: 'Produce or craft goods. amount is batch count (default 1, max 20). value: '+Object.keys(RECIPES).join(', '),
  useGoods: 'Use produced goods. value: medicine or crafts.',
+ divine_smite: 'Strike attacking raiders with divine lightning during a battle.',
 };
 export const ORACLE_INTENT_SCHEMA = {type:'object', additionalProperties:false,
  required:['intent','value','amount','direction','target'],properties:{
@@ -89,6 +90,7 @@ export function decodeOracleIntent(wire, {defaultTarget='home'}={}) {
   else if(intent==='workshop')action=order('workshop',{facility:value});
   else if(intent==='produce')action=order('produce',{recipeId:value,count:amount||1});
   else if(intent==='useGoods')action=order('useGoods',{resource:value});
+  else if(intent==='divine_smite') { if(value)return null;action=order('smite'); }
  }
  return validateDivineInterpretation(action)||validOracleOrder(action)?action:null;
 }
@@ -111,6 +113,7 @@ export function describeOracleAction(action) {
  if(action.name==='workshop')return `Construct a ${action.facility} workshop`;
  if(action.name==='produce')return `Produce ${action.count} batches of ${action.recipeId}`;
  if(action.name==='useGoods')return `Use ${action.resource}`;
+ if(action.name==='smite')return 'Strike the raiders with divine lightning';
  return 'Unsupported action';
 }
 export const INTENT_MATCH_SCHEMA={type:'object',additionalProperties:false,required:['matches'],properties:{matches:{type:'boolean'}}};
