@@ -5,6 +5,8 @@ import { syncResourceTotals } from '../state/worldState.js';
 import { allySupport } from './Factions.js';
 import { enlistHero, releaseHeroFromBattle } from './Hero.js';
 import { canAffordResources, spendResources } from '../state/economy.js';
+import { canSpendFaith, spendFaith } from './Faith.js';
+import { tallyLegend } from './Legends.js';
 
 export const PREPARATION_COSTS = Object.freeze({ balanced: 4, cover: 3, barricade: 5, trap: 4 });
 export const PREPARATION_SUPPLIES = Object.freeze({
@@ -182,6 +184,42 @@ export function prepareBattle(world, plan, kind = 'balanced') {
   return { ok: true, messageKey: 'combat.event.prepared', messageParams: {
     preparation: { messageKey: `combat.preparation.${kind}`, messageParams: {} }, wood: cost, costs: { resourceBasket: supplies }, gameTime: { gameTime: plan.startAt } },
   message: `Prepared ${kind} defenses for the raid at tick ${plan.startAt}, using ${cost} wood.` };
+}
+
+// Divine lightning: the god's direct hand in a raid. Faith is charged only
+// after every check passes, and the bolt lands on the densest enemy group.
+export const SMITE_RULES = Object.freeze({ faith: 12, cooldown: 8, damage: 16, splash: 8, radius: 2, effectTicks: 3 });
+export function smiteRaiders(world) {
+  const state = world.state;
+  const combat = state.combat;
+  const enemies = combat && ['approaching', 'fighting'].includes(combat.stage)
+    ? combat.units.filter(unit => unit.side === 'enemy' && alive(unit)) : [];
+  if (!enemies.length) return failed('no_raid');
+  if ((combat.smiteReadyAt ?? 0) > state.time) return failed('smite_cooldown', { seconds: combat.smiteReadyAt - state.time });
+  if (state.faith && !canSpendFaith(state, SMITE_RULES.faith)) return { ok: false, code: 'insufficient_faith',
+    messageKey: 'event.divine.failure.insufficient_faith', messageParams: { cost: SMITE_RULES.faith, available: Math.floor(state.faith.points) } };
+  const home = homeOf(world);
+  const cluster = unit => enemies.filter(other => distance(other.position, unit.position) <= SMITE_RULES.radius).length;
+  const danger = unit => Math.hypot(unit.position.x - home.anchor.x, unit.position.y - home.anchor.y);
+  const target = [...enemies].sort((a, b) => cluster(b) - cluster(a) || danger(a) - danger(b))[0];
+  if (state.faith) spendFaith(state, SMITE_RULES.faith);
+  let fallen = 0;
+  for (const unit of enemies) {
+    const near = distance(unit.position, target.position);
+    if (near > SMITE_RULES.radius) continue;
+    unit.hp = Math.max(0, unit.hp - (unit === target ? SMITE_RULES.damage : SMITE_RULES.splash));
+    if (!unit.hp) { unit.status = 'fallen'; fallen++; } else { unit.status = 'stunned'; unit.slowUntil = Math.max(unit.slowUntil ?? 0, state.time + 2); }
+  }
+  const hits = enemies.filter(unit => distance(unit.position, target.position) <= SMITE_RULES.radius).length;
+  combat.smiteReadyAt = state.time + SMITE_RULES.cooldown;
+  combat.effectSequence = (combat.effectSequence ?? 0) + 1;
+  combat.effects.push({ id: `${combat.planId}:effect:${combat.effectSequence}`, type: 'lightning',
+    from: { ...target.position }, to: { ...target.position }, createdAt: state.time,
+    expiresAt: state.time + SMITE_RULES.effectTicks, side: 'home', radius: SMITE_RULES.radius });
+  if (combat.effects.length > BATTLE_RULES.maxEffects) combat.effects.shift();
+  tallyLegend(state, 'smites');
+  return { ok: true, messageKey: 'combat.smite.done', position: { ...target.position },
+    messageParams: { hits, fallen, cost: SMITE_RULES.faith } };
 }
 
 export const CLEANUP_RULES = Object.freeze({ delay: 12, interval: 2 });
@@ -523,6 +561,7 @@ export class BattleSystem {
       enemyStrength: Math.round(strength * 100) / 100,
       homeSurvivors: combat.units.filter(unit => unit.side !== 'enemy' && alive(unit)).length };
     applyBattleConsequences(this.world, plan, combat);
+    if (!combat.outcome.food && !combat.outcome.people) tallyLegend(this.world.state, 'flawless');
     combat.stage = 'resolved';
     combat.resolvedAt = this.world.state.time;
     combat.nextCleanupAt = combat.resolvedAt + (combat.cleanupRequested ? 0 : CLEANUP_RULES.delay);

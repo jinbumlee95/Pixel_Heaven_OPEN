@@ -40,6 +40,9 @@ import { HeroSystem, hideHeroEntity } from './Hero.js';
 import { MerchantPanel } from '../ui/Merchant.js';
 import { HeroPanel } from '../ui/Hero.js';
 import { canSpendFaith, quoteDivineCost } from './Faith.js';
+import { LegendSystem } from './Legends.js';
+import { WonderSystem } from './Wonders.js';
+import { Banner } from '../ui/Banner.js';
 
 export const DIVINE_HISTORY_LIMIT = 50;
 
@@ -74,6 +77,7 @@ export class Game {
       onEvent: event => {
         this.eventsView?.add(event); this.renderer.showEvent(event); this.sound.play(event);
         if (['production_complete', 'construction_complete', 'storage_wait'].includes(event.action)) this.priestView?.show(event);
+        if (['legend_earned', 'wonder'].includes(event.action)) this.banner?.show(event);
       } });
     const onEvent = event => this.worldDecisions.record(event);
     if (systems) initializeStory(this.world);
@@ -84,6 +88,9 @@ export class Game {
     this.life = systems ? new LivingWorld(this.world, { onEvent }) : null;
     this.battle = new BattleSystem(this.world, { onEvent, onCamera: event => this.renderer.announceRaid(event) });
     this.hero = new HeroSystem(this.world, { onEvent });
+    // Good fortune and milestones run beside the threat forecasts.
+    this.wonders = systems ? new WonderSystem(this.world, { seed, onEvent }) : null;
+    this.legends = systems ? new LegendSystem(this.world, { onEvent }) : null;
     if(systems)initializeReligion(this.world.state,seed);
     if (host && !restored && systems) {
       this.world.state.hero.arriveAt = this.world.state.time + 30;
@@ -122,6 +129,7 @@ export class Game {
     this.equipmentPanel=new EquipmentPanel(document.querySelector('#equipment-panel'),this.i18n);
     this.heroPanel = new HeroPanel(document.querySelector('#hero-panel'), this.world.state, this.i18n);
     this.merchantPanel = new MerchantPanel(document.querySelector('#merchant-visit'), this.world, this.i18n);
+    this.banner = new Banner(document.querySelector('.map-stage'), this.i18n, { reducedMotion: () => this.renderer.reducedMotion });
     this.theme = new Theme();
     this.localeSelect = document.querySelector('#locale-select');
     this.onLocaleSelect = () => this.i18n.setLocale(this.localeSelect.value);
@@ -312,6 +320,7 @@ export class Game {
     this.equipmentPanel?.dispose?.();
     this.religionPanel?.dispose?.();
     this.merchantPanel?.dispose?.();
+    this.banner?.dispose?.();
     this.theme?.dispose();
     this.localeSelect?.removeEventListener('change', this.onLocaleSelect);
     globalThis.cancelAnimationFrame?.(this.frameId);

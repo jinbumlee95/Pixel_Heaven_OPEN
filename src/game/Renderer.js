@@ -423,6 +423,28 @@ export class Renderer {
         effect.beginFill(BATTLE.magic, 0.22).drawCircle(tx, ty, 24).endFill();
       } else if (event.type === 'slash') {
         effect.lineStyle(3, BATTLE.linen, 0.9).moveTo(tx - 10, ty + 8).lineTo(tx + 12, ty - 12);
+      } else if (event.type === 'lightning') {
+        // Divine smite: one brief sky flash, a jagged bolt and the splash radius.
+        const fade = this.reducedMotion ? 0.85 : 1 - progress * 0.75;
+        const radius = (event.radius ?? 2) * TILE_SIZE;
+        if (!this.reducedMotion && progress < 0.25) effect.beginFill(0xfff6d8, 0.28 * (1 - progress * 4))
+          .drawRect(0, 0, this.app.screen.width, this.app.screen.height).endFill();
+        effect.beginFill(BATTLE.gold, 0.16 * fade).drawCircle(tx, ty + 10, radius).endFill();
+        effect.lineStyle(2, BATTLE.gold, 0.8 * fade).drawCircle(tx, ty + 10, radius * (this.reducedMotion ? 1 : 0.55 + progress * 0.45));
+        // The bolt starts above the viewport; a dark outline keeps it readable on grass and snow.
+        const top = Math.min(-16, ty - 200), steps = 9;
+        const bolt = [[tx, top]];
+        for (let i = 1; i < steps; i++) bolt.push([tx + ((i * 37 + event.createdAt * 13) % 29) - 14, top + (ty + 8 - top) * i / steps]);
+        bolt.push([tx, ty + 8]);
+        for (const [width, color, alpha] of [[11, BATTLE.ink, 0.45], [7, BATTLE.gold, 1], [3, 0xffffff, 1]]) {
+          effect.lineStyle(width, color, alpha * fade).moveTo(...bolt[0]);
+          for (const point of bolt.slice(1)) effect.lineTo(...point);
+        }
+        if (!this.reducedMotion) for (let i = 0; i < 8; i++) {
+          const angle = i * Math.PI / 4, reach = 10 + progress * 22;
+          effect.lineStyle(2, BATTLE.gold, fade).moveTo(tx + Math.cos(angle) * 6, ty + 10 + Math.sin(angle) * 4)
+            .lineTo(tx + Math.cos(angle) * reach, ty + 10 + Math.sin(angle) * reach * 0.6);
+        }
       } else {
         effect.lineStyle(2, BATTLE.enemy, 0.9).drawCircle(tx, ty, 7 + progress * 10);
         effect.lineStyle(2, BATTLE.gold).moveTo(tx - 9, ty - 9).lineTo(tx + 9, ty + 9)
@@ -587,7 +609,8 @@ export class Renderer {
   showEvent(event) {
     const village = this.world.getVillage(event.target ?? event.actor);
     if (!village || !['create_rain', 'create_forest', 'increase_food', 'bless_village', 'curse_village',
-      'prepare_defense', 'build_temple', 'build_house', 'farm', 'raid', 'drought', 'form_alliance'].includes(event.action)) return;
+      'prepare_defense', 'build_temple', 'build_house', 'farm', 'raid', 'drought', 'form_alliance',
+      'smite', 'wonder', 'legend_earned'].includes(event.action)) return;
     this.pulses.push({ position: { ...(event.position ?? village.anchor) }, start: this.visualTime,
       color: ['raid', 'curse_village', 'drought'].includes(event.action) ? 0xeaa875 : 0xf0d68f });
     if (this.pulses.length > 12) this.pulses.shift();

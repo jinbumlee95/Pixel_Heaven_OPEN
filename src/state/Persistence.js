@@ -9,6 +9,8 @@ import { defaultContent, builtinPack } from '../content/builtin.js';
 import { createContentRegistry } from '../content/ContentRegistry.js';
 import { RESOURCE_TYPES } from './economy.js';
 import { validProduction } from '../game/Production.js';
+import { validLegends } from '../game/Legends.js';
+import { validWonders } from '../game/Wonders.js';
 
 export const SAVE_VERSION = 5;
 const mapNames = ['buildings', 'terrain', 'entities', 'groundTiles'];
@@ -117,7 +119,9 @@ function validateSystems(s,r,content) {
   const point=p=>{number(p?.x,0,1999);number(p?.y,0,1999);if(!Number.isInteger(p.x)||!Number.isInteger(p.y))throw Error('invalid_position');};
   const unique=items=>{if(new Set(items.map(i=>i.id)).size!==items.length)throw Error('duplicate_id');};
   const h=s.villages[0];point(h.anchor);number(h.settlementRadius,1,100);number(h.happiness,0,100);
-  for(const key of ['randomState','motionRandomState'])if(s[key]!==undefined){number(s[key],0,4294967295);if(!Number.isInteger(s[key]))throw Error('invalid_random');}
+  if(s.legends!==undefined&&!validLegends(s.legends))throw Error('invalid_legends');
+  if(s.wonders!==undefined&&!validWonders(s.wonders))throw Error('invalid_wonders');
+  for(const key of ['randomState','motionRandomState','wonderRandomState'])if(s[key]!==undefined){number(s[key],0,4294967295);if(!Number.isInteger(s[key]))throw Error('invalid_random');}
   if(h.labor){let sum=0;for(const role of ['farming','woodcutting','mining','crafting','building','defense','husbandry']){number(h.labor[role],0,h.population);if(!Number.isInteger(h.labor[role]))throw Error('invalid_labor');sum+=h.labor[role];}if(sum>h.population)throw Error('invalid_labor');}
   if(s.factions){unique(array(s.factions,30));if(s.factions.length<20)throw Error('invalid_factions');for(const f of s.factions){one(f.stance,['hostile','neutral','allied']);one(f.temperament,['aggressive','mercantile','cooperative','guarded']);number(f.strength,0,100);for(const n of Object.values(f.resources))number(n);if(!f.relations||typeof f.relations!=='object')throw Error('invalid_relations');}}
   if(s.eventQueue){unique(array(s.eventQueue,4));for(const p of s.eventQueue){one(p.kind,['raid','drought','fire','flood','cold']);one(p.stage,['forecast','active','resolved','averted']);number(p.announcedAt);number(p.startAt,p.announcedAt);number(p.endAt,p.startAt);number(p.severity,1,3);if(p.playerDecision!==undefined)one(p.playerDecision,['autonomous','receiving','responded','failed']);if(!p.mitigation||typeof p.mitigation!=='object')throw Error('invalid_mitigation');for(const e of array(p.exposure??[],24))point(e.position);}}

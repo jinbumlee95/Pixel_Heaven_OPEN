@@ -17,7 +17,8 @@ import { canSpendFaith, spendFaith, DIVINE_FAITH_COSTS } from './Faith.js';
 import { RESOURCE_TYPES, buildingCost } from '../state/economy.js';
 import { setStoryProfile } from './Story.js';
 import { interpretDivineMessage } from '../llm/divineLLM.js';
-import { PREPARATION_SUPPLIES, requestBattleCleanup } from './Combat.js';
+import { PREPARATION_SUPPLIES, requestBattleCleanup, smiteRaiders, SMITE_RULES } from './Combat.js';
+import { LEGENDS, legendProgress } from './Legends.js';
 import { DISASTER_COSTS } from './Disasters.js';
 import { parseTradeCommand, validTradeIntent, isTradeMessage } from './TradeCommands.js';
 import { tradeBasket, setTradePolicy, quoteTrade, TRADE_VALUES } from './Trading.js';
@@ -62,6 +63,7 @@ export function parseChatCommand(message) {
     ['previous',/^(?:previous world|이전 세계|前の世界)$/u],
     ['new',/^(?:new world|새 세계|新世界)$/u],
     ['ai',/^(?:enable ai|ai 활성화|ai有効化)$/u],['demo',/^(?:demo mode|데모 모드|デモモード)$/u],
+    ['legends',/^(?:legends|achievements|milestones|전설|업적|伝説|実績)$/u],
     ['home',/^(?:focus home|세계수로|세계수로 돌아가기|世界樹へ)$/u],['battle',/^(?:show battle|전장 보여줘|戦場を見せて)$/u]
   ];
   for(const [name,pattern]of meta)if(exact(s,pattern))return {type:'meta',name};
@@ -81,6 +83,10 @@ export function parseChatCommand(message) {
   if(m)return {type:'meta',name:'difficulty',value:m[1]};
   m=s.match(/^(?:priest personality|사제 성격|司祭性格)\s*(careful|hopeful)$/u);
   if(m)return {type:'meta',name:'personality',value:m[1]};
+  // Divine lightning during a raid. Exact phrases only, so negation never strikes.
+  if(exact(s,/^(?:please )?(?:smite(?: (?:the |our )?(?:raiders|enemies|enemy|invaders|attackers|foes))?|(?:strike|hit|blast) (?:the |our )?(?:raiders|enemies|enemy|invaders|attackers|foes) with (?:divine )?lightning|(?:call down|send down|send|throw|hurl) (?:divine )?lightning(?: (?:on|at|upon) (?:the |our )?(?:raiders|enemies|enemy|invaders|attackers|foes))?|lightning strike|divine (?:lightning|wrath))$/u)
+    ||exact(s,/^(?:(?:적|적들|습격자|습격자들|침략자|침략자들)(?:에게|에|을|를)?\s*)?(?:벼락|번개|천벌)(?:을|를)?\s*(?:내려|내려라|내려줘|떨어뜨려|떨어뜨려라|내리쳐|내리쳐라)?$/u)
+    ||exact(s,/^(?:(?:敵|襲撃者|侵略者)(?:たち)?に)?(?:雷|天罰)(?:を)?(?:落とせ|落として|下せ|下して)?$/u))return {type:'order',name:'smite'};
   if(exact(s,/^(?:(?:알아서\s*)?(?:전투(?:를)?\s*준비|습격(?:에)?\s*대비|마을\s*방어(?:를)?\s*준비)(?:해|해줘|하라|해라|하세요)?|(?:please )?(?:prepare (?:for )?(?:battle|combat)|get ready for battle|prepare our defenses)(?: automatically)?|(?:自動で)?(?:戦闘準備|襲撃に備えて|防衛を準備して))$/u))
     return {type:'decision',name:'respond',kind:'raid'};
   if(exact(s,/^(?:(?:(?:전투|전쟁)(?:가)?\s*(?:끝나면|종료\s*후|후)\s*)?(?:방어\s*시설|전투\s*시설|장애물)(?:을|들(?:을)?)?\s*(?:정리|철거|삭제|제거|치워)(?:해|해줘|하라|해라|줘)?|(?:clean up|remove) (?:the )?(?:battlefield|defenses|battle objects)(?: after (?:the )?battle)?|(?:戦闘後に)?(?:防衛設備|障害物)を(?:片付けて|撤去して))$/u))
@@ -120,6 +126,7 @@ export function parseChatCommand(message) {
 
 export function validOrder(o) {
   if(!o||o.type!=='order')return false;
+  if(o.name==='smite')return true;
   if(o.name==='dungeon')return o.operation==='policy'&&['safe','treasure','hunt'].includes(o.value)||o.operation==='route'&&ROUTES.includes(o.value)||o.operation==='light'&&['faith','coal'].includes(o.value);
   if(o.name==='religion')return validReligionOrder(o);
   if(o.name==='useGoods')return ['crafts','medicine'].includes(o.resource);
@@ -135,6 +142,7 @@ export function validOrder(o) {
 export function executeChatOrder(world,order,onEvent=()=>{}) {
   if(!validOrder(order))return failure('invalid');
   const conflict=religionConflict(world.state,null,order);if(conflict)return conflict;
+  if(order.name==='smite'){const r=smiteRaiders(world);return r.ok?{...r,event:{source:'divine',action:'smite',actor:'home',time:world.state.time,position:r.position,messageKey:r.messageKey,messageParams:r.messageParams}}:r;}
   if(order.name==='dungeon')return dungeonOrder(world,order);
   if(order.name==='religion')return religionOrder(world,order);
   if(order.name==='useGoods'&&order.resource==='crafts'&&world.state.religion)return religionOrder(world,{type:'order',name:'religion',operation:'rite',id:'harvest'});
@@ -189,12 +197,13 @@ export class ChatCommands {
         else if(c.name==='dungeon')reply=dungeonSummary(s,g.i18n)+'\n'+t('dungeon.help');
         else if(c.name==='religion'){g.religionPanel?.show(true);reply=g.religionPanel?t('religion.panelOpened'):religionSummary(s,g.i18n);}
         else if(c.name==='closeReligion'){g.religionPanel?.show(false);reply=t('cw.done');}
-        else if(c.name==='help')reply=t('cw.commands')+'\n'+t('trade.help')+'\n'+t('production.help')+'\n'+t('religion.help')+'\n'+t('dungeon.help');
+        else if(c.name==='help')reply=t('cw.commands')+'\n'+t('trade.help')+'\n'+t('production.help')+'\n'+t('religion.help')+'\n'+t('dungeon.help')+'\n'+t('legend.help');
         else if(['equipment','equipmentGoals','equipmentCompare','closeEquipment'].includes(c.name)){s.hero.equipment.visible=c.name!=='closeEquipment';reply=equipmentSummary(g.world,g.i18n,c.name==='equipmentCompare'?c.id:undefined);}
         else if(['production','recipes'].includes(c.name))reply=productionSummary(g.world,g.i18n,c.name==='recipes');
         else if(c.name==='trade')reply=tradeSummary(g.world,s.life?.caravan??s.life?.lastTrade,g.i18n);
-        else if(c.name==='status')reply=t('counter.stats',{population:h.population,food:Math.floor(h.food),wood:Math.floor(h.wood)})+'\n'+t(`story.${s.story.profile}`)+' · '+t(`story.${s.story.personality}`)+'\n'+g.i18n.formatMessage(g.localAI.statusMessage);
+        else if(c.name==='status')reply=t('counter.stats',{population:h.population,food:Math.floor(h.food),wood:Math.floor(h.wood)})+'\n'+t('story.title')+': '+t(`story.${s.story.profile}`)+' · '+t(`story.${s.story.personality}`)+'\n'+g.i18n.formatMessage(g.localAI.statusMessage);
         else if(c.name==='resources')reply=[...RESOURCE_TYPES,...(h.modResources??[])].map(id=>`${t(`resource.${id}`)} ${Math.floor(h[id])}`).join(' · ')+`\n${t('faith.title')} ${Math.floor(s.faith.points)}`;
+        else if(c.name==='legends')reply=t('legend.title')+'\n'+LEGENDS.map(l=>`${Object.hasOwn(s.legends?.earned??{},l.id)?'✦':'·'} ${t('legend.name.'+l.id)} — ${t('legend.goal.'+l.id,{goal:l.goal})} (${legendProgress(s,l)}/${l.goal}) · +${l.reward} ${t('faith.title')}`).join('\n');
         else if(c.name==='labor')reply=JOBS.map(id=>`${t(`work.${id}`)}: ${h.labor[id]}`).join(' · ');
         else if(c.name==='work')reply=s.work.jobs.map(j=>`${j.id} · ${t(`work.type.${j.type}`)} · ${t(`work.status.${j.status}`)} ${Math.floor(j.progress/j.required*100)}%`).join('\n')||t('cw.empty');
         else if(c.name==='animals')reply=t('life.summary',{sheep:s.life.sheep,deer:s.life.deer,hunger:s.life.hunger});
@@ -209,6 +218,7 @@ export class ChatCommands {
           reply=Object.entries(DIVINE_FAITH_COSTS).filter(([id])=>id!=='prepare_defense').map(([id,cost])=>`${t(`cw.action.${id}`)}: ${basket({faith:cost,...(['build_house','farm','build_temple'].includes(id)?buildingCost(h,id):{}),...(id.startsWith('propose_')?{food:4,silver:1}:{}),...(DISASTER_COSTS[id.replace('prepare_','')]??{})})}`).join('\n');
           reply+='\n'+Object.entries(PREPARATION_SUPPLIES).map(([id,cost])=>`${t(`combat.preparation.${id}`)}: ${basket({...cost,faith:DIVINE_FAITH_COSTS.prepare_defense[id]})}`).join('\n');
           reply+='\n'+Object.entries(GOODS).map(([id,good])=>`${t(id==='sheep'?'life.sheep':`resource.${id}`)} ×${good.quantity}: ${basket({silver:good.price})}`).join('\n');
+          reply+='\n'+t('combat.smite.cost',{cost:SMITE_RULES.faith});
           reply+='\n'+t('cw.costNote');
         }
         else if(c.name==='speed')g.speed=c.value;

@@ -15,6 +15,7 @@ const definitions=[
  ['workshop',{facility:enumeration(Object.keys(WORKSHOPS))}],
  ['produce',{recipeId:enumeration(Object.keys(RECIPES)),count:{type:'integer',minimum:1,maximum:20}}],
  ['useGoods',{resource:enumeration(['medicine','crafts'])}],
+ ['smite',{}],
 ];
 export const ORACLE_ORDER_SCHEMAS=definitions.map(([name,fields])=>({type:'object',additionalProperties:false,
  required:['type','name',...Object.keys(fields)],properties:{type:{const:'order'},name:{const:name},...fields}}));

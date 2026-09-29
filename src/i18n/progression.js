@@ -76,6 +76,8 @@ const entries = {
   'exp.summary': ['회차 {cycle} · 깊이 {depth} (다음 {next}) · 보급 {supplies}회 · 가방 {bag}/24', 'Cycle {cycle} · depth {depth} (next {next}) · supplies {supplies} · bag {bag}/24', '周回 {cycle} · 深度 {depth} (次 {next}) · 補給 {supplies}回 · 荷物 {bag}/24'],
   'exp.help': ['복귀 신탁 전까지 반복합니다. 더 깊이 가 / 영웅 보급 보내. 다음 회차: 식량 6·약초 1·석탄 1 + 운송 은 1, 5초. 전리품 9개부터 은 1, 6초 운송.', 'Repeats until recalled. go deeper / resupply hero. Next cycle: 6 food, 1 herb, 1 coal + 1 silver, 5s delivery. Ship 9+ loot for 1 silver, 6s.', '帰還指示まで反復。もっと深くへ / 勇者に補給。次周回: 食料6・薬草1・石炭1 + 銀1、5秒。荷物9以上で銀1・6秒輸送。'],
   'exp.depthOrdered': ['다음 회차 깊이 {depth}: 적 체력·공격력과 조우 경험치가 증가합니다.', 'Next cycle depth {depth}: enemy HP, damage and encounter XP increase.', '次周回の深度 {depth}: 敵の体力・攻撃力と遭遇経験値が増加します。'],
+  'exp.notAway': ['원정 중인 영웅이 없습니다. 먼저 영웅을 던전으로 보내세요.', 'The hero is not on an expedition. Send the hero to the dungeon first.', '遠征中の勇者がいません。先に勇者をダンジョンへ送り出してください。'],
+  'exp.returning': ['영웅이 이미 귀환 중입니다.', 'The hero is already heading home.', '勇者はすでに帰還中です。'],
   'exp.depthLimit': ['현재 최대 깊이는 5입니다.', 'Maximum depth is 5.', '最大深度は5です。'],
   'exp.noSupplyOrder': ['보급 대기 중에만 보급을 보낼 수 있습니다.', 'Supplies can only be sent while waiting for supplies.', '補給待ちの時のみ補給できます。'],
   'exp.supplySent': ['보급을 보냈습니다. 5초 후 도착합니다.', 'Supplies sent; arriving in 5 seconds.', '補給を発送。5秒後に到着します。'],

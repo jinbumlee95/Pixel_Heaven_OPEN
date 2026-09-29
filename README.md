@@ -26,11 +26,15 @@ Your settlement begins with eight people, one house and one field. Its resources
 | Begin production after gathering materials | `build sawmill`, then `produce planks 3` |
 | Inspect production / equipment | `production status`, `recipes`, `equipment` |
 | Prepare for a forecast | `respond forecast-1` (use the visible event ID) |
+| Strike raiders during a battle | `smite the raiders` (12 faith, every 8 seconds) |
+| See goals and their faith rewards | `legends` |
 | Let the settlement handle an event | `ignore forecast-1` |
 | Trade during a visit | `buy cloth 2`, `sell wood 5` |
 | Adjust expedition policy | `dungeon safe`, `dungeon hunt`, `dungeon treasure` |
 | Save / restore | `save`, `load` |
 | More commands | `help` |
+
+During a raid you can call down divine lightning on the densest group of raiders. Twelve **legends** (population, houses, workshops, temple, hero level, dungeon clears, a boss, a flawless defense and more) each pay a one-time faith reward with a banner over the map. Between the forecast threats, rare **wonders** bring good fortune: pilgrims, a falling star, a golden harvest, a wandering bard, a faithful dream or a merchant's gift. Wonders use their own saved random stream, so they never change which threats are forecast.
 
 Heroes repeat dungeon runs until recalled, recovering and resupplying when possible. Supplies or cargo capacity can make them wait. Production facilities, a grid equipment inventory, four equipment grades, prayers, commandments and rituals support longer progression. Battle preparations interact with combat terrain and can be cleared afterward.
 
@@ -51,7 +55,7 @@ node tools/check.mjs
 node tools/validate-content.mjs
 ```
 
-80 Node test scripts cover simulation, validated actions, persistence, input and regression cases. Three normal-start 30-minute simulations verify workshop construction, production, hero growth, recall and save restoration without injecting resources or faith. Real Chrome desktop checks cover the actual Priest and chat path.
+82 Node test scripts cover simulation, validated actions, persistence, input and regression cases. Three normal-start 30-minute simulations verify workshop construction, production, hero growth, recall and save restoration without injecting resources or faith. Real Chrome desktop checks cover the actual Priest and chat path.
 
 `src/game` owns simulation, `src/actions` validates effects, `src/llm` interprets requests, `src/ui` provides panels and `src/state` owns persistence. PixiJS is isolated in `src/game/Renderer.js`. Sparse world storage and declarative content registries support extension.
 

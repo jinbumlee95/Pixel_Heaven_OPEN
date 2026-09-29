@@ -14,7 +14,7 @@ export function stepWorld(game,elapsedMs) {
     game.accumulator+=slice;remaining-=slice;
     if(game.accumulator>=TICK_INTERVAL_MS) {
       tick(game.world.state);
-      for(const id of ['work','factions','diplomacy','life','forecasts','emergence'])game[id]?.update();
+      for(const id of ['work','factions','diplomacy','life','forecasts','emergence','wonders','legends'])game[id]?.update();
       const request=game.worldDecisions.update();if(request)pending.push(request);
       game.accumulator-=TICK_INTERVAL_MS;
     }
