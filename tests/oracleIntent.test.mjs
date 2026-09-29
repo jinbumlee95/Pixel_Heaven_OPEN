@@ -13,20 +13,21 @@ for(const invalid of [wire('erase_map'),wire('produce',{value:'planks',amount:21
 const context={defaultTarget:'home',situation:{villages:[{id:'home',name:'Worldtree Settlement'}],hero:{equipment:{items:Array(200).fill('irrelevant')}},recent_events:Array(100).fill('irrelevant')}};
 assert.equal(oracleIntentPrompt({message:'Send the hero to the dungeon.',...context}).includes('irrelevant'),false,'oracle classification must not serialize inventories or world history');
 let calls=0;
-const ai=new LocalAI();ai.session={destroy(){},clone:async()=>{let count=0;return {destroy(){},prompt:async(prompt,options)=>{calls++;assert.equal(++count,1,'each classification uses a fresh conversation');if(prompt.startsWith('Verify'))return '{"matches":true}';assert.deepEqual(options.responseConstraint,ORACLE_INTENT_SCHEMA);return JSON.stringify(wire('hero_dispatch'));}}}};
-assert.equal((await ai.interpret('Send the hero to the dungeon.',context)).action,'hero_dispatch','production provider must decode the compact intent');
+const ai=new LocalAI();ai.session={destroy(){},clone:async()=>{let count=0;return {destroy(){},prompt:async(prompt,options)=>{calls++;assert.equal(++count,1,'each classification uses a fresh conversation');if(prompt.startsWith('Verify'))return '{"matches":true}';assert.deepEqual(options.responseConstraint,ORACLE_INTENT_SCHEMA);return JSON.stringify(wire('dungeon_light',{value:'coal'}));}}}};
+// Hero commands take the rule shortcut, so a model-only intent exercises the provider.
+assert.deepEqual(await ai.interpret('Light the dungeon using coal.',context),{type:'order',name:'dungeon',operation:'light',value:'coal'},'production provider must decode the compact intent');
 assert.equal(calls,2);
 assert.deepEqual(decodeOracleIntent(wire('prepare_fire',{value:'trap'})).parameters,{},'irrelevant model fields cannot reach the executor');
 ai.stop();
 // A structurally valid but semantically wrong proposal cannot mutate the game.
 const blocked=new LocalAI();let requests=0;
 blocked.session={destroy(){},clone:async()=>({destroy(){},prompt:async p=>{requests++;return p.startsWith('Verify')?'{"matches":false}':JSON.stringify(wire('increase_food',{amount:50}));}})};
-assert.equal((await blocked.interpret('Send the hero to the dungeon.',context)).status,'unclear');
+assert.equal((await blocked.interpret('Light the dungeon using coal.',context)).status,'unclear');
 assert.equal(requests,4,'repair is bounded and must also match');blocked.stop();
 const game=new Game(null,{ritual:false});
 const faith=game.world.state.faith.points,food=game.world.getVillage('home').food;
 game.localAI.session={destroy(){},clone:async()=>({destroy(){},prompt:async p=>p.startsWith('Verify')?'{"matches":false}':JSON.stringify(wire('increase_food',{amount:50}))})};
-assert.equal((await game.sendDivineMessage('Send the hero to the dungeon.')).ok,false);
+assert.equal((await game.sendDivineMessage('Light the dungeon using coal.')).ok,false);
 assert.equal(game.world.getVillage('home').food,food,'mismatched action cannot grant food');
 assert.equal(game.world.state.faith.points,faith,'mismatched action cannot charge faith');
 game.stop();

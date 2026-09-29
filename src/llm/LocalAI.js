@@ -190,9 +190,18 @@ export class LocalAI {
     }
   }
 
-  // Nano rejects unknown words like 'deongun'; normalize known typos before classify/verify.
-  interpret = (message, context) => isQuestion(message) ? Promise.resolve({status:'unclear',confidence:0}) : this.request('divine', { ...context, message: normalizeDungeonTypos(message) },
-    () => interpretDivineMessage(message, context), value=>validateDivineInterpretation(value)||validOracleOrder(value));
+  interpret = async (message, context) => {
+    if (isQuestion(message)) return {status:'unclear',confidence:0};
+    // Nano often misreads short hero commands (e.g. as expedition_supply).
+    // The strict rule parser rejects negation/conditions, so its hero match is safe to use directly.
+    if (this.session) {
+      const rule = await interpretDivineMessage(message, context);
+      if (['hero_dispatch','hero_recall'].includes(rule?.action)) { this.traces.divine = { provider: 'demo', reason: 'rule_match' }; return rule; }
+    }
+    // Nano rejects unknown words like 'deongun'; normalize known typos before classify/verify.
+    return this.request('divine', { ...context, message: normalizeDungeonTypos(message) },
+      () => interpretDivineMessage(message, context), value=>validateDivineInterpretation(value)||validOracleOrder(value));
+  };
 
   interpretTrade = message => this.request('trade',{message},()=>parseTradeCommand(message)??{type:'invalid'},value=>value?.type==='invalid'||validTradeIntent(value));
 

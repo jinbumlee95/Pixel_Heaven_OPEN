@@ -112,10 +112,28 @@ const typoAI = new LocalAI({ api: {
     seen.push(message);
     const knows = message.includes('dungeon');
     if (p.startsWith('Verify')) return JSON.stringify({ matches: knows });
-    return JSON.stringify({ intent: knows ? 'hero_dispatch' : 'none', value: '', amount: 0, direction: '', target: 'home' });
+    return JSON.stringify({ intent: knows ? 'dungeon_light' : 'none', value: knows ? 'coal' : '', amount: 0, direction: '', target: 'home' });
   } }) }),
 } });
 await typoAI.detect(); await typoAI.enable();
-assert.equal((await typoAI.interpret('send hero deongun', context)).action, 'hero_dispatch');
-assert.ok(seen.length === 2 && seen.every(m => m === '"send hero dungeon"'), JSON.stringify(seen));
+assert.equal((await typoAI.interpret('Light the deongun using coal', context)).operation, 'light');
+assert.ok(seen.length === 2 && seen.every(m => m === '"Light the dungeon using coal"'), JSON.stringify(seen));
 typoAI.stop();
+
+// Clear hero commands skip the model, which may misread them; unsafe wording still goes to the model.
+const wrongModel = [];
+const heroAI = new LocalAI({ api: {
+  availability: async () => 'available',
+  create: async () => ({ destroy() {}, clone: async () => ({ destroy() {}, prompt: async p => {
+    wrongModel.push(p);
+    return p.startsWith('Verify') ? '{"matches":true}' : JSON.stringify({ intent: 'expedition_supply', value: '', amount: 0, direction: '', target: 'home' });
+  } }) }),
+} });
+await heroAI.detect(); await heroAI.enable();
+for (const message of ['send hero to dungeon', 'send hero deongun', 'recall the hero']) {
+  assert.equal((await heroAI.interpret(message, context)).action, message.startsWith('recall') ? 'hero_recall' : 'hero_dispatch', message);
+}
+assert.equal(wrongModel.length, 0, 'model not asked for clear hero commands');
+await heroAI.interpret('do not send hero to dungeon', context);
+assert.equal(wrongModel.length > 0, true, 'negated command is not short-circuited');
+heroAI.stop();
