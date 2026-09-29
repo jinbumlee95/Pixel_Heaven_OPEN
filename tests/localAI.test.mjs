@@ -87,3 +87,18 @@ assert.equal(await cancelled, false);
 createdLate({ destroy() {} });
 download.stop();
 console.log('localAI: passed');
+
+// Browsers may report 'ko' available, but create() aborts on non-Prompt-API languages.
+const permissive = new LocalAI({ api: {
+  availability: async () => 'downloadable',
+  create: async o => {
+    for (const io of [...o.expectedInputs, ...o.expectedOutputs]) {
+      assert.ok(io.languages.every(l => ['en', 'es', 'ja', 'de', 'fr'].includes(l)), `unsupported language sent: ${io.languages}`);
+    }
+    return { destroy() {} };
+  },
+} });
+await permissive.detect();
+assert.equal(await permissive.enable(), true);
+assert.deepEqual(permissive.options.expectedInputs[0].languages, ['en', 'ko', 'ja'], 'Korean input stays accepted');
+permissive.stop();

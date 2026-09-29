@@ -9,6 +9,12 @@ import { validateDivineInterpretation } from './schemas.js';
 import { validateWorldSchema } from '../actions/worldActions.js';
 import { RequestQueue } from './RequestQueue.js';
 
+// Chrome Prompt API only accepts these codes; any other code aborts create().
+export const PROMPT_API_LANGUAGES = ['en', 'es', 'ja', 'de', 'fr'];
+const supportedOptions = options => ({ ...options,
+  expectedInputs: options.expectedInputs.map(input => ({ ...input, languages: input.languages.filter(l => PROMPT_API_LANGUAGES.includes(l)) })),
+  expectedOutputs: options.expectedOutputs.map(output => ({ ...output, languages: output.languages.filter(l => PROMPT_API_LANGUAGES.includes(l)) })),
+});
 const OPTIONS = {
   expectedInputs: [{ type: 'text', languages: ['en'] }],
   expectedOutputs: [{ type: 'text', languages: ['en'] }],
@@ -95,7 +101,8 @@ export class LocalAI {
     try {
       // Called directly from the click handler, preserving user activation.
       const session = await Promise.race([
-        this.api.create({ ...this.options, signal: controller.signal,
+        // 'ko' may pass availability() but aborts create(); Korean text is still accepted as input.
+        this.api.create({ ...supportedOptions(this.options), signal: controller.signal,
           monitor: monitor => monitor.addEventListener('downloadprogress', event => {
             if (generation === this.generation) this.report(`Downloading on-device AI · ${Math.round(event.loaded * 100)}%`,
               'ai.downloading', { percent: Math.round(event.loaded * 100) });
