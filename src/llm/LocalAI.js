@@ -192,11 +192,11 @@ export class LocalAI {
 
   interpret = async (message, context) => {
     if (isQuestion(message)) return {status:'unclear',confidence:0};
-    // Nano often misreads short hero commands (e.g. as expedition_supply).
+    // Nano often misreads short hero and disaster-preparation commands.
     // The strict rule parser rejects negation/conditions, so its hero match is safe to use directly.
     if (this.session) {
       const rule = await interpretDivineMessage(message, context);
-      if (['hero_dispatch','hero_recall'].includes(rule?.action)) { this.traces.divine = { provider: 'demo', reason: 'rule_match' }; return rule; }
+      if (['hero_dispatch','hero_recall','prepare_fire','prepare_flood','prepare_cold'].includes(rule?.action)) { this.traces.divine = { provider: 'demo', reason: 'rule_match' }; return rule; }
     }
     // Nano rejects unknown words like 'deongun'; normalize known typos before classify/verify.
     return this.request('divine', { ...context, message: normalizeDungeonTypos(message) },

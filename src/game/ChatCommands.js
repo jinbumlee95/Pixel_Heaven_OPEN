@@ -116,8 +116,9 @@ export function parseChatCommand(message) {
     if(/말|않|하지|don't|not|ない|\b(?:if|unless|and|or)\b|만약|하면|다면|もし/u.test(s)||kind.length>1||ids.length>1)return {type:'invalid'};
     return {type:'decision',name:/ignore|맡겨|넘겨|任せる/u.test(s)?'ignore':'respond',...(id?{id}:{}),...(kind.length?{kind:kind[0][0]}:{})};
   }
-  const disaster=Object.entries(kinds).find(([kind,re])=>['fire','flood','cold'].includes(kind)&&re.test(s));
-  if(disaster&&/^(?:prepare (?:fire|flood|cold)|(?:산불|화재|홍수|한파)(?:부터|에)?\s*대비(?:해|해줘)?|(?:火災|洪水|寒波)対策)$/u.test(s))
+  // "prepare the flood", "prepare for winter" etc. name the same forecast preparations.
+  const disaster=/\bwinter\b/u.test(s)?['cold']:Object.entries(kinds).find(([kind,re])=>['fire','flood','cold'].includes(kind)&&re.test(s));
+  if(disaster&&/^(?:prepare (?:for )?(?:the |a )?(?:wild)?(?:fire|flood|cold|winter)|(?:산불|화재|홍수|한파)(?:부터|에)?\s*대비(?:해|해줘)?|(?:火災|洪水|寒波)対策)$/u.test(s))
     return {type:'decision',name:'respond',kind:disaster[0]};
   // Meta-like malformed text must never become a food grant or an action.
   if(/^(?:show|save|load|import|export|assign|buy|repair|cancel|speed|language)\b|보여줘|얼마|몇 명|알려줘|見せて|いくつ/u.test(s))return {type:'invalid'};
@@ -238,6 +239,8 @@ export class ChatCommands {
       if(g.speed===0 && !(command?.type==='decision'&&command.name==='ignore'))return failure('paused');
       if(command?.type==='decision') {
         const chosen=selectDecision(s,command);
+        // A named kind with no announced event gets a clear reason, not "has ended".
+        if(!chosen.ok&&chosen.code==='expired'&&command.kind&&!command.id&&command.name==='respond')return failure('noForecast',{kind:{messageKey:['raid','drought','fire','flood','cold'].includes(command.kind)?`forecast.kind.${command.kind}`:`cw.${command.kind}`,messageParams:{}}});
         if(!chosen.ok){if(chosen.code==='ambiguous')this.clarification=command;return failure(chosen.code,{choices:chosen.choices.join(', ')});}
         const card=chosen.card;
         if(command.name==='ignore'){setDecision(s,card.id,'autonomous');return {ok:true,message:t('cw.autonomous')};}
