@@ -68,3 +68,7 @@ node tools/validate-content.mjs
 `src/game` owns simulation, `src/actions` validates effects, `src/llm` interprets requests, `src/ui` provides panels and `src/state` owns persistence. PixiJS is isolated in `src/game/Renderer.js`. Sparse world storage and declarative content registries support extension.
 
 This remains a playable prototype. Broader language reliability, long-term balance and dedicated elite/boss art need further work.
+
+## License
+
+Released under the [MIT License](LICENSE). © 2026 JB LEE.
